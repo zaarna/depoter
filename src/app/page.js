@@ -1,4 +1,6 @@
+import Button from "@/components/ReusableComponent/Button/Button";
 import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -33,6 +35,7 @@ export default function Home() {
             </a>{" "}
             center.
           </p>
+          <Button>Get Started</Button>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
@@ -59,6 +62,15 @@ export default function Home() {
             Documentation
           </a>
         </div>
+        <section className="bg-background p-8">
+          <h1 className="text-text-accent text-4xl mb-4">Our Vision</h1>
+          <p className="text-text-primary text-lg">
+            We empower digital transformation through AI and innovation.
+          </p>
+          <a href="#" className="text-text-accent underline mt-4 inline-block">
+            Learn More
+          </a>
+        </section>
       </main>
     </div>
   );

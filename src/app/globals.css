@@ -1,26 +1,215 @@
 @import "tailwindcss";
 
+/* ------------------------------
+   🎨 CSS Variables: Theme Colors
+-------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* 🌞 Light Theme */
+  --color-bg: #fff7e4;
+  --color-text-primary: #212121;
+  --color-dark-bg: #212121;
+  --color-text-accent: #ffbe2e;
+  --color-accent: #ffbe2e;
+  --color-secondary: #3c2c0b;
+  --color-muted: #978050;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* 🌚 Dark Theme */
+    --color-bg: #0a0a0a;
+    --color-text-primary: #ededed;
+    --color-text-accent: #ffbe2e;
+    --color-accent: #ffbe2e;
+    --color-secondary: #978050;
+    --color-muted: #3c2c0b;
   }
 }
 
+/* ------------------------------
+   🌐 Tailwind Theme Integration
+-------------------------------- */
+@theme inline {
+  --color-background: var(--color-bg);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-accent: var(--color-text-accent);
+  --color-accent: var(--color-accent);
+  --color-secondary: var(--color-secondary);
+  --color-muted: var(--color-muted);
+}
+
+/* ------------------------------
+   🧱 Global Resets & Base Styles
+-------------------------------- */
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-outfit);
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  font-family: var(--font-unbounded);
+  color: var(--color-text-accent);
+  font-weight: 700;
+}
+
+p,
+span,
+li {
+  font-family: var(--font-outfit);
+  color: var(--color-text-primary);
+}
+
+/* Optional: Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-muted);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+/* ------------------------------
+   📦 Custom Container Utility
+-------------------------------- */
+@layer utilities {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1180px;
+    }
+  }
+  @media (min-width: 1320px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+}
+
+/* button css */
+.btn-radial {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 100px;
+  background: var(--color-dark-bg);
+  color: #fff;
+  border: 2px solid transparent;
+  overflow: hidden;
+  font-family: var(--font-heading);
+  /* Smooth transition for opacity, background, border */
+  transition: opacity 0.85s ease, border-color 0.85s ease;
+  opacity: 1; /* Default slightly dim */
+}
+
+.btn-radial span {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+/* Radial background layer */
+.btn-radial::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, #ffbe2e 0%, transparent 300%);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.85s ease-in-out, opacity 0.85s ease-in-out;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+/* Hover State */
+.btn-radial:hover {
+  opacity: 1; /* Increase opacity */
+  border-color: var(--color-dark-bg);
+}
+
+/* Radial grows on hover */
+.btn-radial:hover::before {
+  transform: scale(3);
+  opacity: 1;
+  border-radius: 100px;
+}
+
+/* Hover Out Animation */
+.btn-radial:not(:hover)::before {
+  transform: scale(0);
+  opacity: 0;
+  border-radius: 20px;
+}
+.socilaicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.socilaicon:hover {
+  border-color: var(--color-dark-bg);
+  background-color: var(--color-accent);
+}
+.animatedlogo {
+  width: 60px;
+  height: 100px;
+  position: absolute;
+  left: calc(100vw - 96vw);
+  bottom: 3px;
+  z-index: 1;
+}
+.textlogo {
+  z-index: 4;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .btn-radial {
+    font-size: 14px;
+  }
 }

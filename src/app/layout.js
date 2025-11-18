@@ -1,15 +1,25 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
+import { Outfit, Unbounded } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/ReusableComponent/Footer/footer";
+import Header from "@/components/ReusableComponent/Header/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
   subsets: ["latin"],
 });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -19,10 +29,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${outfit.variable} ${unbounded.variable} antialiased`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
