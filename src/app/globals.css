@@ -52,15 +52,12 @@ body {
 
 /* Typography */
 h1,
-h2,
-h3 {
+h2 {
   font-family: var(--font-unbounded);
-  color: var(--color-text-accent);
+  /* color: var(--color-text-accent); */
   font-weight: 700;
 }
 
-p,
-span,
 li {
   font-family: var(--font-outfit);
   color: var(--color-text-primary);
@@ -126,7 +123,6 @@ li {
   font-size: 16px;
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
   font-weight: 500;
   border-radius: 100px;
   background: var(--color-dark-bg);
@@ -211,5 +207,153 @@ li {
 @media (max-width: 1024px) {
   .btn-radial {
     font-size: 14px;
+  }
+}
+.backgroundcover-home {
+  position: relative;
+  background: hsla(42, 100%, 95%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(42, 100%, 95%, 1) 8%,
+    hsla(42, 42%, 82%, 1) 73%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(42, 100%, 95%, 1) 8%,
+    hsla(42, 42%, 82%, 1) 73%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(42, 100%, 95%, 1) 8%,
+    hsla(42, 42%, 82%, 1) 73%
+  );
+
+  z-index: 2;
+}
+.backgroundcover-home::before {
+  position: absolute;
+  content: "";
+  right: -6%;
+  top: -40%;
+  width: 100%;
+  height: 1190px;
+  background-image: url("/heroimage.webp");
+  /* background-color: #212121; */
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+.backgroundcover-home::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 1190px;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 247, 228, 1) 0%,
+      rgba(255, 247, 228, 0.5) 15%,
+      rgba(255, 247, 228, 0) 100%
+    )
+    22% 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 3;
+  background-blend-mode: multiply;
+}
+.bgimage-service::before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  left: 0%;
+  margin: auto;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url("/puzzle3.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.brand-bg::before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  left: 0%;
+  margin: auto;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Brands.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.howworks-bg::before {
+  position: absolute;
+  content: "";
+  background-image: url(/Howorks.webp);
+  background-size: contain;
+  background-position: left;
+  background-repeat: round;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+.buildtohandle::before {
+  position: absolute;
+  content: "";
+  background-image: url(/buildtohandle.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.line-animate {
+  stroke-dasharray: 10 10;
+  animation: dash-forward 2s linear infinite;
+}
+@keyframes dash-forward {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+@media (max-width: 768.99px) {
+  .backgroundcover-home:before,
+  .backgroundcover-home::after,
+  .bgimage-service::before {
+    content: none;
+  }
+  .backgroundcover-home {
+    position: relative;
+    background-image: url("/mobilehomepagebanner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 100px;
   }
 }

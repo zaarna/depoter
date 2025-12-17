@@ -167,9 +167,9 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[#FFF7E4] drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] border-b border-gray-300 sticky top-0 z-50">
+    <header className="bg-[#FFF7E4] absolute drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] border-b border-gray-300 sticky top-0 z-50">
       <div className="container">
-        <div className="flex items-center space-x-4 h-20">
+        <div className="flex items-center space-x-4 h-20 justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             {/* Left GIF */}
@@ -198,9 +198,10 @@ export default function Header() {
               <nav className="hidden lg:flex items-center lg:space-x-3 xl:space-x-8">
                 <Link
                   href="/"
-                  className="text-[#212121] lg:text-sm xl:text-base"
+                  className="text-[#212121] lg:text-sm xl:text-base relative group"
                 >
                   Home
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{backgroundColor: 'var(--color-text-accent)'}}></span>
                 </Link>
 
                 {Object.entries(menuData).map(([key, menu]) => (
@@ -210,9 +211,10 @@ export default function Header() {
                     onMouseEnter={() => setActiveDropdown(key)}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
-                    <button className="flex items-center gap-1 text-[#212121] lg:text-sm xl:text-base">
+                    <button className="flex items-center gap-1 text-[#212121] lg:text-sm xl:text-base relative group">
                       {menu.title}
-                      <ChevronDown className="w-4 h-4 lg:w-5 lg:h-5 pt-0.5" />
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{backgroundColor: 'var(--color-text-accent)'}}></span>
+                      <ChevronDown className="w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-colors duration-300 group-hover:color-[#212121]" />
                     </button>
 
                     {/* Dropdown Menu */}
@@ -237,11 +239,13 @@ export default function Header() {
                                 <li key={itemIdx}>
                                   <Link
                                     href={item.href}
-                                    className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors group"
+                                    className="flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-200 group relative"
+                                    style={{'--hover-bg': 'rgba(var(--color-text-accent-rgb), 0.05)'}}
                                   >
-                                    <span className="text-xl">{item.icon}</span>
-                                    <span className="text-sm text-gray-700 group-hover:text-gray-900 font-medium">
+                                    <span className="text-xl group-hover:scale-110 transition-transform duration-200">{item.icon}</span>
+                                    <span className="text-sm text-gray-700 font-medium relative" style={{color: 'inherit'}}>
                                       {item.name}
+                                      <span className="absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{backgroundColor: 'var(--color-text-accent)'}}></span>
                                     </span>
                                   </Link>
                                 </li>
@@ -254,15 +258,16 @@ export default function Header() {
                   </div>
                 ))}
               </nav>
+              <div className="w-px h-8 bg-black mx-3"></div>
               <div className="flex items-center space-x-3">
                 <Link
                   href="/partner"
-                  className="text-[#212121] lg:text-sm xl:text-base"
+                  className="text-[#212121] lg:text-sm xl:text-base hover:font-semibold"
                 >
                   Partner With Us
                 </Link>
                 {/* Get a Quote Button - Desktop */}
-                <Button href="/">Get a Quote</Button>
+                <Button href="/" className="px-4 py-2.5">Get a Quote</Button>
               </div>
             </div>
           </div>
