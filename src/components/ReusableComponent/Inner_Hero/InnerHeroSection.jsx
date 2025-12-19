@@ -6,16 +6,17 @@ import BannerHeading from "../All_Title/BannerHeading";
 import { usePathname } from "next/navigation";
 import { heroConfig } from "@/config/heroConfig";
 
-function InnerHeroSection({bottomSection}) {
+function InnerHeroSection({ bottomSection }) {
   const pathname = usePathname();
   const selectedHero = heroConfig[pathname] || heroConfig["/"];
-    const heading = selectedHero.heading;
+  const heading = selectedHero.heading;
   const button = selectedHero.button;
   return (
-    <section className={`relative overflow-hidden min-h-[700px] md:min-h-[900px] h-auto ${selectedHero.className}`}>
+    <section
+      className={`relative overflow-hidden min-h-[700px] md:min-h-[900px] h-auto ${selectedHero.className}`}
+    >
       <div className="container">
         <div className="flex flex-col items-center md:items-start w-full max-w-[571px] pt-0 md:pt-[310px] relative z-10">
-
           <BannerHeading
             title={heading.title}
             highlight={heading.highlight}
@@ -26,10 +27,7 @@ function InnerHeroSection({bottomSection}) {
           />
 
           <div className="pt-8">
-            <Button
-              href={button.link}
-              className={button.className}
-            >
+            <Button href={button.link} className={button.className}>
               {button.text}
             </Button>
           </div>
