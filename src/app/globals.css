@@ -193,12 +193,12 @@ li {
   background-color: var(--color-accent);
 }
 .animatedlogo {
+  z-index: 1;
   width: 60px;
   height: 100px;
-  position: absolute;
-  left: calc(100vw - 96vw);
-  bottom: 3px;
-  z-index: 1;
+  position: relative;
+  bottom: 11px;
+  left: 0;
 }
 .textlogo {
   z-index: 4;
@@ -298,16 +298,44 @@ li {
   position: absolute;
   content: "";
   background-image: url(/Howorks.webp);
-  background-size: contain;
-  background-position: left;
-  background-repeat: round;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 101%;
   margin: auto;
   position: absolute;
   top: 0%;
   left: 0%;
   right: 0%;
+  background-size: 100% 100%;
+}
+.howworks-bg::after {
+  content: none;
+  background: repeating-linear-gradient(
+    rgb(151, 128, 80) 0px,
+    rgb(151, 128, 80) 9px,
+    rgba(0, 0, 0, 0) 10px,
+    rgba(0, 0, 0, 0) 20px
+  );
+  width: 1px;
+  height: 60%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  z-index: 3;
+  background-size: 100% 20px;
+  animation: dottedMove 0.8s linear infinite;
+}
+@keyframes dottedMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 20px;
+  }
 }
 .buildtohandle::before {
   position: absolute;
@@ -324,7 +352,51 @@ li {
   left: 0%;
   right: 0%;
 }
-
+.global-bg::before {
+  position: absolute;
+  content: "";
+  background-image: url(/globalbg.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+.insights-bg::before {
+  position: absolute;
+  content: "";
+  background-image: url(/Blogs.webp);
+  background-size: 1673px 767px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+.case-bg::before {
+  position: absolute;
+  content: "";
+  background-image: url(/casestudybg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
 .line-animate {
   stroke-dasharray: 10 10;
   animation: dash-forward 2s linear infinite;
@@ -335,6 +407,12 @@ li {
   }
   to {
     stroke-dashoffset: -40;
+  }
+}
+
+@media (max-width: 1022.99px) {
+  .howworks-bg::after {
+    content: "";
   }
 }
 

@@ -1,73 +1,77 @@
-export   const features = [
-    {
-      icon: "/zero.svg",
-      text: "Zero upfront cost",
-    },
-    {
-      icon: "/api.svg",
-      text: "API integrations",
-    },
-    {
-      icon: "/local.svg",
-      text: "Local and global deliveries",
-    },
-    {
-      icon: "/realtime.svg",
-      text: "Realtime inventory",
-    },
-    {
-      icon: "/payuse.svg",
-      text: "Pay per use",
-    },
-    {
-      icon: "/cold.svg",
-      text: "Cold and frozen storage",
-    },
-  ];
+export const features = [
+  {
+    icon: "/zero.svg",
+    text: "Zero upfront cost",
+  },
+  {
+    icon: "/api.svg",
+    text: "API integrations",
+  },
+  {
+    icon: "/local.svg",
+    text: "Local and global deliveries",
+  },
+  {
+    icon: "/realtime.svg",
+    text: "Realtime inventory",
+  },
+  {
+    icon: "/payuse.svg",
+    text: "Pay per use",
+  },
+  {
+    icon: "/cold.svg",
+    text: "Cold and frozen storage",
+  },
+];
 export const services = [
-    {
-      id: 1,
-      title: "D2C Fulfillment Service",
-      description:
-        "We help you deliver a seamless shopping experience to your customers with fast, accurate, and trackable direct-to-consumer shipments. From order processing to last-mile delivery, we make it easy for you to exceed customer expectations and boost brand loyalty.",
-      buttonText: "Deliver Happiness to Customers ",
-      buttonLink: "/",
-      image: "/d2c.webp",
-      bgColor: "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
-    },
-    {
-      id: 2,
-      title: "B2B Fulfillment Services",
-      description:
-        "We process, package, and dispatch your wholesale and bulk orders with speed and precision. From warehousing to dispatch, every order is handled within one system to ensure order fulfillment solutions reliability and business scalability.",
-        buttonText: "Simplify B2B Logistics",
-      buttonLink: "/",
-      image: "/b2b.webp",
-      bgColor: "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
-    },
-    {
-      id: 3,
-      title: "Multichannel Fulfillment",
-      description:
-        "We help you manage orders across multiple sales channels with ease. By integrating your online stores, marketplaces, and retail channels, we centralize inventory, streamline fulfillment, and ensure consistent delivery performance through reliable order fulfillment solutions.",
-      buttonText: "Centralize Your Orders",
-      buttonLink: "/",
-      image: "/Multichannel.webp",
-      bgColor: "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
-    },
-    {
-      id: 4,
-      title: "Delivery & Return Management",
-      description:
-        "We simplify both outbound and inbound logistics with our comprehensive delivery and warehousing solutions, ensuring timely delivery, hassle-free returns, and transparent tracking, helping you maintain customer satisfaction and operational efficiency.",
-      buttonText: "Simplify Shipping & Returns",
-      buttonLink: "/",
-      image: "/Delivery.webp",
-      bgColor: "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
-    },
-  ];
+  {
+    id: 1,
+    title: "D2C Fulfillment Service",
+    description:
+      "We help you deliver a seamless shopping experience to your customers with fast, accurate, and trackable direct-to-consumer shipments. From order processing to last-mile delivery, we make it easy for you to exceed customer expectations and boost brand loyalty.",
+    buttonText: "Deliver Happiness to Customers ",
+    buttonLink: "/",
+    image: "/d2c.webp",
+    bgColor:
+      "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
+  },
+  {
+    id: 2,
+    title: "B2B Fulfillment Services",
+    description:
+      "We process, package, and dispatch your wholesale and bulk orders with speed and precision. From warehousing to dispatch, every order is handled within one system to ensure order fulfillment solutions reliability and business scalability.",
+    buttonText: "Simplify B2B Logistics",
+    buttonLink: "/",
+    image: "/b2b.webp",
+    bgColor:
+      "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
+  },
+  {
+    id: 3,
+    title: "Multichannel Fulfillment",
+    description:
+      "We help you manage orders across multiple sales channels with ease. By integrating your online stores, marketplaces, and retail channels, we centralize inventory, streamline fulfillment, and ensure consistent delivery performance through reliable order fulfillment solutions.",
+    buttonText: "Centralize Your Orders",
+    buttonLink: "/",
+    image: "/Multichannel.webp",
+    bgColor:
+      "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
+  },
+  {
+    id: 4,
+    title: "Delivery & Return Management",
+    description:
+      "We simplify both outbound and inbound logistics with our comprehensive delivery and warehousing solutions, ensuring timely delivery, hassle-free returns, and transparent tracking, helping you maintain customer satisfaction and operational efficiency.",
+    buttonText: "Simplify Shipping & Returns",
+    buttonLink: "/",
+    image: "/Delivery.webp",
+    bgColor:
+      "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
+  },
+];
 
-  export const brands = [
+export const brands = [
   "/logo1.svg",
   "/logo2.svg",
   "/logo3.svg",
@@ -84,16 +88,74 @@ export const cardsone = [
   {
     image: "/simplicity01.svg",
     title: "Start with us at no cost",
-    description: "Begin your journey at zero cost. Experience smooth onboarding, explore our services, and realize tangible value before any financial commitment.",
+    description:
+      "Begin your journey at zero cost. Experience smooth onboarding, explore our services, and realize tangible value before any financial commitment.",
   },
   {
     image: "/simplicity02.svg",
     title: "Complexity to clarity",
-    description: "From bundled offers and custom orders to unique packaging or promotions, we simplify complex fulfillment into smart, cost-effective processes designed for your business.",
+    description:
+      "From bundled offers and custom orders to unique packaging or promotions, we simplify complex fulfillment into smart, cost-effective processes designed for your business.",
   },
   {
     image: "/simplicity03.svg",
     title: "Hassel-free onboarding",
-    description: "Whether expanding into new markets or launching fresh operations, our onboarding stays effortless. We manage setup, workflows, billing, and team training to keep you ready from day one.",
+    description:
+      "Whether expanding into new markets or launching fresh operations, our onboarding stays effortless. We manage setup, workflows, billing, and team training to keep you ready from day one.",
+  },
+];
+
+export const insights = [
+  {
+    id: 1,
+    title: "5 Custom Packaging Tips for Ecommerce Fulfillment",
+    date: "October 30, 2020",
+    description:
+      "Standing out amongst the crowd of great online products is tough. For this reason, many D2C brands and e-commerce store owners are using custom packaging.",
+    image: "/blog1.webp",
+  },
+  {
+    id: 2,
+    title: "How Fulfillment Centers Can Help Your Online Business Grow?",
+    date: "October 23, 2020",
+    description:
+      "Want to double your online business? Ideal for Small and Medium businesses! Grow your business with e-commerce fulfillment services.",
+    image: "/blog2.webp",
+  },
+  {
+    id: 3,
+    title: "Importance of Barcodes for E-commerce Brands",
+    date: "October 16, 2020",
+    description:
+      "Barcodes provide the link and traceability between production, shipping, storage, orders, picking, packing, last mile delivery and product returns.",
+    image: "/blog3.webp",
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Shruti Mehta",
+    role: "Startup Founder",
+    message:
+      "Rish Cloud Tech turned our vision into a fully functional platform. Their team's expertise exceeded our expectations!",
+    avatar: "S",
+  },
+  {
+    id: 2,
+    name: "Rohit Bansal",
+    role: "Tech Lead",
+    message:
+      "Their AI-driven analytics transformed how we manage data, providing game-changing insights.",
+    avatar: "R",
+    active: true,
+  },
+  {
+    id: 3,
+    name: "James Carter",
+    role: "CEO",
+    message:
+      "Rish Cloud Tech built a secure and scalable cloud solution that significantly boosted operational efficiency.",
+    avatar: "J",
   },
 ];

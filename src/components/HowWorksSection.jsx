@@ -15,7 +15,7 @@ function HowWorksSection({ sectionKey = [] }) {
             <TitleContent {...tc} />
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-6 md:mt-12">
+        <div className="max-w-6xl mx-auto mt-6 md:mt-12 relative z-10">
           <div className="grid">
             <HowITWorksDetail />
           </div>

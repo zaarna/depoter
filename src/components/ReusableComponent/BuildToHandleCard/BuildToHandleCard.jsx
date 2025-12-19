@@ -25,8 +25,12 @@ export default function BuildToHandleCard() {
       href: "/industries/health",
       accentColor: "bg-[#FFBE2E]",
       hoverColor: "bg-white",
+      ContentTitlecolor: "text-black",
+      ContentTitlemobilecolor: "text-[#3C2C0B]",
       hoveronText: "group-hover:text-black",
       ContentHover: "group-hover:text-[#3C2C0B]",
+      colorText: "text-[#978050]",
+      mobileColorText: "text-black",
     },
     {
       id: 2,
@@ -38,8 +42,12 @@ export default function BuildToHandleCard() {
       href: "/industries/beauty",
       accentColor: "bg-[#978050]",
       hoverColor: "bg-[#FFBE2E]",
+      ContentTitlecolor: "text-black",
+      ContentTitlemobilecolor: "text-white",
       hoveronText: "group-hover:text-[#FFBE2E]",
       ContentHover: "group-hover:text-white",
+      colorText: "text-[#978050]",
+      mobileColorText: "text-[#FFBE2E]",
     },
     {
       id: 3,
@@ -51,8 +59,12 @@ export default function BuildToHandleCard() {
       href: "/industries/apparel",
       accentColor: "bg-[#978050]",
       hoverColor: "bg-[#FFBE2E]",
+      ContentTitlecolor: "text-black",
+      ContentTitlemobilecolor: "text-white",
       hoveronText: "group-hover:text-[#FFBE2E]",
       ContentHover: "group-hover:text-white",
+      colorText: "text-[#978050]",
+      mobileColorText: "text-[#FFBE2E]",
     },
     {
       id: 4,
@@ -64,8 +76,12 @@ export default function BuildToHandleCard() {
       href: "/industries/pets",
       accentColor: "bg-[#978050]",
       hoverColor: "bg-[#FFBE2E]",
+      ContentTitlecolor: "text-black",
+      ContentTitlemobilecolor: "text-white",
       hoveronText: "group-hover:text-[#FFBE2E]",
       ContentHover: "group-hover:text-white",
+      colorText: "text-[#978050]",
+      mobileColorText: "text-[#FFBE2E]",
     },
     {
       id: 5,
@@ -78,8 +94,12 @@ export default function BuildToHandleCard() {
       href: "/industries/home",
       accentColor: "bg-[#FFBE2E]",
       hoverColor: "bg-white",
+      ContentTitlecolor: "text-black",
+      ContentTitlemobilecolor: "text-[#3C2C0B]",
       hoveronText: "group-hover:text-black",
       ContentHover: "group-hover:text-[#3C2C0B]",
+      colorText: "text-[#978050]",
+      mobileColorText: "text-black",
     },
     {
       id: 6,
@@ -92,8 +112,12 @@ export default function BuildToHandleCard() {
       href: "/industries/food",
       accentColor: "bg-[#FFBE2E]",
       hoverColor: "bg-white",
+      ContentTitlecolor: "text-black",
+      ContentTitlemobilecolor: "text-[#3C2C0B]",
       hoveronText: "group-hover:text-black",
       ContentHover: "group-hover:text-[#3C2C0B]",
+      colorText: "text-[#978050]",
+      mobileColorText: "text-black",
     },
     {
       id: 7,
@@ -105,8 +129,12 @@ export default function BuildToHandleCard() {
       href: "/industries/sports",
       accentColor: "bg-[#978050]",
       hoverColor: "bg-[#FFBE2E]",
+      ContentTitlecolor: "text-black",
+      ContentTitlemobilecolor: "text-white",
       hoveronText: "group-hover:text-[#FFBE2E]",
       ContentHover: "group-hover:text-white",
+      colorText: "text-[#978050]",
+      mobileColorText: "text-[#FFBE2E]",
     },
   ];
 
@@ -124,16 +152,16 @@ export default function BuildToHandleCard() {
               <div
                 className={`absolute -top-8 -right-8 w-24 h-24 rounded-full 
                 ${industry.hoverColor}
-                opacity-0 group-hover:opacity-100
+                opacity-100 md:opacity-0 group-hover:opacity-100
                 transition-opacity duration-500 ease-in-out
                 origin-top-right z-10`}
               />
 
               {/* Decorative Circles */}
               <div
-                className={`absolute -top-8 -right-8 w-24 h-24 ${industry.accentColor}
-                rounded-full group-hover:rounded-3xl 
-                transform scale-100 group-hover:scale-[5]
+                className={`absolute top-0 right-0 w-full h-full md:-top-8 md:-right-8 md:w-24 md:h-24 ${industry.accentColor}
+                rounded-3xl md:rounded-full group-hover:rounded-3xl 
+                transform md:scale-100 group-hover:scale-[5]
                 transition-transform duration-500 ease-in-out
                 origin-top-right`}
               />
@@ -145,7 +173,7 @@ export default function BuildToHandleCard() {
                     size={80}
                     className={`transition-all duration-300 ${
                       industry.hoverIcon
-                        ? "group-hover:opacity-0"
+                        ? " group-hover:opacity-0"
                         : "group-hover:text-[#212121]"
                     }`}
                   />
@@ -155,22 +183,22 @@ export default function BuildToHandleCard() {
                       size={80}
                       className="
                         absolute inset-0
-                        opacity-0
+                        md:opacity-0
                         transition-all duration-300
-                        group-hover:opacity-100
+                        group-hover:opacity-100 opacity-100
                     "
                     />
                   )}
                 </div>
 
                 <h3
-                  className={`text-2xl font-semibold text-black ${industry.ContentHover} mb-3`}
+                  className={`text-2xl font-semibold ${industry.ContentTitlemobilecolor} md:${industry.ContentTitlecolor} ${industry.ContentHover} mb-3`}
                 >
                   {industry.title}
                 </h3>
 
                 <p
-                  className={`text-black ${industry.ContentHover} font-light text-lg leading-relaxed mb-6`}
+                  className={`${industry.ContentTitlemobilecolor} md:${industry.ContentTitlecolor} ${industry.ContentHover} font-light text-lg leading-relaxed mb-6`}
                 >
                   {industry.description}
                 </p>
@@ -179,7 +207,7 @@ export default function BuildToHandleCard() {
                   href={industry.href}
                   className={`
                     inline-flex items-center gap-3 text-lg font-bold
-                    text-[#978050]
+                     ${industry.mobileColorText} md:${industry.colorText}
                     transition-all duration-300
                     ${industry.hoveronText}
                     p-2 rounded-full

@@ -1,8 +1,8 @@
-const Scalabilitysix = ({ className, width, height }) => {
+const Scalabilitysix = ({ className, size = "100" }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 120 120"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

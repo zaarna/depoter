@@ -5,10 +5,52 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "../Button/Button";
 import { ChevronDown } from "lucide-react";
+import { useEffect, useRef } from "react";
+import {
+  AboutIcon,
+  ApparelIcon,
+  B2BIcon,
+  BeautyIcon,
+  BlogIcon,
+  CaseStudyIcon,
+  ContactIcon,
+  CustomIcon,
+  D2CIcon,
+  DeliveriesIcon,
+  FoodIcon,
+  FreightIcon,
+  FulfillmentIcon,
+  HealthIcon,
+  HomeIcon,
+  IntegrationsIcon,
+  InventoryIcon,
+  IORIcon,
+  KSAIcon,
+  MultiChannelIcon,
+  PetsIcon,
+  ProductIcon,
+  SportsIcon,
+  UAEFreezoneIcon,
+  UAEIcon,
+  WarehouseIcon,
+} from "../Icons/MenuIcons/AllMenuIcon";
 
 export default function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setActiveDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const menuData = {
     services: {
@@ -17,22 +59,12 @@ export default function Header() {
         {
           title: "FULFILLMENT SERVICES",
           items: [
-            { name: "D2C", icon: "📦", href: "/services/d2c" },
-            { name: "E2B", icon: "🏢", href: "/services/e2b" },
+            { name: "D2C", icon: <D2CIcon />, href: "/services/d2c" },
+            { name: "B2B", icon: <B2BIcon />, href: "/services/e2b" },
             {
               name: "Multichannel",
-              icon: "🔄",
+              icon: <MultiChannelIcon />,
               href: "/services/multichannel",
-            },
-            {
-              name: "Marketplace Amazon",
-              icon: "🛒",
-              href: "/services/marketplace-amazon",
-            },
-            {
-              name: "Marketplace Noon",
-              icon: "🌙",
-              href: "/services/marketplace-noon",
             },
           ],
         },
@@ -41,16 +73,20 @@ export default function Header() {
           items: [
             {
               name: "Freight Forwarding",
-              icon: "🚚",
+              icon: <FreightIcon />,
               href: "/services/freight",
             },
-            { name: "Custom Clearance", icon: "📋", href: "/services/customs" },
             {
-              name: "Product Bundling",
-              icon: "📦",
+              name: "Custom Clearance",
+              icon: <CustomIcon />,
+              href: "/services/customs",
+            },
+            {
+              name: "Product Registration",
+              icon: <ProductIcon />,
               href: "/services/bundling",
             },
-            { name: "JOB/EOB", icon: "⚙️", href: "/services/job-eob" },
+            { name: "IOR/EOR", icon: <IORIcon />, href: "/services/job-eob" },
           ],
         },
       ],
@@ -62,17 +98,17 @@ export default function Header() {
           items: [
             {
               name: "Integrations",
-              icon: "🔌",
+              icon: <IntegrationsIcon />,
               href: "/technology/integrations",
             },
             {
               name: "Inventory Management",
-              icon: "📊",
+              icon: <InventoryIcon />,
               href: "/technology/inventory",
             },
             {
               name: "Warehouse Management System",
-              icon: "🏭",
+              icon: <WarehouseIcon />,
               href: "/technology/wms",
             },
           ],
@@ -86,25 +122,33 @@ export default function Header() {
           items: [
             {
               name: "Health & Wellness",
-              icon: "💊",
+              icon: <HealthIcon />,
               href: "/industries/health",
             },
             {
               name: "Beauty & Personal Care",
-              icon: "💄",
+              icon: <BeautyIcon />,
               href: "/industries/beauty",
             },
-            { name: "Food & Beverage", icon: "🍔", href: "/industries/food" },
+            {
+              name: "Food & Beverage",
+              icon: <FoodIcon />,
+              href: "/industries/food",
+            },
             {
               name: "Apparel & Accessories",
-              icon: "👔",
+              icon: <ApparelIcon />,
               href: "/industries/apparel",
             },
-            { name: "Home Goods", icon: "🏠", href: "/industries/home" },
-            { name: "Pets", icon: "🐾", href: "/industries/pets" },
+            {
+              name: "Home Goods",
+              icon: <HomeIcon />,
+              href: "/industries/home",
+            },
+            { name: "Pets", icon: <PetsIcon />, href: "/industries/pets" },
             {
               name: "Sports, Toys, & Games",
-              icon: "⚽",
+              icon: <SportsIcon />,
               href: "/industries/sports",
             },
           ],
@@ -118,15 +162,15 @@ export default function Header() {
           items: [
             {
               name: "UAE Mainland",
-              icon: "🇦🇪",
+              icon: <UAEIcon />,
               href: "/geographies/uae-mainland",
             },
             {
               name: "UAE Freezone",
-              icon: "🏢",
+              icon: <UAEFreezoneIcon />,
               href: "/geographies/uae-freezone",
             },
-            { name: "KSA", icon: "🇸🇦", href: "/geographies/ksa" },
+            { name: "KSA", icon: <KSAIcon />, href: "/geographies/ksa" },
           ],
         },
       ],
@@ -138,10 +182,14 @@ export default function Header() {
           items: [
             {
               name: "Fulfillment Center",
-              icon: "🏭",
+              icon: <FulfillmentIcon />,
               href: "/infra/fulfillment-center",
             },
-            { name: "Deliveries", icon: "🚚", href: "/infra/deliveries" },
+            {
+              name: "Deliveries",
+              icon: <DeliveriesIcon />,
+              href: "/infra/deliveries",
+            },
           ],
         },
       ],
@@ -151,11 +199,14 @@ export default function Header() {
       sections: [
         {
           items: [
-            { name: "About us", icon: "ℹ️", href: "/about" },
-            { name: "Blog", icon: "📝", href: "/blog" },
-            { name: "Case Study", icon: "📊", href: "/case-study" },
-            { name: "Contact Us", icon: "📞", href: "/contact" },
-            { name: "Career", icon: "💼", href: "/career" },
+            { name: "About us", icon: <AboutIcon />, href: "/about" },
+            { name: "Blog", icon: <BlogIcon />, href: "/blog" },
+            {
+              name: "Case Study",
+              icon: <CaseStudyIcon />,
+              href: "/case-study",
+            },
+            { name: "Contact Us", icon: <ContactIcon />, href: "/contact" },
           ],
         },
       ],
@@ -193,59 +244,92 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="">
+          <div className="hidden lg:block">
             <div className="flex items-center">
-              <nav className="hidden lg:flex items-center lg:space-x-3 xl:space-x-8">
+              <nav
+                ref={menuRef}
+                className="hidden lg:flex items-center lg:space-x-3 xl:space-x-8"
+              >
                 <Link
                   href="/"
                   className="text-[#212121] lg:text-sm xl:text-base relative group"
                 >
                   Home
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{backgroundColor: 'var(--color-text-accent)'}}></span>
+                  <span
+                    className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300"
+                    style={{ backgroundColor: "var(--color-text-accent)" }}
+                  ></span>
                 </Link>
 
                 {Object.entries(menuData).map(([key, menu]) => (
-                  <div
-                    key={key}
-                    className="relative"
-                    onMouseEnter={() => setActiveDropdown(key)}
-                    onMouseLeave={() => setActiveDropdown(null)}
-                  >
-                    <button className="flex items-center gap-1 text-[#212121] lg:text-sm xl:text-base relative group">
+                  <div key={key} className="relative">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setActiveDropdown(activeDropdown === key ? null : key)
+                      }
+                      className="flex items-center gap-1 text-[#212121] lg:text-sm xl:text-base relative group"
+                    >
                       {menu.title}
-                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{backgroundColor: 'var(--color-text-accent)'}}></span>
-                      <ChevronDown className="w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-colors duration-300 group-hover:color-[#212121]" />
+
+                      <span
+                        className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300"
+                        style={{ backgroundColor: "var(--color-text-accent)" }}
+                      />
+
+                      <ChevronDown
+                        className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${
+                          activeDropdown === key ? "rotate-180" : ""
+                        }`}
+                      />
                     </button>
 
-                    {/* Dropdown Menu */}
+                    {/* Dropdown */}
                     {activeDropdown === key && (
-                      <div className="absolute left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-200 py-4 px-2">
+                      <div
+                        className={`
+                        absolute left-0 top-16
+                        bg-white rounded-xl shadow-2xl
+                        border-b-4 border-[#FFBE2E]
+                        grid gap-6 py-3
+                        ${
+                          menu.sections.length > 1
+                            ? "grid-cols-2 w-[600px]"
+                            : "grid-cols-1 w-80"
+                        }
+                      `}
+                      >
                         {menu.sections.map((section, idx) => (
-                          <div
-                            key={idx}
-                            className={
-                              idx > 0
-                                ? "mt-4 pt-4 border-t border-gray-200"
-                                : ""
-                            }
-                          >
+                          <div key={idx}>
+                            {/* Section Title */}
                             {section.title && (
-                              <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider px-3 mb-2">
+                              <h3 className="text-lg px-5 font-bold text-[#1C1C1C] uppercase tracking-wider mb-3">
                                 {section.title}
                               </h3>
                             )}
-                            <ul className="space-y-1">
+
+                            {/* Items */}
+                            <ul className="space-y-2">
                               {section.items.map((item, itemIdx) => (
-                                <li key={itemIdx}>
+                                <li
+                                  key={itemIdx}
+                                  className="hover:bg-[#FFF7E4] py-1.5"
+                                >
                                   <Link
                                     href={item.href}
-                                    className="flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-200 group relative"
-                                    style={{'--hover-bg': 'rgba(var(--color-text-accent-rgb), 0.05)'}}
+                                    onClick={() => setActiveDropdown(null)}
+                                    className="
+                                    flex items-center gap-3
+                                    px-3 py-1 rounded-lg
+                                    transition-all duration-200
+                                    
+                                    group text-[#1C1C1C]
+                                  "
                                   >
-                                    <span className="text-xl group-hover:scale-110 transition-transform duration-200">{item.icon}</span>
-                                    <span className="text-sm text-gray-700 font-medium relative" style={{color: 'inherit'}}>
+                                    <span className="text-lg">{item.icon}</span>
+
+                                    <span className="text-base font-medium  relative">
                                       {item.name}
-                                      <span className="absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{backgroundColor: 'var(--color-text-accent)'}}></span>
                                     </span>
                                   </Link>
                                 </li>
@@ -267,7 +351,9 @@ export default function Header() {
                   Partner With Us
                 </Link>
                 {/* Get a Quote Button - Desktop */}
-                <Button href="/" className="px-4 py-2.5">Get a Quote</Button>
+                <Button href="/" className="px-4 py-2.5">
+                  Get a Quote
+                </Button>
               </div>
             </div>
           </div>
@@ -301,7 +387,6 @@ export default function Header() {
             </svg>
           </button>
         </div>
-        
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
