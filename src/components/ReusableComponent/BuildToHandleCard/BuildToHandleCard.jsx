@@ -192,7 +192,7 @@ export default function BuildToHandleCard() {
                 </div>
 
                 <h3
-                  className={`text-2xl font-semibold ${industry.ContentTitlemobilecolor} md:${industry.ContentTitlecolor} ${industry.ContentHover} mb-3`}
+                  className={`text-2xl font-semibold  md:${industry.ContentTitlecolor} ${industry.ContentHover} ${industry.ContentTitlemobilecolor} mb-3`}
                 >
                   {industry.title}
                 </h3>

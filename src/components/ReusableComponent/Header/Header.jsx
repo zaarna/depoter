@@ -48,9 +48,14 @@ export default function Header() {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
   }, []);
+
+  const handleLinkClick = () => {
+    setActiveDropdown(null);
+    setMobileMenuOpen(false);
+  };
 
   const menuData = {
     services: {
@@ -60,7 +65,7 @@ export default function Header() {
           title: "FULFILLMENT SERVICES",
           items: [
             { name: "D2C", icon: <D2CIcon />, href: "/services/d2c" },
-            { name: "B2B", icon: <B2BIcon />, href: "/services/e2b" },
+            { name: "B2B", icon: <B2BIcon />, href: "/services/b2b" },
             {
               name: "Multichannel",
               icon: <MultiChannelIcon />,
@@ -395,7 +400,8 @@ export default function Header() {
               <Link
                 href="/"
                 className="block px-4 py-2 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
+                // onClick={() => setMobileMenuOpen(false)}
+                onClick={handleLinkClick}
               >
                 Home
               </Link>
@@ -439,6 +445,7 @@ export default function Header() {
                               href={item.href}
                               className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
                               onClick={() => setMobileMenuOpen(false)}
+                              // onClick={handleLinkClick}
                             >
                               <span className="text-lg">{item.icon}</span>
                               <span className="text-sm text-gray-700">
@@ -456,7 +463,8 @@ export default function Header() {
               <Link
                 href="/partner"
                 className="block px-4 py-2 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
+                // onClick={() => setMobileMenuOpen(false)}
+                onClick={handleLinkClick}
               >
                 Partner With Us
               </Link>
@@ -464,7 +472,8 @@ export default function Header() {
               <Link
                 href="/quote"
                 className="block mx-4 mt-4 bg-gray-900 text-white px-6 py-2.5 rounded-full hover:bg-gray-800 transition-colors text-center font-medium"
-                onClick={() => setMobileMenuOpen(false)}
+                // onClick={() => setMobileMenuOpen(false)}
+                onClick={handleLinkClick}
               >
                 Get a Quote
               </Link>

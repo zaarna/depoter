@@ -16,7 +16,7 @@ function TestimonialSection({ sectionKey = [] }) {
         </div>
       </div>
 
-      <div className=" mt-6 md:mt-12 relative z-10">
+      <div className=" mt-6 md:mt-12 relative z-10 px-4 md:px-0">
         <TestimonialCard testimonials={testimonials} />
       </div>
     </section>
