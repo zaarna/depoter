@@ -15,7 +15,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
           <TitleContent {...tc} />
         </div>
         <div className="mt-6 md:mt-12 relative">
-          <BuildToHandleCard />
+          <BuildToHandleCard variant="grid" />
         </div>
       </div>
     </section>

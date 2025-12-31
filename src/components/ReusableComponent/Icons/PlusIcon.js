@@ -1,0 +1,23 @@
+const PlusIcon = ({ className, size = "30" }) => {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M16 30C8.28 30 2 23.72 2 16C2 8.28 8.28 2 16 2C23.72 2 30 8.28 30 16C30 23.72 23.72 30 16 30ZM16 4C9.38 4 4 9.38 4 16C4 22.62 9.38 28 16 28C22.62 28 28 22.62 28 16C28 9.38 22.62 4 16 4Z"
+        fill="#141414"
+      />
+      <path
+        d="M22 17H10C9.44 17 9 16.56 9 16C9 15.44 9.44 15 10 15H22C22.56 15 23 15.44 23 16C23 16.56 22.56 17 22 17Z"
+        fill="#141414"
+      />
+    </svg>
+  );
+};
+
+export default PlusIcon;

@@ -12,7 +12,7 @@ import FoodIcon from "../Icons/FoodIcon";
 import FoodHoverIcon from "../Icons/FoodHoverIcon";
 import SportIcon from "../Icons/SportIcon";
 
-export default function BuildToHandleCard() {
+export default function BuildToHandleCard({ variant = "grid" }) {
   const industries = [
     {
       id: 1,
@@ -138,105 +138,151 @@ export default function BuildToHandleCard() {
     },
   ];
 
+  const isFlex = variant === "flex";
+
   return (
     <>
-      {/* Grid Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {industries.map((industry, index) => {
-          return (
+      {isFlex ? (
+        <div className="flex flex-wrap justify-center gap-6">
+          {industries.map((industry) => (
             <div
               key={industry.id}
-              className={`group relative bg-white rounded-3xl p-8 shadow-md hover:shadow-2xl transition-shadow duration-500 overflow-hidden h-full`}
+              className="
+        w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group relative bg-white rounded-3xl p-4 md:p-8 shadow-md hover:shadow-2xl transition-shadow duration-500 overflow-hidden h-full border-2 border-[#212121]"
             >
-              {/* Diagonal Hover Background */}
+              {/* Decorative Circle */}
               <div
-                className={`absolute -top-8 -right-8 w-24 h-24 rounded-full 
-                ${industry.hoverColor}
-                opacity-100 md:opacity-0 group-hover:opacity-100
-                transition-opacity duration-500 ease-in-out
-                origin-top-right z-10`}
-              />
-
-              {/* Decorative Circles */}
-              <div
-                className={`absolute top-0 right-0 w-full h-full md:-top-8 md:-right-8 md:w-24 md:h-24 ${industry.accentColor}
-                rounded-3xl md:rounded-full group-hover:rounded-3xl 
-                transform md:scale-100 group-hover:scale-[5]
-                transition-transform duration-500 ease-in-out
-                origin-top-right`}
+                className={`absolute top-0 right-0 left-0 m-auto w-[80px] h-[68px] bg-linear-to-b from-[#FFBE2EBF] to-white 
+`}
               />
 
               {/* Content */}
-              <div className="relative z-10">
-                <div className="mb-6 relative w-fit group">
+              <div className="relative z-10 flex flex-col items-center text-center">
+                <div className="mb-6 relative w-fit">
                   <industry.icon
                     size={80}
-                    className={`transition-all duration-300 ${
-                      industry.hoverIcon
-                        ? " group-hover:opacity-0"
-                        : "group-hover:text-[#212121]"
-                    }`}
+                    className={`transition-all duration-300`}
                   />
-
-                  {industry.hoverIcon && (
-                    <industry.hoverIcon
-                      size={80}
-                      className="
-                        absolute inset-0
-                        md:opacity-0
-                        transition-all duration-300
-                        group-hover:opacity-100 opacity-100
-                    "
-                    />
-                  )}
                 </div>
 
-                <h3
-                  className={`text-2xl font-semibold  md:${industry.ContentTitlecolor} ${industry.ContentHover} ${industry.ContentTitlemobilecolor} mb-3`}
-                >
+                <h3 className={`text-2xl font-semibold mb-3 `}>
                   {industry.title}
                 </h3>
 
                 <p
-                  className={`${industry.ContentTitlemobilecolor} md:${industry.ContentTitlecolor} ${industry.ContentHover} font-light text-lg leading-relaxed mb-6`}
+                  className={`font-light text-lg leading-relaxed mb-6 text-center`}
                 >
                   {industry.description}
                 </p>
 
                 <Link
                   href={industry.href}
-                  className={`
+                  className={`inline-flex items-center cursor-pointer gap-3 text-lg font-bold transition-all underline underline-offset-8 text-[#978050] duration-300 p-2 rounded-full hover:text-[#FFBE2E]`}
+                >
+                  <span>{industry.link}</span>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industries.map((industry, index) => {
+            return (
+              <div
+                key={industry.id}
+                className={`group relative bg-white rounded-3xl p-8 shadow-md hover:shadow-2xl transition-shadow duration-500 overflow-hidden h-full`}
+              >
+                {/* Diagonal Hover Background */}
+                <div
+                  className={`absolute -top-8 -right-8 w-24 h-24 rounded-full 
+                ${industry.hoverColor}
+                opacity-100 md:opacity-0 group-hover:opacity-100
+                transition-opacity duration-500 ease-in-out
+                origin-top-right z-10`}
+                />
+
+                {/* Decorative Circles */}
+                <div
+                  className={`absolute top-0 right-0 w-full h-full md:-top-8 md:-right-8 md:w-24 md:h-24 ${industry.accentColor}
+                rounded-3xl md:rounded-full group-hover:rounded-3xl 
+                transform md:scale-100 group-hover:scale-[5]
+                transition-transform duration-500 ease-in-out
+                origin-top-right`}
+                />
+
+                {/* Content */}
+                <div className="relative z-10">
+                  <div className="mb-6 relative w-fit group">
+                    <industry.icon
+                      size={80}
+                      className={`transition-all duration-300 ${
+                        industry.hoverIcon
+                          ? " group-hover:opacity-0"
+                          : "group-hover:text-[#212121]"
+                      }`}
+                    />
+
+                    {industry.hoverIcon && (
+                      <industry.hoverIcon
+                        size={80}
+                        className="
+                        absolute inset-0
+                        md:opacity-0
+                        transition-all duration-300
+                        group-hover:opacity-100 opacity-100
+                    "
+                      />
+                    )}
+                  </div>
+
+                  <h3
+                    className={`text-2xl font-semibold  md:${industry.ContentTitlecolor} ${industry.ContentHover} ${industry.ContentTitlemobilecolor} mb-3`}
+                  >
+                    {industry.title}
+                  </h3>
+
+                  <p
+                    className={`${industry.ContentTitlemobilecolor} md:${industry.ContentTitlecolor} ${industry.ContentHover} font-light text-lg leading-relaxed mb-6`}
+                  >
+                    {industry.description}
+                  </p>
+
+                  <Link
+                    href={industry.href}
+                    className={`
                     inline-flex items-center gap-3 text-lg font-bold
                      ${industry.mobileColorText} md:${industry.colorText}
                     transition-all duration-300
                     ${industry.hoveronText}
                     p-2 rounded-full
                 `}
-                >
-                  <span>{industry.link}</span>
-                  <svg
-                    className="
+                  >
+                    <span>{industry.link}</span>
+                    <svg
+                      className="
                     w-5 h-5
                     duration-700 ease-in-out
                     group-hover:-rotate-45
                     "
-                    width="23"
-                    height="18"
-                    viewBox="0 0 23 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 8.89387C0 9.50287 0.422 9.93687 1.0315 9.93687H16.465L18.973 9.84287L15.1175 13.3584L12.4925 16.0184C12.305 16.2064 12.211 16.4874 12.211 16.7684C12.211 17.3434 12.656 17.7764 13.231 17.7764C13.512 17.7764 13.758 17.6714 13.9925 17.4484L21.7855 9.66787C22.0195 9.44487 22.137 9.17537 22.137 8.89437C22.137 8.60137 22.0195 8.33187 21.7855 8.10937L13.9925 0.327867C13.7575 0.105367 13.512 -0.000133939 13.2305 -0.000133939C12.6565 -0.000133939 12.211 0.433366 12.211 1.01937C12.211 1.28887 12.305 1.56987 12.4925 1.75737L15.1175 4.42937L18.961 7.93337L16.465 7.83937L1.0315 7.83937C0.422 7.83937 0 8.28387 0 8.89387Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </Link>
+                      width="23"
+                      height="18"
+                      viewBox="0 0 23 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 8.89387C0 9.50287 0.422 9.93687 1.0315 9.93687H16.465L18.973 9.84287L15.1175 13.3584L12.4925 16.0184C12.305 16.2064 12.211 16.4874 12.211 16.7684C12.211 17.3434 12.656 17.7764 13.231 17.7764C13.512 17.7764 13.758 17.6714 13.9925 17.4484L21.7855 9.66787C22.0195 9.44487 22.137 9.17537 22.137 8.89437C22.137 8.60137 22.0195 8.33187 21.7855 8.10937L13.9925 0.327867C13.7575 0.105367 13.512 -0.000133939 13.2305 -0.000133939C12.6565 -0.000133939 12.211 0.433366 12.211 1.01937C12.211 1.28887 12.305 1.56987 12.4925 1.75737L15.1175 4.42937L18.961 7.93337L16.465 7.83937L1.0315 7.83937C0.422 7.83937 0 8.28387 0 8.89387Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </Link>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      )}
     </>
   );
 }
