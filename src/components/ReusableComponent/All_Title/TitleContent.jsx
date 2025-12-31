@@ -15,24 +15,23 @@ function TitleContent({
 }) {
   // If highlight exists, replace it inside the title text
   const renderTitle = () => {
-  const safeTitle = title.replace(/\n/g, "<br />"); // convert \n to <br />
+    const safeTitle = title.replace(/\n/g, "<br />"); // convert \n to <br />
 
-  if (!highlight) {
-    return <span dangerouslySetInnerHTML={{ __html: safeTitle }} />;
-  }
+    if (!highlight) {
+      return <span dangerouslySetInnerHTML={{ __html: safeTitle }} />;
+    }
 
-  const safeHighlight = highlight.replace(/\n/g, "<br />");
-  const parts = safeTitle.split(highlight);
+    const safeHighlight = highlight.replace(/\n/g, "<br />");
+    const parts = safeTitle.split(highlight);
 
-  return (
-    <span>
-      <span dangerouslySetInnerHTML={{ __html: parts[0] }} />
-      <span style={{ color: highlightColor }}>{highlight}</span>
-      <span dangerouslySetInnerHTML={{ __html: parts[1] }} />
-    </span>
-  );
-};
-
+    return (
+      <span>
+        <span dangerouslySetInnerHTML={{ __html: parts[0] }} />
+        <span style={{ color: highlightColor }}>{highlight}</span>
+        <span dangerouslySetInnerHTML={{ __html: parts[1] }} />
+      </span>
+    );
+  };
 
   return (
     <div className={`flex flex-col gap-3 ${className}`}>
