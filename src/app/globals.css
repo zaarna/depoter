@@ -1084,7 +1084,7 @@ li {
   }
 
   .industry-card.desktop-dark:hover .industry-card__title {
-    color: black;
+    color: white;
   }
 
   .industry-card.desktop-dark:hover .industry-card__description {
@@ -1096,13 +1096,8 @@ li {
   }
 
   .industry-card.desktop-dark:hover .industry-card__icon {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
 /* Handle icon color on hover when no hover icon exists */
-.industry-card.desktop-yellow:hover .industry-card__icon:not(.has-hover-icon),
-.industry-card.desktop-dark:hover .industry-card__icon:not(.has-hover-icon) {
-  color: #212121;
-  opacity: 1;
-}

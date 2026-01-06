@@ -34,7 +34,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       // ContentHover: "group-hover:text-[#3C2C0B]",
       // colorText: "text-[#978050]",
       // mobileColorText: "text-black",
-      mobileclass: "",
+      mobileclass: "yellow",
       desktopclass: "yellow",
       column: 0,
       marginTop: "mt-25",
@@ -186,7 +186,10 @@ function BuildToHandlesection({ sectionKey = [] }) {
         <div className="mt-6 md:mt-12 relative">
           <div className="lg:hidden flex flex-col gap-6">
             {industries.map((category, index) => (
-              <BuildToHandleCard key={index} industry={category} />
+              <>
+                {console.log("Category", category)}
+                <BuildToHandleCard key={index} industry={category} />
+              </>
             ))}
           </div>
 
@@ -196,6 +199,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
               <div key={columnIndex} className="flex flex-col gap-6">
                 {column.map((category, cardIndex) => (
                   <div key={cardIndex} className={category.marginTop}>
+                    {console.log("Category", category)}
                     <BuildToHandleCard industry={category} />
                   </div>
                 ))}
