@@ -7,11 +7,12 @@ import FastAndFlexible from "@/components/d2cPageSection/FastAndFlexible";
 import WhyChooseDepotter from "@/components/d2cPageSection/WhyChooseDepotter";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
 import KeyMetrics from "@/components/ReusableComponent/Inner_Hero/KeyMetrics";
+import TestimonialSection from "@/components/TestimonialSection";
 
 export default function d2cPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center dark:bg-black">
-      <main className="flex flex-col min-h-screen w-full bg-white dark:bg-black">
+    <div className="flex min-h-screen items-center justify-center">
+      <main className="flex flex-col min-h-screen w-full  ">
         <InnerHeroSection bottomSection={<KeyMetrics />} />
         <BuiltHandleService />
         <D2cFulfillmentCenter />
@@ -20,6 +21,7 @@ export default function d2cPage() {
         <BusinessInSync />
         <Crossdocking />
         <WhyChooseDepotter />
+        <TestimonialSection />
       </main>
     </div>
   );

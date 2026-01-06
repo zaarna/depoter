@@ -27,7 +27,11 @@ function InnerHeroSection({ bottomSection }) {
           />
 
           <div className="pt-8">
-            <Button href={button.link} className={button.className}>
+            <Button
+              href={button.link}
+              className={button.className}
+              variant="black"
+            >
               {button.text}
             </Button>
           </div>

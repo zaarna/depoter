@@ -9,8 +9,13 @@ const Button = ({
   onClick,
   type = "button",
   className = "",
+  variant = "black",
 }) => {
-  const buttonClasses = `btn-radial transition-all duration-500 ${className}`;
+  let variantStyle = "";
+  if (variant == "black") {
+    variantStyle = "bg-[#212121] text-[#FFBE2E] black";
+  }
+  const buttonClasses = `btn-radial transition-all duration-500 ${variantStyle} ${className}`;
 
   // If href exists → render link button
   if (href) {

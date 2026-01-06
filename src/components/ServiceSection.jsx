@@ -5,8 +5,8 @@ import { services } from "@/data/home";
 import TitleContent from "./ReusableComponent/All_Title/TitleContent";
 import ServiceCard from "./ReusableComponent/Service_Card/ServiceCard";
 
-function ServiceSection({ sectionKey = []}) {
- const tc = titleContentConfig[sectionKey] || titleContentConfig["services"];
+function ServiceSection({ sectionKey = [] }) {
+  const tc = titleContentConfig[sectionKey] || titleContentConfig["services"];
   return (
     <section className="py-8 md:py-16">
       <div className="container">
@@ -14,7 +14,7 @@ function ServiceSection({ sectionKey = []}) {
           <TitleContent {...tc} />
         </div>
         <div className="mt-6 md:mt-12 relative">
-            <ServiceCard services={services} />
+          <ServiceCard services={services} />
         </div>
       </div>
     </section>

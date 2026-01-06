@@ -3,27 +3,43 @@ import TitleContent from "../All_Title/TitleContent";
 
 // components/TimelineItem.jsx
 const TimelineCard = React.forwardRef(
-  ({ title, icon, position, index }, ref) => {
+  ({ title, icon, position, index, isMobile }, ref) => {
     const isTopRow = index < 4;
     console.log();
 
     return (
-      <div
-        className="flex flex-col items-center w-[22%]  justify-center text-center gap-y-0"
-        ref={ref}
-      >
-        {isTopRow ? (
-          <>
-            <Text title={title} />
-            <Image icon={icon} isTopRow={isTopRow} />
-          </>
+      <>
+        {isMobile ? (
+          <div
+            className={`flex md:hidden flex-col w-full ${
+              index % 2 == 0 ? "items-start" : "items-end"
+            }`}
+            ref={ref}
+          >
+            <div className="w-1/2 text-center">
+              <img src={icon} alt="" className="h-20 w-20 mx-auto" />
+              <Text title={title} />
+            </div>
+          </div>
         ) : (
-          <>
-            <Image icon={icon} isTopRow={isTopRow} />
-            <Text title={title} />
-          </>
+          <div
+            className="hidden md:flex flex-col items-center w-[22%]  justify-center text-center gap-y-0 "
+            ref={ref}
+          >
+            {isTopRow ? (
+              <>
+                <Text title={title} />
+                <Image icon={icon} isTopRow={isTopRow} />
+              </>
+            ) : (
+              <>
+                <Image icon={icon} isTopRow={isTopRow} />
+                <Text title={title} />
+              </>
+            )}
+          </div>
         )}
-      </div>
+      </>
     );
   }
 );
@@ -40,7 +56,9 @@ function Image({ icon, isTopRow }) {
       src={icon}
       alt=""
       className={`${
-        isTopRow ? "mb-4 mt-5 updownAnimated" : "mt-4 mb-5 downupAnimated"
+        isTopRow
+          ? "md:mb-4 md:mt-5 updownAnimated"
+          : "md:mt-4 md:mb-5 downupAnimated"
       } w-30 h-30`}
     />
   );

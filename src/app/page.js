@@ -14,8 +14,8 @@ import { features } from "@/data/home";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center dark:bg-black">
-      <main className="flex flex-col min-h-screen w-full bg-white dark:bg-black">
+    <div className="flex min-h-screen items-center justify-center ">
+      <main className="flex flex-col min-h-screen w-full  ">
         <InnerHeroSection
           bottomSection={<ScrollingBanner features={features} />}
         />

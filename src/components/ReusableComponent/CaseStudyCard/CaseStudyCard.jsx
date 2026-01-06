@@ -6,8 +6,8 @@ export default function CaseStudySection() {
     {
       id: 1,
       title: "Ndure",
-      image: "/ndure.jpg",
-      href: "/case-study/ndure",
+      image: "/indure.webp",
+      href: "/indure.webp",
       variant: "bottom", // title bottom, hover bottom → top
     },
     {
@@ -27,14 +27,14 @@ export default function CaseStudySection() {
         return (
           <div
             key={item.id}
-            className="group relative aspect-609/678 rounded-3xl overflow-hidden bg-white shadow-lg"
+            className="group relative aspect-600/600 border border-[#978050] rounded-3xl overflow-hidden bg-white shadow-lg"
           >
             <div className="">
               <Image
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover"
+                className=" object-fill rounded-3xl"
               />
             </div>
 
@@ -68,9 +68,10 @@ export default function CaseStudySection() {
                 href={item.href}
                 className="
                   text-[#FFB703]
-                  text-xl font-semibold
+                  text-2xl font-semibold
                   flex items-center gap-2
                   hover:gap-3 transition-all
+                  underline                  
                 "
               >
                 View Case Study

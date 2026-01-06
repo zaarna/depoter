@@ -235,4 +235,13 @@ export const titleContentConfig = {
     titleColor: "#000000",
     highlightColor: "#FFBE2E",
   },
+  defineeverytechnology: {
+    title: "Define Every \n Experience",
+    highlight: "Experience",
+    titleColor: "#FFFFFF",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center md:text-left",
+  },
 };

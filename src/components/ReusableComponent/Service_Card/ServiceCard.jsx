@@ -8,7 +8,7 @@ export default function ServiceCard({ services }) {
       {services.map((service) => (
         <div
           key={service.id}
-          className={`relative overflow-hidden duration-300 `}
+          className={`relative overflow-hidden duration-300`}
         >
           {/* Image */}
           <div className="relative w-full h-72 rounded-4xl mb-4 overflow-hidden group">

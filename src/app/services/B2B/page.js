@@ -8,6 +8,7 @@ import DelieverRetails from "@/components/ReusableComponent/B2b_Sections/Delieve
 import ScalabilitySection from "@/components/ScalabilitySection";
 import LongTermGrowth from "@/components/ReusableComponent/B2b_Sections/LongTermGrowth";
 import AdvanceTechnologySection from "@/components/ReusableComponent/B2b_Sections/AdvanceTechnologySection";
+import TestimonialSection from "@/components/TestimonialSection";
 
 export default function b2cPage() {
   const data = [
@@ -33,6 +34,7 @@ export default function b2cPage() {
         <DelieverRetails />
         <LongTermGrowth />
         <AdvanceTechnologySection />
+        <TestimonialSection />
       </main>
     </div>
   );

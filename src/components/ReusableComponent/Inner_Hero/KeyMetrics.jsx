@@ -1,4 +1,6 @@
 import React from "react";
+import TitleContent from "../All_Title/TitleContent";
+import { titleContentConfig } from "@/config/titleContentConfig";
 
 function KeyMetrics() {
   const stats = [
@@ -27,6 +29,8 @@ function KeyMetrics() {
       icon: "/Same_Day.svg",
     },
   ];
+
+  const tc = titleContentConfig["defineeverytechnology"];
   return (
     <section className="w-full relative">
       {/* Brown background strip at the bottom */}
@@ -43,12 +47,13 @@ function KeyMetrics() {
         >
           <div className="w-full flex flex-col md:flex-row items-center justify-center gap-y-15 lg:mt-10 md:pt-10">
             <div className="w-full md:w-[30%]">
-              <h3 className="font-semibold text-[40px] lg:text-[50px] text-center md:text-left leading-[1.05]">
+              {/* <h3 className="font-semibold text-[40px] lg:text-[50px] text-center md:text-left leading-[1.05]">
                 <span className="block">Define Every </span>
                 <span className="block text-[#FFBE2E] mt-0 pt-0">
                   Experience
                 </span>
-              </h3>
+              </h3> */}
+              <TitleContent {...tc} />
             </div>
             <div className="flex items-center mx-auto px-4 md:px-0 justify-center gap-x-2 sm:gap-x-0 gap-y-10 lg:gap-y-15 w-fit md:w-[70%] flex-wrap">
               {stats.map((stat, index) => (
