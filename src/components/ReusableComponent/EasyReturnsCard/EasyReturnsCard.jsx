@@ -51,9 +51,9 @@ export default function EasyReturnsCard() {
               opacity="0.45"
               d="M279.5 14H1261.5C1289.11 14 1311.5 36.3858 1311.5 64V266C1311.5 293.614 1289.11 316 1261.5 316H50.5C22.8857 316 0.5 338.386 0.5 366V547C0.5 574.614 22.8858 597 50.5 597H1066"
               stroke="#3C2C0B"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-dasharray="8 8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeDasharray="8 8"
             />
             <path
               d="M1306.56 167.393L1305.9 164.943L1311.66 159.195L1311.14 171.962L1306.56 167.393Z"

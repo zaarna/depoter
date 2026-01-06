@@ -52,15 +52,15 @@ function InsightsGrid({ insights = [] }) {
                     <path
                       d="M18.899 9.90071H0.749926"
                       stroke="#978050"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
                     />
                     <path
                       d="M14.7776 4.12695L18.9024 8.25174C19.6802 9.02952 20.069 9.41841 20.069 9.90166C20.069 10.3849 19.6802 10.7738 18.9024 11.5516L14.7776 15.6764"
                       stroke="#978050"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </span>

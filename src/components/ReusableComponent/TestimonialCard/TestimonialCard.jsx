@@ -68,15 +68,15 @@ export default function TestimonialCard({ testimonials = [] }) {
             <path
               d="M1.92009 9.90071H20.0692"
               stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
             />
             <path
               d="M6.0415 4.12695L1.91671 8.25174C1.13894 9.02952 0.750047 9.41841 0.750047 9.90166C0.750047 10.3849 1.13894 10.7738 1.91671 11.5516L6.0415 15.6764"
               stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>
@@ -91,15 +91,15 @@ export default function TestimonialCard({ testimonials = [] }) {
             <path
               d="M18.899 9.90071H0.749926"
               stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
             />
             <path
               d="M14.7776 4.12695L18.9024 8.25174C19.6802 9.02952 20.069 9.41841 20.069 9.90166C20.069 10.3849 19.6802 10.7738 18.9024 11.5516L14.7776 15.6764"
               stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>

@@ -574,7 +574,10 @@ li {
   z-index: 2;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.featurecard .carditem:first-child {
+.featurecard .carditem:first-child,
+.featurecard .carditem:nth-child(2),
+.featurecard .carditem:nth-child(3),
+.featurecard .carditem:last-child {
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
 }
