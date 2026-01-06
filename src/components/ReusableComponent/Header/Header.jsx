@@ -64,8 +64,8 @@ export default function Header() {
         {
           title: "FULFILLMENT SERVICES",
           items: [
-            { name: "D2C", icon: <D2CIcon />, href: "/services/d2c" },
-            { name: "B2B", icon: <B2BIcon />, href: "/services/b2b" },
+            { name: "D2C", icon: <D2CIcon />, href: "/services/D2C" },
+            { name: "B2B", icon: <B2BIcon />, href: "/services/B2B" },
             {
               name: "Multichannel",
               icon: <MultiChannelIcon />,
