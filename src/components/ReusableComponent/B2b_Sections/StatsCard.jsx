@@ -5,7 +5,6 @@ const StatsCard = ({ stat, description, icon, index }) => {
         index % 2 === 0 ? "stats-card-mobile-even" : "stats-card-mobile-odd"
       } gradientCard border border-[#978050]`}
     >
-      {console.log(index % 2 === 0)}
       <div>
         <h3 className="text-3xl md:text-5xl font-black text-[#212121] mb-2 tracking-tight">
           {stat}

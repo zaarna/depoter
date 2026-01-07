@@ -55,7 +55,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       // ContentHover: "group-hover:text-white",
       // colorText: "text-[#978050]",
       // mobileColorText: "text-[#FFBE2E]",
-      mobileclass: "yellow",
+      mobileclass: "dark",
       desktopclass: "dark",
       column: 1,
       marginTop: "mt-0",
@@ -76,7 +76,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       // ContentHover: "group-hover:text-white",
       // colorText: "text-[#978050]",
       // mobileColorText: "text-[#FFBE2E]",
-      mobileclass: "dark",
+      mobileclass: "yellow",
       desktopclass: "dark",
       column: 2,
       marginTop: "mt-25",
@@ -97,7 +97,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       // ContentHover: "group-hover:text-white",
       // colorText: "text-[#978050]",
       // mobileColorText: "text-[#FFBE2E]",
-      mobileclass: "yellow",
+      mobileclass: "dark",
       desktopclass: "dark",
       column: 0,
       marginTop: "mt-0",
@@ -119,7 +119,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       // ContentHover: "group-hover:text-[#3C2C0B]",
       // colorText: "text-[#978050]",
       // mobileColorText: "text-black",
-      mobileclass: "dark",
+      mobileclass: "yellow",
       desktopclass: "yellow",
       column: 1,
       marginTop: "mt-0",
@@ -141,7 +141,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       // ContentHover: "group-hover:text-[#3C2C0B]",
       // colorText: "text-[#978050]",
       // mobileColorText: "text-black",
-      mobileclass: "yellow",
+      mobileclass: "dark",
       desktopclass: "yellow",
       column: 2,
       marginTop: "mt-0",
@@ -162,7 +162,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       // ContentHover: "group-hover:text-white",
       // colorText: "text-[#978050]",
       // mobileColorText: "text-[#FFBE2E]",
-      mobileclass: "dark",
+      mobileclass: "yellow",
       desktopclass: "dark",
       column: 1,
       marginTop: "mt-0",
@@ -187,7 +187,6 @@ function BuildToHandlesection({ sectionKey = [] }) {
           <div className="lg:hidden flex flex-col gap-6">
             {industries.map((category, index) => (
               <>
-                {console.log("Category", category)}
                 <BuildToHandleCard key={index} industry={category} />
               </>
             ))}
@@ -199,7 +198,6 @@ function BuildToHandlesection({ sectionKey = [] }) {
               <div key={columnIndex} className="flex flex-col gap-6">
                 {column.map((category, cardIndex) => (
                   <div key={cardIndex} className={category.marginTop}>
-                    {console.log("Category", category)}
                     <BuildToHandleCard industry={category} />
                   </div>
                 ))}

@@ -5,7 +5,6 @@ import TitleContent from "../All_Title/TitleContent";
 const TimelineCard = React.forwardRef(
   ({ title, icon, position, index, isMobile }, ref) => {
     const isTopRow = index < 4;
-    console.log();
 
     return (
       <>

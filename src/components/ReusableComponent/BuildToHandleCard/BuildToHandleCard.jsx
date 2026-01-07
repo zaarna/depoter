@@ -3,7 +3,6 @@
 import Link from "next/link";
 
 export default function BuildToHandleCard({ variant = "grid", industry }) {
-  console.log("industry", industry);
   return (
     <>
       <div

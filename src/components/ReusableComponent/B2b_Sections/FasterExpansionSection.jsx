@@ -16,7 +16,6 @@ function FasterExpansionSection({ sectionKey }) {
 
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
-  console.log("IsMobile?", isMobile);
   const features = [
     {
       id: 1,

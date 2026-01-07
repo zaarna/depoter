@@ -36,9 +36,9 @@ const steps = [
 export default function EasyReturnsCard() {
   return (
     <div className="max-w-[1100px] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-0 md:gap-y-16 auto-rows-fr relative">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-5 lg:gap-y-16 auto-rows-fr relative">
         {/* DASHED FLOW LINE */}
-        <div className="hidden md:block absolute -left-[10%] top-[18%] pointer-events-none">
+        <div className="hidden lg:block absolute -left-[10%] top-[18%] pointer-events-none">
           <svg
             width="1324"
             height="525"
@@ -225,7 +225,7 @@ export default function EasyReturnsCard() {
             />
           </svg>
         </div>
-        <div className="md:hidden block absolute right-[10%] top-[0%] pointer-events-none">
+        {/* <div className="md:hidden block absolute right-[10%] top-[0%] pointer-events-none">
           <svg
             width="92"
             height="1998"
@@ -518,14 +518,14 @@ export default function EasyReturnsCard() {
               fill="#373B42"
             />
           </svg>
-        </div>
+        </div> */}
 
         {steps.map((step, i) => (
           <div
             key={i}
-            className="flex flex-col items-start gap-5 relative h-auto md:h-[460px]"
+            className="flex flex-col items-center lg:items-start gap-5 relative h-auto lg:h-[460px]"
           >
-            <div className="absolute">
+            <div className="hidden lg:absolute">
               <svg
                 width="29"
                 height="27"
@@ -565,7 +565,7 @@ export default function EasyReturnsCard() {
             </div>
 
             {/* TEXT */}
-            <div className="w-[330px]">
+            <div className="w-full lg:w-[330px] text-center lg:text-left">
               <h3 className="text-xl font-bold text-[#212121] mb-2">
                 {step.title}
               </h3>

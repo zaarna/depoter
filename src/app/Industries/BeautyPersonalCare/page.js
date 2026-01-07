@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function BeautyPersonalCarePage() {
   return (
@@ -13,11 +13,12 @@ export default function BeautyPersonalCarePage() {
             Elevate your beauty brand with smart fulfillment
           </p>
           <p className="text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-            Manage cosmetics, skincare, and personal care products with precision. 
-            From marketplace integration to order fulfillment, we handle it all.
+            Manage cosmetics, skincare, and personal care products with
+            precision. From marketplace integration to order fulfillment, we
+            handle it all.
           </p>
-          <Link 
-            href="/contact" 
+          <Link
+            href="/contact"
             className="inline-block bg-white text-pink-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-50 transition-colors"
           >
             Get Started Today

@@ -82,8 +82,8 @@ export default function WhyChooseDepotter({ sectionKey = [] }) {
           </div>
 
           {/* RIGHT – TEXT CONTENT */}
-          <div className="order-1 md:order-2 text-center md:text-right">
-            <div className=" text-center md:text-right relative z-10 ">
+          <div className="order-1 md:order-2 text-center lg:text-right">
+            <div className=" text-center lg:text-right relative z-10 ">
               <TitleContent {...tc} />
             </div>
 
@@ -98,7 +98,7 @@ export default function WhyChooseDepotter({ sectionKey = [] }) {
               Our streamlined workflows support faster cross-border deliveries,
               improved tax efficiency, and stronger cash flow for your business.
             </p>
-            <div className="flex justify-end mt-6 md:mt-10">
+            <div className="flex justify-center lg:justify-end mt-6 md:mt-10">
               <span className=" w-20 h-0.5 block bg-[#FFBE2E] opacity-0 md:opacity-100 " />
             </div>
           </div>

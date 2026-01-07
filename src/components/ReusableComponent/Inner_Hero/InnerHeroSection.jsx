@@ -8,7 +8,7 @@ import { heroConfig } from "@/config/heroConfig";
 
 function InnerHeroSection({ bottomSection }) {
   const pathname = usePathname();
-  const selectedHero = heroConfig[pathname] || heroConfig["/"];
+  const selectedHero = heroConfig[pathname.toLowerCase()] || heroConfig["/"];
   const heading = selectedHero.heading;
   const button = selectedHero.button;
   return (

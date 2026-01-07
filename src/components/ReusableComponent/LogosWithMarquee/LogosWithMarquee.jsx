@@ -24,14 +24,26 @@ export default function LogosWithMarquee() {
           {/* RIGHT SIDE – LOGO MARQUEE */}
           <div className="hidden md:block space-y-6">
             {/* ROW 1 – CLOCKWISE */}
-            <Marquee speed={80} direction="right" pauseOnHover gradient={false}>
+            <Marquee
+              speed={80}
+              direction="right"
+              pauseOnHover
+              gradient={true}
+              autoFill
+            >
               {row1.map((logo, i) => (
                 <LogoCard key={i} src={logo} />
               ))}
             </Marquee>
 
             {/* ROW 2 – ANTI-CLOCKWISE */}
-            <Marquee speed={80} direction="left" pauseOnHover gradient={false}>
+            <Marquee
+              speed={80}
+              direction="left"
+              pauseOnHover
+              gradient={true}
+              autoFill
+            >
               {row2.map((logo, i) => (
                 <LogoCard key={i} src={logo} />
               ))}

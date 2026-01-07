@@ -43,8 +43,11 @@ export default function Header() {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
-        setActiveDropdown(null);
+      // Only apply click-outside logic on desktop (lg and up)
+      if (window.innerWidth >= 1024) {
+        if (menuRef.current && !menuRef.current.contains(e.target)) {
+          setActiveDropdown(null);
+        }
       }
     };
 
@@ -220,6 +223,7 @@ export default function Header() {
 
   const toggleDropdown = (menu) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
+    // setActiveDropdown(menu);
   };
 
   return (
@@ -322,7 +326,9 @@ export default function Header() {
                                 >
                                   <Link
                                     href={item.href}
-                                    onClick={() => setActiveDropdown(null)}
+                                    onClick={() => {
+                                      setActiveDropdown(null);
+                                    }}
                                     className="
                                     flex items-center gap-3
                                     px-3 py-1 rounded-lg
