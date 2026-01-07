@@ -542,7 +542,7 @@ li {
   left: 0;
   bottom: 0;
   height: 100%;
-  width: 21%;
+  width: 155px;
   z-index: 2;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
@@ -595,7 +595,7 @@ li {
   .insights-bg:before {
     background-size: cover;
   }
-  .yellow-strip:before {
+  .yellow-strip::before {
     content: "";
     z-index: 2;
     background: #ffbe2e;
@@ -642,11 +642,13 @@ li {
 }
 
 @media (max-width: 768.99px) {
-  .backgroundcover-home:before,
+  .backgroundcover-home::before,
   .backgroundcover-home::after,
+  .backgroundcover-b2b::before,
+  .backgroundcover-b2b::after,
   .bgimage-service::before,
-  .backgroundcover-d2c:before,
-  .backgroundcover-d2c:after {
+  .backgroundcover-d2c::before,
+  .backgroundcover-d2c::after {
     content: none;
   }
 
@@ -673,6 +675,16 @@ li {
     padding-top: 0px;
     padding-bottom: 25px;
     margin-top: 280px;
+  }
+  .backgroundcover-b2b {
+    background-image: url("/b2bmobilebanner.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  .backgroundcover-b2b > .container {
+    margin-top: 340px;
   }
   #keyMetricsDiv {
     background-image: url("/keymetricsmobile.png");

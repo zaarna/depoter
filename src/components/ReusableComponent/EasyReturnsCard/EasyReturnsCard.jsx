@@ -36,7 +36,7 @@ const steps = [
 export default function EasyReturnsCard() {
   return (
     <div className="max-w-[1100px] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-5 lg:gap-y-16 auto-rows-fr relative">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-5 lg:gap-y-16 auto-rows-fr relative">
         {/* DASHED FLOW LINE */}
         <div className="hidden lg:block absolute -left-[10%] top-[18%] pointer-events-none">
           <svg

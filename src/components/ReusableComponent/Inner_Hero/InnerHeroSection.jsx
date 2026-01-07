@@ -13,7 +13,7 @@ function InnerHeroSection({ bottomSection }) {
   const button = selectedHero.button;
   return (
     <section
-      className={`relative overflow-hidden min-h-[700px] md:min-h-[900px] h-auto ${selectedHero.className}`}
+      className={`relative overflow-hidden min-h-[700px] sm:min-h-[650px] md:min-h-[900px] h-auto ${selectedHero.className}`}
     >
       <div className="container">
         <div className="flex flex-col items-center md:items-start w-full max-w-[571px] pt-0 md:pt-[310px] relative z-10">

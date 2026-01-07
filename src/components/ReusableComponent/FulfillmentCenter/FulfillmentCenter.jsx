@@ -196,9 +196,9 @@ export default function FulfillmentCenter() {
   const activeStep = steps.find((s) => s.id === active);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[400px_1fr] gap-10 items-stretch">
+    <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-10 items-stretch">
       {/* LEFT SIDE – DESKTOP TABS */}
-      <div className="hidden md:flex flex-col gap-5 relative">
+      <div className=" hidden lg:flex flex-col gap-5 relative">
         <div
           className="absolute left-7 top-0 bottom-0 w-[1.5px]"
           style={{
@@ -258,7 +258,7 @@ export default function FulfillmentCenter() {
 
       {/* RIGHT SIDE – DESKTOP CONTENT */}
       <div
-        className="hidden md:block bg-linear-to-r from-[#FFF4DB] to-white rounded-3xl shadow border
+        className="hidden lg:block bg-linear-to-r from-[#FFF4DB] to-white rounded-3xl shadow border
         h-full overflow-hidden"
       >
         <div className="p-8 relative">
@@ -305,7 +305,7 @@ export default function FulfillmentCenter() {
       </div>
 
       {/* MOBILE – ACCORDION */}
-      <div className="md:hidden space-y-4">
+      <div className="lg:hidden space-y-4">
         <div
           className="absolute left-[18] top-0 h-full w-[1.5px]"
           style={{

@@ -31,14 +31,14 @@ const features = [
 
 export default function FlexibleCard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 rounded-none md:rounded-2xl gap-5 md:gap-0 overflow-hidden shadow-none md:shadow-[0_20px_40px_rgba(0,0,0,0.15)]">
+    <div className="grid grid-cols-1 lg:grid-cols-4 rounded-none md:rounded-2xl gap-15 lg:gap-0 overflow-hidden shadow-none lg:shadow-[0_20px_40px_rgba(0,0,0,0.15)]">
       {features.map((item, i) => {
         const isDark = item.variant === "dark";
 
         return (
           <div
             key={i}
-            className={`flex flex-col items-center text-center px-14 py-5 md:rounded-none rounded-2xl md:shadow-none shadow-[0_0px_5px_rgba(0,0,0,0.15)] border md:border-0 
+            className={`flex flex-col items-center text-center px-14 py-5 lg:rounded-none rounded-2xl lg:shadow-none shadow-[0_0px_5px_rgba(0,0,0,0.15)] border lg:border-0 
                 ${
                   isDark
                     ? "bg-[#3C2C0B] text-white border-[#3C2C0B]"

@@ -29,7 +29,7 @@ export default function LogosWithMarquee() {
               direction="right"
               pauseOnHover
               gradient={true}
-              autoFill
+              // autoFill
             >
               {row1.map((logo, i) => (
                 <LogoCard key={i} src={logo} />
@@ -42,7 +42,7 @@ export default function LogosWithMarquee() {
               direction="left"
               pauseOnHover
               gradient={true}
-              autoFill
+              // autoFill
             >
               {row2.map((logo, i) => (
                 <LogoCard key={i} src={logo} />
