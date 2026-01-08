@@ -102,10 +102,10 @@ function ManageMeasurmentSection({ sectionKey = [] }) {
             <h6 className="font-bold sm:-ml-8  text-[#000000] text-center sm:text-left text-[20px]">
               Our Multi-UOM Capabilities Include
             </h6>
-            <div className="hidden sm:flex gap-8 mt-10 relative  ">
+            <div className="hidden md:flex gap-8 mt-10 relative  ">
               <div className="w-2/5 relative">
                 <div
-                  className="hidden sm:block absolute left-10 top-3 z-11 bg-[url('/Line.svg')]
+                  className=" absolute left-10 top-3 z-11 bg-[url('/Line.svg')]
                bg-no-repeat
                bg-contain
                bg-top h-[95%] w-2.5"
@@ -136,7 +136,7 @@ function ManageMeasurmentSection({ sectionKey = [] }) {
               </div>
             </div>
             {/* MOBILE VIEW - Accordion */}
-            <div className="sm:hidden relative mt-5">
+            <div className="md:hidden relative mt-5">
               {items.map((item, index) => (
                 <div key={index} className="relative mb-4 last:mb-0">
                   {/* Accordion Item */}
