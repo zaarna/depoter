@@ -1,0 +1,62 @@
+name: Deploy depoter to VPS (Manual Trigger)
+
+on:
+  workflow_dispatch: # Manual trigger event
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up SSH agent with private key
+      - name: Set up SSH agent
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Step 3: Add VPS to known_hosts
+      - name: Add VPS to known_hosts
+        run: |
+          ssh-keyscan 93.127.172.117 >> ~/.ssh/known_hosts
+
+      # Step 4: Deploy to VPS using SSH
+      - name: Deploy to VPS
+        run: |
+          ssh react@93.127.172.117 << 'EOF'
+            set -e
+            echo "=== Starting deployment process ==="
+            cd depoter
+
+            echo "=== Updating code ==="
+            git pull origin master
+            git log -n 1 --oneline
+
+            echo "=== Setting Node version ==="
+            export NVM_DIR="$HOME/.nvm"
+            source "$NVM_DIR/nvm.sh"
+            nvm use 22
+            node -v
+            which node
+            
+
+            echo "=== Deploying frontend ==="            
+            npm install
+            npm run build
+
+            echo "=== Checking frontend build ==="
+            if [ -d .next ] && [ "$(ls -A .next)" ]; then
+              echo ".next directory exists and is not empty"
+            else
+              echo "ERROR: .next directory is missing or empty"
+              exit 1
+            fi
+
+            echo "=== Restarting frontend process ==="
+            pm2 restart depoter
+            pm2 describe depoter | grep script
+
+            echo "=== Deployment completed successfully ==="
+          EOF
