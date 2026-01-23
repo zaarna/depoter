@@ -53,7 +53,16 @@ function FasterExpansionSection({ sectionKey }) {
   const tc =
     titleContentConfig[sectionKey] || titleContentConfig["fasterexpansion"];
   return (
-    <section className="py-8 md:py-16 bg-[#FFFFFF]  relative overflow-hidden">
+    <section className="py-8 md:py-16  relative overflow-hidden">
+      <div
+        className="
+      absolute inset-0
+      bg-[url('/FasterExpansionSectionbg.webp')]
+      bg-center bg-no-repeat bg-cover
+      opacity-[0.15]
+      pointer-events-none
+    "
+      />
       <div className="container">
         <div className="grid text-center relative z-10">
           <TitleContent {...tc} />

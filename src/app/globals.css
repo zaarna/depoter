@@ -93,7 +93,9 @@ li {
   overflow: hidden;
   font-family: var(--font-heading);
   /* Smooth transition for opacity, background, border */
-  transition: opacity 0.85s ease, border-color 0.85s ease;
+  transition:
+    opacity 0.85s ease,
+    border-color 0.85s ease;
   opacity: 1; /* Default slightly dim */
 }
 
@@ -110,7 +112,9 @@ li {
   inset: 0;
   transform: scale(0);
   opacity: 0;
-  transition: transform 0.85s ease-in-out, opacity 0.85s ease-in-out;
+  transition:
+    transform 0.85s ease-in-out,
+    opacity 0.85s ease-in-out;
   z-index: 1;
   border-radius: 20px;
 }
@@ -286,6 +290,10 @@ li {
   background-repeat: no-repeat;
   z-index: 2;
 }
+.brand-bg {
+  position: relative;
+  overflow: hidden;
+}
 .brand-bg::before {
   position: absolute;
   content: "";
@@ -295,10 +303,29 @@ li {
   top: 0%;
   width: 100%;
   height: 100%;
-  background-image: url("/Brands.svg");
+  background-image: url("/Brands.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  opacity: 0.95;
+  filter: blur(2px);
+  /* subtle blur */
+  transform: scale(1.05);
+  z-index: 0;
+}
+.brand-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at top,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05)
+  );
+
+  z-index: 1;
 }
 .howworks-bg::before {
   position: absolute;
@@ -582,7 +609,12 @@ li {
   }
   .backgroundcover-home {
     position: relative;
-    background-image: url("/mobilehomepagebanner.png");
+    /* background-image: url("/mobilehomepagebanner.webp"); */
+    background-image: image-set(
+      url("/mobilehomepagebanner.webp") 1x,
+      url("/mobilehomepagebanner@2x.webp") 2x,
+      url("/mobilehomepagebanner@3x.webp") 3x
+    );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -652,10 +684,9 @@ li {
     content: none;
   }
 
-  .backgroundcover-home,
+  /* .backgroundcover-home, */
   .backgroundcover-d2c {
     position: relative;
-    background-image: url("/mobilehomepagebanner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -668,7 +699,12 @@ li {
   .backgroundcover-d2c {
     min-height: 1100px;
     height: max-content;
-    background-image: url("/mobiled2cbanner.png");
+    /* background-image: url("/mobiled2cbanner.png"); */
+    background-image: image-set(
+      url("/mobiled2cbanner.webp") 1x,
+      url("/mobiled2cbanner@2x.webp") 2x,
+      url("/mobiled2cbanner@3x.webp") 3x
+    );
     align-items: start;
   }
   .backgroundcover-d2c > .container {
@@ -677,7 +713,12 @@ li {
     margin-top: 280px;
   }
   .backgroundcover-b2b {
-    background-image: url("/b2bmobilebanner.webp");
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image: image-set(
+      url("/b2bmobilebanner.webp") 1x,
+      url("/b2bmobilebanner@2x.webp") 2x,
+      url("/b2bmobilebanner@3x.webp") 3x
+    );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -840,7 +881,9 @@ li {
   width: 100%;
   height: 100%;
   border-radius: 3rem;
-  transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+  transition:
+    transform 0.5s ease-in-out,
+    border-radius 0.5s ease-in-out;
   transform-origin: top right;
 }
 
@@ -1120,4 +1163,35 @@ li {
   }
 }
 
-/* Handle icon color on hover when no hover icon exists */
+@keyframes dash-flow {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+.animated-dash {
+  animation: dash-flow 1.5s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.9;
+  }
+  60% {
+    transform: scale(2.4); /* 🔥 spreads MUCH further */
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(2.8); /* 🔥 large coverage */
+    opacity: 0;
+  }
+}
+
+.pulse-ring {
+  transform-origin: center;
+  animation: pulse 1.6s ease-out infinite;
+}

@@ -51,7 +51,7 @@ export const services = [
     id: 3,
     title: "Multichannel Fulfillment",
     description:
-      "We help you manage orders across multiple sales channels with ease. By integrating your online stores, marketplaces, and retail channels, we centralize inventory, streamline fulfillment, and ensure consistent delivery performance through reliable order fulfillment solutions.",
+      "We bring all your sales channels together under one system. With our multichannel order fulfillment solutions, your online stores, marketplaces, and retail outlets run in sync, making inventory management simple and ensuring smooth, reliable deliveries across every channel",
     buttonText: "Centralize Your Orders",
     buttonLink: "/",
     image: "/Multichannel.webp",

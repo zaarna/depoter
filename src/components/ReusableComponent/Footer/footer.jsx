@@ -40,8 +40,8 @@ export default function Footer() {
   ];
 
   const quickLinks = [
-    { name: "B2C", href: "/b2c" },
-    { name: "B2B", href: "/b2b" },
+    { name: "D2C", href: "/services/D2C" },
+    { name: "B2B", href: "/services/B2B" },
     { name: "Multichannel", href: "/multichannel" },
     { name: "Integration", href: "/integration" },
   ];

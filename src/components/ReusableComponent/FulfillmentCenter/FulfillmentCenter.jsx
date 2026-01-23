@@ -29,7 +29,7 @@ export default function FulfillmentCenter() {
         },
         {
           heading: "First Fill Rate",
-          text: "Orders are directed to the warehouse that can fulfill the entire order from available stock.",
+          text: "Orders are directed to the warehouse that can fulfill the entire order from available stock, ensuring fewer split shipments and faster delivery.",
         },
       ],
     },
@@ -182,7 +182,7 @@ export default function FulfillmentCenter() {
         },
         {
           heading: "Automated Replenishment Alerts",
-          text: "Triggers stock notifications based on real-time thresholds.",
+          text: "Triggers reorder notifications based on real-time thresholds.",
         },
         {
           heading: "Real-Time Stock Updates",

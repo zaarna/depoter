@@ -9,6 +9,8 @@ import ScalabilitySection from "@/components/ScalabilitySection";
 import LongTermGrowth from "@/components/ReusableComponent/B2b_Sections/LongTermGrowth";
 import AdvanceTechnologySection from "@/components/ReusableComponent/B2b_Sections/AdvanceTechnologySection";
 import TestimonialSection from "@/components/TestimonialSection";
+import ExpandBuisnessSection from "@/components/ReusableComponent/B2b_Sections/ExpandBuisnessSection";
+import EndToEndSection from "@/components/ReusableComponent/B2b_Sections/EndToEndSection";
 
 export default function b2cPage() {
   const data = [
@@ -27,11 +29,13 @@ export default function b2cPage() {
       <main className="flex flex-col min-h-screen w-full bg-white ">
         <InnerHeroSection />
         <NumbersGradieantCards data={data} />
+        <ExpandBuisnessSection />
         <SmartTechnologySection />
         <FlexibleStorageSection />
         <FasterExpansionSection />
         <ManageMeasurmentSection />
         <DelieverRetails />
+        <EndToEndSection />
         <LongTermGrowth />
         <AdvanceTechnologySection />
         <TestimonialSection />

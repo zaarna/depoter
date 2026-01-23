@@ -38,7 +38,7 @@ function DelieverRetails({ sectionKey = [] }) {
     titleContentConfig[sectionKey] || titleContentConfig["deliverretail"];
   return (
     <section className="py-10 md:py-16  relative overflow-hidden brand-bg">
-      <div className="container">
+      <div className="container relative z-10">
         <div className="grid text-center relative">
           <TitleContent {...tc} />
         </div>

@@ -38,6 +38,7 @@ export default function WhyChooseInfoCard() {
           image: "/simplicity03.svg",
         },
       ],
+      bg: "#FFF2D5",
     },
 
     {
@@ -67,6 +68,7 @@ export default function WhyChooseInfoCard() {
           image: "/Dynamic03.svg",
         },
       ],
+      bg: "#FFEBC0",
     },
 
     {
@@ -96,6 +98,7 @@ export default function WhyChooseInfoCard() {
           image: "/Tech03.svg",
         },
       ],
+      bg: "#FFE4AE",
     },
 
     {
@@ -125,6 +128,7 @@ export default function WhyChooseInfoCard() {
           image: "/Growth03.svg",
         },
       ],
+      bg: "#FFDE9C",
     },
   ];
 
@@ -158,8 +162,11 @@ export default function WhyChooseInfoCard() {
     <section className="relative">
       {steps.map((step, index) => (
         <div key={index} className="min-h-[120vh] ">
-          <div className="sticky top-24 flex justify-center">
-            <div className="stack-inner bg-[fff4db] rounded-3xl py-6 lg:py-8 shadow-xl border border-yellow-200">
+          <div className={`sticky top-24 flex justify-center`}>
+            <div
+              className="stack-inner bg-[fff4db] rounded-3xl py-6 lg:py-8 shadow-xl border border-yellow-200"
+              style={{ backgroundColor: step.bg }}
+            >
               {/* Badge + Title */}
               <div className="mb-8 pl-6 lg:pl-8">
                 <div className="inline-block bg-[#212121] text-[#FFBE2E] text-sm px-4 py-2 rounded-full mb-4">
@@ -182,7 +189,7 @@ export default function WhyChooseInfoCard() {
                 {step.features.map((feature) => (
                   <div
                     key={feature.id}
-                    className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 group"
+                    className="bg-white rounded-4xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 group border border-[#FFBE2E]"
                   >
                     {/* Image */}
                     <div className="relative w-full h-48 mb-6 overflow-hidden">

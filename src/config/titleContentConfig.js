@@ -195,7 +195,7 @@ export const titleContentConfig = {
   },
   managemesaurment: {
     title: "Manage Multiple Units of \n Measurement with Total Control",
-    highlight: "Measurement with Total Control",
+    highlight: "Total Control",
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
     titleColor: "#212121",
@@ -243,5 +243,23 @@ export const titleContentConfig = {
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
     highlightColor: "#FFBE2E",
     className: "text-center md:text-left",
+  },
+  expandbuisness: {
+    title: "Expand Your Business\n Across Every Channel",
+    highlight: "Every Channel",
+    titleColor: "#212121",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center lg:text-left",
+  },
+  endtoend: {
+    title: "End-to-End Return Management \n Built for B2B Precision",
+    highlight: "B2B Precision",
+    titleColor: "#212121",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center",
   },
 };

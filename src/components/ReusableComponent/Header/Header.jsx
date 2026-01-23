@@ -354,7 +354,7 @@ export default function Header() {
                 ))}
               </nav>
               <div className="w-px h-8 bg-black mx-3"></div>
-              <div className="flex items-center space-x-3">
+              <div className=" flex items-center space-x-3">
                 <Link
                   href="/partner"
                   className="text-[#212121] lg:text-sm xl:text-base hover:font-semibold"
@@ -401,7 +401,43 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-300">
+          <div className="lg:hidden py-4">
+            <div className="flex items-center justify-between gap-3 border-b-2 border-black py-4 px-4">
+              {/* Left text */}
+              <Link
+                href="/partner"
+                onClick={handleLinkClick}
+                className="
+      font-semibold text-black
+      whitespace-nowrap
+      text-[clamp(14px,4.3vw,18px)]
+      leading-none
+    "
+              >
+                Partner With Us
+              </Link>
+
+              {/* Right button */}
+              <Link
+                href="/quote"
+                onClick={handleLinkClick}
+                className="
+      bg-[#1C1C1C] text-white
+      rounded-full
+      px-6 py-4
+      font-semibold
+      whitespace-nowrap
+      text-[clamp(13px,3.5vw,16px)]
+      leading-none
+      shadow-md
+      hover:bg-[#2A2A2A]
+      transition-colors
+    "
+              >
+                Get a Quote
+              </Link>
+            </div>
+
             <div className="space-y-2">
               <Link
                 href="/"
@@ -465,24 +501,6 @@ export default function Header() {
                   )}
                 </div>
               ))}
-
-              <Link
-                href="/partner"
-                className="block px-4 py-2 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors font-medium"
-                // onClick={() => setMobileMenuOpen(false)}
-                onClick={handleLinkClick}
-              >
-                Partner With Us
-              </Link>
-
-              <Link
-                href="/quote"
-                className="block mx-4 mt-4 bg-gray-900 text-white px-6 py-2.5 rounded-full hover:bg-gray-800 transition-colors text-center font-medium"
-                // onClick={() => setMobileMenuOpen(false)}
-                onClick={handleLinkClick}
-              >
-                Get a Quote
-              </Link>
             </div>
           </div>
         )}

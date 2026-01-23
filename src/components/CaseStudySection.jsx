@@ -5,6 +5,7 @@ import { brands } from "@/data/home";
 import TitleContent from "./ReusableComponent/All_Title/TitleContent";
 import BrandMarquee from "./ReusableComponent/BrandMarquee/BrandMarquee";
 import CaseStudyCard from "./ReusableComponent/CaseStudyCard/CaseStudyCard";
+import Button from "./ReusableComponent/Button/Button";
 
 function CaseStudySection({ sectionKey = [] }) {
   const tc = titleContentConfig[sectionKey] || titleContentConfig["case"];
@@ -16,6 +17,10 @@ function CaseStudySection({ sectionKey = [] }) {
         </div>
         <div className="grid mt-6 md:mt-12">
           <CaseStudyCard />
+          <Button
+            children="View More"
+            className="mt-15 w-[300px] px-5 py-3 mx-auto cursor-pointer"
+          />
         </div>
       </div>
     </section>

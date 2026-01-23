@@ -153,7 +153,16 @@ function ManageMeasurmentSection({ sectionKey = [] }) {
 
                     {/* Accordion Content */}
                     {activeIndex === index && (
-                      <div className="bg-[#FFF8F0] rounded-2xl  border-b-4 border-x-2 border-t-2 border-[#978050] p-6">
+                      <div
+                        className="bg-[#FFF8F0]
+rounded-2xl
+rounded-tl-none
+rounded-tr-none
+lg:rounded-tl-2xl
+lg:rounded-tr-2xl
+border-b-4 border-x-2 border-t-2 border-[#978050]
+p-6"
+                      >
                         {items[activeIndex].content.map((section, idx) => (
                           <div key={idx} className="mb-4 last:mb-0">
                             <p

@@ -14,37 +14,37 @@ function FlexibleStorageSection({ sectionKey }) {
         "Suitable for non-perishable items, operating at 30°C to 45°C depending on the country's climate.",
     },
     {
-      iconsImage: "/drystorage.svg",
+      iconsImage: "/chillerstorage.svg",
       title: "Chiller Storage",
       description:
         "Temperature maintained between 4°C and 10°C for fresh products and beverages.",
     },
     {
-      iconsImage: "/drystorage.svg",
+      iconsImage: "/frozenstorage.svg",
       title: "Frozen Storage",
       description:
         "Operates between -10°C and -20°C, suitable for frozen foods and pharmaceuticals.",
     },
     {
-      iconsImage: "/drystorage.svg",
+      iconsImage: "/carbohydratestorage.svg",
       title: "Carbohydrate Drinks",
       description:
         "Air-conditioned between 18°C and 24°C, approved by the authorities for beverage storage.",
     },
     {
-      iconsImage: "/drystorage.svg",
+      iconsImage: "/tempraturestorage.svg",
       title: "Temperature-Controlled (Food)",
       description:
         "Maintains 18°C to 24°C, ideal for consumables needing stable conditions.",
     },
     {
-      iconsImage: "/drystorage.svg",
+      iconsImage: "/nonfoodstorage.svg",
       title: "Temperature-Controlled (Non-Food)",
       description:
         "For cosmetics, beauty, and personal care goods stored between 18°C and 24°C.",
     },
     {
-      iconsImage: "/drystorage.svg",
+      iconsImage: "/dangerousstorage.svg",
       title: "Dangerous Goods (DG) Storage",
       description:
         "Authorized for hazardous materials, fully compliant with UAE and international standards.",

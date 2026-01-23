@@ -48,12 +48,10 @@ const SmartTechnologySection = ({ sectionKey = [] }) => {
     titleContentConfig[sectionKey] || titleContentConfig["smarttechnology"];
   return (
     <section className="py-8 md:py-16 bg-[#ffffff] relative overflow-hidden">
-      <div className="container">
-        <div className="grid text-center relative z-10">
-          <TitleContent {...tc} />
-        </div>
-        <TechnologyCards features={features} />
+      <div className="grid text-center relative z-10">
+        <TitleContent {...tc} />
       </div>
+      <TechnologyCards features={features} />
     </section>
   );
 };
