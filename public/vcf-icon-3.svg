@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="24" y="27" width="35" height="37" rx="2" fill="white"/>
+<path d="M54.5 52.75C54.5 55.5114 52.2614 57.75 49.5 57.75H14.5C11.7386 57.75 9.5 55.5114 9.5 52.75" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.5 16.25H54.5" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.5 11.25V1.25" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44.5 11.25V1.25" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.5 41.5V42.125L43.875 52.75H43.25V42.75C43.25 42.06 43.81 41.5 44.5 41.5H54.5Z" fill="#212121"/>
+<path d="M54.5 42.125L43.875 52.75H14.5C11.7387 52.75 9.5 50.5113 9.5 47.75" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.8962 31.8525L33.4266 30.3829C33.329 30.2853 33.1708 30.2853 33.0731 30.3829L31.6035 31.8525C31.2885 32.1675 30.75 31.9444 30.75 31.499V23.25H35.75V31.499C35.7498 31.9445 35.2111 32.1675 34.8962 31.8525Z" fill="#212121"/>
+<path d="M42 23.25H24.5V38.25H42V23.25Z" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.5 25.75H18.25" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.5 30.75H15.75" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.5 35.75H19.5" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.5 62.75H14.5C11.7386 62.75 9.5 60.5114 9.5 57.75V11.25C9.5 8.48863 11.7386 6.25 14.5 6.25H49.5C52.2614 6.25 54.5 8.48863 54.5 11.25V57.75C54.5 60.5114 52.2614 62.75 49.5 62.75Z" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

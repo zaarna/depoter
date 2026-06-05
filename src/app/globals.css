@@ -190,7 +190,9 @@ li {
 }
 .backgroundcover-home,
 .backgroundcover-d2c,
-.backgroundcover-b2b {
+.backgroundcover-b2b,
+.backgroundcover-multichannel,
+.backgroundcover-freightforwarding {
   position: relative;
   background: hsla(42, 100%, 95%, 1);
 
@@ -254,9 +256,45 @@ li {
   background-position: center;
   z-index: 2;
 }
+.backgroundcover-multichannel::before {
+  position: absolute;
+  content: "";
+  right: -6%;
+  top: -25%;
+  width: 100%;
+  height: 1190px;
+  background-image: url("/Multichannel Illustrator.webp");
+  /* background-color: #212121; */
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.backgroundcover-freightforwarding::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -25%;
+  width: 100%;
+  height: 1190px;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
+    url("/freightforwarding-bg.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
 .backgroundcover-home::after,
 .backgroundcover-d2c::after,
-.backgroundcover-b2b::after {
+.backgroundcover-b2b::after,
+.backgroundcover-multichannel::after,
+.backgroundcover-freightforwarding::after {
   position: absolute;
   content: "";
   left: 0;
@@ -275,7 +313,7 @@ li {
   z-index: 3;
   background-blend-mode: multiply;
 }
-.bgimage-service::before {
+/* .bgimage-service::before {
   position: absolute;
   content: "";
   right: 0%;
@@ -289,7 +327,7 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 2;
-}
+} */
 .brand-bg {
   position: relative;
   overflow: hidden;
@@ -678,6 +716,10 @@ li {
   .backgroundcover-home::after,
   .backgroundcover-b2b::before,
   .backgroundcover-b2b::after,
+  .backgroundcover-multichannel::before,
+  .backgroundcover-multichannel::after,
+  .backgroundcover-freightforwarding::before,
+  .backgroundcover-freightforwarding::after,
   .bgimage-service::before,
   .backgroundcover-d2c::before,
   .backgroundcover-d2c::after {
@@ -724,6 +766,64 @@ li {
     background-repeat: no-repeat;
     z-index: 2;
   }
+
+  .better-circle-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: #ffbe2e;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .backgroundcover-multichannel > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
+
+  .backgroundcover-freightforwarding > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
+
+  .backgroundcover-multichannel {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image: image-set(
+      url("/MultichannelMobile.svg") 1x,
+      url("/MultichannelMobile.svg") 2x,
+      url("/MultichannelMobile.svg") 3x
+        /* url("/b2bmobilebanner@2x.webp") 2x,
+      url("/b2bmobilebanner@3x.webp") 3x */
+    );
+    /* background-size: cover; */
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-freightforwarding {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image: image-set(
+      url("/freightforwarding-bg-mobile-1x.webp") 1x,
+      url("/freightforwarding-bg-mobile-2x.webp") 2x,
+      url("/freightforwarding-bg-mobile-3x.webp") 3x
+        /* url("/b2bmobilebanner@2x.webp") 2x,
+      url("/b2bmobilebanner@3x.webp") 3x */
+    );
+    /* background-size: cover; */
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
   .backgroundcover-b2b > .container {
     margin-top: 340px;
   }
@@ -856,6 +956,26 @@ li {
   height: 100%;
 }
 
+.better-circle-icon {
+  position: absolute;
+  bottom: -75px;
+  right: -75px;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: #ffbe2e;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.better-circle-icon.yellow {
+  background-color: #ffbe2e;
+}
+
+.better-circle-icon.dark {
+  background-color: #212121;
+}
+
 .industry-card:hover {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
@@ -895,6 +1015,46 @@ li {
 .industry-card__content {
   position: relative;
   z-index: 10;
+}
+
+.industry-card--icon-only {
+  min-height: 24rem;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  place-items: center;
+}
+
+.industry-card--icon-only:hover {
+  box-shadow: none;
+}
+
+.industry-card--icon-only .industry-card__hover-bg,
+.industry-card--icon-only .industry-card__accent-bg {
+  display: none;
+}
+
+.industry-card__full-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.industry-card__icon-full {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Icon Container */
@@ -1096,6 +1256,11 @@ li {
   .industry-card.desktop-yellow:hover .industry-card__icon {
     opacity: 0;
   }
+
+  /* No hover image: keep the default icon visible on hover */
+  .industry-card.desktop-yellow:hover .industry-card__icon.has-hover-icon {
+    opacity: 1;
+  }
 }
 
 /* ==================== DESKTOP THEME: DARK ==================== */
@@ -1159,6 +1324,11 @@ li {
   }
 
   .industry-card.desktop-dark:hover .industry-card__icon {
+    opacity: 0;
+  }
+
+  /* No hover image: keep the default icon visible on hover */
+  .industry-card.desktop-dark:hover .industry-card__icon.has-hover-icon {
     opacity: 1;
   }
 }
@@ -1194,4 +1364,889 @@ li {
 .pulse-ring {
   transform-origin: center;
   animation: pulse 1.6s ease-out infinite;
+}
+
+.every-order-card {
+  /* position: relative; */
+  /* background-color: white; */
+  border-radius: 1.5rem;
+  /* border: 2px solid #ffbe2e; */
+  width: 80%;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  /* transition: box-shadow 0.5s; */
+  overflow: hidden;
+  /* height: 570px; */
+  background: linear-gradient(220deg, #fff7e4 20%, #ffbe2e 100%);
+  background: linear-gradient(
+    9.9deg,
+    rgba(255, 190, 46, 0.75) 21.55%,
+    rgba(255, 247, 228, 0.5) 63.13%,
+    rgba(255, 247, 228, 0) 78.83%
+  );
+}
+
+.every-order-card__image-wrapper {
+  /* position: relative; */
+  width: 170px;
+  height: 170px;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+  background-color: #ffffff;
+}
+
+.every-order-card__image {
+  display: block;
+  height: 90%;
+  width: 90%;
+  margin: 1.5sensrem auto;
+}
+.every-order-card__description {
+  font-size: 100px;
+  color: rgba(255, 190, 46, 0.15);
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.every-order-card__title {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.better-choice-card-multi-channel {
+  /* border: solid 2px #070604 !important; */
+  border: 1px solid rgba(151, 128, 80, 1) !important;
+}
+
+@media (min-width: 768px) {
+  .every-order-card__image-wrapper {
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    background-color: #ffffff;
+  }
+  .every-order-card {
+    height: 570px;
+  }
+  .every-order-card__description {
+    font-size: 140px;
+  }
+
+  .every-order-card__title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.amazon-lines-1 {
+  position: absolute;
+  top: 68px;
+  left: 400px;
+  z-index: 1;
+  /* width: 00px; */
+  /* font-size: 14px; */
+}
+.amazon-lines-2 {
+  position: absolute;
+  top: 68px;
+  left: 710px;
+}
+.amazon-lines-3 {
+  position: absolute;
+  top: 383px;
+  left: 400px;
+}
+.amazon-lines-4 {
+  position: absolute;
+  top: 225px;
+  left: 460px;
+}
+.amazon-lines-5 {
+  position: absolute;
+  top: 225px;
+  left: 770px;
+}
+.amazon-lines-6 {
+  position: absolute;
+  top: 382px;
+  left: 710px;
+}
+
+.bg-amazon-rotate-12 {
+  background-image: url("/AmazonCardImage.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-amazon-rotate-6 {
+  background-image: url("/amazonCardMirror.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.amazon-card h4 {
+  font-size: 18px;
+}
+
+.icon-wrapper-right {
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: -90px;
+  left: 150px;
+}
+
+.icon-wrapper-left {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: -90px;
+  left: -140px;
+  z-index: 2;
+}
+
+.custom-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-image {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.custom-list-item {
+  list-style: none;
+  background: #fff7e4;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+@media (min-width: 768px) {
+  .amazon-card h4 {
+    font-size: 20px;
+    width: 75%;
+  }
+
+  .icon-wrapper-right {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -100px;
+    left: 150px;
+    z-index: 2;
+  }
+  .icon-wrapper-left {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -100px;
+    left: -150px;
+    z-index: 2;
+  }
+
+  .custom-list-item {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .merchant-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+/* globals.css */
+
+.amazon-left-card {
+  clip-path: polygon(5% 0%, 100% 0%, 95% 50%, 100% 100%, 5% 100%, 0% 50%);
+}
+
+.amazon-right-card {
+  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%, 5% 50%);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .amazon-left-card,
+  .amazon-right-card {
+    clip-path: none;
+    border-radius: 20px;
+    padding: 70px 20px 24px !important;
+  }
+}
+
+.merchant-section {
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.merchant-section.direct-ship-section {
+  position: relative;
+  min-height: 660px;
+}
+
+.direct-ship-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.merchant-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Common Row */
+.merchant-row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: -30px; /* overlap */
+}
+
+/* Left Card Position */
+.left-card {
+  justify-content: flex-start;
+  position: relative;
+  left: 50px; /* slight overlap */
+}
+
+/* Right Card Position */
+.right-card {
+  justify-content: flex-end;
+  position: relative;
+  left: -50px; /* slight overlap */
+}
+
+/* Hexagon Card */
+.vendor-card-image-bg {
+  width: 600px;
+  height: 140px;
+
+  background-image: url("/Vendor_hexagon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+/* Title */
+.vendor-card-title {
+  font-size: 22px;
+  /* font-weight: 700; */
+  color: #000;
+  /* text-align: center; */
+  z-index: 2;
+}
+
+.vendor-card-step {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #4b5563;
+  margin-bottom: 8px;
+  z-index: 2;
+}
+
+.vendor-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  padding: 20px 1rem;
+}
+
+.vendor-card-icon-right {
+  position: absolute;
+  top: 7px;
+  left: 50px;
+}
+.vendor-card-icon-left {
+  position: absolute;
+  top: 7px;
+  right: 50px;
+}
+
+/* First card spacing fix */
+.merchant-row:first-child {
+  margin-top: 0;
+}
+.yellow-hexagon {
+  background-image: url("/yellow-hexagon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 125px;
+  width: 125px;
+}
+
+.vendor-card-title {
+  width: 320px;
+}
+
+/* Right Side */
+.vendor-card-title-right {
+  text-align: right;
+  margin-left: 60px;
+}
+
+/* Left Side */
+.vendor-card-title-left {
+  text-align: left;
+  margin-left: 200px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .merchant-row {
+    justify-content: center !important;
+    margin-top: -15px;
+  }
+
+  .vendor-card-image-bg {
+    width: 100%;
+    max-width: 350px;
+    height: 100px;
+    margin: 20px auto;
+  }
+
+  /* Left Card Position */
+  .left-card {
+    /* justify-content: flex-start; */
+    position: relative;
+    left: 0; /* slight overlap */
+  }
+
+  /* Right Card Position */
+  .right-card {
+    /* justify-content: flex-end; */
+    position: relative;
+    left: 0; /* slight overlap */
+  }
+  .vendor-card-icon-right {
+    top: 6px;
+    left: 10px;
+  }
+  .vendor-card-icon-left {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+  }
+
+  .yellow-hexagon {
+    height: 90px;
+    width: 90px;
+  }
+
+  .yellow-hexagon img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .vendor-card-title {
+    font-size: 14px;
+    width: 100%;
+    /* margin-left: 0 !important; */
+    /* text-align: center !important; */
+  }
+  /* Right Side */
+  .vendor-card-title-right {
+    width: 70%;
+    text-align: right;
+    margin-left: 0;
+  }
+
+  /* Left Side */
+  .vendor-card-title-left {
+    width: 70%;
+    text-align: left;
+    margin-left: 90px;
+  }
+}
+
+/* Seamless Card  */
+
+.seamless-order-card {
+  width: 60%;
+  height: 200px;
+
+  background: #3c2c0b;
+  position: relative;
+  z-index: 1;
+  border-radius: 1.5rem;
+  /* border: 1px solid rgba(151, 128, 80, 1); */
+  /* offset: 0; */
+  border: 1px solid #ffbe2e;
+}
+
+/* Line 1 */
+.seamless-order-lines .line-1 {
+  position: absolute;
+  bottom: 140px;
+  right: 290px;
+  z-index: 0;
+}
+
+/* Line 2 */
+.seamless-order-lines .line-2 {
+  position: absolute;
+  bottom: 115px;
+  right: 330px;
+}
+
+/* strait line */
+.seamless-order-lines .line-3 {
+  position: absolute;
+  bottom: 95px;
+  right: 365px;
+}
+
+/* Line 3 */
+.seamless-order-lines .line-4 {
+  position: absolute;
+  bottom: 55px;
+  right: 330px;
+}
+
+/* Line 4 */
+.seamless-order-lines .line-5 {
+  position: absolute;
+  bottom: 25px;
+  right: 290px;
+}
+
+.seamless-order-lines .polygone {
+  position: absolute;
+  /* width: 300px; */
+  top: 170px;
+  right: 130px;
+}
+
+.seamless-order-card p {
+  font-size: 21px;
+  padding: 25px;
+  font-weight: 200;
+  color: whitesmoke;
+  text-align: justify;
+}
+
+.vertical-line-container {
+  position: relative;
+  top: -205px;
+  right: 0px;
+}
+
+.fbn-dot-1 {
+  position: relative;
+  top: 38px;
+  left: 108px;
+  z-index: 2;
+}
+.fbn-services-bg {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.fbn-order-description {
+  background-image: url("/fbn-hexagone-bg.svg");
+  background-size: contain;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  height: 80px;
+  /* margin: 0 0; */
+  /* margin: 15px; */
+  /* width: 90%; */
+}
+
+.order-vertical-line-container {
+  position: relative;
+  /* width: 100%; */
+  top: -10px;
+  left: 00px;
+}
+.order-horizontal-bottom-container {
+  position: relative;
+  /* width: 100%; */
+  top: 229px;
+  left: 00px;
+}
+
+.order-dot-1 {
+  position: relative;
+  top: 216px;
+  left: 145px;
+  z-index: 2;
+}
+
+.order-dot-2 {
+  position: relative;
+  top: 192px;
+  left: 450px;
+  z-index: 2;
+}
+
+.order-dot-3 {
+  position: relative;
+  top: 168px;
+  left: 755px;
+  z-index: 2;
+}
+
+.direct-ship-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: -30px; /* overlap */
+}
+.direct-ship-card-bg {
+  height: 100px;
+  width: 30%;
+  border-radius: 1.5rem;
+}
+
+.direct-ship-card-title-right {
+  text-align: right;
+}
+.direct-ship-card-title-left {
+  text-align: left;
+}
+
+.direct-ship-card-icon-right {
+  position: absolute;
+  top: 0px;
+  right: 375px;
+  z-index: 3;
+}
+.direct-ship-card-icon-left {
+  position: absolute;
+  top: 0px;
+  left: 375px;
+  z-index: 3;
+}
+
+.direct-ship-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  overflow: hidden; /* clips the corner circle → the dark "notch" accent */
+  background-color: #ffbe2e;
+  padding: 20px 1rem;
+  border-radius: 1.5rem;
+}
+
+.direct-ship-card .box {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid #ffbe2e;
+  background: white;
+  overflow: hidden;
+}
+
+.direct-ship-card-left-circle {
+  position: absolute;
+  top: 70px;
+  left: -20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.direct-ship-card-right-circle {
+  position: absolute;
+  top: 70px;
+  right: -20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.direct-ship-right-image {
+  position: absolute;
+  width: 100px;
+  top: 18px;
+  left: 359px;
+}
+.direct-ship-left-image {
+  position: absolute;
+  width: 100px;
+  top: 18px;
+  right: 295px;
+}
+/* Mobile: stack seamless order images above the card without changing desktop */
+@media (max-width: 768px) {
+  .seamless-order-wrapper {
+    display: flex;
+    flex-direction: column-reverse; /* put images above the card */
+    align-items: center;
+    gap: 12px;
+  }
+
+  .seamless-order-card {
+    order: 2;
+    width: 90%;
+    max-width: 520px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .seamless-order-card p {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    /* text-align: center; */
+  }
+
+  .seamless-order-lines .line-1,
+  .seamless-order-lines .line-2,
+  .seamless-order-lines .line-3,
+  .seamless-order-lines .line-4,
+  .seamless-order-lines .line-5,
+  .seamless-order-lines .polygone {
+    display: none;
+    position: static;
+    margin: 6px;
+  }
+
+  .seamless-order-lines img {
+    max-width: 90px;
+    height: auto;
+  }
+}
+
+.left-card1 {
+  justify-content: flex-start;
+  position: relative;
+  left: 50px;
+}
+.right-card1 {
+  justify-content: flex-end;
+  position: relative;
+  left: -50px;
+}
+
+.direct-ship-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: -30px; /* overlap */
+}
+.direct-ship-card-bg {
+  height: 100px;
+  width: 30%;
+  /* border: 1px solid #ffbe2e; */
+  /* background: #ffbe2e; */
+  border-radius: 1.5rem;
+}
+
+/* Right Side */
+.direct-ship-card-title-right {
+  text-align: right;
+  /* margin-left: 60px; */
+}
+
+/* Left Side */
+.direct-ship-card-title-left {
+  text-align: left;
+  /* margin-left: 200px; */
+}
+
+.direct-ship-card-icon-right {
+  position: absolute;
+  top: 0px;
+  right: 375px;
+  z-index: 3;
+}
+.direct-ship-card-icon-left {
+  position: absolute;
+  top: 0px;
+  left: 375px;
+  z-index: 3;
+}
+
+.direct-ship-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  background-color: #ffbe2e;
+  padding: 20px 1rem;
+  border-radius: 1.5rem;
+}
+
+.direct-ship-card .box {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid #ffbe2e;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background: white;
+  overflow: hidden;
+}
+
+.direct-ship-card-left-circle {
+  position: absolute;
+  top: 70px;
+  left: -20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* background: #000000; */
+  /* z-index: -1; */
+}
+
+.direct-ship-card-right-circle {
+  position: absolute;
+  top: 70px;
+  right: -20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* background: #000000; */
+  /* z-index: -1; */
+}
+
+.direct-ship-right-image {
+  position: absolute;
+  /* height: 100px; */
+  width: 100px;
+  top: 18px;
+  left: 359px;
+}
+
+.direct-ship-left-image {
+  position: absolute;
+  /* height: 100px; */
+  width: 100px;
+  top: 18px;
+  right: 295px;
+}
+
+.left-card1 {
+  justify-content: flex-start;
+  position: relative;
+  left: 50px; /* slight overlap */
+}
+
+.right-card1 {
+  justify-content: flex-end;
+  position: relative;
+  left: -50px; /* slight overlap */
+}
+
+@media (max-width: 768px) {
+  .fbn-dot-1 {
+    position: relative;
+    top: 38px;
+    left: 88px;
+    z-index: 2;
+  }
+  .direct-ship-card-bg {
+    width: 70%;
+    margin: 20px auto;
+    font-size: 30px;
+  }
+
+  .direct-ship-card-bg .box {
+    width: 80px;
+    height: 80px;
+  }
+
+  .left-card1 {
+    position: relative;
+    left: -60px;
+  }
+
+  .right-card1 {
+    position: relative;
+    left: 60px;
+  }
+
+  .direct-ship-card-icon-left {
+    position: absolute;
+    top: 30;
+    left: 270;
+    z-index: 3;
+  }
+
+  .direct-ship-card-icon-right {
+    position: absolute;
+    top: 30;
+    right: 270;
+    z-index: 3;
+  }
+
+  .direct-ship-left-image {
+    position: absolute;
+    width: 80px;
+    top: 35;
+    right: 210;
+  }
+
+  .direct-ship-right-image {
+    position: absolute;
+    width: 80px;
+    top: 35;
+    left: 255px;
+  }
+  .custom-clearance-card {
+    margin-top: 50px;
+  }
 }

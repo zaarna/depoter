@@ -1,0 +1,15 @@
+<svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="5" width="33" height="34" rx="4" fill="white"/>
+<path d="M27.5834 9.40918C26.5841 9.40918 7.71169 9.40918 6.70284 9.40918C5.14303 9.40918 3.87891 10.6734 3.87891 12.2332V44.2383C3.87891 45.7981 5.14303 47.0623 6.70284 47.0623H38.708C40.2678 47.0623 41.532 45.7981 41.532 44.2383V20.9404" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.4122 11.2919V22.5878L22.1821 19.4504L16.9531 22.5878V9.40918" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37.7662 31.0601H22.7051V42.356H37.7662V31.0601Z" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.64453 37.6494H17.0578" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.3512 41.833H7.64453" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.0595 9.78076C32.9068 10.257 32.8242 10.7649 32.8242 11.2919C32.8242 14.0213 35.0368 16.2339 37.7662 16.2339H39.6488" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M42.337 13.1748C42.5764 12.5946 42.7084 11.9587 42.7084 11.2921C42.7084 8.56278 40.4958 6.3501 37.7664 6.3501H35.1777" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.8252 4.70264L35.1777 6.34992L36.8252 7.99739" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.002 14.5869L39.6493 16.2342L38.002 17.8815" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37.7667 21.6467C43.4854 21.6467 48.1213 17.0108 48.1213 11.2921C48.1213 5.57341 43.4854 0.9375 37.7667 0.9375C32.048 0.9375 27.4121 5.57341 27.4121 11.2921C27.4121 17.0108 32.048 21.6467 37.7667 21.6467Z" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.4707 34.8252H34.0013" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.0013 38.5908H26.4707" stroke="#212121" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
