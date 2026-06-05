@@ -311,7 +311,7 @@ export default function Footer() {
 
         <div className="py-8 border-t border-white lg:border-gray-200 text-left lg:text-center">
           <p className="text-sm text-[#212121] font-medium">
-            © 2025 Depoter, All Rights Reserved.
+            © 2026 Depoter, All Rights Reserved.
           </p>
         </div>
       </div>

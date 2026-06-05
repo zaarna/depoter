@@ -6,7 +6,7 @@ const SocialIcons = ({ items = [] }) => {
   return (
     <div className="flex gap-2">
       {items.map(({ href, icon: Icon }, i) => (
-        <div className="socilaicon">
+        <div className="socilaicon" key={i}>
           <Link
             key={i}
             href={href}

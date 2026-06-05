@@ -72,7 +72,7 @@ export default function Header() {
             {
               name: "Multichannel",
               icon: <MultiChannelIcon />,
-              href: "/services/multichannel",
+              href: "/services/Multichannel",
             },
           ],
         },
@@ -82,7 +82,7 @@ export default function Header() {
             {
               name: "Freight Forwarding",
               icon: <FreightIcon />,
-              href: "/services/freight",
+              href: "/services/FreightForwarding",
             },
             {
               name: "Custom Clearance",

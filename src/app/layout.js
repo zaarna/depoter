@@ -1,10 +1,7 @@
-
 import { Outfit, Unbounded } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/ReusableComponent/Footer/footer";
 import Header from "@/components/ReusableComponent/Header/Header";
-
-
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -19,7 +16,6 @@ const unbounded = Unbounded({
   display: "swap",
   subsets: ["latin"],
 });
-
 
 export const metadata = {
   title: "Create Next App",

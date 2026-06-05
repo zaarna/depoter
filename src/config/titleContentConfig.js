@@ -103,6 +103,18 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
+  betterchoicemultichannel: {
+    title: "Built to Handle What You Sell",
+    highlight: "You Sell",
+    title: "What Makes Us\n ",
+    highlight: "the Better Choice",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+  },
+
   Fulfillmentcenter: {
     title: "How Orders Move Through Our\n D2C Fulfillment Center",
     highlight: "D2C Fulfillment Center",
@@ -111,6 +123,102 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
+  addvaluetosupplychain: {
+    title: "How Depoter Adds\n",
+    highlight: "Value to Your Supply Chain",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#FFFFFF",
+    content:
+      "Businesses involved in international trade often face challenges related to shipping complexity, regulatory requirements, and unpredictable logistics costs.Depoter focuses on solving these challenges through structured logistics solutions designed for operational efficiency.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#FFFFFF",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+  },
+
+  handleEveryOrder: {
+    title: "How We Handle\n",
+    highlight: "Every Order",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#212121",
+    content:
+      "We handle every order with care, from inspection and labeling to storage, picking, packing, and dispatch. Our workflows deliver reliable multi-channel fulfillment services and e-commerce warehouse fulfillment for Amazon and Noon, ensuring seamless multi-channel order fulfillment for Amazon and Noon sellers",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+  },
+
+  freightforwardingservices: {
+    title: "Our Freight ",
+    highlight: "Forwarding Services",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#212121",
+    content:
+      "Depoter provides a comprehensive suite of freight solutions designed to support businesses engaged in global trade.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+  },
+
+  returnandexchange: {
+    title: "Returns and Exchange\n",
+    highlight: "That Flow Smoothly",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#ffffff",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+  },
+
+  seamlessnoonorder: {
+    title: "Seamless Fulfillment for Your \n",
+    highlight: "Noon Orders",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    content:
+      "As a trusted Noon fulfillment partner, we handle storage, order fulfillment, delivery, and returns for both FBN and Direct Ship models across the UAE, KSA, and Egypt, enabling sellers to scale without operational complexity.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#FFFFFF",
+    contentSize: "text-[1.25rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    titleColor: "#ffffff",
+  },
+
+  whybusinesschoosedepoter: {
+    title: "Why Businesses ",
+    highlight: "Choose Depoter",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    content:
+      "Selecting a freight forwarding partner is an important decision that directly impacts supply chain reliability.Companies choose Depoter because of our experience, industry expertise, and structured logistics approach.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#212121",
+    contentSize: "text-[1.25rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    titleColor: "#212121",
+  },
+
+  amazonfulfillment: {
+    title: "Amazon Fulfillment That Keeps\n",
+    highlight: "Your Business Moving",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#ffffff",
+    content:
+      "We support Amazon sellers across FBA, FBM, EasyShip, and Vendor Central models. Our teams manage labeling, inbound planning, order processing, shipping coordination, and compliance to ensure reliable e-commerce fulfillment and consistent marketplace performance.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#FFFFFF",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+  },
+
   easyreturns: {
     title: "Easy Returns and Exchanges",
     highlight: "and Exchanges",
@@ -119,6 +227,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   flexible: {
     title: " The Pillars of Fast and Flexible\n D2C Fulfillment",
     highlight: "D2C Fulfillment",
@@ -127,6 +236,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   Businessinsync: {
     title: "Integration That Keeps Your \n Business in Sync",
     highlight: "Business in Sync",
@@ -140,6 +250,7 @@ export const titleContentConfig = {
     contentSize: "text-[1.125rem]",
     contentColor: "#FFFFFF",
   },
+
   Crossdocking: {
     title: "Crossdocking \n for Rapid ",
     highlight: "D2C \n Fulfillment",

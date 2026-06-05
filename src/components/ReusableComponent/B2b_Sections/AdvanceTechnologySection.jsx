@@ -212,7 +212,7 @@ function AdvanceTechnologySection(sectionKey = []) {
     paths.push(
       `M${centerX} ${startY} V${
         firstHorizontalY - curveRadius - verticalReduction
-      }`
+      }`,
     ); // Vertical ends earlier (natural gap)
 
     cardData.forEach((card, index) => {

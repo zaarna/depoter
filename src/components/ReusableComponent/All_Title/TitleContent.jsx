@@ -7,10 +7,12 @@ function TitleContent({
   titleTag: TitleTag = "h2",
   contentTag: ContentTag = "p",
   titleSize = "text-clamp(1.5rem, 0.9815rem + 2.5926vw, 3.25rem)",
-  contentSize = "text-[1rem]",
+  contentSize = "text-[1.25rem]",
   titleColor = "#212121",
   highlightColor = "#978050",
   contentColor = "#4A4A4A",
+  contentAlign = "center",
+  contentWidth = "w-full",
   className = "",
 }) {
   // If highlight exists, replace it inside the title text
@@ -33,6 +35,15 @@ function TitleContent({
     );
   };
 
+  const contentAlignClass =
+    {
+      left: "text-left",
+      center: "text-center",
+      right: "text-right",
+    }[contentAlign] || "text-left";
+
+  const contentWidthClass = contentWidth || "w-full";
+
   return (
     <div className={`flex flex-col gap-3 ${className}`}>
       <TitleTag
@@ -43,8 +54,8 @@ function TitleContent({
       </TitleTag>
 
       <ContentTag
-        className={`${contentSize} leading-relaxed`}
-        style={{ color: contentColor }}
+        className={`${contentSize} mx-auto leading-relaxed ${contentAlignClass} ${contentWidthClass}`}
+        style={{ color: contentColor, fontSize: contentSize }}
       >
         {content}
       </ContentTag>

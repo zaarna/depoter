@@ -14,6 +14,22 @@ function ServiceSection({ sectionKey = [] }) {
           <TitleContent {...tc} />
         </div>
         <div className="mt-6 md:mt-12 relative">
+          <div className="hidden lg:block absolute inset-[-2%] pointer-events-none z-1">
+            <svg
+              className="w-full h-full [shape-rendering:geometricPrecision]
+               [image-rendering:optimizeQuality]"
+              viewBox="0 0 1435 1435"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              <image
+                href="/puzzle3.svg"
+                width="1435"
+                height="1435"
+                preserveAspectRatio="none"
+              />
+            </svg>
+          </div>
           <ServiceCard services={services} />
         </div>
       </div>

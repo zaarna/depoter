@@ -40,6 +40,41 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+  "/services/multichannel": {
+    className: "backgroundcover-multichannel",
+    heading: {
+      title: (
+        <>
+          Multi-Channel <br />
+          E-Commerce
+        </>
+      ),
+      highlight: "Fulfillment Service",
+      description:
+        "One fulfillment partner to manage storage, orders, shipping, and returns across Amazon, Noon, and direct sales channels",
+    },
+    button: {
+      text: "Scale Your Fulfillment",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+  "/services/freightforwarding": {
+    className: "backgroundcover-freightforwarding",
+    heading: {
+      title: "Freight Forwarding",
+      highlight: "Services",
+      titleColor: "#978050",
+      highlightColor: "#212121",
+      description:
+        "Reliable freight forwarding services to simplify international shipping, manage documentation, and ensure fast, compliant, and smooth cargo movement across global supply chains.",
+    },
+    button: {
+      text: "Get a Freight Quote",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
   "/pricing": {
     className: "backgroundcover-pricing",
   },
