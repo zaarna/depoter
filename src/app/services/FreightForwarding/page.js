@@ -1,3 +1,4 @@
+import FAQSection from "@/components/FAQSection";
 import AddvalueToSupplyChain from "@/components/ReusableComponent/FreightForwarding/AddValueToSupplyChain";
 import CustomsClearance from "@/components/ReusableComponent/FreightForwarding/CustomsClearance";
 import FreightForwardingServices from "@/components/ReusableComponent/FreightForwarding/FreightForwardingServices";
@@ -6,6 +7,7 @@ import StepByStepFreightProcess from "@/components/ReusableComponent/FreightForw
 import StrategicHub from "@/components/ReusableComponent/FreightForwarding/StrategicHub";
 import WhyChooseDepoter from "@/components/ReusableComponent/FreightForwarding/WhyChooseDepoter";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import ShippingWithConfidence from "@/components/ShippingWithConfidence";
 import TestimonialSection from "@/components/TestimonialSection";
 
 export default function multiChannelPage() {
@@ -18,11 +20,11 @@ export default function multiChannelPage() {
         <CustomsClearance />
         <AddvalueToSupplyChain />
         <WhyChooseDepoter />
-        {/* <StepByStepFreightProcess /> */}
+        <StepByStepFreightProcess />
         <IndustriesWeServe />
-        {/* <FBNInboundServices /> */}
-        {/* <ReturnNExchange /> */}
-        <TestimonialSection />
+        <FAQSection />
+        <ShippingWithConfidence />
+        {/* <TestimonialSection /> */}
       </main>
     </div>
   );

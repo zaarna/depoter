@@ -26,11 +26,10 @@ function CustomsClearance({ sectionKey = "" }) {
   ];
 
   const tc =
-    titleContentConfig[sectionKey] ||
-    titleContentConfig.freightforwardingservices;
+    titleContentConfig[sectionKey] || titleContentConfig["customclearance"];
 
   return (
-    <section className="py-8 md:py-16 bg-[#FFF7E4] relative overflow-hidden">
+    <section className="py-8 md:py-16 bg-[#FFFFFF] relative overflow-hidden">
       <div className="container">
         <div className="text-center relative z-10 mb-25">
           <TitleContent {...tc} />
@@ -41,6 +40,13 @@ function CustomsClearance({ sectionKey = "" }) {
             {industries.map((industry, index) => (
               <CustomsClearanceCard key={index} industry={industry} />
             ))}
+          </div>
+          <div className="mt-20 text-center text-[23px]">
+            <p className="w-[70%] mx-auto">
+              By simplifying the customs clearance process, we reduce the risk
+              of delays, penalties, or shipment rejections while ensuring
+              compliance with international trade regulations.
+            </p>
           </div>
         </div>
       </div>

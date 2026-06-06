@@ -76,7 +76,7 @@ export default function IndustriesWeServeCard({ variant = "grid", industry }) {
 
           <p className="industry-card__description">{industry.description}</p>
 
-          <Link href={industry.href} className="industry-card__link">
+          {/* <Link href={industry.href} className="industry-card__link">
             <span>{industry.link}</span>
 
             <svg
@@ -92,7 +92,7 @@ export default function IndustriesWeServeCard({ variant = "grid", industry }) {
                 fill="currentColor"
               />
             </svg>
-          </Link>
+          </Link> */}
         </div>
       )}
     </div>

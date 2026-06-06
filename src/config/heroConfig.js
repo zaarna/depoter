@@ -75,6 +75,22 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+  "/infra/fulfillmentcenter": {
+    className: "backgroundcover-fulfillmentcenter",
+    heading: {
+      title: "Fulfillment Center UAE: ",
+      highlight: "Smart Space & Fast Shipping for Your Brand",
+      titleColor: "#212121",
+      highlightColor: "#978050",
+      description:
+        "Built for speed and scale, our fulfillment center UAE helps ecommerce brands manage warehouse storage, order processing, and fast dispatch with efficient systems and reliable infrastructure for smooth operations from inbound to final delivery.",
+    },
+    button: {
+      text: "Talk to Our Experts",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
   "/pricing": {
     className: "backgroundcover-pricing",
   },

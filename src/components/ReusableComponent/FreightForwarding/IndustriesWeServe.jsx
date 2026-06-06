@@ -30,9 +30,9 @@ function IndustriesWeServe({ sectionKey = [] }) {
       id: 1,
       icon: FoodPerishableGoodsIcon,
       hoverIcon: FoodPerishableGoodsHoverIcon,
-      title: "Health & Wellness",
+      title: "Food & Perishable Goods",
       description:
-        "Fast, secure fulfillment for supplements, hygiene kits, and wellness products.",
+        "Temperature-sensitive products require careful logistics coordination. We support businesses transporting perishable goods through structured freight solutions.",
       link: "Explore Health Fulfillment",
       href: "/industries/health",
       mobileclass: "yellow",
@@ -43,10 +43,11 @@ function IndustriesWeServe({ sectionKey = [] }) {
     {
       id: 2,
       icon: ManufacturingIcon,
+      hoverIcon: ManufacturingIcon,
       // icon: "/industries-we-serve-icon-1.svg",
-      title: "Beauty & Personal Care",
+      title: "Manufacturing & Industrial Equipment",
       description:
-        "Careful handling and quick shipping for cosmetics, skincare, and grooming items.",
+        "Manufacturers rely on consistent supply chains for raw materials and machinery. We help manage large-scale cargo shipments and international logistics operations.",
       link: "Discover Beauty Logistics",
       href: "/industries/beauty",
       mobileclass: "dark",
@@ -58,9 +59,9 @@ function IndustriesWeServe({ sectionKey = [] }) {
       id: 3,
       icon: ECommarceIcon,
       hoverIcon: ECommarceHoverIcon,
-      title: "Apparel & Accessories",
+      title: "E-commerce & Retail Distribution",
       description:
-        "Neat packing and smooth delivery for clothing, shoes, and accessories.",
+        "Online sellers and retail businesses require fast and reliable shipping to keep inventory moving across markets. Our logistics solutions support global product distribution.",
       link: "Simplify Apparel Fulfillment",
       href: "/industries/apparel",
       mobileclass: "yellow",
@@ -71,9 +72,10 @@ function IndustriesWeServe({ sectionKey = [] }) {
     {
       id: 4,
       icon: ConstructionIcon,
-      title: "Pets",
+      hoverIcon: ConstructionIcon,
+      title: "Construction & Heavy Machinery",
       description:
-        "Reliable fulfillment for pet food, toys, and everyday pet care items.",
+        "Large equipment and construction materials require specialized shipping solutions. Our freight network supports the transportation of oversized and heavy cargo.",
       link: "Ship Pet Supplies",
       href: "/industries/pets",
       mobileclass: "dark",
@@ -97,9 +99,10 @@ function IndustriesWeServe({ sectionKey = [] }) {
     {
       id: 6,
       icon: AutomativeIcon,
-      title: "Food & Beverage",
+      hoverIcon: AutomativeIcon,
+      title: "Automotive & Spare Parts",
       description:
-        "Safe storage and timely delivery for packaged snacks, drinks, and more.",
+        "Automotive supply chains require timely cargo movement for components and spare parts. Our freight coordination ensures shipments reach manufacturers and distributors on time. ",
       link: "Enable Food Fulfillment",
       href: "/industries/food",
       mobileclass: "dark",
@@ -111,9 +114,9 @@ function IndustriesWeServe({ sectionKey = [] }) {
       id: 7,
       icon: ElectronicsIcon,
       hoverIcon: ElectronicsHoverIcon,
-      title: "Sports, Toys & Games",
+      title: "Electronics & Consumer Goods",
       description:
-        "Quick dispatch for active gear, kids' toys, and high-volume seasonal orders.",
+        "High-value products require secure transportation and efficient customs handling. Our freight specialists ensure safe cargo movement across global markets.",
       link: "Speed Up Shipping",
       href: "/industries/sports",
       mobileclass: "yellow",
@@ -130,9 +133,9 @@ function IndustriesWeServe({ sectionKey = [] }) {
   ];
 
   const tc =
-    titleContentConfig[sectionKey] || titleContentConfig["buildtohandle"];
+    titleContentConfig[sectionKey] || titleContentConfig["industriesweserve"];
   return (
-    <section className="py-8 md:py-16 buildtohandle relative overflow-hidden">
+    <section className="py-8 md:py-16 relative overflow-hidden">
       <div className="container">
         <div className="grid text-center relative z-10">
           <TitleContent {...tc} />

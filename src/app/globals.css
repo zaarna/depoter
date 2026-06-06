@@ -105,49 +105,95 @@ li {
   /* color: #ffffff; */
 }
 
-/* Radial background layer */
+/* Circular reveal layer — a centered circle that grows from the inside */
 .btn-radial::before {
   content: "";
   position: absolute;
-  inset: 0;
-  transform: scale(0);
+  top: 50%;
+  left: 50%;
+  width: 130%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
   opacity: 0;
   transition:
-    transform 0.85s ease-in-out,
-    opacity 0.85s ease-in-out;
+    transform 0.6s ease-in-out,
+    opacity 0.3s ease-in-out;
   z-index: 1;
-  border-radius: 20px;
 }
 
 .btn-radial.black::before {
-  background: radial-gradient(circle at center, #ffbe2e 0%, transparent 300%);
+  background: #ffbe2e;
 }
 
-.btn-radial.black:hover::before {
-  border-color: #212121;
+/* Gradient border ring — drawn above the fill so it stays visible on hover */
+.btn-radial::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, #ffbe2e 0%, #ff7e2e 45%, #212121 100%);
+  /* Mask out the center so only the 2px ring shows */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+  pointer-events: none;
 }
 
 /* Hover State */
 .btn-radial:hover {
   opacity: 1;
 }
+.btn-radial:hover::after {
+  opacity: 1;
+}
 .btn-radial.black:hover {
   color: #212121;
 }
 
-/* Radial grows on hover */
+/* Circle grows from the center on hover */
 .btn-radial:hover::before {
-  transform: scale(3);
+  transform: translate(-50%, -50%) scale(1.1);
   opacity: 1;
-  border-radius: 100px;
 }
 
-/* Hover Out Animation */
+/* Hover Out Animation — shrinks back to the center */
 .btn-radial:not(:hover)::before {
-  transform: scale(0);
+  transform: translate(-50%, -50%) scale(0);
   opacity: 0;
-  border-radius: 20px;
 }
+
+/* WhyChooseDepoter card — gradient border that fades from bottom to top */
+.wcd-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px; /* border thickness */
+  background: linear-gradient(to top, #ffbe2e 0%, rgba(255, 190, 46, 0) 100%);
+  /* Mask out the center so only the border ring is painted */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.35; /* faint by default */
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* Border becomes fully visible on hover */
+.wcd-card:hover::after {
+  opacity: 1;
+}
+
 .socilaicon {
   display: flex;
   align-items: center;
@@ -192,7 +238,8 @@ li {
 .backgroundcover-d2c,
 .backgroundcover-b2b,
 .backgroundcover-multichannel,
-.backgroundcover-freightforwarding {
+.backgroundcover-freightforwarding,
+.backgroundcover-fulfillmentcenter {
   position: relative;
   background: hsla(42, 100%, 95%, 1);
 
@@ -290,11 +337,32 @@ li {
   z-index: 2;
 }
 
+.backgroundcover-fulfillmentcenter::before {
+  position: absolute;
+  content: "";
+  right: -10%;
+  top: -25%;
+  width: 100%;
+  height: 990px;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
+    url("/B2B_heroimg.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
 .backgroundcover-home::after,
 .backgroundcover-d2c::after,
 .backgroundcover-b2b::after,
 .backgroundcover-multichannel::after,
-.backgroundcover-freightforwarding::after {
+.backgroundcover-freightforwarding::after,
+.backgroundcover-fulfillmentcenter::after {
   position: absolute;
   content: "";
   left: 0;
@@ -720,6 +788,8 @@ li {
   .backgroundcover-multichannel::after,
   .backgroundcover-freightforwarding::before,
   .backgroundcover-freightforwarding::after,
+  .backgroundcover-fulfillmentcenter::before,
+  .backgroundcover-fulfillmentcenter::after,
   .bgimage-service::before,
   .backgroundcover-d2c::before,
   .backgroundcover-d2c::after {
@@ -792,6 +862,12 @@ li {
     margin-top: 280px;
   }
 
+  .backgroundcover-fulfillmentcenter > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
+
   .backgroundcover-multichannel {
     /* background-image: url("/b2bmobilebanner.webp"); */
     background-image: image-set(
@@ -814,6 +890,22 @@ li {
       url("/freightforwarding-bg-mobile-1x.webp") 1x,
       url("/freightforwarding-bg-mobile-2x.webp") 2x,
       url("/freightforwarding-bg-mobile-3x.webp") 3x
+        /* url("/b2bmobilebanner@2x.webp") 2x,
+      url("/b2bmobilebanner@3x.webp") 3x */
+    );
+    /* background-size: cover; */
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-fulfillmentcenter {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image: image-set(
+      url("/B2B_heroimg.webp") 1x,
+      url("/B2B_heroimg.webp") 2x,
+      url("/B2B_heroimg.webp") 3x
         /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
     );
@@ -1079,6 +1171,7 @@ li {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+  transition: color 1s ease;
 }
 
 /* Description */
@@ -1087,6 +1180,7 @@ li {
   font-size: 1.125rem;
   line-height: 1.75;
   margin-bottom: 1.5rem;
+  transition: color 1s ease;
 }
 
 /* Link */

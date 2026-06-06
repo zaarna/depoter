@@ -3,7 +3,7 @@ import React from "react";
 function WhyChooseDepoterCard({ industry }) {
   return (
     <div
-      className="custom-clearance-card relative w-full rounded-[28px]"
+      className="wcd-card custom-clearance-card relative w-full rounded-[28px]"
       style={{
         background:
           "linear-gradient(358.44deg, #FFBE2E -111.88%, rgba(255, 190, 46, 0.799014) -43.36%, rgba(255, 190, 46, 0) 76.18%)",

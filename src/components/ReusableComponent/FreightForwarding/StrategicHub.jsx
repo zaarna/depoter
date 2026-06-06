@@ -19,7 +19,7 @@ import BetterChoiceMultiChannel from "../BetterChoiceCardMultiChannel/BetterChoi
 function StrategicHub({ sectionKey = [] }) {
   const tc =
     titleContentConfig[sectionKey] ||
-    titleContentConfig["betterchoicemultichannel"];
+    titleContentConfig["strategichubforglobal"];
 
   const paragraphData = [
     "Dubai has established itself as one of the most important logistics and trade gateways connecting global markets. Located between Asia, Europe, and the Middle East, the region offers direct access to major international shipping routes and air cargo networks.",

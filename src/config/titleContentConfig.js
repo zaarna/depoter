@@ -219,6 +219,74 @@ export const titleContentConfig = {
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
   },
 
+  strategichubforglobal: {
+    title: "Dubai: ",
+    highlight: "A Strategic Hub for Global Freight",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "black",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#FFFFFF",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+  },
+
+  customclearance: {
+    title: "Customs ",
+    highlight: "Clearance & Documentation",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "black",
+    highlightColor: "#ffbe2e",
+    content:
+      "International trade requires strict compliance with customs regulations, accurate documentation, and proper product classification.Our customs specialists help businesses manage the complexities of import and export procedures by handling essential documentation such as:",
+    contentAlign: "center",
+    contentColor: "black",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  industriesweserve: {
+    title: "Industries  ",
+    highlight: "We Serve",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "black",
+    highlightColor: "#ffbe2e",
+    content:
+      "Depoter supports businesses across multiple industries that rely on efficient global logistics and reliable cargo transportation.",
+    contentAlign: "center",
+    contentColor: "black",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  stepbystepfreightprocess: {
+    title: "Step-by-Step ",
+    highlight: "Freight Process",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "black",
+    highlightColor: "#ffbe2e",
+    content:
+      "To ensure a smooth logistics experience for our clients, Depoter follows a structured freight management process.",
+    contentAlign: "center",
+    contentColor: "black",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  shippingwithconfidence: {
+    title: "Start Shipping with ",
+    highlight: "Confidence",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "white",
+    highlightColor: "#ffbe2e",
+    content:
+      "Simplify your international shipping with a reliable freight partner. Depoter ensures smooth, fast, and compliant cargo movement across global routes.",
+    contentAlign: "center",
+    contentColor: "white",
+    contentWidth: "w-full md:w-3/4 lg:w-5/7",
+  },
+
   easyreturns: {
     title: "Easy Returns and Exchanges",
     highlight: "and Exchanges",

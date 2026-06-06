@@ -191,12 +191,12 @@ export default function Header() {
             {
               name: "Fulfillment Center",
               icon: <FulfillmentIcon />,
-              href: "/infra/fulfillment-center",
+              href: "/Infra/FulfillmentCenter",
             },
             {
               name: "Deliveries",
               icon: <DeliveriesIcon />,
-              href: "/infra/deliveries",
+              href: "/Infra/deliveries",
             },
           ],
         },
