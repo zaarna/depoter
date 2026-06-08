@@ -44,7 +44,10 @@ export default function AmazonFulfillment() {
   return (
     <>
       <div className="text-center w-full mt-20 ">
-        <h2 className="text-white font-bold mb-4" style={{ fontSize: "30px" }}>
+        <h2
+          className="text-white mb-4"
+          style={{ fontSize: "36px", fontFamily: "outfit", fontWeight: "600" }}
+        >
           Fulfillment by Amazon (FBA)
         </h2>
         <div className="mt-6 md:mt-12 relative">

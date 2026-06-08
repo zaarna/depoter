@@ -5,49 +5,49 @@ import React, { useEffect, useState } from "react";
 const industries = [
   {
     id: 1,
-    title: "Purchase order management and confirmations",
+    title: "Daily order sync and processing",
     icons: "/direct-ship-icon-1.svg",
     desktopcolor: "black",
     mobilecolor: "black",
   },
   {
     id: 2,
-    title: "ASN creation with carton and pallet-level accuracy",
+    title: "Accurate picking and packing",
     icons: "/direct-ship-icon-2.svg",
     desktopcolor: "black",
     mobilecolor: "white",
   },
   {
     id: 3,
-    title: "Delivery appointment scheduling at Amazon fulfillment centers",
+    title: "Non-compliant label printing",
     icons: "/direct-ship-icon-3.svg",
     desktopcolor: "white",
     mobilecolor: "black",
   },
   {
     id: 4,
-    title: "SKU labeling and carton setup",
+    title: "Handover readiness for Noon logistics teams",
     icons: "/direct-ship-icon-4.svg",
     desktopcolor: "white",
     mobilecolor: "white",
   },
   {
     id: 5,
-    title: "Transport arrangement and delivery execution",
+    title: "Real-time order status updates and tracking",
     icons: "/direct-ship-icon-5.svg",
     desktopcolor: "black",
     mobilecolor: "black",
   },
   {
     id: 6,
-    title: "POD collection and GRN follow-up",
+    title: "Handling Non-Delivery Reports (NDRs)",
     icons: "/direct-ship-icon-6.svg",
     desktopcolor: "black",
     mobilecolor: "white",
   },
   {
     id: 7,
-    title: "Dispute handling for shortages and chargebacks",
+    title: "Packaging compliance checks",
     icons: "/direct-ship-icon-7.svg",
     desktopcolor: "white",
     mobilecolor: "black",
@@ -69,7 +69,7 @@ export default function DirectShipCard() {
   }, []);
 
   return (
-    <div className="merchant-section direct-ship-section">
+    <div className="merchant-section direct-ship-section ">
       <div className="merchant-wrapper direct-ship-wrapper">
         {industries.map((industry, index) => {
           const isEven = index % 2 === 0;

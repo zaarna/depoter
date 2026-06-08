@@ -1,16 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import OrderingIcon from "../Icons/D2cpageIcons/OrderingIcon";
-import AutoRulesIcon from "../Icons/D2cpageIcons/AutoRulesIcon";
-import KittingIcon from "../Icons/D2cpageIcons/KittingIcon";
-import FifoIcon from "../Icons/D2cpageIcons/FifoIcon";
-import CustomPackICon from "../Icons/D2cpageIcons/CustomPackICon";
-import LastIcon from "../Icons/D2cpageIcons/LastIcon";
-import InventoryIcon from "../Icons/D2cpageIcons/InventoryIcon";
-import PickIcon from "../Icons/D2cpageIcons/PickIcon";
-import MinusIcon from "../Icons/MinusIcon";
-import PlusIcon from "../Icons/PlusIcon";
+import OrderingIcon from "../ReusableComponent/Icons/D2cpageIcons/OrderingIcon";
+import AutoRulesIcon from "../ReusableComponent/Icons/D2cpageIcons/AutoRulesIcon";
+import KittingIcon from "../ReusableComponent/Icons/D2cpageIcons/KittingIcon";
+import FifoIcon from "../ReusableComponent/Icons/D2cpageIcons/FifoIcon";
+import CustomPackICon from "../ReusableComponent/Icons/D2cpageIcons/CustomPackICon";
+import LastIcon from "../ReusableComponent/Icons/D2cpageIcons/LastIcon";
+import InventoryIcon from "../ReusableComponent/Icons/D2cpageIcons/InventoryIcon";
+import PickIcon from "../ReusableComponent/Icons/D2cpageIcons/PickIcon";
+import MinusIcon from "../ReusableComponent/Icons/MinusIcon";
+import PlusIcon from "../ReusableComponent/Icons/PlusIcon";
 
 export default function FulfillmentCenter() {
   const steps = [

@@ -29,7 +29,7 @@ export default function AmazonCardHolder({ industry }) {
         <div className="absolute w-[15px] h-[15px] bg-black rounded-full right-[12px] top-[45%] -translate-y-1/2" />
       )}
       <h4
-        className={` ${industry.rotate === "rotate-6" ? "ms-20" : "me-20 text-end"} ${isMobile ? "mt-6" : "mt-7"}`}
+        className={` ${industry.rotate === "rotate-6" ? "ms-20" : "me-20 text-end"} ${isMobile ? "mt-6" : "mt-6"}`}
       >
         {industry.title}
       </h4>

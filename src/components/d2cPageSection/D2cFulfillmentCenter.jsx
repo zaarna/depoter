@@ -3,7 +3,7 @@ import React from "react";
 import { services } from "@/data/home";
 import TitleContent from "@/components/ReusableComponent/All_Title/TitleContent";
 import { titleContentConfig } from "@/config/titleContentConfig";
-import FulfillmentCenter from "../ReusableComponent/FulfillmentCenter/FulfillmentCenter";
+import FulfillmentCenter from "./FulfillmentCenter";
 
 function D2cFulfillmentCenter({ sectionKey = [] }) {
   const tc =

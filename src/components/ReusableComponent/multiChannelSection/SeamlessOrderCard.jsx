@@ -4,10 +4,16 @@ export default function SeamlessOrderCard() {
   return (
     <>
       <div className="text-center text-white w-full mt-20 mb-10  z-1 ">
-        <h2 className="font-bold mt-20" style={{ fontSize: "30px" }}>
+        <h2
+          className="font-bold mt-20"
+          style={{ fontSize: "30px", fontFamily: "outfit" }}
+        >
           Your Products Are Ready to Sell
         </h2>
-        <p className=" mt-4 mb-10" style={{ fontSize: "21px" }}>
+        <p
+          className=" mt-4 mb-10"
+          style={{ fontSize: "21px", fontFamily: "outfit" }}
+        >
           Fulfilled by Noon (FBN)
         </p>
       </div>

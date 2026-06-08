@@ -1651,7 +1651,7 @@ li {
     position: relative;
     width: 50px;
     height: 50px;
-    top: -100px;
+    top: -95px;
     left: 150px;
     z-index: 2;
   }
@@ -1659,7 +1659,7 @@ li {
     position: relative;
     width: 50px;
     height: 50px;
-    top: -100px;
+    top: -95px;
     left: -150px;
     z-index: 2;
   }
@@ -2036,7 +2036,7 @@ li {
 }
 .direct-ship-card-bg {
   height: 100px;
-  width: 30%;
+  width: 33%;
   border-radius: 1.5rem;
 }
 
@@ -2159,12 +2159,12 @@ li {
 .left-card1 {
   justify-content: flex-start;
   position: relative;
-  left: 50px;
+  left: 80px;
 }
 .right-card1 {
   justify-content: flex-end;
   position: relative;
-  left: -50px;
+  left: -80px;
 }
 
 .direct-ship-card {
@@ -2212,7 +2212,7 @@ li {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  font-size: 18px;
+  font-size: 21px;
   justify-content: center;
   width: 100%;
   height: 100px;
@@ -2276,13 +2276,13 @@ li {
 .left-card1 {
   justify-content: flex-start;
   position: relative;
-  left: 50px; /* slight overlap */
+  left: 110px; /* slight overlap */
 }
 
 .right-card1 {
   justify-content: flex-end;
   position: relative;
-  left: -50px; /* slight overlap */
+  left: -110px; /* slight overlap */
 }
 
 @media (max-width: 768px) {
@@ -2343,4 +2343,44 @@ li {
   .custom-clearance-card {
     margin-top: 50px;
   }
+}
+
+.fulfill-bg-image {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.9) 100%,
+      rgba(255, 255, 255, 0.9) 100%,
+      transparent 100%
+    ),
+    url("/fbm-bg.jpg");
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.vendor-card-image {
+  background:
+    linear-gradient(90deg, #fff7e438 100%, #fff7e440 100%, transparent 100%),
+    url("/vendor-card-fulfillment.png");
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.fbn-inbound-bg-image {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.9) 100%,
+      rgba(255, 255, 255, 0.9) 100%,
+      transparent 100%
+    ),
+    url("/fbm-bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-blend-mode: lighten; */
+}
+
+.vendor-card-title1 {
+  width: 80%;
 }

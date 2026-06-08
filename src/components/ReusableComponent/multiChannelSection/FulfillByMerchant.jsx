@@ -30,8 +30,11 @@ export default function FulfillByMerchant() {
   ];
   return (
     <>
-      <div className="text-center w-full mt-25">
-        <h2 className="text-black font-bold mb-25" style={{ fontSize: "30px" }}>
+      <div className="text-center w-full fulfill-bg-image">
+        <h2
+          className="text-black font-bold mt-25"
+          style={{ fontSize: "36px", fontFamily: "outfit" }}
+        >
           Fulfillment by Merchant (FBM)
         </h2>
         <div className="mt-6 md:mt-12 relative">

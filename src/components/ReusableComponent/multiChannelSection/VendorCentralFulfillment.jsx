@@ -4,8 +4,11 @@ import VendorFulfillmentCard from "./VendorFulfillmentCard";
 export default function VendorCentralFulfillment() {
   return (
     <>
-      <div className="text-center w-full mt-20 pb-15 bg-amber-50">
-        <h2 className="text-black font-bold mt-20" style={{ fontSize: "30px" }}>
+      <div className="text-center vendor-card-image w-full pb-15">
+        <h2
+          className="text-black font-bold mt-20"
+          style={{ fontSize: "36px", fontFamily: "outfit" }}
+        >
           Vendor Central Fulfillment
         </h2>
         <div className="mt-6 md:mt-12 relative">
