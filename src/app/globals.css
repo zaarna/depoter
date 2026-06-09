@@ -2384,3 +2384,52 @@ li {
 .vendor-card-title1 {
   width: 80%;
 }
+
+
+
+
+/* ======= integrations CSS ======= */
+
+.backgroundcover-EcoIntegration::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      128.11deg,
+      rgba(255, 247, 228, 0.06) 14.29%,
+      rgba(228, 216, 189, 0) 85.3%
+    ),
+    url("/EcoIntegration-bg.png");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+
+  z-index: 1;
+}
+.backgroundcover-EcoIntegration::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    #fff7e4 0%,
+    rgba(255, 247, 228, 0.95) 25%,
+    rgba(255, 247, 228, 0.75) 40%,
+    rgba(255, 247, 228, 0.2) 60%,
+    rgba(255, 247, 228, 0) 80%
+  );
+
+  z-index: 2;
+}
+
+.backgroundcover-EcoIntegration .container {
+  position: relative;
+  z-index: 3;
+}
+.backgroundcover-EcoIntegration .container > div {
+  padding-top: 300px !important;
+}

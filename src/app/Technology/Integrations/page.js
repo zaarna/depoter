@@ -1,33 +1,33 @@
-import Link from 'next/link';
+import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import IntegrationBenefits from "@/components/ReusableComponent/Integration/IntegrationBenefits";
+import HowItWorksSection from "@/components/ReusableComponent/Integration/HowItWorksSection";
+import SmartIntegration from "@/components/ReusableComponent/Integration/SmartIntegration";
+import BenefitsSection from "@/components/ReusableComponent/Integration/BenefitsSection";
+import IntegrationPlatformsSection from "@/components/ReusableComponent/Integration/IntegrationPlatformsSection";
+import UAEOperationsSection from "@/components/ReusableComponent/Integration/UAEOperationsSection";
+import SupplyChainSection from "@/components/ReusableComponent/Integration/SupplyChainSection";
+import WhyChooseSection from "@/components/ReusableComponent/Integration/WhyChooseSection";
+import SolutionForSection from "@/components/ReusableComponent/Integration/SolutionForSection";
+import FAQSection from "@/components/FAQSection";
+import ShippingWithConfidence from "@/components/ShippingWithConfidence";
 
 export default function IntegrationsPage() {
-
-
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-600 to-purple-800 text-white py-20 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Integrations
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-purple-100">
-            Sell everywhere, fulfill from anywhere
-          </p>
-          <p className="text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-            Connect all your sales channels and manage them from a single platform. 
-            Whether you're selling on your website, marketplaces, or social media, 
-            we've got you covered.
-          </p>
-          <Link 
-            href="/contact" 
-            className="inline-block bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-purple-50 transition-colors"
-          >
-            Get Started Today
-          </Link>
-        </div>
-      </section>
-
+    <div className="flex min-h-screen items-center justify-center">
+      <main className="flex flex-col min-h-screen w-full  ">
+        <InnerHeroSection />
+        <IntegrationBenefits />
+        <HowItWorksSection />
+        <SmartIntegration />
+        <BenefitsSection />
+        <IntegrationPlatformsSection />
+        <UAEOperationsSection />
+        <SupplyChainSection />
+        <WhyChooseSection />
+        <SolutionForSection />
+        <FAQSection />
+        <ShippingWithConfidence />
+      </main>
     </div>
   );
 }

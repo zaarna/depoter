@@ -87,6 +87,20 @@ export const heroConfig = {
     },
     button: {
       text: "Talk to Our Experts",
+    },
+  },
+  "/technology/integrations": {
+    className: "backgroundcover-EcoIntegration",
+    heading: {
+      title: "Ecommerce",
+      highlight: "Integration Services UAE",
+      titleColor: "#978050",
+      highlightColor: "#212121",
+      description:
+        "Connect your business to our in-house Warehouse Management System (WMS) with 100+ native integrations across leading eCommerce platforms, marketplaces, delivery partners, and ERP systems..",
+    },
+    button: {
+      text: "Connect Your Store in Minutes",
       link: "/#",
       className: "px-6 sm:px-12 py-3.5",
     },
