@@ -47,7 +47,7 @@ export default function HowToConnect() {
         {steps.map((step, i) => (
           <div key={i}>
             {/* CARD */}
-            <div className="md:bg-transparent bg-white flex flex-col items-center border-2 rounded-2xl border-[#978050] md:rounded-none p-8 md:p-0 md:items-start gap-3 relative h-full md:text-left text-center">
+            <div className="md:bg-transparent bg-white flex flex-col items-center md:rounded-none p-8 md:p-0 md:items-start gap-3 relative h-full md:text-left text-center">
               {/* IMAGE */}
 
               <div className="w-52 h-52 bg-white rounded-2xl flex items-center justify-center shadow-lg">
