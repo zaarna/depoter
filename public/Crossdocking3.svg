@@ -8,10 +8,10 @@
 <path d="M8 7.00001H87.875V86.875H8V7.00001Z" fill="white"/>
 </mask>
 <g mask="url(#mask1_3197_24482)">
-<path d="M77.8877 65.0342H82.7549C83.8594 65.0342 84.7549 64.1387 84.7549 63.0342V12.1201C84.7549 11.0156 83.8594 10.1201 82.7549 10.1201H13.1201C12.0155 10.1201 11.1201 11.0156 11.1201 12.1201V63.0342C11.1201 64.1388 12.0155 65.0342 13.1201 65.0342H17.3604" stroke="black" stroke-width="3.55" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M47.9375 83.7549C37.6143 83.7549 29.2168 75.3574 29.2168 65.0342C29.2168 54.711 37.6143 46.3135 47.9375 46.3135C58.2607 46.3135 66.6582 54.711 66.6582 65.0342C66.6582 75.3574 58.2607 83.7549 47.9375 83.7549Z" stroke="black" stroke-width="3.55" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M47.9375 58.7939V65.0342H54.1777" stroke="black" stroke-width="3.55" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M57.2979 10.1201V33.833L47.9375 27.5928L38.5771 33.833V10.1201" stroke="black" stroke-width="3.55" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77.8877 65.0342H82.7549C83.8594 65.0342 84.7549 64.1387 84.7549 63.0342V12.1201C84.7549 11.0156 83.8594 10.1201 82.7549 10.1201H13.1201C12.0155 10.1201 11.1201 11.0156 11.1201 12.1201V63.0342C11.1201 64.1388 12.0155 65.0342 13.1201 65.0342H17.3604" stroke="black" stroke-width="3.55" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M47.9375 83.7549C37.6143 83.7549 29.2168 75.3574 29.2168 65.0342C29.2168 54.711 37.6143 46.3135 47.9375 46.3135C58.2607 46.3135 66.6582 54.711 66.6582 65.0342C66.6582 75.3574 58.2607 83.7549 47.9375 83.7549Z" stroke="black" stroke-width="3.55" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M47.9375 58.7939V65.0342H54.1777" stroke="black" stroke-width="3.55" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M57.2979 10.1201V33.833L47.9375 27.5928L38.5771 33.833V10.1201" stroke="black" stroke-width="3.55" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </g>
 </svg>

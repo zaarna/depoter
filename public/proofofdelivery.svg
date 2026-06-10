@@ -5,16 +5,16 @@
 <path d="M31 27H93V89H31V27Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_3521_8101)">
-<path d="M61.8789 40.9258L57.0352 38.5039L52.1914 40.9258V28.8164H61.8789V40.9258Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.8789 40.9258L57.0352 38.5039L52.1914 40.9258V28.8164H61.8789V40.9258Z" stroke="black" stroke-width="2" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<path d="M40.082 62.7227H49.7695" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M40.082 69.9883H49.7695" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.082 62.7227H49.7695" stroke="black" stroke-width="2" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.082 69.9883H49.7695" stroke="black" stroke-width="2" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <mask id="mask1_3521_8101" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="31" y="27" width="62" height="62">
 <path d="M31 27H93V89H31V27Z" fill="white"/>
 </mask>
 <g mask="url(#mask1_3521_8101)">
-<path d="M91.1836 77.4961C91.1836 77.4961 84.6777 87.1836 76.6523 87.1836C68.627 87.1836 62.1211 77.4961 62.1211 77.4961C62.1211 77.4961 68.627 67.8086 76.6523 67.8086C84.6777 67.8086 91.1836 77.4961 91.1836 77.4961Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M80.2852 77.4961C80.2852 79.5024 78.6586 81.1289 76.6523 81.1289C74.6461 81.1289 73.0195 79.5024 73.0195 77.4961C73.0195 75.4898 74.6461 73.8633 76.6523 73.8633C78.6586 73.8633 80.2852 75.4898 80.2852 77.4961Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M81.2539 68.8205V28.8164H32.8164V77.2539H62.2905" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M91.1836 77.4961C91.1836 77.4961 84.6777 87.1836 76.6523 87.1836C68.627 87.1836 62.1211 77.4961 62.1211 77.4961C62.1211 77.4961 68.627 67.8086 76.6523 67.8086C84.6777 67.8086 91.1836 77.4961 91.1836 77.4961Z" stroke="black" stroke-width="2" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M80.2852 77.4961C80.2852 79.5024 78.6586 81.1289 76.6523 81.1289C74.6461 81.1289 73.0195 79.5024 73.0195 77.4961C73.0195 75.4898 74.6461 73.8633 76.6523 73.8633C78.6586 73.8633 80.2852 75.4898 80.2852 77.4961Z" stroke="black" stroke-width="2" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M81.2539 68.8205V28.8164H32.8164V77.2539H62.2905" stroke="black" stroke-width="2" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>

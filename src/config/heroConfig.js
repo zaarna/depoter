@@ -105,6 +105,22 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+  "/infra/deliveries": {
+    className: "backgroundcover-deliveries",
+    heading: {
+      title: "Delivery Services in UAE for",
+      highlight: "Fast, Reliable & Scalable Shipping",
+      titleColor: "#212121",
+      highlightColor: "#978050",
+      description:
+        "Manage deliveries with speed, reliability, and full visibility. Our delivery services UAE support last mile, same day, and cross border shipping, helping businesses ensure fast order delivery, real-time tracking, and smooth operations.",
+    },
+    button: {
+      text: "Get A Delivery Quote",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
   "/pricing": {
     className: "backgroundcover-pricing",
   },

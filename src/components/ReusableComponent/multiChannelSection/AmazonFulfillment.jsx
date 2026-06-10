@@ -1,5 +1,4 @@
 import React from "react";
-import HandleEveryOrderCard from "./HandleEveryOrderCard";
 import AmazonCardHolder from "./AmazonCardHolder";
 
 export default function AmazonFulfillment() {

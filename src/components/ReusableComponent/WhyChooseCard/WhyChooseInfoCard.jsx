@@ -145,7 +145,6 @@ export default function WhyChooseInfoCard() {
         y: -20,
         filter: "brightness(0.85)",
         ease: "none",
-        effect: "true",
         scrollTrigger: {
           trigger: cards[index + 1],
           start: "top center",

@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import BulletDot from "../BulletDot";
 
 export default function HandleEveryOrderCard({ variant = "grid", industry }) {
   return (
@@ -24,6 +25,7 @@ export default function HandleEveryOrderCard({ variant = "grid", industry }) {
         {/* Title and List */}
         <div className="">
           <h4 className="every-order-card__title">{industry.title}</h4>
+          <p>{industry.description}</p>
           <ul className="every-order-card__list mb-1 mt-4">
             {(Array.isArray(industry.list)
               ? industry.list
@@ -33,9 +35,7 @@ export default function HandleEveryOrderCard({ variant = "grid", industry }) {
                 key={index}
                 className="every-order-card__list-item flex items-start gap-2 mb-2"
               >
-                <span className="w-4 h-4 rounded-full border border-[#978050] flex items-center justify-center bg-white mt-1 flex-shrink-0">
-                  <span className="w-2 h-2 rounded-full bg-[#978050]"></span>
-                </span>
+                <BulletDot className="mt-1" />
 
                 <span>{item}</span>
               </li>

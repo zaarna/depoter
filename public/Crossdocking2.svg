@@ -12,11 +12,11 @@
 <path d="M1 2.00001H76.875V77.875H1V2.00001Z" fill="white"/>
 </mask>
 <g mask="url(#mask2_3197_24484)">
-<path d="M25.8965 15.3372V29.1191C25.8965 32.3929 28.5503 35.0469 31.8242 35.0469H50.9412C54.215 35.0469 56.8689 32.3929 56.8689 29.1191V15.3372" stroke="black" stroke-width="3.37222" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M59.8328 4.96338H22.9326V15.3369H59.8328V4.96338Z" stroke="black" stroke-width="3.37222" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M41.3086 19.7832V16.6711" stroke="black" stroke-width="3.37222" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M73.9111 74.9111H48.3149C38.0668 74.9111 28.2206 70.9255 20.8579 63.7971L5.73951 49.7996C3.40309 47.5065 3.36782 43.7535 5.66081 41.4169C7.95381 39.0802 11.7068 39.0449 14.0435 41.3381L31.9724 57.7207" stroke="black" stroke-width="3.37222" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M50.4971 59.0544H35.6777C32.4038 59.0544 29.75 56.4006 29.75 53.1267C29.75 49.853 32.4038 47.199 35.6777 47.199H64.1122C69.5244 47.199 73.9116 51.5853 73.9116 56.9974V57.1942V60.0918" stroke="black" stroke-width="3.37222" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.8965 15.3372V29.1191C25.8965 32.3929 28.5503 35.0469 31.8242 35.0469H50.9412C54.215 35.0469 56.8689 32.3929 56.8689 29.1191V15.3372" stroke="black" stroke-width="3.37222" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M59.8328 4.96338H22.9326V15.3369H59.8328V4.96338Z" stroke="black" stroke-width="3.37222" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.3086 19.7832V16.6711" stroke="black" stroke-width="3.37222" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M73.9111 74.9111H48.3149C38.0668 74.9111 28.2206 70.9255 20.8579 63.7971L5.73951 49.7996C3.40309 47.5065 3.36782 43.7535 5.66081 41.4169C7.95381 39.0802 11.7068 39.0449 14.0435 41.3381L31.9724 57.7207" stroke="black" stroke-width="3.37222" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50.4971 59.0544H35.6777C32.4038 59.0544 29.75 56.4006 29.75 53.1267C29.75 49.853 32.4038 47.199 35.6777 47.199H64.1122C69.5244 47.199 73.9116 51.5853 73.9116 56.9974V57.1942V60.0918" stroke="black" stroke-width="3.37222" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </g>
 </g>

@@ -1,4 +1,4 @@
-import FAQAccordion from "./ReusableComponent/FreightForwarding/FAQAccordion";
+import Accordion from "./ReusableComponent/Accordion";
 
 export default function FAQSection() {
   const faqData = [
@@ -39,7 +39,7 @@ export default function FAQSection() {
           </h2>
         </div>
 
-        <FAQAccordion faqs={faqData} />
+        <Accordion items={faqData} />
       </div>
     </section>
   );

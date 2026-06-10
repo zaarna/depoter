@@ -1,3 +1,5 @@
+import { button } from "framer-motion/client";
+
 export const titleContentConfig = {
   services: {
     title: "Dedicated Fulfillment Solutions\n",
@@ -440,5 +442,114 @@ export const titleContentConfig = {
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
     highlightColor: "#FFBE2E",
     className: "text-center",
+  },
+  moderncommercedeliveries: {
+    title: "A Scalable Delivery Network Bult \n for ",
+    highlight: "Modern Commerce",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        Logistics is the backbone of any successful brand in the Middle East. At
+        Depoter, our <strong>delivery network</strong> is not just about moving
+        boxes; it’s about <strong>operational excellence</strong>. We have built
+        a strong infrastructure that covers:
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+  },
+  deliverysolution: {
+    title: "Domestic Delivery Solutions: \n",
+    highlight: "Speed Tiers for Every Need",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+    content:
+      "In the UAE, one size does not fit all. Your customers demand choices, and our ecommerce delivery services provide exactly that.",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    button: {
+      text: "Choose Your Delivery Speed",
+      link: "#",
+      className: "px-6 sm:px-12 py-3.5 mt-6",
+    },
+  },
+  crossborderdelivery: {
+    title: "Cross-Border\n Delivery Solutions:\n  ",
+    highlight: "Expanding Across\n the GCC & Beyond",
+    titleTag: "h2",
+    titleSize: "text-[28px] sm:text-[36px] md:text-[32px] lg:text-[46px]",
+    titleColor: "#FFFFFF",
+    highlightColor: "#ffbe2e",
+    content:
+      "Don't let borders stop your growth. Our cross-border delivery solutions make shipping to international markets as simple as a local delivery, powered by operational excellence and seamless logistics.",
+    contentWidth: "w-full",
+    contentAlign: "left",
+    contentSize:
+      "text-[1rem] sm:text-[1.125rem] md:text-[1rem] lg:text-[1.25rem]",
+    contentColor: "#FFFFFF",
+    button: {
+      text: "Start Shipping Globally Today",
+      link: "#",
+      className: "px-6 sm:px-12 py-3.5 mt-6",
+    },
+  },
+  deliverycapabilities: {
+    title: "Specialized ",
+    highlight: "Delivery Capabilites",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+    content:
+      "Some products require precision handling beyond standard courier services. We specialize in managing high-stakes categories with specific environmental and safety requirements:",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    button: {
+      text: "Integrate Your Store with Our Tech",
+      link: "#",
+      className: "px-6 sm:px-12 py-3.5 mt-6",
+    },
+  },
+  deliveryservices: {
+    title: "Value-Added ",
+    highlight: "Delivery Services",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+    content:
+      "We support your deliveries with additional services that improve customer experience and make your operations easier.",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+  },
+  whychoosedeliveryservice: {
+    title: "Why Choose ",
+    highlight: "Depoter Delivery Services",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#FFFFFF",
+    highlightColor: "#ffbe2e",
+    content:
+      "Choosing the right delivery partner can directly impact your customer experience and business growth.",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    contentColor: "#FFFFFF",
+  },
+  deliveryoperations: {
+    title: "Ready to Simplify ",
+    highlight: "Your Delivery\n Operations?",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "#FFFFFF",
+    highlightColor: "#ffbe2e",
+    content:
+      "Don’t let delivery challenges slow down your growth. With the right system in place, you can ensure fast shipping, reliable service, and better customer experience.",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    contentColor: "#FFFFFF",
+    button: {
+      text: "Talk to a Delivery Expert",
+      link: "#",
+      className: "px-6 sm:px-12 py-3.5 mt-6 bg-[#FFBE2E]",
+    },
   },
 };

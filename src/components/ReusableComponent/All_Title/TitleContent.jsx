@@ -24,13 +24,18 @@ function TitleContent({
     }
 
     const safeHighlight = highlight.replace(/\n/g, "<br />");
-    const parts = safeTitle.split(highlight);
+    const parts = safeTitle.split(safeHighlight);
 
     return (
       <span>
-        <span dangerouslySetInnerHTML={{ __html: parts[0] }} />
-        <span style={{ color: highlightColor }}>{highlight}</span>
-        <span dangerouslySetInnerHTML={{ __html: parts[1] }} />
+        <span dangerouslySetInnerHTML={{ __html: parts[0] ?? "" }} />
+        <span
+          style={{ color: highlightColor }}
+          dangerouslySetInnerHTML={{ __html: safeHighlight }}
+        />
+        <span
+          dangerouslySetInnerHTML={{ __html: parts.slice(1).join(safeHighlight) }}
+        />
       </span>
     );
   };

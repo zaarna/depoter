@@ -48,7 +48,7 @@ export const D2CIcon = ({ size = 24, className }) => {
             d="M9.78117 4.83153C9.78117 6.34252 8.55322 7.56747 7.03839 7.56747C5.52361 7.56747 4.29565 6.34252 4.29565 4.83153C4.29565 3.3205 5.52361 2.09555 7.03839 2.09555C8.55322 2.09555 9.78117 3.3205 9.78117 4.83153Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -56,7 +56,7 @@ export const D2CIcon = ({ size = 24, className }) => {
             d="M10.7031 12.1262H3.3728V9.14126C3.3728 8.27219 4.07729 7.5677 4.94631 7.5677H9.12962C9.99864 7.5677 10.7031 8.27219 10.7031 9.14126V12.1262Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -64,7 +64,7 @@ export const D2CIcon = ({ size = 24, className }) => {
             d="M19.7041 4.83153C19.7041 6.34252 18.4761 7.56747 16.9612 7.56747C15.4465 7.56747 14.2185 6.34252 14.2185 4.83153C14.2185 3.3205 15.4465 2.09555 16.9612 2.09555C18.4761 2.09555 19.7041 3.3205 19.7041 4.83153Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -72,7 +72,7 @@ export const D2CIcon = ({ size = 24, className }) => {
             d="M20.6257 12.1261H13.2954V9.14113C13.2954 8.27207 13.9999 7.56758 14.8689 7.56758H19.0522C19.9213 7.56758 20.6257 8.27207 20.6257 9.14113V12.1261Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -80,7 +80,7 @@ export const D2CIcon = ({ size = 24, className }) => {
             d="M5.56714 17.6928V20.3658H18.4315V21.9046L22.3774 19.0293L18.4315 16.1541V17.6928"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -88,7 +88,7 @@ export const D2CIcon = ({ size = 24, className }) => {
             d="M9.86238 17.6925L5.56702 17.6927V19.2315L1.62109 16.3562L5.56702 13.481V15.0197H18.4314V17.6927L13.6766 17.6925"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -147,7 +147,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M5.22138 13.3556C6.34353 13.3556 7.25482 14.2669 7.25482 15.389C7.25482 16.5115 6.34353 17.4225 5.22138 17.4225C4.09928 17.4225 3.18799 16.5115 3.18799 15.389C3.18799 14.2669 4.09928 13.3556 5.22138 13.3556Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -155,7 +155,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M5.22138 1.83287C6.34353 1.83287 7.25482 2.74421 7.25482 3.86631C7.25482 4.9888 6.34353 5.89975 5.22138 5.89975C4.09928 5.89975 3.18799 4.9888 3.18799 3.86631C3.18799 2.74421 4.09928 1.83287 5.22138 1.83287Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -163,7 +163,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M8.61017 20.8113V22.1669H1.83203V20.8113C1.83203 18.9409 3.35065 17.4223 5.22108 17.4223C7.0915 17.4223 8.61017 18.9409 8.61017 20.8113Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -171,7 +171,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M8.61017 9.28846V10.6441H1.83203V9.28846C1.83203 7.41804 3.35065 5.89941 5.22108 5.89941C7.0915 5.89941 8.61017 7.41804 8.61017 9.28846Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -179,7 +179,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M22.1666 9.9667H12.6772V10.6445C12.6772 12.1418 13.8912 13.3557 15.3885 13.3557H19.4554C20.9527 13.3557 22.1666 12.1418 22.1666 10.6445V9.9667Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -187,7 +187,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M19.4553 9.96619V7.25492H15.3884V9.96619"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -195,7 +195,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M22.1666 9.96646V10.6443C22.1666 12.1416 20.9527 13.3555 19.4554 13.3555H15.3885C13.8912 13.3555 12.6772 12.1416 12.6772 10.6443V9.96646V16.7446H22.1666V9.96646Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -203,7 +203,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M15.3884 12.6781V14.0337"
             stroke="black"
             strokeWidth="0.756"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -211,7 +211,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M11.3218 1.83274H17.4221V4.54401"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -219,7 +219,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M11.3213 22.1671H17.4216V19.4559"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -227,7 +227,7 @@ export const B2BIcon = ({ size = 24, className }) => {
             d="M19.4553 12.6782V14.0338"
             stroke="black"
             strokeWidth="0.756"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -295,7 +295,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M9.89062 7.03125V9.37499L8.83593 8.90624L7.78125 9.37499V7.03125"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -303,7 +303,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M5.67188 13.0078V6.79688H18.3281V13.0078"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -311,7 +311,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M16.2187 7.03125V9.37499L15.1641 8.90624L14.1094 9.37499V7.03125"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -319,7 +319,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M8.83594 6.56248V0.46875H15.164V6.56248"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -327,7 +327,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M13.0547 0.703125V3.04687L12 2.57812L10.9453 3.04687V0.703125"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -335,7 +335,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M12 7.03125V21.0704"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -343,7 +343,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M17.6408 21.1374C17.9098 18.9713 19.7109 16.0472 19.7109 13.4696L12 11.2266L4.28906 13.4696C4.28906 16.0472 6.09018 18.9713 6.3591 21.1374"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -351,7 +351,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M0.46875 23.5312C1.86178 23.5312 1.95857 22.4464 3.35155 22.4464C4.74453 22.4464 4.84137 23.5312 6.23435 23.5312C7.62733 23.5312 7.72417 22.4464 9.11715 22.4464C10.5101 22.4464 10.607 23.5312 12 23.5312C13.3929 23.5312 13.4897 22.4464 14.8828 22.4464C16.2757 22.4464 16.3725 23.5312 17.7656 23.5312C19.1585 23.5312 19.2553 22.4464 20.6484 22.4464C22.0413 22.4464 22.1381 23.5312 23.5312 23.5312"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -359,7 +359,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M0.46875 21.1874C1.86178 21.1874 1.95857 20.1026 3.35155 20.1026C4.74453 20.1026 4.84137 21.1874 6.23435 21.1874C7.62733 21.1874 7.72417 20.1026 9.11715 20.1026C10.5101 20.1026 10.607 21.1874 12 21.1874C13.3929 21.1874 13.4897 20.1026 14.8828 20.1026C16.2757 20.1026 16.3725 21.1874 17.7656 21.1874C19.1585 21.1874 19.2553 20.1026 20.6484 20.1026C22.0413 20.1026 22.1381 21.1874 23.5312 21.1874"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -367,7 +367,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M9.57356 13.9096L8.12109 14.3321"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -375,7 +375,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M14.4258 13.9096L15.8782 14.3321"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -383,7 +383,7 @@ export const FreightIcon = ({ size = 24, className }) => {
           d="M18.755 17.0467L11.9996 15.5801L5.24414 17.0467"
           stroke="black"
           strokeWidth="0.937496"
-          stroke-miterlimit="22.9256"
+          strokeMiterlimit="22.9256"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -472,7 +472,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M19.1437 20.85H4.10615C3.16381 20.85 2.3999 20.0861 2.3999 19.1437V4.10624C2.3999 3.16391 3.16381 2.39999 4.10615 2.39999H19.1437C20.086 2.39999 20.8499 3.16391 20.8499 4.10624V19.1437C20.8499 20.0861 20.086 20.85 19.1437 20.85Z"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -480,7 +480,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M2.3999 5.41211H20.8499"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -491,7 +491,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M9.17749 3.90625H18.9673"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -499,7 +499,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M18.2167 8.80113H5.03198C4.61776 8.80113 4.28198 8.46535 4.28198 8.05113V8.04501C4.28198 7.63079 4.61776 7.29501 5.03198 7.29501H18.2167C18.6309 7.29501 18.9667 7.63079 18.9667 8.04501V8.05113C18.9667 8.46535 18.6309 8.80113 18.2167 8.80113Z"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -507,7 +507,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M18.0299 18.9675H15.01C14.4922 18.9675 14.0725 18.5478 14.0725 18.03V18.0224C14.0725 17.5046 14.4922 17.0849 15.01 17.0849H18.0299C18.5477 17.0849 18.9674 17.5046 18.9674 18.0224V18.03C18.9674 18.5478 18.5476 18.9675 18.0299 18.9675Z"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -515,7 +515,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M8.23936 18.9675H5.21948C4.70172 18.9675 4.28198 18.5478 4.28198 18.03V18.0224C4.28198 17.5046 4.70172 17.0849 5.21948 17.0849H8.23936C8.75716 17.0849 9.17686 17.5046 9.17686 18.0224V18.03C9.17686 18.5478 8.75716 18.9675 8.23936 18.9675Z"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -523,7 +523,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M14.083 14.6298V11.2548C14.083 10.8406 14.4188 10.5048 14.833 10.5048H18.208C18.6222 10.5048 18.958 10.8406 18.958 11.2548V14.6298C18.958 15.044 18.6222 15.3798 18.208 15.3798H14.833C14.4188 15.3798 14.083 15.044 14.083 14.6298Z"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -531,7 +531,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M17.4615 10.5048V13.1305L16.5202 12.3775L15.5789 13.1305V10.5048"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -539,7 +539,7 @@ export const ProductIcon = ({ size = 24, className }) => {
           d="M4.28198 10.6841H12.1891"
           stroke="black"
           strokeWidth="0.75"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -579,11 +579,11 @@ export const IORIcon = ({ size = 24, className }) => {
         />
         <path
           fill-rule="evenodd"
-          clip-rule="evenodd"
+          clipPath="evenodd"
           d="M5.06445 3.04306V21.1462H18.4561V3.04306C13.9922 3.04306 9.52834 3.04306 5.06445 3.04306Z"
           stroke="black"
           strokeWidth="0.956542"
-          stroke-miterlimit="2.6131"
+          strokeMiterlimit="2.6131"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -591,7 +591,7 @@ export const IORIcon = ({ size = 24, className }) => {
           d="M15.8606 0.6539H19.652C20.3097 0.6539 20.8477 1.19201 20.8477 1.84959V22.335C20.8477 22.9926 20.3096 23.5307 19.652 23.5307H3.86903C3.21145 23.5307 2.67334 22.9927 2.67334 22.335V1.84959C2.67334 1.19196 3.2114 0.654091 3.86903 0.654091H7.6497"
           stroke="black"
           strokeWidth="0.956556"
-          stroke-miterlimit="2.6131"
+          strokeMiterlimit="2.6131"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -599,7 +599,7 @@ export const IORIcon = ({ size = 24, className }) => {
           d="M15.8138 2.79558V0H7.70703V2.79558"
           stroke="black"
           strokeWidth="0.956556"
-          stroke-miterlimit="2.6131"
+          strokeMiterlimit="2.6131"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -607,7 +607,7 @@ export const IORIcon = ({ size = 24, className }) => {
           d="M7.45288 14.1512H15.7049M7.45288 11.7598H15.7049"
           stroke="black"
           strokeWidth="0.956542"
-          stroke-miterlimit="2.6131"
+          strokeMiterlimit="2.6131"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -615,7 +615,7 @@ export const IORIcon = ({ size = 24, className }) => {
           d="M11.0436 6.97705H7.63501V9.36844H11.0436V6.97705Z"
           stroke="black"
           strokeWidth="0.956556"
-          stroke-miterlimit="2.6131"
+          strokeMiterlimit="2.6131"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -623,7 +623,7 @@ export const IORIcon = ({ size = 24, className }) => {
           d="M13.4282 9.36856H15.8858"
           stroke="black"
           strokeWidth="0.956542"
-          stroke-miterlimit="2.6131"
+          strokeMiterlimit="2.6131"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -631,7 +631,7 @@ export const IORIcon = ({ size = 24, className }) => {
           d="M7.63501 16.5425H10.0926"
           stroke="black"
           strokeWidth="0.956542"
-          stroke-miterlimit="2.6131"
+          strokeMiterlimit="2.6131"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -686,70 +686,70 @@ export const IntegrationsIcon = ({ size = 24, className }) => {
             d="M18.2817 10.8826L16.6752 10.3672C16.615 10.1945 16.5443 10.0237 16.4636 9.85667L17.1907 8.39888C17.264 8.25194 17.2354 8.07441 17.1193 7.95806L16.0422 6.8781C15.9262 6.76175 15.7499 6.73302 15.6026 6.80647L14.1488 7.53555C13.9822 7.45459 13.8119 7.38376 13.6396 7.32335L13.1256 5.75212C13.074 5.59623 12.9285 5.49106 12.7645 5.49106H11.2412C11.0771 5.49106 10.9317 5.59623 10.88 5.75212L10.366 7.32335C10.1938 7.38376 10.0235 7.45464 9.85686 7.53559L8.40299 6.80647C8.2561 6.73302 8.07984 6.76099 7.9634 6.8781L6.88635 7.95806C6.7703 8.07441 6.74165 8.25194 6.81493 8.39888L7.54203 9.85667C7.46133 10.0237 7.39066 10.1945 7.33042 10.3672L5.72392 10.8826C5.5685 10.9344 5.46362 11.0407 5.46362 11.2051V12.7722C5.46362 12.9366 5.5685 13.0825 5.72396 13.1343L7.33046 13.6497C7.39066 13.8224 7.46137 13.9932 7.54207 14.1603L6.81493 15.618C6.74165 15.7649 6.7703 15.9425 6.88635 16.0588L7.96344 17.1388C8.08026 17.2556 8.25724 17.2843 8.40304 17.2105L9.85686 16.4814C10.0235 16.5623 10.1938 16.6332 10.3661 16.6936L10.88 18.2648C10.9317 18.4206 11.0771 18.5258 11.2412 18.5258H12.7645C12.9285 18.5258 13.074 18.4206 13.1257 18.2648L13.6396 16.6935C13.8119 16.6331 13.9822 16.5622 14.1488 16.4813L15.6027 17.2104C15.7488 17.2835 15.9258 17.2548 16.0423 17.1388L17.1193 16.0588C17.2353 15.9425 17.264 15.7649 17.1907 15.618L16.4636 14.1602C16.5443 13.9932 16.615 13.8224 16.6752 13.6497L18.2817 13.1343C18.4372 13.0825 18.542 12.9366 18.542 12.7722V11.2842C18.542 11.1198 18.4372 10.9344 18.2817 10.8826Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M14.0501 12.0084C14.0501 13.1422 13.1335 14.0613 12.0028 14.0613C10.8722 14.0613 9.95557 13.1422 9.95557 12.0084C9.95557 10.8746 10.8722 9.95559 12.0028 9.95559C13.1335 9.95559 14.0501 10.8746 14.0501 12.0084Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M5.92658 3.88557C5.92658 5.01932 5.00997 5.93842 3.87931 5.93842C2.7486 5.93842 1.83203 5.01932 1.83203 3.88557C1.83203 2.75183 2.7486 1.83273 3.87931 1.83273C5.00997 1.83273 5.92658 2.75183 5.92658 3.88557Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M22.1595 3.88557C22.1595 5.01932 21.2429 5.93842 20.1122 5.93842C18.9815 5.93842 18.0649 5.01932 18.0649 3.88557C18.0649 2.75183 18.9815 1.83273 20.1122 1.83273C21.2429 1.83273 22.1595 2.75183 22.1595 3.88557Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M5.93366 20.1143C5.93366 21.248 5.01705 22.1671 3.88639 22.1671C2.75568 22.1671 1.83911 21.248 1.83911 20.1143C1.83911 18.9806 2.75568 18.0615 3.88639 18.0615C5.01705 18.0615 5.93366 18.9806 5.93366 20.1143Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M22.1666 20.1143C22.1666 21.248 21.25 22.1671 20.1193 22.1671C18.9886 22.1671 18.072 21.248 18.072 20.1143C18.072 18.9806 18.9886 18.0615 20.1193 18.0615C21.25 18.0615 22.1666 18.9806 22.1666 20.1143Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M16.5906 16.5885L18.6687 18.6653"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M5.32959 5.33476L7.41973 7.42346"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M7.43103 16.6049L5.35938 18.6893"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
           <path
             d="M18.6478 5.31937L16.5713 7.40854"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinejoin="round"
           />
         </g>
@@ -808,7 +808,7 @@ export const InventoryIcon = ({ size = 24, className }) => {
           d="M6.93701 10.3126V3.56256H17.062V13.1436"
           stroke="black"
           strokeWidth="0.72"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -816,7 +816,7 @@ export const InventoryIcon = ({ size = 24, className }) => {
           d="M11.9995 10.3126H2.04321V20.4376H11.9995V10.3126Z"
           stroke="black"
           strokeWidth="0.72"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -824,7 +824,7 @@ export const InventoryIcon = ({ size = 24, className }) => {
           d="M8.62451 13.6876H6.93701H5.24951V10.3126H8.62451V13.6876Z"
           stroke="black"
           strokeWidth="0.72"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -832,7 +832,7 @@ export const InventoryIcon = ({ size = 24, className }) => {
           d="M18.4799 16.7011H17.0822H15.6846V13.9058H18.4799V16.7011Z"
           stroke="black"
           strokeWidth="0.72"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -840,7 +840,7 @@ export const InventoryIcon = ({ size = 24, className }) => {
           d="M13.687 6.93756H11.9995H10.312V3.56256H13.687V6.93756Z"
           stroke="black"
           strokeWidth="0.72"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -848,7 +848,7 @@ export const InventoryIcon = ({ size = 24, className }) => {
           d="M11.9995 13.6876H21.9558V20.4376H11.9995"
           stroke="black"
           strokeWidth="0.72"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -904,7 +904,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M5.55403 3.73727H2.65896C2.29901 3.73727 2.00488 4.03144 2.00488 4.39139V17.6162C2.00488 17.9762 2.29901 18.2704 2.65896 18.2704H21.3399C21.6999 18.2704 21.9952 17.9762 21.9952 17.6162V4.39139C21.9952 4.03144 21.6999 3.73727 21.3399 3.73727H18.4461"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -912,7 +912,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M16.663 1.62182H7.3357C6.35514 1.62182 5.55396 2.42422 5.55396 3.40361V12.7312C5.55396 13.7118 6.35514 14.5142 7.3357 14.5142H16.663C17.6436 14.5142 18.446 13.7118 18.446 12.7312V3.40361C18.446 2.42422 17.6436 1.62182 16.663 1.62182Z"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -920,7 +920,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M13.8937 16.393H21.9953M2.00488 16.393H10.1053"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -928,7 +928,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M17.8948 20.6727H6.1053C5.63655 20.6727 5.25269 21.0554 5.25269 21.5254V22.378H18.7474V21.5254C18.7474 21.0554 18.3635 20.6727 17.8948 20.6727Z"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -936,7 +936,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M15.4485 20.6726V18.2702M8.55103 18.2702V20.6726"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -944,7 +944,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M15.372 6.0823L11.9999 8.11405L8.62769 6.0823V10.0537L11.9999 12.0842L15.372 10.0537V6.0823Z"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -952,7 +952,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M15.372 6.08234L11.9999 4.05177L8.62769 6.08234"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -960,7 +960,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M11.9993 8.11414V12.0843"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -968,7 +968,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M7.38501 4.81839V3.45274H8.75062"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -976,7 +976,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M16.6139 4.81839V3.45274H15.2483"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -984,7 +984,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M16.6139 11.3166V12.6823H15.2483"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -992,7 +992,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M7.38501 11.3166V12.6823H8.75062"
             stroke="black"
             strokeWidth="0.72"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1000,7 +1000,7 @@ export const WarehouseIcon = ({ size = 24, className }) => {
             d="M12.0023 16.393H11.9993"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1059,7 +1059,7 @@ export const HealthIcon = ({ size = 24, className }) => {
             d="M9.78117 4.83153C9.78117 6.34252 8.55322 7.56747 7.03839 7.56747C5.52361 7.56747 4.29565 6.34252 4.29565 4.83153C4.29565 3.3205 5.52361 2.09555 7.03839 2.09555C8.55322 2.09555 9.78117 3.3205 9.78117 4.83153Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1067,7 +1067,7 @@ export const HealthIcon = ({ size = 24, className }) => {
             d="M10.7031 12.1262H3.3728V9.14126C3.3728 8.27219 4.07729 7.5677 4.94631 7.5677H9.12962C9.99864 7.5677 10.7031 8.27219 10.7031 9.14126V12.1262Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1075,7 +1075,7 @@ export const HealthIcon = ({ size = 24, className }) => {
             d="M19.7041 4.83153C19.7041 6.34252 18.4761 7.56747 16.9612 7.56747C15.4465 7.56747 14.2185 6.34252 14.2185 4.83153C14.2185 3.3205 15.4465 2.09555 16.9612 2.09555C18.4761 2.09555 19.7041 3.3205 19.7041 4.83153Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1083,7 +1083,7 @@ export const HealthIcon = ({ size = 24, className }) => {
             d="M20.6257 12.1261H13.2954V9.14113C13.2954 8.27207 13.9999 7.56758 14.8689 7.56758H19.0522C19.9213 7.56758 20.6257 8.27207 20.6257 9.14113V12.1261Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1091,7 +1091,7 @@ export const HealthIcon = ({ size = 24, className }) => {
             d="M5.56714 17.6928V20.3658H18.4315V21.9046L22.3774 19.0293L18.4315 16.1541V17.6928"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1099,7 +1099,7 @@ export const HealthIcon = ({ size = 24, className }) => {
             d="M9.86238 17.6925L5.56702 17.6927V19.2315L1.62109 16.3562L5.56702 13.481V15.0197H18.4314V17.6927L13.6766 17.6925"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1272,7 +1272,7 @@ export const HomeIcon = ({ size = 24, className }) => {
       <g mask="url(#mask0_3166_338)">
         <path
           fill-rule="evenodd"
-          clip-rule="evenodd"
+          clipPath="evenodd"
           d="M16.3916 23.0519H8.21078C8.11676 23.0518 8.03059 22.9993 7.98745 22.9158C6.88249 20.7724 6.28633 17.9082 6.28633 16.3013C6.29017 14.6378 6.97953 13.0494 8.19196 11.9105H4.46507C4.32645 11.9107 4.21391 11.7985 4.2137 11.6599C4.21366 11.6214 4.22241 11.5835 4.23931 11.549L8.25781 3.35091C8.29997 3.26491 8.38742 3.21046 8.48319 3.21054H16.5203C16.6207 3.21054 16.7114 3.27033 16.751 3.36256L20.2672 11.5605C20.3219 11.6878 20.2631 11.8353 20.1358 11.8901C20.1046 11.9035 20.0709 11.9104 20.0369 11.9105H16.4099C17.6222 13.0495 18.3114 14.6378 18.3152 16.3013C18.3152 17.9078 17.719 20.7719 16.6147 22.9158C16.5716 22.9994 16.4855 23.0519 16.3916 23.0519ZM12.2508 17.7476C13.0667 17.7475 13.728 17.0861 13.7279 16.2702C13.7279 15.4543 13.0664 14.793 12.2505 14.7931C11.4348 14.7931 10.7734 15.4544 10.7734 16.2702C10.774 17.0859 11.4351 17.747 12.2508 17.7476ZM12.2508 15.2959C11.712 15.2955 11.275 15.7319 11.2745 16.2706C11.2741 16.8093 11.7105 17.2464 12.2493 17.2468C12.788 17.2473 13.2251 16.8108 13.2255 16.2721C13.2255 16.2716 13.2255 16.2711 13.2255 16.2706C13.2251 15.7324 12.7889 15.2963 12.2508 15.2959ZM12.2508 19.1218C13.8255 19.1217 15.1021 17.8451 15.102 16.2703C15.1019 14.6956 13.8253 13.4191 12.2505 13.4191C10.6759 13.4192 9.39938 14.6957 9.39934 16.2703C9.40101 17.8445 10.6766 19.1202 12.2508 19.1219V19.1218ZM12.2508 13.9213C10.9533 13.921 9.90131 14.9726 9.90102 16.2701C9.90072 17.5676 10.9523 18.6195 12.2498 18.6198C13.5472 18.6201 14.5992 17.5685 14.5995 16.2711C14.5995 16.2709 14.5995 16.2707 14.5995 16.2705C14.5981 14.9738 13.5475 13.923 12.2508 13.9213ZM4.46507 4.71757C5.29766 4.71757 5.97265 4.04262 5.97265 3.20999C5.97265 2.3774 5.29771 1.70241 4.46507 1.70241C3.63248 1.70241 2.95749 2.37735 2.95749 3.20999V3.21076C2.95877 4.04275 3.63312 4.71676 4.46507 4.71757ZM4.46507 2.20592C3.91022 2.20592 3.46044 2.65569 3.46044 3.21054C3.46044 3.76539 3.91022 4.21517 4.46507 4.21517C5.01992 4.21517 5.46969 3.76539 5.46969 3.21054C5.46918 2.65587 5.0197 2.20639 4.46507 2.20592ZM3.20933 20.0382C4.31898 20.0381 5.2185 19.1385 5.21845 18.0289C5.21837 16.9192 4.31877 16.0197 3.20907 16.0197C2.0995 16.0198 1.20004 16.9193 1.19995 18.0289C1.20136 19.138 2.10019 20.0368 3.20933 20.0382ZM3.20933 16.5218C2.37674 16.5213 1.70137 17.1959 1.7009 18.0285C1.70043 18.8611 2.37499 19.5364 3.20758 19.5369C4.04017 19.5374 4.71554 18.8628 4.71601 18.0302C4.71601 18.0299 4.71601 18.0296 4.71601 18.0293C4.7152 17.1975 4.04124 16.5231 3.20933 16.5218ZM21.2924 4.21513C22.125 4.21513 22.8 3.54018 22.8 2.70755C22.8 1.87491 22.125 1.20001 21.2924 1.20001C20.4598 1.20001 19.7848 1.87495 19.7848 2.70759C19.7856 3.53984 20.4601 4.21436 21.2924 4.21513ZM21.2924 1.70348C20.7375 1.70348 20.2877 2.15325 20.2877 2.7081C20.2877 3.26295 20.7375 3.71273 21.2924 3.71273C21.8472 3.71273 22.297 3.26295 22.297 2.7081C22.2964 2.15347 21.847 1.70403 21.2924 1.70348ZM10.3222 11.4081L11.1473 3.71286H10.2026L7.96278 11.4085H8.87253H8.88521L10.3222 11.4081ZM13.4609 3.71281L14.183 11.4081H15.7168H15.7295H16.5509L14.5907 3.71281H13.4609ZM13.6786 11.4081L12.9565 3.71286H11.6524L10.8271 11.4081H13.6786ZM7.43977 11.4081L9.67956 3.71247H8.64075L4.86777 11.4085L7.43977 11.4081ZM15.1096 3.71247L17.0696 11.4081H19.6561L16.3552 3.71281L15.1096 3.71247ZM17.0225 20.5398H7.56366C7.77944 21.229 8.04741 21.9007 8.36531 22.5492H16.2376C16.5554 21.9005 16.8233 21.2286 17.0388 20.5393C17.0336 20.5393 17.0283 20.5393 17.023 20.5393L17.0225 20.5398ZM7.41228 20.038H17.0231C17.078 20.0379 17.1315 20.056 17.1751 20.0894C17.61 18.5832 17.8131 17.1376 17.8131 16.3015C17.809 14.5784 17.0033 12.9554 15.6333 11.9104H8.96962C7.59947 12.9552 6.79359 14.5782 6.78949 16.3012C6.78898 17.1281 6.98764 18.5504 7.41228 20.038Z"
           fill="black"
           stroke="black"
@@ -1331,31 +1331,31 @@ export const PetsIcon = ({ size = 24, className }) => {
             d="M17.3919 17.6588C17.3919 21.4754 14.9776 19.8574 11.9994 19.8574C9.02124 19.8574 6.60693 21.4754 6.60693 17.6588C6.60693 13.8422 9.02124 10.7482 11.9994 10.7482C14.9776 10.7482 17.3919 13.8422 17.3919 17.6588Z"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
           />
           <path
             d="M10.7203 6.36885C10.7203 7.78652 9.57099 8.93579 8.15337 8.93579C6.7357 8.93579 5.58643 7.78652 5.58643 6.36885C5.58643 4.95118 6.7357 3.80195 8.15337 3.80195C9.57099 3.80195 10.7203 4.95118 10.7203 6.36885Z"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
           />
           <path
             d="M5.65802 11.5872C5.65802 12.6437 4.80152 13.5002 3.74502 13.5002C2.68848 13.5002 1.83203 12.6437 1.83203 11.5872C1.83203 10.5307 2.68848 9.67419 3.74502 9.67419C4.80152 9.67419 5.65802 10.5307 5.65802 11.5872Z"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
           />
           <path
             d="M13.2783 6.36882C13.2783 7.78649 14.4276 8.93576 15.8452 8.93576C17.2629 8.93576 18.4122 7.78649 18.4122 6.36882C18.4122 4.95115 17.2629 3.80192 15.8452 3.80192C14.4276 3.80192 13.2783 4.95115 13.2783 6.36882Z"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
           />
           <path
             d="M18.3406 11.5872C18.3406 12.6438 19.1971 13.5003 20.2536 13.5003C21.3101 13.5003 22.1666 12.6438 22.1666 11.5872C22.1666 10.5307 21.3101 9.67425 20.2536 9.67425C19.1971 9.67425 18.3406 10.5307 18.3406 11.5872Z"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
           />
         </g>
       </g>
@@ -1578,7 +1578,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M17.8436 22.378H3.29541V22.1052C3.29541 21.2277 4.00678 20.5163 4.88428 20.5163H16.2547C17.1322 20.5163 17.8436 21.2277 17.8436 22.1052V22.378Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1586,7 +1586,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M15.319 17.5323C15.2886 18.7756 15.087 19.7623 14.847 20.5162H7.80078V3.1615C8.97191 3.74327 10.6438 5.29666 12.1026 7.40135C12.4865 7.95447 12.8553 8.54589 13.1966 9.16774C13.6159 9.9318 13.9935 10.7418 14.3052 11.5834C14.5187 12.1588 14.701 12.7495 14.8453 13.3502C14.8672 13.4426 14.8887 13.5355 14.909 13.6282C15.0769 14.396 15.187 15.1077 15.2511 15.7659C15.3135 16.4046 15.3325 16.9927 15.319 17.5323Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1594,7 +1594,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M5.81665 2.39549V20.5165H7.80094V3.16179L5.81665 2.39549Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1602,7 +1602,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M5.81665 1.62194V2.77319"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1610,7 +1610,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M17.4107 3.40979C16.5797 3.40979 15.906 4.08348 15.906 4.91449C15.906 5.7455 16.5797 6.41919 17.4107 6.41919C18.2418 6.41919 18.9154 5.7455 18.9154 4.91449C18.9154 4.08348 18.2418 3.40979 17.4107 3.40979Z"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1618,7 +1618,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M17.4106 1.62183V2.10425"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1626,7 +1626,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M17.4106 7.72504V8.20746"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1634,7 +1634,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M20.7038 4.91449H20.2214"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1642,7 +1642,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M14.6001 4.91455H14.1177"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1650,7 +1650,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M20.0468 2.27867L19.6606 2.66486"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1658,7 +1658,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M15.1606 7.16414L14.7744 7.55032"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1666,7 +1666,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M20.0468 7.55042L19.6606 7.16423"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1674,7 +1674,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M15.1606 2.66479L14.7744 2.27861"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1682,7 +1682,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M13.1122 9.16772H7.80078V7.40133H12.0183"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1690,7 +1690,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M14.7609 13.3505H7.80078V11.5837H14.2208"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1698,7 +1698,7 @@ export const UAEIcon = ({ size = 24, className }) => {
             d="M15.2346 17.5323H7.80078V15.7659H15.1667"
             stroke="black"
             strokeWidth="0.84375"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1762,7 +1762,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M13.6371 9.03637C16.4217 8.12529 19.475 8.34948 22.1244 9.71741C22.0954 9.60291 22.0645 9.48829 22.0317 9.37366C21.5376 7.48113 19.4641 5.8972 17.0619 5.92079C15.3002 5.90349 13.7183 6.75217 12.8035 7.95161"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1770,7 +1770,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M12.7583 7.92709C14.0951 5.38871 16.3739 3.44636 19.159 2.55798C19.0574 2.49752 18.9546 2.43833 18.8503 2.38049C17.1628 1.39162 14.5766 1.73781 12.8946 3.45311C12.5349 3.8058 12.2391 4.19966 11.9995 4.61521"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1778,7 +1778,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M12.6712 7.87977C12.8668 6.38891 12.3574 4.68179 11.1041 3.45295C9.42221 1.73765 6.83603 1.3915 5.14845 2.38033C5.0442 2.43817 4.9413 2.49736 4.83984 2.55786C7.62485 3.4462 9.90462 5.38805 11.2412 7.92651"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1786,7 +1786,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M11.1955 7.95161C10.2806 6.75217 8.69872 5.90349 6.93701 5.92078C4.53477 5.89724 2.4613 7.48113 1.9672 9.37366C1.93442 9.48833 1.90349 9.60291 1.87451 9.71741C4.52389 8.34948 7.57716 8.12534 10.3618 9.03637"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1794,7 +1794,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M4.40576 22.1671H19.5933"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1802,7 +1802,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M14.7899 19.2703H10.9707"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1810,7 +1810,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M14.9743 16.4578H11.512"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1818,7 +1818,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M11.5713 13.6453H14.6809"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1826,7 +1826,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M11.1479 10.8757C11.4548 12.1534 11.6971 13.8138 11.5776 15.7546C11.4004 18.6322 10.5103 20.914 9.89014 22.1671H14.1089C14.5524 20.8568 15.1243 18.5435 14.9526 15.7546C14.8021 13.3102 14.1378 11.3634 13.5609 10.0625"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1834,7 +1834,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M13.687 9.42651C13.687 10.3585 12.9315 11.114 11.9995 11.114C11.0675 11.114 10.312 10.3585 10.312 9.42651C10.312 8.49455 11.0675 7.73901 11.9995 7.73901C12.9315 7.73901 13.687 8.49455 13.687 9.42651Z"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1842,7 +1842,7 @@ export const UAEFreezoneIcon = ({ size = 24, className }) => {
             d="M10.3551 9.04851C9.08525 8.72527 7.60139 8.88132 6.3164 9.6401C4.22424 10.8208 3.22051 13.2293 3.73887 15.1153C3.76777 15.231 3.79831 15.3457 3.83046 15.4593C5.43675 12.9565 7.96002 11.2384 10.818 10.6309"
             stroke="black"
             strokeWidth="0.78"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -1895,49 +1895,49 @@ export const KSAIcon = ({ size = 24, className }) => {
           d="M12.0003 17.7962C7.58505 17.7962 4.00578 14.2169 4.00578 9.8017C2.90163 11.1947 2.42495 11.7961 1.3208 13.1892L2.43076 17.922H21.5699L22.6798 13.1892C21.5757 11.7962 21.099 11.1948 19.9948 9.8017C19.9948 14.2169 16.4155 17.7962 12.0003 17.7962Z"
           stroke="black"
           strokeWidth="0.886667"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M21.677 17.9219H2.43042V20.8152H21.677V17.9219Z"
           stroke="black"
           strokeWidth="0.886667"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M18.9879 13.8618V11.8485C18.9879 10.044 17.6198 8.55897 15.8643 8.37405"
           stroke="black"
           strokeWidth="0.886667"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M8.21942 8.36615C6.42389 8.51194 5.01221 10.0154 5.01221 11.8484V13.6873"
           stroke="black"
           strokeWidth="0.886667"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M15.8641 16.8012V9.15231C15.8641 7.47186 14.7911 6.04263 13.2931 5.51065L14.2717 4.53208L11.9999 2.26031L9.72814 4.53208L10.7067 5.51065C9.20874 6.04267 8.13574 7.47186 8.13574 9.15231V16.8011"
           stroke="black"
           strokeWidth="0.886667"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M11.5295 12.0676L12.4696 11.1275"
           stroke="black"
           strokeWidth="0.886667"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M11.5295 8.87716L12.4696 7.9371"
           stroke="black"
           strokeWidth="0.886667"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M11.5295 15.1696L12.4696 14.2295"
           stroke="black"
           strokeWidth="0.886667"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
       </g>
       <defs>
@@ -1983,7 +1983,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M15.7852 7.81512H8.21436V15.5584H15.7852V7.81512Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -1991,7 +1991,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M19.0405 6.05085L11.9997 1.62201L4.95898 6.05085"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -1999,7 +1999,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M5.72827 5.69519V15.5584H18.271V5.69519"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2007,7 +2007,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M8.28589 9.9913H15.7128"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2015,7 +2015,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M7.86401 7.81512H16.1347"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2023,7 +2023,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M13.6812 19.3335H10.3164V22.3782H13.6812V19.3335Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2031,7 +2031,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M11.9993 15.7405V20.221"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2039,7 +2039,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M21.4461 19.3335H18.0813V22.3782H21.4461V19.3335Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2047,7 +2047,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M19.7642 19.422V20.2211"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2055,7 +2055,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M5.91781 19.3334H2.55298V22.3781H5.91781V19.3334Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2063,7 +2063,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M4.23511 19.422V20.221"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2071,7 +2071,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M4.23535 19.6772V17.4206H19.7638V19.6772"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2079,7 +2079,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M11.9999 6.06574C12.5586 6.06574 13.0115 5.61282 13.0115 5.05412C13.0115 4.49543 12.5586 4.04251 11.9999 4.04251C11.4412 4.04251 10.9883 4.49543 10.9883 5.05412C10.9883 5.61282 11.4412 6.06574 11.9999 6.06574Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2087,7 +2087,7 @@ export const FulfillmentIcon = ({ size = 24, className }) => {
           d="M4.65356 15.5582H19.3456"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2139,7 +2139,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M10.5678 9.60374L8.06157 8.6897L5.55542 9.60374V3.00739H10.5678V9.60374Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2147,7 +2147,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M14.5016 3.00739H1.62158V13.9759H14.5016V3.00739Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2155,7 +2155,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M3.97038 18.5522H1.62134V16.1116H16.6359"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2163,7 +2163,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M9.0293 18.5522H14.6063"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2171,7 +2171,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M18.3156 7.62854H16.6355V12.1352H20.6849L19.8999 8.87788C19.7232 8.14491 19.0684 7.62854 18.3156 7.62854Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2179,7 +2179,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M19.6022 18.5523H20.7475C21.6476 18.5523 22.3773 17.8214 22.3773 16.9199V13.397C22.3773 12.7001 21.8133 12.1352 21.1176 12.1352H16.7664"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2187,7 +2187,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M6.49441 20.9928C7.84021 20.9928 8.9312 19.9001 8.9312 18.5521C8.9312 17.2042 7.84021 16.1115 6.49441 16.1115C5.14861 16.1115 4.05762 17.2042 4.05762 18.5521C4.05762 19.9001 5.14861 20.9928 6.49441 20.9928Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2196,7 +2196,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M17.1048 20.9928C18.4506 20.9928 19.5416 19.9001 19.5416 18.5521C19.5416 17.2042 18.4506 16.1115 17.1048 16.1115C15.759 16.1115 14.668 17.2042 14.668 18.5521C14.668 19.9001 15.759 20.9928 17.1048 20.9928Z"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2205,7 +2205,7 @@ export const DeliveriesIcon = ({ size = 24, className }) => {
           d="M16.636 6.78082V16.1117"
           stroke="black"
           strokeWidth="0.84375"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2250,7 +2250,7 @@ export const AboutIcon = ({ size = 24, className }) => {
           d="M20.4799 3.57312H3.52051C2.58854 3.57312 1.83301 4.32866 1.83301 5.26062V16.8396C1.83301 17.7715 2.58854 18.5271 3.52051 18.5271H10.522L12.0002 20.4272L13.4783 18.5271H20.4799C21.4118 18.5271 22.1674 17.7715 22.1674 16.8396V5.26062C22.1674 4.32861 21.4118 3.57312 20.4799 3.57312Z"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2258,7 +2258,7 @@ export const AboutIcon = ({ size = 24, className }) => {
           d="M12.0002 16.0037C14.7172 16.0037 16.9198 13.8011 16.9198 11.0841C16.9198 8.36707 14.7172 6.16449 12.0002 6.16449C9.28315 6.16449 7.08057 8.36707 7.08057 11.0841C7.08057 13.8011 9.28315 16.0037 12.0002 16.0037Z"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2267,7 +2267,7 @@ export const AboutIcon = ({ size = 24, className }) => {
           d="M12 10.8752V13.3832"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2315,91 +2315,91 @@ export const BlogIcon = ({ size = 24, className }) => {
           d="M19.0085 15.0169V20.8827H1.83301V4.56233C1.83301 3.76378 2.48036 3.11642 3.27891 3.11642H17.5626C18.3611 3.11642 19.0085 3.76378 19.0085 4.56233V11.5143"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M1.83301 8.18057H19.0085"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M3.73242 5.64816H4.99843"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M3.73242 10.7124H4.99843"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M6.26367 5.64816H7.52968"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M8.7959 5.64816H10.0619"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M11.3281 5.64816H17.1096"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M3.73242 18.3085H7.15064"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M6.26367 10.7124H16.3073"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M12.2569 15.7761H3.73242"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M3.73242 13.2443H13.5229"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M8.41602 18.3085H12.2562"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M19.987 10.6859L14.1553 16.5176V18.3082H15.9458L21.7959 12.4581C22.3122 11.9418 22.2895 11.091 21.7277 10.6041C21.238 10.1797 20.4453 10.2277 19.987 10.6859Z"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M18.8887 11.8872L20.5957 13.5942"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M15.3223 15.3226L17.0947 17.095"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
       </g>
       <defs>
@@ -2464,7 +2464,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M14.6969 9.05731V2.3981H3.09863C2.39967 2.3981 1.83301 2.96476 1.83301 3.66372V17.9167"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2472,7 +2472,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M10.3139 16.651H3.09863C2.39963 16.651 1.83301 17.2177 1.83301 17.9166C1.83301 18.6156 2.39963 19.1823 3.09863 19.1823H4.46783"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2480,7 +2480,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M6.99902 19.1823H14.6969"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2488,7 +2488,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M6.99894 16.6512V20.7292L5.73336 20.3073L4.46777 20.7292V16.6512"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2496,7 +2496,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M5.62988 7.46112H10.8997V4.9297H5.62988V7.46112Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2504,7 +2504,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M5.62988 9.99255H8.32537"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2512,7 +2512,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M5.62988 12.5242H7.27195"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2520,7 +2520,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M14.6963 19.1823C11.9048 19.1823 9.63379 16.9113 9.63379 14.1198C9.63379 11.3283 11.9048 9.05731 14.6963 9.05731C17.4878 9.05731 19.7588 11.3283 19.7588 14.1198C19.7588 16.9113 17.4878 19.1823 14.6963 19.1823Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2528,7 +2528,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M17.2275 14.1198C17.2275 15.5178 16.0943 16.6511 14.6963 16.6511C13.2983 16.6511 12.165 15.5178 12.165 14.1198C12.165 12.7218 13.2983 11.5886 14.6963 11.5886C16.0943 11.5886 17.2275 12.7218 17.2275 14.1198Z"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2536,7 +2536,7 @@ export const CaseStudyIcon = ({ size = 24, className }) => {
             d="M17.2671 18.4798L20.3882 21.6009L22.178 19.811L19.057 16.69"
             stroke="black"
             strokeWidth="0.84"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -2590,7 +2590,7 @@ export const ContactIcon = ({ size = 24, className }) => {
           d="M5.2502 16.2186H3.73145C2.79948 16.2186 2.04395 15.463 2.04395 14.5311V11.1561C2.04395 10.2241 2.79948 9.46857 3.73145 9.46857H5.2502V16.2186Z"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2598,7 +2598,7 @@ export const ContactIcon = ({ size = 24, className }) => {
           d="M20.2688 16.2186H18.75V9.46857H20.2688C21.2007 9.46857 21.9563 10.2241 21.9563 11.1561V14.5311C21.9563 15.463 21.2007 16.2186 20.2688 16.2186Z"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2606,7 +2606,7 @@ export const ContactIcon = ({ size = 24, className }) => {
           d="M5.25 9.46857C5.25 5.74063 8.27206 2.71857 12 2.71857C15.7279 2.71857 18.75 5.74063 18.75 9.46857"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2614,7 +2614,7 @@ export const ContactIcon = ({ size = 24, className }) => {
           d="M12 21.2811C12.932 21.2811 13.6875 20.5255 13.6875 19.5936C13.6875 18.6616 12.932 17.9061 12 17.9061C11.068 17.9061 10.3125 18.6616 10.3125 19.5936C10.3125 20.5255 11.068 21.2811 12 21.2811Z"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -2622,7 +2622,7 @@ export const ContactIcon = ({ size = 24, className }) => {
           d="M13.6875 19.5936H15.375C17.239 19.5936 18.75 18.0825 18.75 16.2186"
           stroke="black"
           strokeWidth="0.84"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
