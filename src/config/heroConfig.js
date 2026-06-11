@@ -12,7 +12,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/services/d2c": {
+  "/services/d2c-fulfillment": {
     className: "backgroundcover-d2c",
     heading: {
       title: "Direct-To-Consumer ",
@@ -26,7 +26,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/services/b2b": {
+  "/services/b2b-fulfillment": {
     className: "backgroundcover-b2b",
     heading: {
       title: "Business-to-Business",
@@ -40,7 +40,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/services/multichannel": {
+  "/services/multichannel-fulfillment": {
     className: "backgroundcover-multichannel",
     heading: {
       title: (
@@ -59,7 +59,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/services/freightforwarding": {
+  "/services/freight-forwarding": {
     className: "backgroundcover-freightforwarding",
     heading: {
       title: "Freight Forwarding",

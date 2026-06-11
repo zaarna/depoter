@@ -67,12 +67,20 @@ export default function Header() {
         {
           title: "FULFILLMENT SERVICES",
           items: [
-            { name: "D2C", icon: <D2CIcon />, href: "/services/D2C" },
-            { name: "B2B", icon: <B2BIcon />, href: "/services/B2B" },
+            {
+              name: "D2C",
+              icon: <D2CIcon />,
+              href: "/services/d2c-fulfillment",
+            },
+            {
+              name: "B2B",
+              icon: <B2BIcon />,
+              href: "/services/b2b-fulfillment",
+            },
             {
               name: "Multichannel",
               icon: <MultiChannelIcon />,
-              href: "/services/Multichannel",
+              href: "/services/multichannel-fulfillment",
             },
           ],
         },
@@ -82,7 +90,7 @@ export default function Header() {
             {
               name: "Freight Forwarding",
               icon: <FreightIcon />,
-              href: "/services/FreightForwarding",
+              href: "/services/freight-forwarding",
             },
             {
               name: "Custom Clearance",
