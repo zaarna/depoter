@@ -40,12 +40,14 @@ const TimelineCard = React.forwardRef(
         )}
       </>
     );
-  }
+  },
 );
 
 function Text({ title }) {
   return (
-    <TitleContent title={title} titleColor="#000000" titleSize="text-[15px]" />
+    <h3 className="text-[20px] md:text-[20px] font-semibold text-[#000000] mb-4">
+      {title}
+    </h3>
   );
 }
 

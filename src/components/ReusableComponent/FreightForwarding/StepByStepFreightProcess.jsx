@@ -11,7 +11,7 @@ function StepByStepFreightProcess({ sectionKey = "" }) {
   const industries = [
     {
       id: 1,
-      title: "Simplifying Complex Documentation",
+      title: "Shipment Consultation",
       icon: "/add-value-icon-1.svg",
       processImage: "/freight-process-image-1.svg",
       description:
@@ -19,40 +19,40 @@ function StepByStepFreightProcess({ sectionKey = "" }) {
     },
     {
       id: 2,
-      title: "Optimizing Transportation Routes",
+      title: "Route Planning & Freight Booking",
       icon: "/add-value-icon-2.svg",
-      processImage: "/freight-process-image-1.svg",
+      processImage: "/freight-process-image-2.svg",
       description:
         "Our logistics specialists evaluate the best transportation method—sea, air, or land—and secure carrier bookings based on cost efficiency and delivery timelines.",
     },
     {
       id: 3,
-      title: "Door-to-Door Logistics Support",
-      processImage: "/freight-process-image-1.svg",
+      title: "Documentation & Customs Preparation",
       icon: "/add-value-icon-3.svg",
+      processImage: "/freight-process-image-3.svg",
       description:
         "We prepare essential shipping documents, including Bills of Lading, customs declarations, and product classification using the appropriate HS codes.",
     },
     {
       id: 4,
-      title: "Real-Time Shipment Visibility",
-      processImage: "/freight-process-image-1.svg",
+      title: "Cargo Transportation",
+      processImage: "/freight-process-image-4.svg",
       icon: "/add-value-icon-4.svg",
       description:
         "Shipments move through secure freight networks via sea, air, or land transportation channels.",
     },
     {
       id: 5,
-      title: "Simplifying Complex Documentation",
-      processImage: "/freight-process-image-1.svg",
+      title: "Customs Clearance",
+      processImage: "/freight-process-image-5.svg",
       icon: "/add-value-icon-1.svg",
       description:
         "Our customs specialists manage the clearance process to ensure compliance with import and export regulations.",
     },
     {
       id: 6,
-      title: "Optimizing Transportation Routes",
-      processImage: "/freight-process-image-1.svg",
+      title: "Final Delivery & Last-Mile Logistics",
+      processImage: "/freight-process-image-6.svg",
       icon: "/add-value-icon-2.svg",
       description:
         "Cargo is transported from the port or airport to the final delivery location through our inland transportation network.",
@@ -335,6 +335,10 @@ function StepByStepFreightProcess({ sectionKey = "" }) {
           </div>
         </div>
       </div>
+      <p className="text-center mt-25 text-[25px] w-[70%] mx-auto">
+        This structured process ensures transparency, reliability, and efficient
+        cargo movement at every stage of the shipment journey.
+      </p>
     </section>
   );
 }

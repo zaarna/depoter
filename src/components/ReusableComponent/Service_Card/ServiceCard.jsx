@@ -33,6 +33,7 @@ export default function ServiceCard({ services }) {
               contentSize="text-base lg:text-lg"
               titleColor="#212121"
               contentColor="#4A4A4A"
+              contentAlign="left"
               className="mb-6"
             />
 

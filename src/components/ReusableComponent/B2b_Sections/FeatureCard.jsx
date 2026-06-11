@@ -12,11 +12,9 @@ function FeatureCard({ image, alt, title, description }) {
           alt={alt}
           className="w-45 h-45 mb-4 md:mb-8 object-contain"
         />
-        <TitleContent
-          title={title}
-          titleColor="#000000"
-          titleSize="text-[24px]"
-        />
+        <h3 className="text-[20px] md:text-[28px] font-semibold w-[50%] text-[#000000] mb-4">
+          {title}
+        </h3>
         <p className="text-[#000000] font-light  leading-relaxed max-w-md text-[20px]">
           {description}
         </p>

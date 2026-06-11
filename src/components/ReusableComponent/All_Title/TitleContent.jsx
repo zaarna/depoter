@@ -34,7 +34,9 @@ function TitleContent({
           dangerouslySetInnerHTML={{ __html: safeHighlight }}
         />
         <span
-          dangerouslySetInnerHTML={{ __html: parts.slice(1).join(safeHighlight) }}
+          dangerouslySetInnerHTML={{
+            __html: parts.slice(1).join(safeHighlight),
+          }}
         />
       </span>
     );

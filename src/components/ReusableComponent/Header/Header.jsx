@@ -357,7 +357,7 @@ export default function Header() {
               <div className=" flex items-center space-x-3">
                 <Link
                   href="/partner"
-                  className="text-[#212121] lg:text-sm xl:text-base hover:text-[#ffae00] transition-colors duration-300"
+                  className="text-[#212121] lg:text-sm xl:text-base hover:border-b-2 transition-colors duration-300"
                 >
                   Partner
                 </Link>
