@@ -25,7 +25,7 @@ export default function UAEOperationsSection() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="font-semibold leading-[1.05] text-[32px] md:text-[48px] lg:text-[48px] text-[#212121]">
+          <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-[#212121]">
             Built for{" "}
             <span className="text-[#F5B42B]">
               UAE Ecommerce &
@@ -34,7 +34,7 @@ export default function UAEOperationsSection() {
             </span>
           </h2>
 
-          <p className="mt-8 text-[18px] md:text-[24px] leading-[1.8] text-[#212121] max-w-5xl mx-auto">
+          <p className="mt-8 text-[1.3rem] text-[#212121] max-w-5xl mx-auto">
             Businesses in the UAE face unique challenges — multiple delivery
             partners, fast delivery expectations, and high order volumes.
           </p>

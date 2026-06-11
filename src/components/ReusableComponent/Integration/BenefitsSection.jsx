@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Button from "../Button/Button";
 
 const benefits = [
   {
@@ -48,7 +49,7 @@ export default function BenefitsAccordionSection() {
         <div className="grid lg:grid-cols-[40%_60%] gap-12 items-start">
           {/* Left Side */}
           <div className="flex flex-col justify-center h-full items-center lg:items-start text-center lg:text-left">
-            <h2 className="font-semibold leading-[1.05] text-[32px] md:text-[48px] lg:text-[46px] text-[#212121]">
+            <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-[#212121]">
               Benefits of
               <br />
               Our{" "}
@@ -59,9 +60,9 @@ export default function BenefitsAccordionSection() {
               </span>
             </h2>
 
-            <button className="mt-8 bg-[#212121] text-[#F5B42B] px-8 py-4 rounded-full text-sm font-medium shadow-md hover:scale-105 duration-300">
+            <Button className="py-4 px-15 mt-20">
               Request an Integration Demo
-            </button>
+            </Button>
           </div>
 
           {/* Accordion */}

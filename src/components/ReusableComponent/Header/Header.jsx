@@ -107,7 +107,7 @@ export default function Header() {
             {
               name: "Integrations",
               icon: <IntegrationsIcon />,
-              href: "/technology/integrations",
+              href: "/technology/Integrations",
             },
             {
               name: "Inventory Management",
@@ -357,9 +357,9 @@ export default function Header() {
               <div className=" flex items-center space-x-3">
                 <Link
                   href="/partner"
-                  className="text-[#212121] lg:text-sm xl:text-base hover:font-semibold"
+                  className="text-[#212121] lg:text-sm xl:text-base hover:text-[#ffae00] transition-colors duration-300"
                 >
-                  Partner With Us
+                  Partner
                 </Link>
                 {/* Get a Quote Button - Desktop */}
                 <Button href="/" className="px-4 py-2.5">

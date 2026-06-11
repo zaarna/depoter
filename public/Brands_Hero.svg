@@ -2,14 +2,14 @@
 <circle cx="51.7227" cy="51.7222" r="50.3611" fill="white" stroke="white" stroke-width="2.72222"/>
 <g clip-path="url(#clip0_2086_30796)">
 <path d="M25.4082 40.8332C25.4082 37.8264 27.8458 35.3888 30.8526 35.3888H42.7624H52.6304C55.6373 35.3888 58.0749 37.8264 58.0749 40.8332V75.3147C58.0749 78.3216 55.6373 80.7592 52.6304 80.7592H30.8526C27.8458 80.7592 25.4082 78.3216 25.4082 75.3147V40.8332Z" fill="#FFBE2E"/>
-<path d="M56.6143 60.9678L61.4309 56.2237L54.7456 55.2169L51.7223 49.17L48.6989 55.2169L42.0137 56.2237L46.8302 60.9678L45.7218 67.6368L51.7223 64.5221L57.7224 67.6368L56.6143 60.9678Z" stroke="#212121" stroke-width="3.15778" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.6143 60.9678L61.4309 56.2237L54.7456 55.2169L51.7223 49.17L48.6989 55.2169L42.0137 56.2237L46.8302 60.9678L45.7218 67.6368L51.7223 64.5221L57.7224 67.6368L56.6143 60.9678Z" stroke="#212121" stroke-width="3.15778" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <mask id="mask0_2086_30796" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="19" y="19" width="66" height="66">
 <path d="M19.0557 19.0554H84.389V84.3887H19.0557V19.0554Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_2086_30796)">
-<path d="M67.0348 26.7117H36.4098C33.5909 26.7117 31.3057 28.997 31.3057 31.8159V76.7326C31.3057 79.5515 33.5909 81.8367 36.4098 81.8367H67.0348C69.8537 81.8367 72.139 79.5515 72.139 76.7326V31.8159C72.139 28.997 69.8537 26.7117 67.0348 26.7117Z" stroke="#212121" stroke-width="3.15778" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M46.6182 36.92H56.8265" stroke="#212121" stroke-width="3.15778" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M51.7227 21.6075V36.92" stroke="#212121" stroke-width="3.15778" strokeMiterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M67.0348 26.7117H36.4098C33.5909 26.7117 31.3057 28.997 31.3057 31.8159V76.7326C31.3057 79.5515 33.5909 81.8367 36.4098 81.8367H67.0348C69.8537 81.8367 72.139 79.5515 72.139 76.7326V31.8159C72.139 28.997 69.8537 26.7117 67.0348 26.7117Z" stroke="#212121" stroke-width="3.15778" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.6182 36.92H56.8265" stroke="#212121" stroke-width="3.15778" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M51.7227 21.6075V36.92" stroke="#212121" stroke-width="3.15778" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </g>
 <defs>

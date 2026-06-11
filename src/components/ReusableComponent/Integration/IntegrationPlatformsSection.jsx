@@ -30,13 +30,13 @@ export default function IntegrationPlatformsSection() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-[36px] md:text-[58px] leading-[1.1] font-semibold text-white">
+          <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-white">
             We Integrate with Leading
             <br />
             <span className="text-[#F5B42B]">Platforms & Partners</span>
           </h2>
 
-          <p className="mt-6 text-[18px] md:text-[22px] leading-[1.8] text-white/90 max-w-4xl mx-auto">
+          <p className="mt-6 text-[18px] md:text-[22px]  text-white/90 max-w-4xl mx-auto">
             We connect your business with all major platforms used by ecommerce
             and logistics businesses in the UAE, so your operations run smoothly
             without switching between multiple systems.
@@ -87,7 +87,7 @@ export default function IntegrationPlatformsSection() {
         </p>
 
         {/* ERP Box */}
-        <div className="bg-[#F7F1E3] rounded-[28px] p-8 md:p-12 mt-14 text-center">
+        <div className="bg-[#F7F1E3] rounded-[28px] p-8 md:p-8 mt-14 text-center md:w-[80%] mx-auto">
           <h3 className="text-[32px] font-semibold text-[#212121]">
             ERP Systems
           </h3>

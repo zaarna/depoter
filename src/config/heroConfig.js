@@ -86,7 +86,9 @@ export const heroConfig = {
         "Built for speed and scale, our fulfillment center UAE helps ecommerce brands manage warehouse storage, order processing, and fast dispatch with efficient systems and reliable infrastructure for smooth operations from inbound to final delivery.",
     },
     button: {
-      text: "Talk to Our Experts",
+      text: "Get a Fulfillment Quote",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
     },
   },
   "/technology/integrations": {

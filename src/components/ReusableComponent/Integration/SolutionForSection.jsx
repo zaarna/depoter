@@ -2,171 +2,136 @@
 
 import Image from "next/image";
 
-const items = [
+const audienceData = [
   {
-    leftTitle: "Ecommerce brands",
-    leftIcon: "/ecommerce.svg",
-    rightTitle: "D2C businesses",
-    rightIcon: "/d2c.svg",
+    title: "Ecommerce brands",
+    icon: "/ecommerce.svg",
   },
   {
-    leftTitle: "Retail companies",
-    leftIcon: "/retail.svg",
-    rightTitle: "Marketplace sellers",
-    rightIcon: "/marketplace.svg",
+    title: "D2C businesses",
+    icon: "/d2c.svg",
   },
   {
-    leftTitle: "Logistics companies",
-    leftIcon: "/logistics.svg",
-    rightTitle: "Growing startups",
-    rightIcon: "/startup.svg",
+    title: "Retail companies",
+    icon: "/retail.svg",
+  },
+  {
+    title: "Marketplace sellers",
+    icon: "/marketplace.svg",
+  },
+  {
+    title: "Logistics companies",
+    icon: "/logistics.svg",
+  },
+  {
+    title: "Growing startups",
+    icon: "/startup.svg",
   },
 ];
 
-export default function SolutionForSection() {
+export default function SolutionAudienceSection() {
   return (
-    <section className="bg-[#3F2A05] py-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="relative bg-[#4D3400] py-20 overflow-visible">
+      <div className="container relative mx-auto px-4">
+        {/* Decorative Images */}
+        <Image
+          src="/solution-is-for-left-image.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="absolute left-[561px] top-[222px] z-99 hidden xl:block"
+        />
+
+        <Image
+          src="/solution-is-for-right-image.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="absolute right-[561px] top-[222px] z-99 hidden xl:block"
+        />
+
         {/* Heading */}
-        <div className="text-center mb-20">
-          <h2 className="text-white text-4xl lg:text-6xl font-bold leading-tight">
-            Who This <span className="text-[#F5B42B]">Solution</span> Is For
+        <div className="relative z-10 text-center">
+          <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] ">
+            <span className="text-white">Who This </span>
+            <span className="text-[#F5B52E]">Solution</span>
+            <span className="text-white"> Is For</span>
           </h2>
 
-          <p className="text-white text-lg mt-4 font-medium">
+          <p className="mt-4 text-[1.3rem]  text-white">
             Our ecommerce integration services UAE are ideal for:
           </p>
         </div>
 
-        {/* Desktop */}
-        <div className="hidden lg:block">
-          <div className="grid grid-cols-[1fr_120px_120px_1fr] items-center gap-x-6 max-w-[1400px] mx-auto">
-            {/* LEFT PILLS */}
-            <div className="flex flex-col justify-between h-[420px]">
-              {items.map((item) => (
-                <div
-                  key={item.leftTitle}
-                  className="relative h-[88px] rounded-full bg-[#ECECEC] flex items-center justify-center"
-                >
-                  <span className="text-[#1F1F1F] text-xl font-medium">
-                    {item.leftTitle}
-                  </span>
-                </div>
-              ))}
-            </div>
+        {/* Desktop Layout */}
+        <div className="relative z-10 mt-16 max-w-[1100px] mx-auto hidden lg:block">
+          {/* Connector Image */}
 
-            {/* LEFT CONNECTOR */}
-            <div className="relative h-[332px] w-[120px]">
-              <Image
-                src="/dotted-line-left.svg"
-                alt=""
-                fill
-                className="object-contain"
+          <div className="grid grid-cols-2 gap-x-50 gap-y-19">
+            {audienceData.map((item, index) => (
+              <AudienceCard
+                key={index}
+                title={item.title}
+                icon={item.icon}
+                isLeft={index % 2 === 0}
               />
-
-              {items.map((item, index) => (
-                <div
-                  key={item.leftTitle}
-                  className="absolute left-0 -translate-x-1/2 -translate-y-1/2"
-                  style={{
-                    top: `${8 + index * 158}px`,
-                  }}
-                >
-                  <div className="w-[82px] h-[82px] rounded-full bg-white border-[3px] border-[#6A4A0A] shadow-lg flex items-center justify-center">
-                    <div className="w-[64px] h-[64px] rounded-full bg-[#F5B42B] flex items-center justify-center">
-                      <Image
-                        src={item.leftIcon}
-                        alt={item.leftTitle}
-                        width={34}
-                        height={34}
-                      />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* RIGHT CONNECTOR */}
-            <div className="relative h-[332px] w-[120px]">
-              <Image
-                src="/dotted-line-right.svg"
-                alt=""
-                fill
-                className="object-contain"
-              />
-
-              {items.map((item, index) => (
-                <div
-                  key={item.rightTitle}
-                  className="absolute right-0 translate-x-1/2 -translate-y-1/2"
-                  style={{
-                    top: `${8 + index * 158}px`,
-                  }}
-                >
-                  <div className="w-[82px] h-[82px] rounded-full bg-white border-[3px] border-[#6A4A0A] shadow-lg flex items-center justify-center">
-                    <div className="w-[64px] h-[64px] rounded-full bg-[#F5B42B] flex items-center justify-center">
-                      <Image
-                        src={item.rightIcon}
-                        alt={item.rightTitle}
-                        width={34}
-                        height={34}
-                      />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* RIGHT PILLS */}
-            <div className="flex flex-col justify-between h-[420px]">
-              {items.map((item) => (
-                <div
-                  key={item.rightTitle}
-                  className="relative h-[88px] rounded-full bg-[#ECECEC] flex items-center justify-center"
-                >
-                  <span className="text-[#1F1F1F] text-xl font-medium">
-                    {item.rightTitle}
-                  </span>
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
 
-        {/* Mobile */}
-        <div className="lg:hidden mt-12 space-y-5">
-          {items
-            .flatMap((item) => [
-              {
-                title: item.leftTitle,
-                icon: item.leftIcon,
-              },
-              {
-                title: item.rightTitle,
-                icon: item.rightIcon,
-              },
-            ])
-            .map((item) => (
-              <div
-                key={item.title}
-                className="bg-[#ECECEC] rounded-full px-5 py-4 flex items-center gap-4"
-              >
-                <div className="w-14 h-14 rounded-full bg-white border-2 border-[#6A4A0A] flex items-center justify-center">
-                  <div className="w-10 h-10 rounded-full bg-[#F5B42B] flex items-center justify-center">
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={22}
-                      height={22}
-                    />
-                  </div>
+        {/* Mobile Layout */}
+        <div className="relative z-10 mt-12 space-y-5 lg:hidden">
+          {audienceData.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-full px-5 py-4 flex items-center gap-4"
+            >
+              <div className="w-14 h-14 rounded-full bg-[#4D3400] border-2 border-white flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#F5B52E] flex items-center justify-center">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={22}
+                    height={22}
+                  />
                 </div>
-
-                <span className="text-[#1F1F1F] font-medium">{item.title}</span>
               </div>
-            ))}
+
+              <span className="text-[#1F1F1F] font-medium">{item.title}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function AudienceCard({ title, icon, isLeft }) {
+  return (
+    <div
+      className={`relative flex items-center h-[102px] rounded-full bg-white z-10
+      ${isLeft ? "justify-end pr-24 pl-10" : "justify-start pl-24 pr-10"}`}
+    >
+      <h3 className="text-[18px] md:text-[20px] font-semibold text-[#2F2F2F]">
+        {title}
+      </h3>
+
+      <div
+        className={`absolute top-1/2 -translate-y-1/2
+        ${isLeft ? "right-[-12px]" : "left-[-12px]"}`}
+      >
+        <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full border-[4px] border-white bg-[#4D3400]">
+          <div className="flex h-[82px] w-[82px] items-center justify-center rounded-full bg-[#F5B52E]">
+            <Image
+              src={icon}
+              alt={title}
+              width={100}
+              height={100}
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

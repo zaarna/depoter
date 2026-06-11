@@ -6,7 +6,7 @@ export default function SupplyChainSection() {
         <div className="grid lg:grid-cols-[48%_52%] gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="font-semibold leading-[1.05] text-[32px] md:text-[48px] lg:text-[48px] text-[#212121]">
+            <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-[#212121]">
               Manage Your Entire
               <br />
               <span className="text-[#F5B42B]">
@@ -16,7 +16,7 @@ export default function SupplyChainSection() {
               </span>
             </h2>
 
-            <p className="mt-10 text-[18px] md:text-[22px] leading-[1.9] text-[#3F3F3F] max-w-3xl">
+            <p className="mt-10 text-[1.3rem] text-[#3F3F3F] max-w-3xl">
               With our platform, you don’t need multiple systems to manage your
               operations. Everything—from orders and inventory to shipping,
               tracking, and returns—is handled in one place. This makes your

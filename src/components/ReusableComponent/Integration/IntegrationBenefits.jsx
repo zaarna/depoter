@@ -31,7 +31,7 @@ const IntegrationBenefits = () => {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left Content */}
           <div>
-            <h2 className="font-semibold leading-[1.05] text-[32px] md:text-[48px] lg:text-[48px] text-[#212121]">
+            <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-[#212121]">
               Stop Managing
               <br />
               Multiple Systems —
@@ -46,7 +46,7 @@ const IntegrationBenefits = () => {
             </h2>
 
             <div className="mt-8 md:mt-10 space-y-6 max-w-[560px]">
-              <p className="text-lg md:text-xl leading-[1.8] text-[#212121]">
+              <p className="text-[1.3rem] text-[#212121]">
                 Running an ecommerce or logistics business in the UAE often
                 means managing multiple platforms — orders, inventory, shipping,
                 and tracking across different systems.

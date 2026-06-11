@@ -207,6 +207,36 @@ export const titleContentConfig = {
     titleColor: "#212121",
   },
 
+  efficientstorage: {
+    title: "Efficient Storage\n",
+    highlight: "Architecture",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    content:
+      "Space utilization is a science at Depoter. Our logistics infrastructure is engineered to reduce movement time and increase productivity.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "right",
+    contentColor: "#212121",
+    contentSize: "text-[1.25rem]",
+    // contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    titleColor: "#212121",
+  },
+
+  climatestoragecontrol: {
+    title: "Climate-Controlled Storage for\n",
+    highlight: "Product Safety",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    content:
+      "Space utilization is a science at Depoter. Our logistics infrastructure is engineered to reduce movement time and increase productivity.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "right",
+    contentColor: "#212121",
+    contentSize: "text-[1.25rem]",
+    // contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    titleColor: "#212121",
+  },
+
   amazonfulfillment: {
     title: "Amazon Fulfillment That Keeps\n",
     highlight: "Your Business Moving",
@@ -259,6 +289,46 @@ export const titleContentConfig = {
     contentAlign: "center",
     contentColor: "black",
     contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  strategicallylocated: {
+    title: "Strategically Located Warehouses\n for ",
+    highlight: "Faster Deliveries",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "black",
+    highlightColor: "#ffbe2e",
+    // contentAlign: "right",
+    contentColor: "black",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  strategicallylocated: {
+    title: "Strategically Located Warehouses\n for ",
+    highlight: "Faster Deliveries",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    titleColor: "black",
+    highlightColor: "#ffbe2e",
+    // contentAlign: "right",
+    contentColor: "black",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  westoreanything: {
+    title: "We Store ",
+    highlight: "Anything You Sell",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#ffffff",
+    highlightColor: "#ffbe2e",
+    content:
+      "Our 3PL fulfillment services are industry-agnostic. We have built a flexible storage environment that can handle diverse product categories without complexity.",
+    contentAlign: "center",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentColor: "white",
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
   },
 
   stepbystepfreightprocess: {
@@ -551,5 +621,36 @@ export const titleContentConfig = {
       link: "#",
       className: "px-6 sm:px-12 py-3.5 mt-6 bg-[#FFBE2E]",
     },
+  },
+  manageeverything: {
+    title: "Manage Everything Without the\n",
+    highlight: "Confusion",
+    titleColor: "#ffffff",
+    content:
+      "Managing multiple systems can slow down your work. Connect everything in one place and run your operations smoothly without errors or delays.",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center",
+    contentColor: "#FFFFFF",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-5/7",
+  },
+
+  scaleyourbusiness: {
+    title: "Scale Your Operations with a\n",
+    highlight: "Reliable Logistics Partner",
+    titleColor: "#ffffff",
+    content:
+      "Don't let logistics hold your business back. Depoter provides the infrastructure, tech, and experts you need to win the UAE market.",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center",
+    contentColor: "#FFFFFF",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
   },
 };

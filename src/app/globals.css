@@ -241,6 +241,7 @@ li {
 .backgroundcover-multichannel,
 .backgroundcover-freightforwarding,
 .backgroundcover-fulfillmentcenter,
+.backgroundcover-EcoIntegration,
 .backgroundcover-deliveries {
   position: relative;
   background: hsla(42, 100%, 95%, 1);
@@ -360,6 +361,26 @@ li {
   z-index: 2;
 }
 
+.backgroundcover-EcoIntegration::before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: 0%;
+  width: 100%;
+  height: 990px;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
+    url("/EcoIntegration-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
 .backgroundcover-deliveries::before {
   position: absolute;
   content: "";
@@ -386,6 +407,7 @@ li {
 .backgroundcover-multichannel::after,
 .backgroundcover-freightforwarding::after,
 .backgroundcover-fulfillmentcenter::after,
+.backgroundcover-EcoIntegration::after,
 .backgroundcover-deliveries::after {
   position: absolute;
   content: "";
@@ -814,6 +836,8 @@ li {
   .backgroundcover-freightforwarding::after,
   .backgroundcover-fulfillmentcenter::before,
   .backgroundcover-fulfillmentcenter::after,
+  .backgroundcover-EcoIntegration::before,
+  .backgroundcover-EcoIntegration::after,
   .bgimage-service::before,
   .backgroundcover-d2c::before,
   .backgroundcover-d2c::after,
@@ -893,6 +917,11 @@ li {
     padding-bottom: 25px;
     margin-top: 280px;
   }
+  .backgroundcover-EcoIntegration > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
 
   .backgroundcover-deliveries > .container {
     padding-top: 0px;
@@ -935,13 +964,28 @@ li {
   .backgroundcover-fulfillmentcenter {
     /* background-image: url("/b2bmobilebanner.webp"); */
     background-image: image-set(
-      url("/B2B_heroimg.webp") 1x,
-      url("/B2B_heroimg.webp") 2x,
-      url("/B2B_heroimg.webp") 3x
+      url("/fulfillment-order-mobile.webp")
+        /* url("/B2B_heroimg.webp") 2x,
+      url("/B2B_heroimg.webp") 3x */
         /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
     );
-    /* background-size: cover; */
+    background-size: contain;
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-EcoIntegration {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image: image-set(
+      url("/ecommerce-integration-mobile.svg")
+        /* url("/B2B_heroimg.webp") 2x, */ /* url("/B2B_heroimg.webp") 3x */
+        /* url("/b2bmobilebanner@2x.webp") 2x,
+      url("/b2bmobilebanner@3x.webp") 3x */
+    );
+    background-size: contain;
     background-position: center;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -2434,48 +2478,158 @@ li {
   width: 80%;
 }
 
-/* ======= integrations CSS ======= */
+.smart-integration-bg {
+  background:
+    linear-gradient(180deg, rgba(151, 128, 80, 0.9), rgba(151, 128, 80, 0.9)),
+    url("/fbm-bg.jpg");
 
-.backgroundcover-EcoIntegration::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image:
-    linear-gradient(
-      128.11deg,
-      rgba(255, 247, 228, 0.06) 14.29%,
-      rgba(228, 216, 189, 0) 85.3%
-    ),
-    url("/EcoIntegration-bg.png");
-
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top;
-
-  z-index: 1;
-}
-.backgroundcover-EcoIntegration::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: linear-gradient(
-    90deg,
-    #fff7e4 0%,
-    rgba(255, 247, 228, 0.95) 25%,
-    rgba(255, 247, 228, 0.75) 40%,
-    rgba(255, 247, 228, 0.2) 60%,
-    rgba(255, 247, 228, 0) 80%
-  );
-
-  z-index: 2;
 }
 
-.backgroundcover-EcoIntegration .container {
-  position: relative;
-  z-index: 3;
+@media (min-width: 1024px) {
+  .featurecard1 .carditem:first-child {
+    animation: featurecard1Card1Move 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .featurecard1 .carditem:nth-child(2) {
+    animation: featurecard1Card2Move 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .featurecard1 .carditem:nth-child(3) {
+    animation: featurecard1Card3Move 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .featurecard1 .carditem:last-child {
+    animation: featurecard1Card4Move 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* Top Left Card */
+  @keyframes featurecard1Card1Move {
+    0%,
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+    50%,
+    70% {
+      transform: translate3d(-42px, -62px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* Top Right Card */
+  @keyframes featurecard1Card2Move {
+    0%,
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+    50%,
+    70% {
+      transform: translate3d(42px, -80px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* Bottom Left Card */
+  @keyframes featurecard1Card3Move {
+    0%,
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+    50%,
+    70% {
+      transform: translate3d(-42px, 80px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* Bottom Right Card */
+  @keyframes featurecard1Card4Move {
+    0%,
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+    50%,
+    70% {
+      transform: translate3d(42px, 80px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
-.backgroundcover-EcoIntegration .container > div {
-  padding-top: 300px !important;
+
+.point-card-bg {
+  background-image: url("/point-card-bg.svg");
+  background-size: 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.fbn-inbound-bg-image {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(245, 240, 230, 0.92),
+      rgba(245, 240, 230, 0.92)
+    ),
+    url("/fbm-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.smart-integration-bg {
+  background:
+    linear-gradient(180deg, rgba(128, 96, 33, 0.92), rgba(123, 91, 27, 0.92)),
+    url("/fbm-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.expert-card-section {
+  padding: 20px 0;
+}
+
+.expert-card-section .number-section {
+  height: 80px;
+  width: 80px;
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.expert-card-section .description-section {
+  font-size: 17px;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .expert-card-section {
+    padding: 10px 0;
+  }
+  .expert-card-section .number-section {
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+  }
+  .expert-card-section .description-section {
+    font-size: 12px;
+    margin-left: 7%;
+    width: 90%;
+  }
+  .point-card-bg {
+    /* background-position: center; */
+  }
 }

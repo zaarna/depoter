@@ -1,6 +1,6 @@
 "use client";
 
-import GradientStepCard from "../GradientStepCard/GradientStepCard";
+import Image from "next/image";
 
 const steps = [
   {
@@ -35,11 +35,11 @@ const HowItWorksSection = () => {
       <div className="container">
         {/* Heading */}
         <div className="max-w-[900px] mx-auto text-center mb-14">
-          <h2 className="text-[36px] md:text-[52px] font-semibold leading-tight text-[#212121]">
+          <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-[#212121]">
             How It <span className="text-[#F5B42B]">Works</span>
           </h2>
 
-          <p className="mt-4 text-[18px] leading-[1.7] text-[#212121]">
+          <p className="mt-4 text-[1.3rem] text-[#212121]">
             In just minutes, automate your order fulfilment, inventory sync, and
             shipping operations. Our system is designed to make integration
             simple and fast, without technical complexity.
@@ -48,15 +48,47 @@ const HowItWorksSection = () => {
 
         {/* Steps */}
         <div className="space-y-6">
-          {steps.map((step) => (
-            <GradientStepCard
-              key={step.id}
-              id={step.id}
-              title={step.title}
-              description={step.description}
-              image={step.image}
-            />
-          ))}
+          {steps.map((step, index) => {
+            const isEven = index % 2 !== 0;
+
+            return (
+              <div
+                key={step.id}
+                className={`grid lg:grid-cols-2 gap-8 items-center rounded-[24px] p-6 md:p-5
+          
+          ${
+            isEven
+              ? "bg-gradient-to-l from-[#F7C54A] via-[#FFBE2E] to-[#FFFFFF]"
+              : "bg-gradient-to-r from-[#F7C54A] via-[#FFBE2E] to-[#FFFFFF]"
+          }
+
+          ${isEven ? "lg:[&>*:first-child]:order-2" : ""}
+        `}
+              >
+                {/* Content */}
+                <div>
+                  <h3 className="text-[24px] md:text-[28px] font-semibold text-[#212121] mb-4">
+                    {step.id}. {step.title}
+                  </h3>
+
+                  <p className="text-[16px] md:text-[18px] leading-[1.8] text-[#212121] ml-5">
+                    {step.description}
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className="bg-[#F8F8F8] rounded-[20px] p-6 flex items-center justify-center min-h-[260px]">
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    width={350}
+                    height={250}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
