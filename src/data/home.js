@@ -135,27 +135,35 @@ export const insights = [
 export const testimonials = [
   {
     id: 1,
-    name: "Shruti Mehta",
-    role: "Startup Founder",
+    name: "Rohit Bansal",
+    // role: "Startup Founder",
     message:
-      "Rish Cloud Tech turned our vision into a fully functional platform. Their team's expertise exceeded our expectations!",
-    avatar: "S",
+      "Before working with Depoter, managing orders during peak sales was difficult. Their team helped us handle fulfillment smoothly, and deliveries have become much more reliable.",
+    avatar: "R",
   },
   {
     id: 2,
-    name: "Rohit Bansal",
-    role: "Tech Lead",
+    name: "Priya Verma",
+    // role: "Tech Lead",
     message:
-      "Their AI-driven analytics transformed how we manage data, providing game-changing insights.",
-    avatar: "R",
+      "We were looking for a fulfillment partner that could manage inventory and returns without delays. Depoter made the process simple and helped us stay organized as our orders increased.",
+    avatar: "P",
     active: true,
   },
   {
     id: 3,
-    name: "James Carter",
-    role: "CEO",
+    name: "Michael Carter",
+    // role: "CEO",
     message:
-      "Rish Cloud Tech built a secure and scalable cloud solution that significantly boosted operational efficiency.",
-    avatar: "J",
+      "Depoter has been a dependable logistics partner for our business. We can easily track inventory, and the team is always available when support is needed.",
+    avatar: "M",
+  },
+  {
+    id: 4,
+    name: "Ahmed Al Mansoori",
+    // role: "CEO",
+    message:
+      "Our UAE operations became much easier after partnering with Depoter. From storage to delivery, everything is handled professionally and our customers receive orders on time.",
+    avatar: "A",
   },
 ];

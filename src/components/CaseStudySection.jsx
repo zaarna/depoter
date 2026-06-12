@@ -10,7 +10,7 @@ import Button from "./ReusableComponent/Button/Button";
 function CaseStudySection({ sectionKey = [] }) {
   const tc = titleContentConfig[sectionKey] || titleContentConfig["case"];
   return (
-    <section className="py-8 md:py-16 case-bg relative overflow-hidden">
+    <section className="py-8 md:py-16 case-bg overflow-hidden">
       <div className="container">
         <div className="grid text-center relative z-10">
           <TitleContent {...tc} />

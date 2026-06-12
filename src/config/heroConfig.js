@@ -96,10 +96,16 @@ export const heroConfig = {
     heading: {
       title: "Ecommerce",
       highlight: "Integration Services UAE",
-      titleColor: "#978050",
-      highlightColor: "#212121",
-      description:
-        "Connect your business to our in-house Warehouse Management System (WMS) with 100+ native integrations across leading eCommerce platforms, marketplaces, delivery partners, and ERP systems..",
+      titleColor: "#212121",
+      highlightColor: "#978050",
+      description: (
+        <>
+          Connect your business to our in-house{" "}
+          <b>Warehouse Management System (WMS)</b> with 100+ native integrations
+          across leading eCommerce platforms, marketplaces, delivery partners,
+          and ERP systems.
+        </>
+      ),
     },
     button: {
       text: "Connect Your Store in Minutes",

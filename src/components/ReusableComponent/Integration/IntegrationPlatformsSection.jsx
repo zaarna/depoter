@@ -48,7 +48,9 @@ export default function IntegrationPlatformsSection() {
           {platformCards.map((card, index) => (
             <div
               key={index}
-              className="bg-[#F7F1E3] rounded-[28px] p-8 min-h-[430px]"
+              className="bg-[#F7F1E3] rounded-[28px] p-8 min-h-[430px]
+  transition-all duration-300 ease-out
+  hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
             >
               <h3 className="text-[28px] font-semibold text-[#212121]">
                 {card.title}

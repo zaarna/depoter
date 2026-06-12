@@ -3,22 +3,27 @@ const features = [
   {
     title: "Easy setup with no technical complexity",
     icon: "/Easy-setup.svg",
+    hoverIcon: "/Easy-setup-hover.svg",
   },
   {
     title: "Strong integration with leading platforms",
     icon: "/Strong-integration.svg",
+    hoverIcon: "/Strong-integration-hover.svg",
   },
   {
     title: "Real-time data visibility",
     icon: "/Real-time-visibility.svg",
+    hoverIcon: "/Real-time-visibility-hover.svg",
   },
   {
     title: "Scalable solution for growing businesses",
     icon: "/Scalable-solution.svg",
+    hoverIcon: "/Scalable-solution-hover.svg",
   },
   {
     title: "Reliable support and onboarding",
     icon: "/Reliable-support.svg",
+    hoverIcon: "/Reliable-support-hover.svg",
   },
 ];
 
@@ -54,18 +59,28 @@ export default function WhyChooseSection() {
 
               <div className="absolute h-[150px] w-[150px] bottom-0 right-0 rounded-full bg-[#F5B52E] blur-[60px] z-0" />
               {/* Inner Card */}
-              <div className="absolute inset-[12px] rounded-[24px] border border-[#E5D7AE]  bg-[#F8F3E7] flex flex-col items-center justify-center text-center px-6">
-                {/* Icon */}
+              <div className="absolute inset-[12px] rounded-[24px] border border-[#E5D7AE] bg-[#F8F3E7] hover:bg-[#3c2c0b] duration-700 flex flex-col items-center justify-center text-center px-6 group">
                 <div className="mb-6">
-                  <img
-                    src={item.icon}
-                    alt={item.title}
-                    className="w-24 h-24 object-contain mx-auto"
-                  />
+                  <div className="relative w-24 h-24 mx-auto">
+                    {/* Normal Icon */}
+                    <img
+                      src={item.icon}
+                      alt={item.title}
+                      className="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                    />
+
+                    {/* Hover Icon */}
+                    {item.hoverIcon && (
+                      <img
+                        src={item.hoverIcon}
+                        alt={`${item.title} Hover`}
+                        className="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      />
+                    )}
+                  </div>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-[20px] leading-[1.5] font-medium text-[#212121]">
+                <h3 className="text-[20px] leading-[1.5] font-medium transition-colors duration-700 group-hover:text-[#ffbe2e]">
                   {item.title}
                 </h3>
               </div>
