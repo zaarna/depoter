@@ -132,4 +132,38 @@ export const insights = [
   },
 ];
 
-z;
+export const testimonials = [
+  {
+    id: 1,
+    name: "Rohit Bansal",
+    // role: "Startup Founder",
+    message:
+      "Before working with Depoter, managing orders during peak sales was difficult. Their team helped us handle fulfillment smoothly, and deliveries have become much more reliable.",
+    avatar: "R",
+  },
+  {
+    id: 2,
+    name: "Priya Verma",
+    // role: "Tech Lead",
+    message:
+      "We were looking for a fulfillment partner that could manage inventory and returns without delays. Depoter made the process simple and helped us stay organized as our orders increased.",
+    avatar: "P",
+    active: true,
+  },
+  {
+    id: 3,
+    name: "Michael Carter",
+    // role: "CEO",
+    message:
+      "Depoter has been a dependable logistics partner for our business. We can easily track inventory, and the team is always available when support is needed.",
+    avatar: "M",
+  },
+  {
+    id: 4,
+    name: "Ahmed Al Mansoori",
+    // role: "CEO",
+    message:
+      "Our UAE operations became much easier after partnering with Depoter. From storage to delivery, everything is handled professionally and our customers receive orders on time.",
+    avatar: "A",
+  },
+];
