@@ -29,6 +29,7 @@ export default function Footer() {
     { name: "Terms & Conditions", href: "/terms" },
   ];
 
+  // industriesLinks
   const industriesLinks = [
     { name: "Health & Wellness", href: "/industries/health" },
     { name: "Beauty & Personal Care", href: "/industries/beauty" },
