@@ -77,21 +77,21 @@ export default function Footer() {
                 <ContactItem
                   icon={LocationIcon}
                   label="Address:"
-                  value="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                  value="Depoter General Warehousing OPC LLC Media One Tower, Media City, Dubai, UAE"
                   href="https://www.google.com/maps?q=Lorem+ipsum"
                 />
                 <ContactItem
                   icon={PhoneIcon}
                   label="Contact number:"
-                  value="00000000"
-                  href="tel:00000000"
+                  value="+971 569902345"
+                  href="tel:+971569902345"
                 />
 
                 <ContactItem
                   icon={MailIcon}
                   label="Email:"
-                  value="depoter@gmail.com"
-                  href="mailto:depoter@gmail.com"
+                  value="info@depoter.com"
+                  href="mailto:info@depoter.com"
                 />
               </div>
 
