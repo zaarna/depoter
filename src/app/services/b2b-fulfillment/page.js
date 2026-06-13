@@ -27,6 +27,7 @@ export default function b2cPage() {
   return (
     <div className="flex min-h-screen items-center justify-center ">
       <main className="flex flex-col min-h-screen w-full bg-white ">
+        {/* B2B Page */}
         <InnerHeroSection />
         <NumbersGradieantCards data={data} />
         <ExpandBuisnessSection />

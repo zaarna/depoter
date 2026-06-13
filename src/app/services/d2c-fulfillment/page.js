@@ -13,6 +13,7 @@ export default function d2cPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
+        {/* D2C page */}
         <InnerHeroSection bottomSection={<KeyMetrics />} />
         <BuiltHandleService />
         <D2cFulfillmentCenter />
