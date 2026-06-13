@@ -41,7 +41,7 @@ export default function TestimonialCard({ testimonials = [] }) {
                   </div>
                   <div>
                     <p className="font-medium text-lg">{item.name}</p>
-                    <p className="text-base">{item.role}</p>
+                    {item.role && <p className="text-base">{item.role}</p>}
                   </div>
                 </div>
 

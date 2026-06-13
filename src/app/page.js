@@ -10,7 +10,7 @@ import ScalabilitySection from "@/components/ScalabilitySection";
 import ServiceSection from "@/components/ServiceSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import WhyChoose from "@/components/WhyChoose";
-import { features } from "@/data/home";
+import { features, testimonials } from "@/data/home";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
         <BuildToHandlesection />
         <GlobalSection />
         <CaseStudySection />
-        <TestimonialSection />
+        <TestimonialSection testimonials={testimonials} />
         <InsightsSection />
       </main>
     </div>

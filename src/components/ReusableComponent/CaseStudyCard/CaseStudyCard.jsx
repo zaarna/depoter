@@ -161,8 +161,11 @@ export default function CardsSection() {
 
           {/* Right Stats */}
           <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {statsData.map((item) => (
-              <div className="rounded-[24px] bg-[#F6F0E2] border border-[#E8B954] p-5 text-center h-full">
+            {statsData.map((item, index) => (
+              <div
+                key={index}
+                className="rounded-[24px] bg-[#F6F0E2] border border-[#E8B954] p-5 text-center h-full"
+              >
                 {/* Fixed Image Height */}
                 <div className="h-[50px] flex items-center justify-center mb-4">
                   <Image
