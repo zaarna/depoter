@@ -9,6 +9,8 @@ import SeamlessNoonOrder from "@/components/ReusableComponent/multiChannelSectio
 import VendorCentralFulfillment from "@/components/ReusableComponent/multiChannelSection/VendorCentralFulfillment";
 import TestimonialSection from "@/components/TestimonialSection";
 
+import { testimonialsMultichannel } from "@/data/home";
+
 export default function multiChannelPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
@@ -22,7 +24,7 @@ export default function multiChannelPage() {
         <SeamlessNoonOrder />
         <FBNInboundServices />
         <ReturnNExchange />
-        <TestimonialSection />
+        <TestimonialSection testimonials={testimonialsMultichannel} />
       </main>
     </div>
   );

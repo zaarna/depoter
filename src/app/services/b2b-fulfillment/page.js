@@ -11,6 +11,7 @@ import AdvanceTechnologySection from "@/components/ReusableComponent/B2b_Section
 import TestimonialSection from "@/components/TestimonialSection";
 import ExpandBuisnessSection from "@/components/ReusableComponent/B2b_Sections/ExpandBuisnessSection";
 import EndToEndSection from "@/components/ReusableComponent/B2b_Sections/EndToEndSection";
+import { testimonialsb2b } from "@/data/home";
 
 export default function b2cPage() {
   const data = [
@@ -38,7 +39,7 @@ export default function b2cPage() {
         <EndToEndSection />
         <LongTermGrowth />
         <AdvanceTechnologySection />
-        <TestimonialSection />
+        <TestimonialSection testimonials={testimonialsb2b} />
       </main>
     </div>
   );
