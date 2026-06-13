@@ -8,6 +8,7 @@ import WhyChooseDepotter from "@/components/d2cPageSection/WhyChooseDepotter";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
 import KeyMetrics from "@/components/ReusableComponent/Inner_Hero/KeyMetrics";
 import TestimonialSection from "@/components/TestimonialSection";
+import { testimonialsd2c } from "@/data/home";
 
 export default function d2cPage() {
   return (
@@ -21,7 +22,8 @@ export default function d2cPage() {
         <BusinessInSync />
         <Crossdocking />
         <WhyChooseDepotter />
-        <TestimonialSection />
+        {/* <TestimonialSection testimonials={testimonialsd2c} /> */}
+        <TestimonialSection testimonials={testimonialsd2c} />
       </main>
     </div>
   );
