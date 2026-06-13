@@ -77,8 +77,7 @@ export default function Footer() {
                 <ContactItem
                   icon={LocationIcon}
                   label="Address:"
-                  value="Depoter General Warehousing OPC LLC
-Media One Tower, Media City, Dubai, UAE"
+                  value="Depoter General Warehousing OPC LLC Media One Tower, Media City, Dubai, UAE"
                   href="https://www.google.com/maps?q=Lorem+ipsum"
                 />
                 <ContactItem
