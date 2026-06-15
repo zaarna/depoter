@@ -45,17 +45,17 @@ export default function TransparentInvoicingSection() {
         >
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left Content */}
-            <div className="max-w-xl">
-              <h2 className="text-4xl leading-tight text-white lg:text-4xl">
+            <div className="max-w-xl text-center lg:text-left">
+              <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] leading-tight text-white ">
                 Automated, Accurate
                 <br />& Transparent
               </h2>
 
-              <h2 className="mt-2 text-4xl  text-[#F7BA2C] lg:text-4xl">
+              <h2 className="mt-2 text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] text-[#F7BA2C] ">
                 Invoicing
               </h2>
 
-              <p className="mt-6 text-[20px] w-[90%] leading-relaxed text-white">
+              <p className="mt-6 text-[20px] w-[90%] mx-auto lg:mx-0 leading-relaxed text-white">
                 Financial transparency is key to a long-term partnership. Our
                 system ensures your billing is as accurate as our shipping.
               </p>

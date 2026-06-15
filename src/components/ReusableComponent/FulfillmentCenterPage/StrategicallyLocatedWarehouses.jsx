@@ -50,7 +50,7 @@ function StrategicallyLocatedWarehouses({ sectionKey }) {
   return (
     <section className=" py-10 lg:py-25 px-6 lg:pl-14 lg:pr-0 overflow-hidden">
       {/* TITLE */}
-      <div className="grid text-start relative z-10">
+      <div className="grid text-center lg:text-start relative z-10">
         <TitleContent {...tc} />
       </div>
 

@@ -29,11 +29,11 @@ export default function ExpertHandsSection() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-black">
+          <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] font-bold text-black">
             Expert Hands Behind Every
           </h2>
 
-          <h2 className="text-4xl font-bold text-[#F5B52E]">
+          <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] font-bold text-[#F5B52E]">
             Inbound & Outbound
           </h2>
 
@@ -87,7 +87,10 @@ function PointCard({ number, title, description }) {
 
         {/* Text */}
         <div className="description-section">
-          <p className="  leading-relaxed text-gray-700">
+          <p
+            className="  leading-relaxed text-gray-700"
+            style={{ width: "95%" }}
+          >
             <span className="font-bold text-black">{title}</span>
             {description}
           </p>

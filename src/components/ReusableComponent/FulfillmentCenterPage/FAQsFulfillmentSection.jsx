@@ -34,7 +34,7 @@ export default function FAQsFulfillmentSection() {
     <section className="bg-[#F5F0E4] py-16">
       <div className="mx-auto max-w-5xl px-4">
         <div className="mb-12 py-2 text-center">
-          <h2 className="text-4xl font-bold md:text-4xl">
+          <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] font-bold">
             Frequently <span className="text-[#E8A91D]">Asked Questions</span>
           </h2>
         </div>
