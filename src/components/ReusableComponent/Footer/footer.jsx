@@ -91,8 +91,8 @@ export default function Footer() {
                 <ContactItem
                   icon={MailIcon}
                   label="Email:"
-                  value="depoter@gmail.com"
-                  href="mailto:depoter@gmail.com"
+                  value="info@depoter.com"
+                  href="mailto:info@depoter.com"
                 />
               </div>
 
@@ -195,8 +195,8 @@ export default function Footer() {
               <ContactItem
                 icon={MailIcon}
                 label="Email:"
-                value="depoter@gmail.com"
-                href="mailto:depoter@gmail.com"
+                value="info@depoter.com"
+                href="mailto:info@depoter.com"
               />
             </div>
 
