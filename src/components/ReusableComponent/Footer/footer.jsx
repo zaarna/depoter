@@ -29,7 +29,6 @@ export default function Footer() {
     { name: "Terms & Conditions", href: "/terms" },
   ];
 
-  // industriesLinks
   const industriesLinks = [
     { name: "Health & Wellness", href: "/industries/health" },
     { name: "Beauty & Personal Care", href: "/industries/beauty" },
@@ -78,21 +77,21 @@ export default function Footer() {
                 <ContactItem
                   icon={LocationIcon}
                   label="Address:"
-                  value="Depoter General Warehousing OPC LLC Media One Tower, Media City, Dubai, UAE"
+                  value="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                   href="https://www.google.com/maps?q=Lorem+ipsum"
                 />
                 <ContactItem
                   icon={PhoneIcon}
                   label="Contact number:"
-                  value="+971 569902345"
-                  href="tel:+971569902345"
+                  value="00000000"
+                  href="tel:00000000"
                 />
 
                 <ContactItem
                   icon={MailIcon}
                   label="Email:"
-                  value="info@depoter.com"
-                  href="mailto:info@depoter.com"
+                  value="depoter@gmail.com"
+                  href="mailto:depoter@gmail.com"
                 />
               </div>
 

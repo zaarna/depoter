@@ -8,7 +8,6 @@ import ReturnNExchange from "@/components/ReusableComponent/multiChannelSection/
 import SeamlessNoonOrder from "@/components/ReusableComponent/multiChannelSection/SeamlessNoonOrder";
 import VendorCentralFulfillment from "@/components/ReusableComponent/multiChannelSection/VendorCentralFulfillment";
 import TestimonialSection from "@/components/TestimonialSection";
-import { testimonialsMultichannel } from "@/data/home";
 
 export default function multiChannelPage() {
   return (
@@ -24,7 +23,7 @@ export default function multiChannelPage() {
         <SeamlessNoonOrder />
         <FBNInboundServices />
         <ReturnNExchange />
-        <TestimonialSection testimonials={testimonialsMultichannel} />
+        <TestimonialSection />
       </main>
     </div>
   );

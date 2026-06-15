@@ -186,7 +186,9 @@ function BuildToHandlesection({ sectionKey = [] }) {
         <div className="mt-6 md:mt-12 relative">
           <div className="lg:hidden flex flex-col gap-6">
             {industries.map((category, index) => (
-              <BuildToHandleCard key={index} industry={category} />
+              <>
+                <BuildToHandleCard key={index} industry={category} />
+              </>
             ))}
           </div>
 
