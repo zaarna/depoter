@@ -11,7 +11,7 @@ export default function ServiceCard({ services }) {
           className={`relative overflow-hidden duration-300`}
         >
           {/* Image */}
-          <div className="relative w-full h-72 rounded-4xl mb-2 overflow-hidden group">
+          <div className="relative w-160 h-90 rounded-4xl mb-2 overflow-hidden group">
             <Image
               src={service.image}
               alt={service.title}
