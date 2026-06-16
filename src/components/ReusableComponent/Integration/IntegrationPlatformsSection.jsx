@@ -4,7 +4,7 @@ const platformCards = [
   {
     title: "Ecommerce Platforms",
     items: [
-      "/Shopify_new.svg",
+      "/Shopify_new1.svg",
       "/Woo.svg",
       "/magentonew.svg",
       "/Sallanew.svg",
