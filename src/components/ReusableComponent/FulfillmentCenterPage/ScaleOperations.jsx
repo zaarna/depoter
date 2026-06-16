@@ -19,7 +19,7 @@ function ScaleOperations({ sectionKey = [] }) {
             className="
     group relative overflow-hidden
     mx-auto block
-    w-full sm:w-[80%] md:w-[60%] lg:w-[25%]
+    w-full sm:w-[80%] md:w-[60%] lg:w-[30%]
     py-4 px-10
     rounded-full
     bg-[#FFBE2E]

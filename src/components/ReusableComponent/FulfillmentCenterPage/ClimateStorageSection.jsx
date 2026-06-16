@@ -30,7 +30,7 @@ export default function ClimateStorageSection() {
   ];
 
   return (
-    <section className="py-16 bg-[#F7F4ED]">
+    <section className="py-16 bg-[#FFF7E4]">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="max-w-4xl mx-auto text-center mb-12">

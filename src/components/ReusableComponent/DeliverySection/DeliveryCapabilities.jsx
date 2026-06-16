@@ -67,7 +67,13 @@ const deliverySteps = [
       {
         icon: "/delivery-v8.svg",
         title: "Courier Integration",
-        desc: "We are integrated with 25+ courier and delivery partners, allowing you to manage multiple carriers through one centralized dashboard.",
+        desc: (
+          <>
+            We are integrated with <b>25+ courier and delivery partners</b>,
+            allowing you to manage multiple carriers through one centralized
+            dashboard.
+          </>
+        ),
       },
       {
         icon: "/delivery-v9.svg",

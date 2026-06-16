@@ -21,7 +21,7 @@ export default function freightForwardingServicesCard() {
 
   const services = [
     {
-      title: "Ocean Freight",
+      title: "Sea Freight",
       icon: "/ffb-service-1.svg",
       items: [
         "Sea freight remains one of the most cost-effective solutions for international cargo transportation, particularly for high-volume shipments.",
@@ -39,7 +39,7 @@ export default function freightForwardingServicesCard() {
       ],
     },
     {
-      title: "Road Freight",
+      title: "Land Transportation",
       icon: "/ffb-service-3.svg",
       items: [
         "Efficient inland transport plays a critical role in connecting ports, warehouses, and final delivery destinations.",

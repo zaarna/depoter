@@ -4,9 +4,10 @@ import TitleContent from "../All_Title/TitleContent";
 import StorageCard from "../B2b_Sections/StorageCard";
 import FulfillmentProcessCard from "./FulfillmentProcessCard";
 
-function FlexibleStorageSection({ sectionKey }) {
+function FulfillmentCenterWorks({ sectionKey }) {
   const tc =
-    titleContentConfig[sectionKey] || titleContentConfig["flexiblestorage"];
+    titleContentConfig[sectionKey] ||
+    titleContentConfig["FulfillmentCenterWorks"];
   const cards = [
     {
       iconsImage: "/smart-receiving.svg",
@@ -61,4 +62,4 @@ function FlexibleStorageSection({ sectionKey }) {
   );
 }
 
-export default FlexibleStorageSection;
+export default FulfillmentCenterWorks;

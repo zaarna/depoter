@@ -7,31 +7,31 @@ const benefits = [
   {
     title: "Error-Free Data Exchange",
     description:
-      "Manual processes often lead to errors, especially when handling large volumes of data. Our system reduces these issues by using automated workflows and accurate SKU mapping.This helps keep your data clean and consistent, reduces order mistakes, and improves overall operational accuracy.",
+      "Manual processes often lead to errors, especially when handling large volumes of data. Our system reduces these issues by using automated workflows and accurate SKU mapping. This helps keep your data clean and consistent, reduces order mistakes, and improves overall operational accuracy.",
     icon: "/Error-Free.svg",
   },
   {
     title: "Real-Time Synchronization",
     description:
-      "Keep your inventory, orders, and shipping data updated instantly across all connected platforms.",
+      "Keep your operations updated at all times with instant inventory and order updates. Once systems are connected, orders update automatically, stock levels remain accurate, and tracking information stays current without any manual effort.",
     icon: "/Real-Time.svg",
   },
   {
     title: "Maximum Data Utilization",
     description:
-      "Use centralized data insights to improve business decisions and operational performance.",
+      "Our system goes beyond basic data syncing by capturing and exchanging complete information across all connected platforms. This helps you understand your performance better, plan operations more effectively, and make smarter business decisions based on accurate data.",
     icon: "/Maximum-data.svg",
   },
   {
     title: "Enhanced Customer Experience",
     description:
-      "Provide faster deliveries, accurate tracking, and seamless shopping experiences for customers.",
+      "Customers expect fast and transparent delivery. With real-time tracking and instant updates, you can give them clear visibility of their orders and timely delivery updates, which helps improve their overall experience and satisfaction. ",
     icon: "/Customer-Experience.svg",
   },
   {
     title: "Operational Efficiency & Scalability",
     description:
-      "Automate repetitive tasks and scale operations smoothly as your ecommerce business grows.",
+      "As your business grows, manual processes can slow things down and create challenges. Our system helps you automate repetitive tasks, reduce dependency on manual work, and manage your operations more efficiently, making it easier to scale as your business expands. ",
     icon: "/Operational-Efficiency.svg",
   },
 ];
@@ -88,7 +88,7 @@ export default function BenefitsAccordionSection() {
                         <img
                           src={item.icon}
                           alt={item.title}
-                          className="w-8 h-8 object-contain"
+                          className="w-[60px] h-[60px] object-contain"
                         />
                       </div>
 

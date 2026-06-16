@@ -12,7 +12,7 @@ function BrandSection({ sectionKey = [] }) {
       <div className="grid text-center relative z-10">
         <TitleContent {...tc} />
       </div>
-      <div className="grid">
+      <div className="grid z-1">
         <BrandMarquee brands={brands} />
       </div>
     </section>

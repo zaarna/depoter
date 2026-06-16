@@ -10,32 +10,32 @@ function AutomatedOrderFlow({ sectionKey = [] }) {
       title: "Seamless\n Integration",
       description:
         "Direct connection with marketplaces, custom websites, and ERP systems for a centralized data flow.",
-      icon: "/bulkorder.svg",
+      icon: "/semless-integration.svg",
     },
     {
       id: 2,
       title: "Tailor-Made \n Solutions",
       description:
         "Customized technology built specifically around your business and operational needs.",
-      icon: "/retailready.svg",
+      icon: "/Tailor-Made.svg",
     },
     {
       id: 3,
       title: "Actionable \n Dashboards",
       description:
         "Access detailed dashboards with real-time KPIs and analytics to make informed decisions.",
-      icon: "/dedicateddelievery.svg",
+      icon: "/Actionable.svg",
     },
     {
       id: 4,
       title: "Automated \n Rules",
       description:
         "Smart automation rules drive cost-efficient operations and eliminate the need for manual intervention",
-      icon: "/proofofdelivery.svg",
+      icon: "/AutomatedRules.svg",
     },
   ];
   const tc =
-    titleContentConfig[sectionKey] || titleContentConfig["deliverretail"];
+    titleContentConfig[sectionKey] || titleContentConfig["automatedorderflow"];
   return (
     <section className="py-10 md:py-16  relative overflow-hidden brand-bg">
       <div className="container relative z-10">

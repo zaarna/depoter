@@ -4,7 +4,7 @@ import ControlTowerSection from "@/components/ReusableComponent/FulfillmentCente
 import EfficientStorageArchitecture from "@/components/ReusableComponent/FulfillmentCenterPage/EfficientStorageArchitecture";
 import ExpertHandsSection from "@/components/ReusableComponent/FulfillmentCenterPage/ExpertHandsSection";
 import FAQsFulfillmentSection from "@/components/ReusableComponent/FulfillmentCenterPage/FAQsFulfillmentSection";
-import FulfillmentProcess from "@/components/ReusableComponent/FulfillmentCenterPage/FulfillmentProcess";
+import FulfillmentCenterWorks from "@/components/ReusableComponent/FulfillmentCenterPage/FulfillmentProcess";
 import ScaleOperations from "@/components/ReusableComponent/FulfillmentCenterPage/ScaleOperations";
 import StrategicallyLocatedWarehouses from "@/components/ReusableComponent/FulfillmentCenterPage/StrategicallyLocatedWarehouses";
 import TransparentInvoicingSection from "@/components/ReusableComponent/FulfillmentCenterPage/TransparentInvoicingSection";
@@ -18,7 +18,7 @@ export default function FulfillmentCenterPage() {
       <main className="flex flex-col min-h-screen w-full  ">
         <InnerHeroSection />
         <StrategicallyLocatedWarehouses />
-        <FulfillmentProcess />
+        <FulfillmentCenterWorks />
         <WeStoreAnything />
         <EfficientStorageArchitecture />
         <ClimateStorageSection />

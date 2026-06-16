@@ -15,38 +15,51 @@ function ExpandBuisnessSection({ sectionKey }) {
       id: 1,
       title: "Marketplaces & Quick Commerce",
       desc: "Seamless e-Commerce fulfillment with fully integrated platforms ensuring faster order flow, accurate processing, and reliable multi-channel delivery.",
-      image: "/marketplace.webp",
+      image: "/b2b-image-1.svg",
     },
     {
       id: 2,
       title: "Supermarkets & Retail Chains",
       desc: "Optimized B2B fulfillment solutions that align with every retailer’s packaging, labeling, and delivery standards for smooth and timely distribution.",
-      image: "/marketplace.webp",
+      image: "/b2b-image-2.svg",
     },
     {
       id: 3,
-      title: "Distribution Partners",
-      desc: "Scalable bulk logistics tailored for distributors with consistent timelines and inventory control.",
-      image: "/marketplace.webp",
+      title: "Distributors & Resellers",
+      desc: "Streamlined bulk order fulfillment with coordinated logistics, centralized tracking, and complete real-time visibility across multiple delivery points.",
+      image: "/b2b-image-3.svg",
     },
     {
       id: 4,
-      title: "Pharma & Healthcare",
-      desc: "Compliance-driven logistics for temperature-sensitive and regulated pharmaceutical distribution.",
-      image: "/marketplace.webp",
+      title: "Kiosks & Counters",
+      desc: "Dependable warehousing and fulfillmentservices that ensure on-time replenishment,efficient dispatching, and consistent product availability.",
+      image: "/b2b-image-4.svg",
     },
     {
       id: 5,
-      title: "Electronics & Appliances",
-      desc: "Secure handling, packaging, and delivery for high-value electronics across B2B channels.",
-      image: "/marketplace.webp",
+      title: "Hotels & Restaurants",
+      desc: "Specialized logistics and warehousing solutions for the continuous, precise, and temperature-controlled supply of food, beverages, and essentials.",
+      image: "/b2b-image-5.svg",
     },
-    {
-      id: 6,
-      title: "FMCG & Bulk Goods",
-      desc: "High-volume, high-frequency fulfillment optimized for speed, accuracy, and cost efficiency.",
-      image: "/marketplace.webp",
-    },
+
+    // {
+    //   id: 4,
+    //   title: "Pharma & Healthcare",
+    //   desc: "Compliance-driven logistics for temperature-sensitive and regulated pharmaceutical distribution.",
+    //   image: "/b2b-image-4.svg",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Electronics & Appliances",
+    //   desc: "Secure handling, packaging, and delivery for high-value electronics across B2B channels.",
+    //   image: "/b2b-image-5.svg",
+    // },
+    // {
+    //   id: 6,
+    //   title: "FMCG & Bulk Goods",
+    //   desc: "High-volume, high-frequency fulfillment optimized for speed, accuracy, and cost efficiency.",
+    //   image: "/b2b-image-1.svg",
+    // },
   ];
 
   return (

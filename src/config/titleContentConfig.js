@@ -187,7 +187,7 @@ export const titleContentConfig = {
     highlightColor: "#ffbe2e",
     contentAlign: "center",
     contentColor: "#FFFFFF",
-    contentSize: "text-[1.25rem]",
+    contentSize: "text-[1.3rem]",
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
     titleColor: "#ffffff",
   },
@@ -202,9 +202,112 @@ export const titleContentConfig = {
     highlightColor: "#ffbe2e",
     contentAlign: "center",
     contentColor: "#212121",
-    contentSize: "text-[1.25rem]",
+    contentSize: "text-[1.3rem]",
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
     titleColor: "#212121",
+  },
+
+  customsclearance: {
+    title: "Our Customs Clearance ",
+    highlight: "Services in UAE",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    content:
+      "Every shipment is different — that’s why we provide customized solutions based on your cargo type, port, and requirements.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#212121",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    titleColor: "#212121",
+  },
+
+  portsairportscoverage: {
+    title: "Ports & Airports ",
+    highlight: "We Cover in UAE",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    content:
+      "The UAE is a global logistics hub, and each gateway has its own unique customs process.Depoter provides expert on-ground support across all major locations.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#212121",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    titleColor: "#212121",
+  },
+
+  customclearanceprocesswork: {
+    title: "How Our Customs ",
+    highlight: "Clearance\n Process Works",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    content:
+      "We follow a simple and structured process to ensure your shipment is cleared quickly and accurately.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#212121",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    titleColor: "#212121",
+  },
+
+  whychoosedepotercustomclearance: {
+    title: "Why Choose ",
+    highlight: "Depoter for Customs\n Clearance Services in UAE",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    content:
+      "We follow a simple and structured process to ensure your shipment is cleared quickly and accurately.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#FFFFFF",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    titleColor: "#FFFFFF",
+  },
+
+  whoweserve: {
+    title: "Who We ",
+    highlight: "Serve",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentColor: "#FFFFFF",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    titleColor: "#212121",
+  },
+
+  FulfillmentCenterWorks: {
+    title: "How Our ",
+    highlight: "Fulfillment Center Works",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    content:
+      "A structured workflow is what ensures inventory accuracy and fast shipping. Here is a look at our end-to-end process:",
+    contentColor: "#212121",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    titleColor: "#212121",
+  },
+
+  automatedorderflow: {
+    title: "Tailor-Made Technology &\n",
+    highlight: "Automated Order Flow",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    content:
+      "A structured workflow is what ensures inventory accuracy and fast shipping. Here is a look at our end-to-end process:",
+    contentColor: "#ffffff",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    titleColor: "#ffffff",
   },
 
   efficientstorage: {
@@ -217,7 +320,7 @@ export const titleContentConfig = {
     highlightColor: "#ffbe2e",
     contentAlign: "right",
     contentColor: "#212121",
-    contentSize: "text-[1.25rem]",
+    contentSize: "text-[1.3rem]",
     // contentWidth: "w-full md:w-3/4 lg:w-2/3",
     titleColor: "#212121",
   },
@@ -232,7 +335,7 @@ export const titleContentConfig = {
     highlightColor: "#ffbe2e",
     contentAlign: "right",
     contentColor: "#212121",
-    contentSize: "text-[1.25rem]",
+    contentSize: "text-[1.3rem]",
     // contentWidth: "w-full md:w-3/4 lg:w-2/3",
     titleColor: "#212121",
   },
@@ -319,7 +422,7 @@ export const titleContentConfig = {
     title: "We Store ",
     highlight: "Anything You Sell",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#ffffff",
     highlightColor: "#ffbe2e",
     content:
@@ -411,7 +514,7 @@ export const titleContentConfig = {
     title: "The Numbers That Define Us",
     highlight: "Define Us",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
@@ -419,7 +522,7 @@ export const titleContentConfig = {
     title: "Smart Technology That \n Simplifies Every B2B Order",
     highlight: "B2B Order",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
@@ -431,7 +534,7 @@ export const titleContentConfig = {
     contentTag: "h3",
     contentSize: "text-[1.3rem]",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
     contentColor: "#000000",
@@ -440,7 +543,7 @@ export const titleContentConfig = {
     title: "Your Gateway to Duty-Free Storage \n and Faster GCC Expansion",
     highlight: "Faster GCC Expansion",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
@@ -448,7 +551,7 @@ export const titleContentConfig = {
     title: "Manage Multiple Units of \n Measurement with Total Control",
     highlight: "Total Control",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
     content:
@@ -461,7 +564,7 @@ export const titleContentConfig = {
     title: "Deliver to Every Retail Shelf \n with Ease",
     highlight: "with Ease",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#FFFFFF",
     highlightColor: "#FFBE2E",
     content:
@@ -474,7 +577,7 @@ export const titleContentConfig = {
     title: "Scalability That Supports Long- \n Term B2B Growth",
     highlight: "B2B Growth",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#000000",
     highlightColor: "#FFBE2E",
   },
@@ -482,7 +585,7 @@ export const titleContentConfig = {
     title: "Advanced Technology That \n Powers Modern B2B Fulfillment",
     highlight: "B2B Fulfillment",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#000000",
     highlightColor: "#FFBE2E",
   },
@@ -491,7 +594,7 @@ export const titleContentConfig = {
     highlight: "Experience",
     titleColor: "#FFFFFF",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     highlightColor: "#FFBE2E",
     className: "text-center md:text-left",
   },
@@ -500,7 +603,7 @@ export const titleContentConfig = {
     highlight: "Every Channel",
     titleColor: "#212121",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     highlightColor: "#FFBE2E",
     className: "text-center lg:text-left",
   },
@@ -509,7 +612,7 @@ export const titleContentConfig = {
     highlight: "B2B Precision",
     titleColor: "#212121",
     titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     highlightColor: "#FFBE2E",
     className: "text-center",
   },
@@ -558,7 +661,7 @@ export const titleContentConfig = {
     contentWidth: "w-full",
     contentAlign: "left",
     contentSize:
-      "text-[1rem] sm:text-[1.125rem] md:text-[1rem] lg:text-[1.25rem]",
+      "text-[1rem] sm:text-[1.125rem] md:text-[1rem] lg:text-[1.3rem]",
     contentColor: "#FFFFFF",
     button: {
       text: "Start Shipping Globally Today",
@@ -612,8 +715,15 @@ export const titleContentConfig = {
     titleSize: "text-[clamp(1.7rem,1.2rem+1vw,2.7rem)]",
     titleColor: "#FFFFFF",
     highlightColor: "#ffbe2e",
-    content:
-      "Don’t let delivery challenges slow down your growth. With the right system in place, you can ensure fast shipping, reliable service, and better customer experience.",
+    content: (
+      <>
+        Don’t let delivery challenges slow down your growth. With the right
+        system in place, you can ensure fast shipping, reliable service, and
+        better customer experience.
+        <br /> <br /> Depoter helps you manage deliveries efficiently so you can
+        focus on scaling your business.
+      </>
+    ),
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
     contentColor: "#FFFFFF",
     button: {

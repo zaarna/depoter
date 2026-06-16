@@ -36,13 +36,18 @@ function StrategicallyLocatedWarehouses({ sectionKey }) {
     {
       id: 4,
       title: "Freezone Facilities",
-      desc: "Compliance-driven logistics for temperature-sensitive and regulated pharmaceutical distribution.",
+      desc: (
+        <>
+          Take advantage of <b>duty-free operations</b> and cost-efficient
+          international shipping with our available Freezone storage options.
+        </>
+      ),
       image: "/faster-deliveries-icon-4.svg",
     },
     {
       id: 5,
       title: "Electronics & Appliances",
-      desc: " Take advantage of duty-free operations and cost-efficient international shipping with our available Freezone storage options.",
+      desc: " We provide optimized infrastructure at highly competitive pricing compared to standard market rates, ensuring a better ROI for your business.",
       image: "/faster-deliveries-icon-5.svg",
     },
   ];

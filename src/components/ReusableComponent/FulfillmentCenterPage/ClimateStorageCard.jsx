@@ -7,7 +7,7 @@ export default function ClimateStorageCard({
   number,
 }) {
   return (
-    <div className="relative overflow-hidden rounded-[24px] bg-gradient-to-b from-[#F5D98A] to-[#F5BC36] p-5 min-h-[400px]">
+    <div className="relative overflow-hidden rounded-[24px] bg-gradient-to-b from-[#fff7e4] to-[#F5BC36] p-5 min-h-[400px]">
       <div className="mb-6">
         <div className="flex h-[140px] w-[140px] items-center justify-center rounded-xl bg-[#F7F4ED]">
           <Image

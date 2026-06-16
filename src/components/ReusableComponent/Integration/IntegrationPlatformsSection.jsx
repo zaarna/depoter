@@ -11,7 +11,7 @@ const platformCards = [
       "/opencartnew.svg",
       "/j.svg",
       "/wixnew.svg",
-      "/custom.png",
+      "/custom.svg",
     ],
   },
   {
@@ -62,7 +62,7 @@ export default function IntegrationPlatformsSection() {
                 {card.items.map((logo, i) => (
                   <div
                     key={i}
-                    className="border-b border-[#D8D0C0] pb-5 flex items-center justify-center min-h-[70px]"
+                    className="border-b-3 border-[#D8D0C0] pb-5 flex items-center justify-center min-h-[70px]"
                   >
                     <img
                       src={logo}
@@ -74,7 +74,7 @@ export default function IntegrationPlatformsSection() {
               </div>
 
               {index === 2 && (
-                <p className="mt-6 text-[16px] leading-[1.7] text-[#212121]">
+                <p className="mt-6 text-[20px] leading-[1.7] font-semibold text-[#212121] border-b-3 border-[#D8D0C0] pb-5 w-40">
                   Other global and regional carriers
                 </p>
               )}

@@ -160,7 +160,7 @@ export default function WhyChooseInfoCard() {
   return (
     <section className="relative">
       {steps.map((step, index) => (
-        <div key={index} className="min-h-[120vh] ">
+        <div key={index} className="min-h-[80vh] ">
           <div className={`sticky top-24 flex justify-center`}>
             <div
               className="stack-inner bg-[fff4db] rounded-3xl py-6 lg:py-8 shadow-xl border border-yellow-200"
