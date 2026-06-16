@@ -95,12 +95,12 @@ export default function Header() {
             {
               name: "Custom Clearance",
               icon: <CustomIcon />,
-              href: "/services/customs",
+              href: "/services/customs-clearance",
             },
             {
               name: "Product Registration",
               icon: <ProductIcon />,
-              href: "/services/bundling",
+              href: "/services/product-registration",
             },
             { name: "IOR/EOR", icon: <IORIcon />, href: "/services/job-eob" },
           ],
@@ -367,7 +367,7 @@ export default function Header() {
                   href="/partner"
                   className="text-[#212121] lg:text-sm xl:text-base hover:border-b-2 transition-colors duration-300"
                 >
-                  Partner
+                  Partner With Us
                 </Link>
                 {/* Get a Quote Button - Desktop */}
                 <Button href="/" className="px-4 py-2.5">

@@ -132,35 +132,35 @@ export default function WhyChooseInfoCard() {
     },
   ];
 
-  useEffect(() => {
-    const cards = gsap.utils.toArray(".stack-inner");
+  // useEffect(() => {
+  //   const cards = gsap.utils.toArray(".stack-inner");
 
-    cards.forEach((card, index) => {
-      if (index === cards.length - 1) return;
+  //   cards.forEach((card, index) => {
+  //     if (index === cards.length - 1) return;
 
-      const scaleTo = 1 - (cards.length - 1 - index) * 0.08;
+  //     const scaleTo = 1 - (cards.length - 1 - index) * 0.08;
 
-      gsap.to(card, {
-        scale: scaleTo,
-        y: -20,
-        filter: "brightness(0.85)",
-        ease: "none",
-        scrollTrigger: {
-          trigger: cards[index + 1],
-          start: "top center",
-          end: "top top",
-          scrub: true,
-        },
-      });
-    });
+  //     gsap.to(card, {
+  //       scale: scaleTo,
+  //       y: -20,
+  //       filter: "brightness(0.85)",
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         trigger: cards[index + 1],
+  //         start: "top center",
+  //         end: "top top",
+  //         scrub: true,
+  //       },
+  //     });
+  //   });
 
-    return () => ScrollTrigger.getAll().forEach((t) => t.kill());
-  }, []);
+  //   return () => ScrollTrigger.getAll().forEach((t) => t.kill());
+  // }, []);
 
   return (
     <section className="relative">
       {steps.map((step, index) => (
-        <div key={index} className="min-h-[80vh] ">
+        <div key={index} className="min-h-[700px] ">
           <div className={`sticky top-24 flex justify-center`}>
             <div
               className="stack-inner bg-[fff4db] rounded-3xl py-6 lg:py-8 shadow-xl border border-yellow-200"
