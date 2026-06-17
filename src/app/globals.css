@@ -1582,7 +1582,7 @@ li {
   /* border: 2px solid #ffbe2e; */
   width: 100%;
   padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); */
   /* transition: box-shadow 0.5s; */
   overflow: hidden;
   /* height: 570px; */
