@@ -33,7 +33,7 @@ const invoiceFeatures = [
 
 export default function TransparentInvoicingSection() {
   return (
-    <section className="bg-[#A78D54]">
+    <section className="transparent-invoicing-bg">
       <div className="container mx-auto px-4">
         <div
           className="overflow-hidden rounded-lg  px-8 py-14 lg:px-16"

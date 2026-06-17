@@ -31,7 +31,7 @@ const IntegrationBenefits = () => {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left Content */}
           <div>
-            <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-[#212121]">
+            <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] text-[#212121]">
               Stop Managing
               <br />
               Multiple Systems —

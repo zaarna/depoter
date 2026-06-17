@@ -22,11 +22,11 @@ export default function AmazonCardHolder({ industry }) {
       className={`amazon-card flex flex-col items-center gap-4 h-40 p-10 text-start rounded-lg relative bg-amazon-${industry.rotate}`}
     >
       {isEven && !isMobile && (
-        <div className="absolute w-[15px] h-[15px] bg-black rounded-full left-[12px] top-[45%] -translate-y-1/2" />
+        <div className="absolute w-[0.9rem] h-[0.9rem] bg-black rounded-full left-[3%] top-[45%] -translate-y-1/2" />
       )}
 
       {!isEven && !isMobile && (
-        <div className="absolute w-[15px] h-[15px] bg-black rounded-full right-[12px] top-[45%] -translate-y-1/2" />
+        <div className="absolute w-[0.9rem] h-[0.9rem] bg-black rounded-full right-[3%] top-[45%] -translate-y-1/2" />
       )}
       <h4
         className={` ${industry.rotate === "rotate-6" ? "ms-20" : "me-20 text-end"} ${isMobile ? "mt-6" : "mt-6"}`}
