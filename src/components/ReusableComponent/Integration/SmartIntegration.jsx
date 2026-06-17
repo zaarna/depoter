@@ -15,7 +15,7 @@ function SmartIntegration({ sectionKey = [] }) {
   ];
 
   return (
-    <section className="py-8 md:py-16 smart-integration-bg relative overflow-hidden">
+    <section className="py-8 md:py-30 smart-integration-bg relative overflow-hidden">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center gap-8 relative z-10">
           <div className="w-full lg:w-[65%] text-center lg:text-left">

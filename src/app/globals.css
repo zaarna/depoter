@@ -1576,14 +1576,10 @@ li {
 }
 
 .every-order-card {
-  /* position: relative; */
-  /* background-color: white; */
   border-radius: 1.5rem;
   /* border: 2px solid #ffbe2e; */
   width: 100%;
   padding: 2rem;
-  /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); */
-  /* transition: box-shadow 0.5s; */
   overflow: hidden;
   /* height: 570px; */
   background: linear-gradient(220deg, #fff7e4 20%, #ffbe2e 100%);
@@ -1653,36 +1649,36 @@ li {
 
 .amazon-lines-1 {
   position: absolute;
-  top: 68px;
-  left: 400px;
+  top: 13%;
+  left: 32%;
   z-index: 1;
   /* width: 00px; */
   /* font-size: 14px; */
 }
 .amazon-lines-2 {
   position: absolute;
-  top: 68px;
-  left: 710px;
+  top: 13%;
+  left: 55%;
 }
 .amazon-lines-3 {
   position: absolute;
-  top: 383px;
-  left: 400px;
+  top: 70%;
+  left: 32%;
 }
 .amazon-lines-4 {
   position: absolute;
-  top: 225px;
-  left: 460px;
+  top: 40.5%;
+  left: 36%;
 }
 .amazon-lines-5 {
   position: absolute;
-  top: 225px;
-  left: 770px;
+  top: 40.5%;
+  left: 56%;
 }
 .amazon-lines-6 {
   position: absolute;
-  top: 382px;
-  left: 710px;
+  top: 70%;
+  left: 55%;
 }
 
 .bg-amazon-rotate-12 {
@@ -1758,25 +1754,28 @@ li {
 }
 
 @media (min-width: 768px) {
+  .amazon-card {
+    height: 150px;
+  }
   .amazon-card h4 {
-    font-size: 20px;
+    font-size: 1em;
     width: 75%;
   }
 
   .icon-wrapper-right {
-    position: relative;
+    position: absolute;
     width: 50px;
     height: 50px;
-    top: -95px;
-    left: 150px;
+    top: 30%;
+    left: 80%;
     z-index: 2;
   }
   .icon-wrapper-left {
-    position: relative;
+    position: absolute;
     width: 50px;
     height: 50px;
-    top: -95px;
-    left: -150px;
+    top: 30%;
+    left: 10%;
     z-index: 2;
   }
 
@@ -1787,6 +1786,90 @@ li {
   .merchant-title {
     font-size: 24px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .icon-wrapper-right {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-wrapper-left {
+    width: 30px;
+    height: 30px;
+  }
+
+  .amazon-card h4 {
+    font-size: 0.7rem;
+    width: 90%;
+  }
+  .amazon-lines-1 {
+    top: 13%;
+    left: 25%;
+    /* width: 00px; */
+    /* font-size: 14px; */
+  }
+  .amazon-lines-2 {
+    top: 13%;
+    left: 55%;
+  }
+  .amazon-lines-3 {
+    top: 68.5%;
+    left: 25%;
+  }
+  .amazon-lines-4 {
+    top: 40.5%;
+    left: 60%;
+  }
+  .amazon-lines-5 {
+    top: 40.5%;
+    left: 31%;
+  }
+  .amazon-lines-6 {
+    top: 68.5%;
+    left: 55%;
+  }
+}
+@media (max-width: 1300px) {
+  .icon-wrapper-right {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-wrapper-left {
+    width: 30px;
+    height: 30px;
+  }
+
+  .amazon-card h4 {
+    font-size: 0.7rem;
+    width: 90%;
+  }
+  .amazon-lines-1 {
+    top: 13%;
+    left: 25%;
+    /* width: 00px; */
+    /* font-size: 14px; */
+  }
+  .amazon-lines-2 {
+    top: 13%;
+    left: 55%;
+  }
+  .amazon-lines-3 {
+    top: 68.5%;
+    left: 25%;
+  }
+  .amazon-lines-4 {
+    top: 40.5%;
+    left: 60%;
+  }
+  .amazon-lines-5 {
+    top: 40.5%;
+    left: 31%;
+  }
+  .amazon-lines-6 {
+    top: 68.5%;
+    left: 55%;
   }
 }
 
@@ -2697,11 +2780,12 @@ li {
 
 .smart-integration-bg {
   background:
-    linear-gradient(180deg, rgba(128, 96, 33, 0.92), rgba(123, 91, 27, 0.92)),
+    linear-gradient(180deg, rgba(128, 96, 33, 0.8), rgba(123, 91, 27, 0.8)),
     url("/fbm-bg.jpg");
 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .expert-card-section {
@@ -2737,4 +2821,14 @@ li {
   .point-card-bg {
     /* background-position: center; */
   }
+}
+
+.transparent-invoicing-bg {
+  background-image:
+    linear-gradient(rgba(151, 128, 80, 0.93), rgba(151, 128, 80, 0.93)),
+    url("/automated-accurate-bg.svg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
