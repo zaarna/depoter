@@ -97,7 +97,7 @@ function InvoiceFeatureCard({ number, title, description, dark }) {
         <h4 className="text-xl font-bold">{title}</h4>
 
         <p
-          className={`mt-2 text-sm leading-relaxed ${
+          className={`mt-2 text-[18px] leading-relaxed ${
             dark ? "text-white/90" : "text-black/80"
           }`}
         >
