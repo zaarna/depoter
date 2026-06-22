@@ -33,7 +33,7 @@ function WeStoreAnything({ sectionKey = "" }) {
   return (
     <section className="py-8 md:py-16 bg-[#978050] relative overflow-hidden">
       <div className="container">
-        <div className="text-center relative z-10 mb-15">
+        <div className="text-center relative z-10 lg:mb-15">
           <TitleContent {...tc} />
         </div>
 

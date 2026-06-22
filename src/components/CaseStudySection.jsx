@@ -19,7 +19,7 @@ function CaseStudySection({ sectionKey = [] }) {
           <CaseStudyCard />
           <Button
             children="View More"
-            className="mt-15 w-[300px] px-5 py-3 mx-auto cursor-pointer"
+            className="mt-0 md:mt-10 w-[300px] px-5 py-3 mx-auto cursor-pointer"
           />
         </div>
       </div>

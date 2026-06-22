@@ -36,7 +36,7 @@ function CustomsClearance({ sectionKey = "" }) {
         </div>
 
         <div className="mt-6 md:mt-12">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-20 lg:gap-6">
             {industries.map((industry, index) => (
               <CustomsClearanceCard key={index} industry={industry} />
             ))}

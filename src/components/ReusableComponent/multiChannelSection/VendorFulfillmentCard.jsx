@@ -46,9 +46,8 @@ export default function VendorFulfillmentCard() {
         {industries.map((industry, index) => (
           <div
             key={industry.id}
-            className={`merchant-row ${
-              index % 2 === 0 ? "left-card" : "right-card"
-            }`}
+            className={`merchant-row ${index % 2 === 0 ? "left-card" : "right-card"
+              }`}
           >
             <div className="vendor-card-image-bg ">
               <div
@@ -65,11 +64,10 @@ export default function VendorFulfillmentCard() {
               <div className="vendor-card-content">
                 {/* <span className="vendor-card-step">Step {industry.id}</span> */}
                 <p
-                  className={`vendor-card-title ${
-                    index % 2 === 0
-                      ? "vendor-card-title-right"
-                      : "vendor-card-title-left"
-                  }`}
+                  className={`vendor-card-title ${index % 2 === 0
+                    ? "vendor-card-title-right"
+                    : "vendor-card-title-left"
+                    }`}
                 >
                   {industry.title}
                 </p>

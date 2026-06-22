@@ -19,7 +19,7 @@ export default function AmazonCardHolder({ industry }) {
 
   return (
     <div
-      className={`amazon-card flex flex-col items-center gap-4 h-40 p-10 text-start rounded-lg relative bg-amazon-${industry.rotate}`}
+      className={`amazon-card flex flex-col items-center md:gap-4 h-25 md:h-40 p-3 md:p-10 text-start rounded-lg relative bg-amazon-${industry.rotate}`}
     >
       {isEven && !isMobile && (
         <div className="absolute w-[0.9rem] h-[0.9rem] bg-black rounded-full left-[3%] top-[45%] -translate-y-1/2" />

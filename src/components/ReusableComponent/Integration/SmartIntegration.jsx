@@ -36,9 +36,9 @@ function SmartIntegration({ sectionKey = [] }) {
                 {paragraph}
               </p>
             ))}
-            <div className="w-75 h-[1.5px] bg-[#FFFFFF] mt-[90px] me-auto "></div>
+            <div className="hidden md:block w-75 h-[1.5px] bg-[#FFFFFF] mt-[90px] me-auto "></div>
           </div>
-          <div className="w-full lg:w-[35%] flex justify-center lg:justify-end">
+          <div className="w-full lg:w-[35%] flex justify-center lg:justify-end mt-10 md:mt-0">
             <div className="w-full ms-10 rounded-3xl">
               <img
                 src="/Smart-Integration.svg"

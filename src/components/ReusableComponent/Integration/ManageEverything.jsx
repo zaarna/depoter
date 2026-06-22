@@ -17,7 +17,7 @@ function ManageEverything({ sectionKey = [] }) {
             href=""
             className="
     group relative overflow-hidden
-    mx-auto block w-[25%]
+    mx-auto block sm:w-[80%] md:w-[60%] lg:w-[30%]
     py-4 px-10
     rounded-full
     bg-[#FFBE2E]

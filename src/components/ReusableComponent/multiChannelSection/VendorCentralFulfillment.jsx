@@ -6,7 +6,7 @@ export default function VendorCentralFulfillment() {
     <>
       <div className="text-center vendor-card-image w-full pb-15">
         <h2
-          className="text-black font-bold mt-20"
+          className="text-black font-bold mt-10  lg:mt-20"
           style={{ fontSize: "36px", fontFamily: "outfit" }}
         >
           Vendor Central Fulfillment

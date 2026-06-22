@@ -19,16 +19,17 @@ function ShippingWithConfidence({ sectionKey = [] }) {
             href=""
             className="
     group relative overflow-hidden
-    mx-auto block w-[25%]
+    mx-auto block
+    w-full sm:w-full md:w-[60%] lg:w-[25%]
     py-4 px-10
     rounded-full
     bg-[#FFBE2E]
     text-black
     font-semibold
+    text-center
     transition-all duration-500
     hover:scale-105
   "
-            variant=""
           >
             <span className="relative z-10">Talk to a Freight Expert</span>
 

@@ -59,7 +59,7 @@ export default function ScalabilityCard() {
       {stats.map((stat) => (
         <div
           key={stat.id}
-          className="group relative overflow-hidden rounded-3xl cursor-pointer h-[300px] md:h-[374px] shadow-lg hover:shadow-2xl transition-all duration-500 p-6 bg-white"
+          className="group relative overflow-hidden rounded-3xl cursor-pointer h-[270px] md:h-[374px] shadow-lg hover:shadow-2xl transition-all duration-500 p-6 bg-white"
         >
           <div
             className={`absolute top-0 left-0 w-full h-1/2 md:h-full transition-all duration-500 group-hover:h-1/2
@@ -82,7 +82,7 @@ export default function ScalabilityCard() {
             </div>
 
             {stat.subtitle ? (
-              <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-4 px-0 md:px-9">
+              <div className="flex flex-col md:flex-row justify-center items-around md:items-start gap-4 px-0 md:px-9">
                 <h3
                   className={`text-4xl md:text-6xl font-bold transition-colors duration-500 ${
                     stat.bgColor === "yellow"

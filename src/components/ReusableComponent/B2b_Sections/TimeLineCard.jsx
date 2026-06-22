@@ -10,9 +10,8 @@ const TimelineCard = React.forwardRef(
       <>
         {isMobile ? (
           <div
-            className={`flex md:hidden flex-col w-full ${
-              index % 2 == 0 ? "items-start" : "items-end"
-            }`}
+            className={`flex md:hidden flex-col w-full ${index % 2 == 0 ? "items-start" : "items-end"
+              }`}
             ref={ref}
           >
             <div className="w-1/2 text-center">
@@ -45,7 +44,7 @@ const TimelineCard = React.forwardRef(
 
 function Text({ title }) {
   return (
-    <h3 className="text-[20px] md:text-[20px] font-semibold text-[#000000] mb-4">
+    <h3 className="text-[18px] md:text-[20px] font-semibold text-[#000000] mb-4">
       {title}
     </h3>
   );
@@ -56,11 +55,10 @@ function Image({ icon, isTopRow }) {
     <img
       src={icon}
       alt=""
-      className={`${
-        isTopRow
-          ? "md:mb-4 md:mt-5 updownAnimated"
-          : "md:mt-4 md:mb-5 downupAnimated"
-      } w-30 h-30`}
+      className={`${isTopRow
+        ? "md:mb-4 md:mt-5 updownAnimated"
+        : "md:mt-4 md:mb-5 downupAnimated"
+        } w-30 h-30`}
     />
   );
 }

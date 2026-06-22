@@ -11,9 +11,8 @@ export default function FreightProcessCard({
 }) {
   return (
     <div
-      className={`w-full flex flex-col lg:flex-row items-center ${
-        isEven ? "lg:justify-end" : "lg:justify-start"
-      }`}
+      className={`w-full flex flex-col lg:flex-row items-center ${isEven ? "lg:justify-end" : "lg:justify-start"
+        }`}
     >
       {/* Mobile Image */}
       {processImage && (
@@ -23,7 +22,7 @@ export default function FreightProcessCard({
             alt={title}
             width={220}
             height={220}
-            className="object-contain w-[180px] sm:w-[220px] h-auto"
+            className="object-contain w-[180px] h-auto"
           />
         </div>
       )}
@@ -46,7 +45,7 @@ export default function FreightProcessCard({
         {/* Header */}
         <div className="relative">
           <div
-            className="h-[50px] sm:h-[58px] flex items-center pl-[55px] sm:pl-[65px] pr-4 sm:pr-6"
+            className="h-[50px] flex items-center pl-[35px] lg:pl-[55px] pr-4 sm:pr-6"
             style={{
               backgroundImage: "url('/freight-process-icon-1.svg')",
               backgroundSize: "100% 100%",
@@ -54,20 +53,20 @@ export default function FreightProcessCard({
               backgroundPosition: "center",
             }}
           >
-            <h3 className="text-[13px] sm:text-[15px] md:text-[20px] font-bold text-[#2D2D2D] leading-tight">
+            <h3 className="text-[13px] md:text-[20px] font-bold text-[#2D2D2D] leading-tight">
               {title}
             </h3>
           </div>
 
           {/* Number Badge */}
-          <div className="absolute left-[4px] top-1/2 z-20 flex h-7 w-7 sm:h-8 sm:w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#3C2C0B] text-sm sm:text-base font-bold text-white">
+          <div className="absolute left-0.5 lg:left-[4px] top-1/2 z-20 flex h-5 w-5  md:h-7 md:w-7 sm:h-8 sm:w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#3C2C0B] text-sm sm:text-base font-bold text-white">
             {String(number).padStart(2, "0")}
           </div>
         </div>
 
         {/* Description Box */}
-        <div className="mt-3 ml-0 lg:ml-14 rounded-[16px] lg:rounded-[20px] border border-[#D39A00] bg-[#FFC62A] px-4 sm:px-6 py-4 sm:py-5 shadow-sm">
-          <p className="text-[14px] sm:text-[15px] leading-relaxed text-[#2D2D2D]">
+        <div className="mt-3 ml-0 lg:ml-14 rounded-[16px] lg:rounded-[20px] border border-[#D39A00] bg-[#FFC62A] lg:px-4 px-6 py-4 sm:py-5 shadow-sm">
+          <p className="text-[13px] sm:text-[15px] leading-relaxed text-[#2D2D2D]">
             {description}
           </p>
         </div>

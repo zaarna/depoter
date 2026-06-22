@@ -135,9 +135,8 @@ function AdvanceTechnologySection(sectionKey = []) {
 
     // === 3. FINAL HORIZONTAL ===
     const lastCenterX = sortedCards[sortedCards.length - 1].centerX;
-    const finalPath = `M${lastCenterX + horizontalGap} ${lineY} L${
-      svgWidth - 10
-    } ${lineY}`;
+    const finalPath = `M${lastCenterX + horizontalGap} ${lineY} L${svgWidth - 10
+      } ${lineY}`;
     paths.push(finalPath);
 
     setSvgData({
@@ -210,8 +209,7 @@ function AdvanceTechnologySection(sectionKey = []) {
 
     const firstHorizontalY = cardData[0].cardTopY - 10;
     paths.push(
-      `M${centerX} ${startY} V${
-        firstHorizontalY - curveRadius - verticalReduction
+      `M${centerX} ${startY} V${firstHorizontalY - curveRadius - verticalReduction
       }`,
     ); // Vertical ends earlier (natural gap)
 
@@ -226,15 +224,13 @@ function AdvanceTechnologySection(sectionKey = []) {
 
       if (card.isRightSide) {
         // Curve right towards icon
-        horizontalPath += `M${centerX + 40} ${horizontalY} Q${centerX} ${
-          horizontalY - verticalGap
-        } ${centerX + curveRadius} ${horizontalY - verticalGap}`;
+        horizontalPath += `M${centerX + 40} ${horizontalY} Q${centerX} ${horizontalY - verticalGap
+          } ${centerX + curveRadius} ${horizontalY - verticalGap}`;
         horizontalPath += ` L${targetX} ${horizontalY - verticalGap}`;
       } else {
         // Curve left towards icon
-        horizontalPath += `M${centerX - 20} ${horizontalY} Q${centerX - 20} ${
-          horizontalY - verticalGap
-        } ${centerX - curveRadius} ${horizontalY - verticalGap}`;
+        horizontalPath += `M${centerX - 20} ${horizontalY} Q${centerX - 20} ${horizontalY - verticalGap
+          } ${centerX - curveRadius} ${horizontalY - verticalGap}`;
         horizontalPath += ` L${targetX} ${horizontalY - verticalGap}`;
       }
       paths.push(horizontalPath);
@@ -244,19 +240,16 @@ function AdvanceTechnologySection(sectionKey = []) {
         const nextHorizontalY = cardData[index + 1].cardTopY - 10;
 
         // Curve FROM horizontal BACK TO vertical (NO GAP HERE)
-        let verticalPath = `M${
-          centerX + (card.isRightSide ? curveRadius : -curveRadius)
-        } ${horizontalY - verticalGap}`;
+        let verticalPath = `M${centerX + (card.isRightSide ? curveRadius : -curveRadius)
+          } ${horizontalY - verticalGap}`;
 
         // Smooth curve connecting horizontal to vertical
-        verticalPath += ` Q${centerX} ${horizontalY - verticalGap} ${centerX} ${
-          horizontalY - verticalGap + curveRadius
-        }`;
+        verticalPath += ` Q${centerX} ${horizontalY - verticalGap} ${centerX} ${horizontalY - verticalGap + curveRadius
+          }`;
 
         // Straight line down, but SHORTER (ends earlier for natural gap)
-        verticalPath += ` L${centerX} ${
-          nextHorizontalY - curveRadius - verticalReduction
-        }`; // Vertical ends earlier (natural gap)
+        verticalPath += ` L${centerX} ${nextHorizontalY - curveRadius - verticalReduction
+          }`; // Vertical ends earlier (natural gap)
 
         paths.push(verticalPath);
       }
@@ -267,14 +260,12 @@ function AdvanceTechnologySection(sectionKey = []) {
     const lastHorizontalY = cardData[cardData.length - 1].cardTopY - 10;
     const lastIsRightSide = cardData[cardData.length - 1].isRightSide;
 
-    let finalVertical = `M${
-      centerX + (lastIsRightSide ? curveRadius : -curveRadius)
-    } ${lastHorizontalY - verticalGap}`;
+    let finalVertical = `M${centerX + (lastIsRightSide ? curveRadius : -curveRadius)
+      } ${lastHorizontalY - verticalGap}`;
 
     // Smooth curve from horizontal to vertical
-    finalVertical += ` Q${centerX} ${
-      lastHorizontalY - verticalGap
-    } ${centerX} ${lastHorizontalY - verticalGap + curveRadius}`;
+    finalVertical += ` Q${centerX} ${lastHorizontalY - verticalGap
+      } ${centerX} ${lastHorizontalY - verticalGap + curveRadius}`;
 
     // Straight to bottom circle (FULL LENGTH, no reduction)
     finalVertical += ` L${centerX} ${endY}`;
@@ -411,11 +402,10 @@ function AdvanceTechnologySection(sectionKey = []) {
 
           {/* Cards */}
           <div
-            className={`relative flex ${
-              isMobile
-                ? "flex-col gap-y-8 justify-center min-h-[1450px] "
-                : "gap-x-5 gap-y-15 px-10 py-10 flex-row flex-wrap justify-center items-center"
-            }`}
+            className={`relative flex ${isMobile
+              ? "flex-col gap-y-8 justify-center min-h-[1450px] "
+              : "gap-x-5 gap-y-15 px-10 py-10 flex-row flex-wrap justify-center items-center"
+              }`}
           >
             {solutions.map((item, index) => (
               <TimelineCard

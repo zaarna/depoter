@@ -27,7 +27,7 @@ export default function CardsSection() {
       {/* Top Section */}
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-6">
         {/* First Card - 60% */}
-        <div className="group relative lg:col-span-6 h-[550px] rounded-3xl overflow-hidden">
+        <div className="group relative lg:col-span-6 md:h-[550px] h-[280px] rounded-3xl border-2 border-[#e8b954]  md:border-none overflow-hidden">
           <Image
             src="/magnific__enhance__89677.png"
             alt="Featured Card"
@@ -59,7 +59,7 @@ export default function CardsSection() {
             "
           >
             <Link
-              href="/case-study"
+              href="#"
               className="
                 text-[#FFB703]
                 text-2xl font-semibold
@@ -130,7 +130,7 @@ export default function CardsSection() {
     "
           >
             <Link
-              href="/case-study"
+              href="#"
               className="
         text-[#FFB703]
         text-2xl font-semibold

@@ -20,7 +20,7 @@ function FBNOrderCard({ iconsImage, title, description }) {
           className="mx-auto"
         />
         <div className="fbn-order-description">
-          <p className="mx-auto p-4 w-50">{description}</p>
+          <p className="mx-auto py-2 px-4 w-50">{description}</p>
         </div>
       </div>
     </div>

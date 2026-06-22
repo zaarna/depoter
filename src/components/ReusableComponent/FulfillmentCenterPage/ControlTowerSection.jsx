@@ -26,7 +26,7 @@ export default function ControlTowerSection() {
       <div className="container mx-auto px-4">
         <div className=" p-6 md:p-12">
           {/* Heading */}
-          <div className="text-center mb-30">
+          <div className="text-center mb-20 md:mb-30">
             <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] font-bold leading-tight">
               <span className="text-black">Control Tower for </span>
               <span className="text-[#F5B52E]">End-to-End Support</span>
@@ -39,7 +39,7 @@ export default function ControlTowerSection() {
           </div>
 
           {/* Content */}
-          <div className="mt-16 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="lg:mt-16 grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side */}
             <div className="flex flex-col gap-10">
               {supportData.map((item, index) => (
@@ -96,7 +96,7 @@ function SupportCard({ title, description, number }) {
       {/* Top Title Box */}
       <div className="rounded-full border border-[#B8B8B8] bg-[#F7F7F7] px-5 py-2 shadow-sm">
         <h3
-          className="text-[28px] leading-none text-[#333333]"
+          className="text-[20px] md:text-[24px] lg:text-[28px] leading-none text-[#333333]"
           style={{ fontWeight: "500" }}
         >
           {title}
@@ -105,7 +105,7 @@ function SupportCard({ title, description, number }) {
 
       {/* Description Box */}
       <div className="mt-2 rounded-2xl border border-[#D39A00] bg-[#F5B52E] px-5 py-4 shadow-sm">
-        <p className="text-[20px] leading-relaxed text-[#333333]">
+        <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-relaxed text-[#333333]">
           {description}
         </p>
       </div>

@@ -160,7 +160,7 @@ export default function WhyChooseInfoCard() {
   return (
     <section className="relative">
       {steps.map((step, index) => (
-        <div key={index} className="min-h-[700px] ">
+        <div key={index} className="min-h-[650px] mb-10 ">
           <div className={`sticky top-24 flex justify-center`}>
             <div
               className="stack-inner bg-[fff4db] rounded-3xl py-6 lg:py-8 shadow-xl border border-yellow-200"
@@ -179,7 +179,7 @@ export default function WhyChooseInfoCard() {
                   <h2 className="text-xl lg:text-3xl text-gray-900">
                     {step.title}
                   </h2>
-                  <div className="flex-1 h-0.5 bg-[#FFBE2E] relative dot-line" />
+                  <div className="hidden lg:block flex-1 h-0.5 bg-[#FFBE2E] relative dot-line" />
                 </div>
               </div>
 

@@ -10,7 +10,7 @@ import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHer
 import ShippingWithConfidence from "@/components/ShippingWithConfidence";
 import TestimonialSection from "@/components/TestimonialSection";
 
-export default function multiChannelPage() {
+export default function FreightForwarding() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
@@ -24,7 +24,6 @@ export default function multiChannelPage() {
         <IndustriesWeServe />
         <FAQSection />
         <ShippingWithConfidence />
-        {/* <TestimonialSection /> */}
       </main>
     </div>
   );

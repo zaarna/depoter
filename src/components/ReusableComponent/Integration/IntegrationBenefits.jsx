@@ -31,7 +31,7 @@ const IntegrationBenefits = () => {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left Content */}
           <div>
-            <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] text-[#212121]">
+            <h2 className="text-[clamp(1.4rem,1.2rem+1vw,2.7rem)] text-[#212121]">
               Stop Managing
               <br />
               Multiple Systems —
@@ -66,11 +66,10 @@ const IntegrationBenefits = () => {
             {benefits.map((item, index) => (
               <div
                 key={index}
-                className={`rounded-[24px] p-6 md:p-8 min-h-[250px] flex flex-col justify-between transition-all duration-300 ${
-                  item.dark
-                    ? "bg-[#A99158]"
-                    : "bg-white border border-[#F5B42B]"
-                }`}
+                className={`rounded-[24px] p-6 md:p-8 min-h-[250px] flex flex-col justify-between transition-all duration-300 ${item.dark
+                  ? "bg-[#A99158]"
+                  : "bg-white border border-[#F5B42B]"
+                  }`}
               >
                 <div className="flex justify-center">
                   <Image
@@ -83,9 +82,8 @@ const IntegrationBenefits = () => {
                 </div>
 
                 <h3
-                  className={`text-center text-lg md:text-xl font-medium leading-snug ${
-                    item.dark ? "text-white" : "text-[#212121]"
-                  }`}
+                  className={`text-center text-lg md:text-xl font-medium leading-snug ${item.dark ? "text-white" : "text-[#212121]"
+                    }`}
                 >
                   {item.title}
                 </h3>

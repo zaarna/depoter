@@ -84,15 +84,15 @@ export default function SolutionAudienceSection() {
           {audienceData.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-full px-5 py-4 flex items-center gap-4"
+              className="bg-white rounded-full px-3 py-2 flex items-center gap-4"
             >
-              <div className="w-14 h-14 rounded-full bg-[#4D3400] border-2 border-white flex items-center justify-center">
-                <div className="w-10 h-10 rounded-full bg-[#F5B52E] flex items-center justify-center">
+              <div className="w-20 h-20 rounded-full bg-[#4D3400] border-2 border-white flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-[#F5B52E] flex items-center justify-center">
                   <Image
                     src={item.icon}
                     alt={item.title}
-                    width={22}
-                    height={22}
+                    width={60}
+                    height={60}
                   />
                 </div>
               </div>

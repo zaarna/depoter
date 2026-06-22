@@ -14,6 +14,8 @@ import HomeHoverIcon from "./ReusableComponent/Icons/HomeHoverIcon";
 import FoodIcon from "./ReusableComponent/Icons/FoodIcon";
 import FoodHoverIcon from "./ReusableComponent/Icons/FoodHoverIcon";
 import SportIcon from "./ReusableComponent/Icons/SportIcon";
+import SportIconHover from "./ReusableComponent/Icons/SportIconHover";
+import ApparelIconHover from "./ReusableComponent/Icons/ApparelIconHover";
 
 function BuildToHandlesection({ sectionKey = [] }) {
   const industries = [
@@ -63,6 +65,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
     {
       id: 3,
       icon: ApparelIcon,
+      hoverIcon: ApparelIconHover,
       title: "Apparel & Accessories",
       description:
         "Neat packing and smooth delivery for clothing, shoes, and accessories.",
@@ -149,6 +152,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
     {
       id: 7,
       icon: SportIcon,
+      hoverIcon: SportIconHover,
       title: "Sports, Toys & Games",
       description:
         "Quick dispatch for active gear, kids' toys, and high-volume seasonal orders.",

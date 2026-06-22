@@ -36,7 +36,7 @@ const steps = [
 export default function ReturnNExchangeCard() {
   return (
     <div className="max-w-[1100px] mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-5 lg:gap-y-16 auto-rows-fr relative">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-0 lg:gap-y-16 auto-rows-fr relative">
         {steps.map((step, i) => (
           <div
             key={i}
@@ -57,7 +57,7 @@ export default function ReturnNExchangeCard() {
             </div>
 
             {/* TEXT */}
-            <div className="w-full lg:w-[230px] text-center lg:text-left mt-10">
+            <div className="w-full lg:w-[230px] text-center lg:text-left mt-0 ">
               <h3 className="text-xl font-bold text-[white] mb-7">
                 {step.title}
               </h3>

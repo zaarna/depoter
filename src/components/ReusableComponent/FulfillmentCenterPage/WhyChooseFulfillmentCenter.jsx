@@ -125,10 +125,10 @@ function BenefitCard({ title, description, dark, className = "" }) {
         ${className}
       `}
     >
-      <h3 className="text-base font-bold">{title}</h3>
+      <h3 className="text-[20px] font-bold">{title}</h3>
 
       <p
-        className={`mt-2 text-sm leading-relaxed ${
+        className={`mt-2 text-[16px] leading-relaxed ${
           dark ? "text-white/90" : "text-black/80"
         }`}
       >

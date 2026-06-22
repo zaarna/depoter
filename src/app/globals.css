@@ -420,8 +420,8 @@ li {
   height: 1190px;
   background: linear-gradient(
       90deg,
-      rgba(255, 247, 228, 1) 0%,
-      rgba(255, 247, 228, 0.5) 15%,
+      rgba(255, 247, 228, 1) 15%,
+      rgba(255, 247, 228, 0.5) 22%,
       rgba(255, 247, 228, 0) 100%
     )
     22% 0;
@@ -766,7 +766,7 @@ li {
       url("/mobilehomepagebanner@2x.webp") 2x,
       url("/mobilehomepagebanner@3x.webp") 3x
     );
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
@@ -850,8 +850,8 @@ li {
   /* .backgroundcover-home, */
   .backgroundcover-d2c {
     position: relative;
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: top;
     background-repeat: no-repeat;
     z-index: 2;
     display: flex;
@@ -863,11 +863,19 @@ li {
     min-height: 1100px;
     height: max-content;
     /* background-image: url("/mobiled2cbanner.png"); */
-    background-image: image-set(
-      url("/mobiled2cbanner.webp") 1x,
-      url("/mobiled2cbanner@2x.webp") 2x,
-      url("/mobiled2cbanner@3x.webp") 3x
-    );
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      image-set(
+        url("/mobiled2cbanner.webp") 1x,
+        url("/mobiled2cbanner@2x.webp") 2x,
+        url("/mobiled2cbanner@3x.webp") 3x
+      );
     align-items: start;
   }
   .backgroundcover-d2c > .container {
@@ -875,14 +883,23 @@ li {
     padding-bottom: 25px;
     margin-top: 280px;
   }
+
   .backgroundcover-b2b {
     /* background-image: url("/b2bmobilebanner.webp"); */
-    background-image: image-set(
-      url("/b2bmobilebanner.webp") 1x,
-      url("/b2bmobilebanner@2x.webp") 2x,
-      url("/b2bmobilebanner@3x.webp") 3x
-    );
-    background-size: cover;
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      image-set(
+        url("/b2bmobilebanner.webp") 1x,
+        url("/b2bmobilebanner@2x.webp") 2x,
+        url("/b2bmobilebanner@3x.webp") 3x
+      );
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
@@ -937,18 +954,22 @@ li {
   }
 
   .backgroundcover-multichannel {
-    /* background-image: url("/b2bmobilebanner.webp"); */
-    background-image: image-set(
-      url("/MultichannelMobile.svg") 1x,
-      url("/MultichannelMobile.svg") 2x,
-      url("/MultichannelMobile.svg") 3x
-        /* url("/b2bmobilebanner@2x.webp") 2x,
-      url("/b2bmobilebanner@3x.webp") 3x */
-    );
-    /* background-size: cover; */
-    background-position: center;
-    background-position-y: top;
-    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      url("/MultichannelMobile.svg");
+
+    background-size: 100%, 100%;
+    background-position:
+      center top,
+      center top;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #fff7e4;
     z-index: 2;
   }
 
@@ -961,8 +982,9 @@ li {
         /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
     );
-    /* background-size: cover; */
+    background-size: 100% 100%;
     background-position: center;
+
     background-position-y: top;
     background-repeat: no-repeat;
     z-index: 2;
@@ -970,15 +992,24 @@ li {
 
   .backgroundcover-freightforwarding {
     /* background-image: url("/b2bmobilebanner.webp"); */
-    background-image: image-set(
-      url("/freightforwarding-bg-mobile-1x.webp") 1x,
-      url("/freightforwarding-bg-mobile-2x.webp") 2x,
-      url("/freightforwarding-bg-mobile-3x.webp") 3x
-        /* url("/b2bmobilebanner@2x.webp") 2x,
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      image-set(
+        url("/freightforwarding-bg-mobile-1x.webp") 1x,
+        url("/freightforwarding-bg-mobile-2x.webp") 2x,
+        url("/freightforwarding-bg-mobile-3x.webp") 3x
+          /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
-    );
-    /* background-size: cover; */
-    background-position: center;
+      );
+    background-size: 100%;
+    background-color: #fff7e4;
+    /* background-position: center; */
     background-position-y: top;
     background-repeat: no-repeat;
     z-index: 2;
@@ -986,15 +1017,24 @@ li {
 
   .backgroundcover-fulfillmentcenter {
     /* background-image: url("/b2bmobilebanner.webp"); */
-    background-image: image-set(
-      url("/fulfillment-order-mobile.webp")
-        /* url("/B2B_heroimg.webp") 2x,
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      image-set(
+        url("/fulfillment-order-mobile.png")
+          /* url("/B2B_heroimg.webp") 2x,
       url("/B2B_heroimg.webp") 3x */
-        /* url("/b2bmobilebanner@2x.webp") 2x,
+          /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
-    );
+      );
     background-size: contain;
     background-position: center;
+    background-color: #fff7e4;
     background-position-y: top;
     background-repeat: no-repeat;
     z-index: 2;
@@ -1002,14 +1042,23 @@ li {
 
   .backgroundcover-EcoIntegration {
     /* background-image: url("/b2bmobilebanner.webp"); */
-    background-image: image-set(
-      url("/ecommerce-integration-mobile.svg")
-        /* url("/B2B_heroimg.webp") 2x, */ /* url("/B2B_heroimg.webp") 3x */
-        /* url("/b2bmobilebanner@2x.webp") 2x,
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      image-set(
+        url("/ecommerce-integration-mobile.svg")
+          /* url("/B2B_heroimg.webp") 2x, */ /* url("/B2B_heroimg.webp") 3x */
+          /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
-    );
+      );
     background-size: contain;
     background-position: center;
+    background-color: #fff7e4;
     background-position-y: top;
     background-repeat: no-repeat;
     z-index: 2;
@@ -1017,16 +1066,25 @@ li {
 
   .backgroundcover-deliveries {
     /* background-image: url("/b2bmobilebanner.webp"); */
-    background-image: image-set(
-      url("/Delivery-heroimg-mobile-1x.webp") 1x,
-      url("/Delivery-heroimg-mobile-2x.webp") 2x,
-      url("/Delivery-heroimg-mobile-3x.webp") 3x
-        /* url("/b2bmobilebanner@2x.webp") 2x,
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      image-set(
+        url("/Delivery-heroimg-mobile-1x.webp") 1x,
+        url("/Delivery-heroimg-mobile-2x.webp") 2x,
+        url("/Delivery-heroimg-mobile-3x.webp") 3x
+          /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
-    );
+      );
     /* background-size: cover; */
     background-position: center;
     background-position-y: top;
+    background-color: #fff7e4;
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -1046,7 +1104,7 @@ li {
   .backgroundcover-d2c > .container {
     padding-top: 0px;
     padding-bottom: 25px;
-    margin-top: 400px;
+    margin-top: 350px;
   }
 }
 
@@ -1057,7 +1115,7 @@ li {
   .backgroundcover-d2c > .container {
     padding-top: 0px;
     padding-bottom: 25px;
-    margin-top: 400px;
+    margin-top: 300px;
   }
 }
 
@@ -1647,40 +1705,6 @@ li {
   }
 }
 
-.amazon-lines-1 {
-  position: absolute;
-  top: 13%;
-  left: 32%;
-  z-index: 1;
-  /* width: 00px; */
-  /* font-size: 14px; */
-}
-.amazon-lines-2 {
-  position: absolute;
-  top: 13%;
-  left: 55%;
-}
-.amazon-lines-3 {
-  position: absolute;
-  top: 70%;
-  left: 32%;
-}
-.amazon-lines-4 {
-  position: absolute;
-  top: 40.5%;
-  left: 36%;
-}
-.amazon-lines-5 {
-  position: absolute;
-  top: 40.5%;
-  left: 56%;
-}
-.amazon-lines-6 {
-  position: absolute;
-  top: 70%;
-  left: 55%;
-}
-
 .bg-amazon-rotate-12 {
   background-image: url("/AmazonCardImage.svg");
   background-size: 100%;
@@ -1696,7 +1720,8 @@ li {
 }
 
 .amazon-card h4 {
-  font-size: 18px;
+  font-size: 1.1rem;
+  width: 70%;
 }
 
 .icon-wrapper-right {
@@ -1704,16 +1729,16 @@ li {
   width: 60px;
   height: 60px;
   position: relative;
-  top: -90px;
-  left: 150px;
+  top: -90%;
+  left: 40%;
 }
 
 .icon-wrapper-left {
   position: relative;
   width: 50px;
   height: 50px;
-  top: -90px;
-  left: -140px;
+  top: -90%;
+  left: -38%;
   z-index: 2;
 }
 
@@ -1753,7 +1778,206 @@ li {
   color: #374151;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 792px) {
+  .amazon-card {
+    /* height: 150px; */
+  }
+  .amazon-card h4 {
+    font-size: 0.7em;
+    width: 95%;
+  }
+
+  .icon-wrapper-right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 30%;
+    left: 80%;
+    z-index: 2;
+  }
+
+  .icon-wrapper-left {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+  }
+
+  .amazon-lines-1 {
+    position: absolute;
+    top: 13%;
+    left: 24%;
+    z-index: 1;
+    /* width: 00px; */
+    /* font-size: 14px; */
+  }
+  .amazon-lines-2 {
+    position: absolute;
+    top: 13%;
+    left: 57%;
+  }
+  .amazon-lines-3 {
+    position: absolute;
+    top: 69%;
+    left: 24%;
+  }
+  .amazon-lines-4 {
+    position: absolute;
+    top: 40.5%;
+    left: 31%;
+  }
+  .amazon-lines-5 {
+    position: absolute;
+    top: 40.5%;
+    left: 58%;
+  }
+  .amazon-lines-6 {
+    position: absolute;
+    top: 69%;
+    left: 55%;
+  }
+}
+@media (min-width: 1086px) {
+  .amazon-card {
+    height: 150px;
+  }
+  .amazon-card h4 {
+    font-size: 0.7em;
+    width: 80%;
+  }
+
+  .icon-wrapper-right {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 30%;
+    left: 80%;
+    z-index: 2;
+  }
+  .icon-wrapper-left {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+  }
+
+  .custom-list-item {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .merchant-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .amazon-lines-1 {
+    position: absolute;
+    top: 13%;
+    left: 24%;
+    z-index: 1;
+    /* width: 00px; */
+    /* font-size: 14px; */
+  }
+  .amazon-lines-2 {
+    position: absolute;
+    top: 13%;
+    left: 57%;
+  }
+  .amazon-lines-3 {
+    position: absolute;
+    top: 69%;
+    left: 24%;
+  }
+  .amazon-lines-4 {
+    position: absolute;
+    top: 40.5%;
+    left: 31%;
+  }
+  .amazon-lines-5 {
+    position: absolute;
+    top: 40.5%;
+    left: 58%;
+  }
+  .amazon-lines-6 {
+    position: absolute;
+    top: 69%;
+    left: 55%;
+  }
+}
+
+@media (min-width: 1284px) {
+  .amazon-card {
+    height: 150px;
+  }
+  .amazon-card h4 {
+    font-size: 0.9em;
+    width: 70%;
+  }
+
+  .icon-wrapper-right {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 30%;
+    left: 80%;
+    z-index: 2;
+  }
+  .icon-wrapper-left {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+  }
+
+  .custom-list-item {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .merchant-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .amazon-lines-1 {
+    position: absolute;
+    top: 13%;
+    left: 29%;
+    z-index: 1;
+    /* width: 00px; */
+    /* font-size: 14px; */
+  }
+  .amazon-lines-2 {
+    position: absolute;
+    top: 13%;
+    left: 57%;
+  }
+  .amazon-lines-3 {
+    position: absolute;
+    top: 69%;
+    left: 29%;
+  }
+  .amazon-lines-4 {
+    position: absolute;
+    top: 40.5%;
+    left: 36%;
+  }
+  .amazon-lines-5 {
+    position: absolute;
+    top: 40.5%;
+    left: 56%;
+  }
+  .amazon-lines-6 {
+    position: absolute;
+    top: 69%;
+    left: 55%;
+  }
+}
+
+@media (min-width: 1440px) {
   .amazon-card {
     height: 150px;
   }
@@ -1787,89 +2011,43 @@ li {
     font-size: 24px;
     margin-bottom: 20px;
   }
-}
-@media (max-width: 1200px) {
-  .icon-wrapper-right {
-    width: 30px;
-    height: 30px;
-  }
-
-  .icon-wrapper-left {
-    width: 30px;
-    height: 30px;
-  }
-
-  .amazon-card h4 {
-    font-size: 0.7rem;
-    width: 90%;
-  }
   .amazon-lines-1 {
+    position: absolute;
     top: 13%;
-    left: 25%;
+    left: 32%;
+    z-index: 1;
     /* width: 00px; */
     /* font-size: 14px; */
   }
   .amazon-lines-2 {
+    position: absolute;
     top: 13%;
     left: 55%;
   }
   .amazon-lines-3 {
-    top: 68.5%;
-    left: 25%;
+    position: absolute;
+    top: 70%;
+    left: 32%;
   }
   .amazon-lines-4 {
+    position: absolute;
     top: 40.5%;
-    left: 60%;
+    left: 36%;
   }
   .amazon-lines-5 {
+    position: absolute;
     top: 40.5%;
-    left: 31%;
+    left: 56%;
   }
   .amazon-lines-6 {
-    top: 68.5%;
+    position: absolute;
+    top: 70%;
     left: 55%;
   }
 }
-@media (max-width: 1300px) {
-  .icon-wrapper-right {
-    width: 30px;
-    height: 30px;
-  }
-
-  .icon-wrapper-left {
-    width: 30px;
-    height: 30px;
-  }
-
+@media (max-width: 400px) {
   .amazon-card h4 {
-    font-size: 0.7rem;
-    width: 90%;
-  }
-  .amazon-lines-1 {
-    top: 13%;
-    left: 25%;
-    /* width: 00px; */
-    /* font-size: 14px; */
-  }
-  .amazon-lines-2 {
-    top: 13%;
-    left: 55%;
-  }
-  .amazon-lines-3 {
-    top: 68.5%;
-    left: 25%;
-  }
-  .amazon-lines-4 {
-    top: 40.5%;
-    left: 60%;
-  }
-  .amazon-lines-5 {
-    top: 40.5%;
-    left: 31%;
-  }
-  .amazon-lines-6 {
-    top: 68.5%;
-    left: 55%;
+    font-size: 1rem;
   }
 }
 
@@ -1885,6 +2063,11 @@ li {
 
 /* MOBILE */
 
+.merchant-section {
+  width: 100%;
+  padding: 60px 20px;
+}
+
 @media (max-width: 768px) {
   .amazon-left-card,
   .amazon-right-card {
@@ -1892,11 +2075,10 @@ li {
     border-radius: 20px;
     padding: 70px 20px 24px !important;
   }
-}
-
-.merchant-section {
-  width: 100%;
-  padding: 60px 20px;
+  .merchant-section {
+    /* width: 100%; */
+    padding: 0;
+  }
 }
 
 .merchant-section.direct-ship-section {
@@ -2059,23 +2241,23 @@ li {
     left: 0; /* slight overlap */
   }
   .vendor-card-icon-right {
-    top: 6px;
-    left: 10px;
+    top: 10%;
+    left: 2%;
   }
   .vendor-card-icon-left {
     position: absolute;
-    top: 6px;
-    right: 10px;
+    top: 9%;
+    right: 2%;
   }
 
   .yellow-hexagon {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
   }
 
   .yellow-hexagon img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 
   .vendor-card-title {
@@ -2155,6 +2337,21 @@ li {
   /* width: 300px; */
   top: 170px;
   right: 130px;
+}
+
+/* Line 1 */
+.seamless-order-lines .line-6 {
+  position: absolute;
+  top: 37.5%;
+  right: 15%;
+  z-index: 0;
+}
+
+/* Line 2 */
+.seamless-order-lines .line-7 {
+  position: absolute;
+  top: 37.5%;
+  left: 15%;
 }
 
 .seamless-order-card p {
@@ -2492,8 +2689,8 @@ li {
     z-index: 2;
   }
   .direct-ship-card-bg {
-    width: 70%;
-    margin: 20px auto;
+    width: 65%;
+    margin: 20px 30px;
     font-size: 30px;
   }
 
@@ -2504,43 +2701,46 @@ li {
 
   .left-card1 {
     position: relative;
-    left: -60px;
+    left: -6%;
   }
 
   .right-card1 {
     position: relative;
-    left: 60px;
+    left: 3%;
   }
 
   .direct-ship-card-icon-left {
     position: absolute;
     top: 30;
-    left: 270;
+    left: 77%;
     z-index: 3;
   }
 
   .direct-ship-card-icon-right {
     position: absolute;
     top: 30;
-    right: 270;
+    right: 78%;
     z-index: 3;
   }
 
   .direct-ship-left-image {
     position: absolute;
-    width: 80px;
+    width: 40px;
     top: 35;
-    right: 210;
+    right: 72%;
   }
 
   .direct-ship-right-image {
     position: absolute;
     width: 80px;
     top: 35;
-    left: 255px;
+    left: 72%;
   }
   .custom-clearance-card {
-    margin-top: 50px;
+    margin-top: 0px;
+  }
+  .direct-ship-card-content {
+    font-size: 1rem;
   }
 }
 
@@ -2557,6 +2757,12 @@ li {
   background-blend-mode: lighten;
 }
 
+@media (max-width: 786px) {
+  .fulfill-bg-image {
+    background: "#ffffff";
+    background-image: none;
+  }
+}
 .vendor-card-image {
   background:
     linear-gradient(90deg, #ffcb5339 100%, #ffcb5339 100%, #ffcb5339 100%),
@@ -2806,7 +3012,7 @@ li {
 
 @media (max-width: 768px) {
   .expert-card-section {
-    padding: 10px 0;
+    padding: 18px 0;
   }
   .expert-card-section .number-section {
     height: 40px;
@@ -2814,15 +3020,20 @@ li {
     font-size: 30px;
   }
   .expert-card-section .description-section {
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 7%;
     width: 90%;
   }
   .point-card-bg {
     /* background-position: center; */
+    background-size: 110%;
   }
 }
-
+@media (max-width: 400px) {
+  .expert-card-section {
+    padding: 10px 0;
+  }
+}
 .transparent-invoicing-bg {
   background-image:
     linear-gradient(rgba(151, 128, 80, 0.93), rgba(151, 128, 80, 0.93)),

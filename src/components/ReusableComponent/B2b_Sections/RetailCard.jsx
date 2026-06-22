@@ -10,8 +10,8 @@ function RetailCard({ icon, title, description }) {
       </div>
 
       {/* Content */}
-      <h3 className="text-lg font-bold text-center text-gray-900 mb-3 mt-5">
-        <TitleContent title={title} titleSize="text-[24px]" />
+      <h3 className="text-lg text-[24px] w-50 mx-auto font-bold text-center text-gray-900 mb-3 mt-5">
+        {title}
       </h3>
 
       <p className="text-[18px] font-light text-[#000000] text-center leading-relaxed mb-6">

@@ -20,9 +20,8 @@ export default function BuildToHandleCard({ variant = "grid", industry }) {
           <div className="industry-card__icon-wrapper group">
             <industry.icon
               size={80}
-              className={`industry-card__icon ${
-                industry.hoverIcon ? "" : "has-hover-icon"
-              }`}
+              className={`industry-card__icon ${industry.hoverIcon ? "" : "has-hover-icon"
+                }`}
             />
 
             {industry.hoverIcon && (

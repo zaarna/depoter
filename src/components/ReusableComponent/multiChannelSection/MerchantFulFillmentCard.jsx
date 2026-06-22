@@ -11,11 +11,10 @@ export default function MerchantFulFillmentCard({ industry }) {
       : [industry.title];
 
   return (
-    <div className="merchant-fulfillment-card container mb-20">
+    <div className="merchant-fulfillment-card container mt-10 lg:mb-20">
       <div
-        className={`flex flex-col gap-6 items-center ${
-          isEven ? "lg:flex-row-reverse" : "lg:flex-row"
-        }`}
+        className={`flex flex-col gap-6 items-center ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"
+          }`}
       >
         {/* MOBILE LAYOUT */}
         <div className="block lg:hidden w-full">

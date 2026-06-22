@@ -3,8 +3,6 @@
 import React from "react";
 import { titleContentConfig } from "@/config/titleContentConfig";
 import TitleContent from "../All_Title/TitleContent";
-import CustomsClearanceCard from "./CustomsClearanceCard";
-import AddvalueToSupplyChainCard from "./AddvalueToSupplyChainCard";
 import FreightProcessCard from "./ShipmentCard";
 
 function StepByStepFreightProcess({ sectionKey = "" }) {
@@ -304,7 +302,7 @@ function StepByStepFreightProcess({ sectionKey = "" }) {
             </svg>
           </div>
 
-          <div className="relative z-10 flex flex-col gap-10 lg:gap-[82px]">
+          <div className="relative z-10 flex flex-col gap-10 lg:gap-[91px]">
             {industries.map((item, index) => (
               <FreightProcessCard
                 key={index}

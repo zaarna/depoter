@@ -32,13 +32,13 @@ export default function FulfillByMerchant() {
     <>
       <div className="text-center w-full fulfill-bg-image">
         <h2
-          className="text-black font-bold mt-25"
+          className="text-black font-bold mt-10 lg:mt-25"
           style={{ fontSize: "36px", fontFamily: "outfit" }}
         >
           Fulfillment by Merchant (FBM)
         </h2>
         <div className="mt-6 md:mt-12 relative">
-          <div className="lg:hidden flex flex-col gap-6">
+          <div className="lg:hidden flex flex-col">
             {industries.map((category, index) => (
               //   <>
               <div key={index}>

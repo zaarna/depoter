@@ -36,7 +36,7 @@ function StrategicHub({ sectionKey = [] }) {
     <section className="py-8 md:py-16 bg-[#FFFFFF] relative overflow-hidden">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center gap-8 relative z-10">
-          <div className="flex-1 text-center lg:text-left">
+          <div className="flex-1 text-left">
             <TitleContent {...tc} />
 
             {paragraphData.map((paragraph, index) => (
@@ -48,11 +48,11 @@ function StrategicHub({ sectionKey = [] }) {
               </p>
             ))}
 
-            <div className="w-75 h-[1.5px] bg-black mt-[90px] me-auto"></div>
+            <div className="lg:w-75 h-[1.5px] bg-black mt-[90px] me-auto"></div>
           </div>
 
           <div className="flex-1 flex justify-center lg:justify-end">
-            <div className="w-full ms-10 rounded-3xl">
+            <div className="w-full lg:ms-10 rounded-3xl">
               <img
                 src="/StrategicHubImage.svg"
                 alt="Strategic Hub Illustration"

@@ -41,11 +41,11 @@ function AddvalueToSupplyChain({ sectionKey = "" }) {
   return (
     <section className="py-8 md:py-16 bg-[#978050] relative overflow-hidden">
       <div className="container">
-        <div className="text-center relative z-10 mb-15">
+        <div className="text-center relative z-10 md:mb-15">
           <TitleContent {...tc} />
         </div>
 
-        <div className="mt-6">
+        <div className="md:mt-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 justify-items-center justify-center">
             {industries.map((industry, index) => (
               <AddvalueToSupplyChainCard key={index} industry={industry} />

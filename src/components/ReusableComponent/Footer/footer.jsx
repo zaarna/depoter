@@ -223,9 +223,8 @@ export default function Footer() {
                 Company
               </span>
               <svg
-                className={`w-5 h-5 text-gray-600 transition-transform ${
-                  openAccordion === "company" ? "rotate-180" : ""
-                }`}
+                className={`w-5 h-5 text-gray-600 transition-transform ${openAccordion === "company" ? "rotate-180" : ""
+                  }`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -264,9 +263,8 @@ export default function Footer() {
                 Industries
               </span>
               <svg
-                className={`w-5 h-5 text-gray-600 transition-transform ${
-                  openAccordion === "industries" ? "rotate-180" : ""
-                }`}
+                className={`w-5 h-5 text-gray-600 transition-transform ${openAccordion === "industries" ? "rotate-180" : ""
+                  }`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

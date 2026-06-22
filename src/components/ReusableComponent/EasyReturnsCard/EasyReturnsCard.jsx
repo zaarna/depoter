@@ -36,7 +36,7 @@ const steps = [
 export default function EasyReturnsCard() {
   return (
     <div className="max-w-[1100px] mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-5 lg:gap-y-16 auto-rows-fr relative">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-10 lg:gap-y-16 auto-rows-fr relative">
         {/* DASHED FLOW LINE */}
         <div className="hidden lg:block absolute -left-[10%] top-[18%] pointer-events-none">
           <svg
@@ -225,10 +225,10 @@ export default function EasyReturnsCard() {
             />
           </svg>
         </div>
-        {/* <div className="md:hidden block absolute right-[10%] top-[0%] pointer-events-none">
+        <div className="md:hidden block absolute right-[8%] top-[3.5%] pointer-events-none">
           <svg
             width="92"
-            height="1998"
+            height="1968"
             viewBox="0 0 92 1998"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -518,12 +518,12 @@ export default function EasyReturnsCard() {
               fill="#373B42"
             />
           </svg>
-        </div> */}
+        </div>
 
         {steps.map((step, i) => (
           <div
             key={i}
-            className="flex flex-col items-center lg:items-start gap-5 relative h-auto lg:h-[460px]"
+            className="flex flex-col item-start ms-10 lg:ms-0 lg:items-center lg:items-start gap-5 relative h-auto lg:h-[460px]"
           >
             <div className="hidden lg:absolute">
               <svg
@@ -560,16 +560,16 @@ export default function EasyReturnsCard() {
               </svg>
             </div>
             {/* ICON CARD */}
-            <div className="w-40 h-40 md:w-52 md:h-52 bg-[#9E8754] rounded-2xl flex items-center justify-center shadow-[10px_10px_0px_rgba(0,0,0,1)]">
+            <div className="w-40 h-40 md:w-52 md:h-52 bg-[#9E8754] rounded-2xl flex items-center justify-start shadow-[10px_10px_0px_rgba(0,0,0,1)]">
               <img src={step.icon} alt="" className="w-44 h-44" />
             </div>
 
             {/* TEXT */}
-            <div className="w-full lg:w-[330px] text-center lg:text-left">
+            <div className="w-[70%] lg:w-[330px] lg:text-left">
               <h3 className="text-xl font-bold text-[#212121] mb-2">
                 {step.title}
               </h3>
-              <p className="text-lg text-[#212121] font-light leading-relaxed">
+              <p className="text-sm lg:text-lg text-[#212121] font-light leading-relaxed">
                 {step.desc}
               </p>
             </div>

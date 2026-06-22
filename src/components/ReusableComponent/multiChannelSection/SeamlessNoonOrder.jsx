@@ -15,24 +15,7 @@ export default function SeamlessNoonOrder({ sectionKey = [] }) {
           <TitleContent {...tc} />
         </div>
         <div className="mt-6 md:mt-12 relative">
-          {/* <div className="lg:hidden flex flex-col gap-6">
-            {industries.map((category, index) => (
-              //   <>
-              <div key={index}>
-                <BetterChoiceMultiChannel industry={category} />
-              </div>
-              //   </>
-            ))}
-          </div> */}
-
-          {/* Tablet and Desktop: Masonry Layout */}
-          <div className="">
-            {/* {industries.map((category, index) => (
-              <div key={index}> */}
-            <SeamlessOrderCard />
-            {/* </div>
-            ))} */}
-          </div>
+          <SeamlessOrderCard />
         </div>
       </div>
     </section>

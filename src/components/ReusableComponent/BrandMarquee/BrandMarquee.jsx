@@ -6,7 +6,7 @@ import Image from "next/image";
 function BrandMarquee({ brands = [] }) {
   return (
     <div className="w-full mt-6 md:mt-12 relative overflow-hidden z-20">
-      <Marquee pauseOnHover={true} speed={45} gradient={false}>
+      <Marquee pauseOnHover={false} speed={45} gradient={false}>
         <div className="flex space-x-6 px-4">
           {brands.map((logo, index) => (
             <div

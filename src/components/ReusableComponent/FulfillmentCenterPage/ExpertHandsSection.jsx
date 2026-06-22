@@ -89,7 +89,7 @@ function PointCard({ number, title, description }) {
         <div className="description-section">
           <p
             className="  leading-relaxed text-gray-700"
-            style={{ width: "95%" }}
+            style={{ width: "100%" }}
           >
             <span className="font-bold text-black">{title}</span>
             {description}

@@ -52,8 +52,17 @@ export default function DeliverySolution() {
           <TitleContent {...tc} />
         </div>
         <div className="mt-6 md:mt-12 relative">
+          <div className="lg:hidden flex flex-col gap-6">
+            {industries.map((category, index) => (
+              //   <>
+              <div key={index}>
+                <HandleEveryOrderCard industry={category} />
+              </div>
+              //   </>
+            ))}
+          </div>
           {/* Masonry Layout */}
-          <div className="flex gap-2 sm:gap-3 lg:gap-5">
+          <div className="hidden  lg:flex  gap-2 sm:gap-3 lg:gap-5">
             {/* Odd Data Section */}
             <div className="flex flex-col gap-x-12 gap-y-8 sm:gap-y-12 lg:gap-y-20 xl:gap-y-40 flex-1">
               {industries
