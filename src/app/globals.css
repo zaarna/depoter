@@ -227,7 +227,8 @@ li {
 .backgroundcover-freightforwarding,
 .backgroundcover-fulfillmentcenter,
 .backgroundcover-EcoIntegration,
-.backgroundcover-deliveries {
+.backgroundcover-deliveries,
+.backgroundcover-customsclearance {
   position: relative;
   background: hsla(42, 100%, 95%, 1);
 
@@ -288,7 +289,7 @@ li {
   height: 1190px;
   /* background-image: url("/D2C_heroimg.webp"); */
   background-image:
-    linear-gradient(90.11deg, #ffffff73 10.29%, #e4d8bd00 85.3%),
+    linear-gradient(90.11deg, #ffffff73 15.29%, #e4d8bd00 25.3%),
     url("/B2B_heroimg.webp");
   /* background-color: #212121; */
   background-size: cover;
@@ -403,6 +404,26 @@ li {
   z-index: 2;
 }
 
+.backgroundcover-customsclearance::before {
+  position: absolute;
+  content: "";
+  right: -8%;
+  top: -5%;
+  width: 100%;
+  height: 840px;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
+    url("/customs-clearance-hero.svg");
+
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
 .backgroundcover-home::after,
 .backgroundcover-d2c::after,
 .backgroundcover-b2b::after,
@@ -411,7 +432,8 @@ li {
 .backgroundcover-freightforwarding::after,
 .backgroundcover-fulfillmentcenter::after,
 .backgroundcover-EcoIntegration::after,
-.backgroundcover-deliveries::after {
+.backgroundcover-deliveries::after,
+.backgroundcover-customsclearance::after {
   position: absolute;
   content: "";
   left: 0;
@@ -762,15 +784,16 @@ li {
     position: relative;
     /* background-image: url("/mobilehomepagebanner.webp"); */
     background-image: image-set(
-      url("/mobilehomepagebanner.webp") 1x,
-      url("/mobilehomepagebanner@2x.webp") 2x,
-      url("/mobilehomepagebanner@3x.webp") 3x
+      url("/mobilehomepagebanner.svg") 1x
+        /* url("/mobilehomepagebanner@2x.webp") 2x,
+      url("/mobilehomepagebanner@3x.webp") 3x */
     );
-    background-size: 100% 100%;
-    background-position: center;
+    background-size: 100%;
+    background-position: top;
     background-repeat: no-repeat;
     z-index: 2;
     display: flex;
+    background-color: #fff7e4;
     align-items: flex-end;
     justify-content: center;
     padding-bottom: 100px;
@@ -843,7 +866,9 @@ li {
   .backgroundcover-d2c::before,
   .backgroundcover-d2c::after,
   .backgroundcover-deliveries::before,
-  .backgroundcover-deliveries::after {
+  .backgroundcover-deliveries::after,
+  .backgroundcover-customsclearance::before,
+  .backgroundcover-customsclearance::after {
     content: none;
   }
 
@@ -872,10 +897,12 @@ li {
         rgba(0, 0, 0, 0.1) 100.07%
       ),
       image-set(
-        url("/mobiled2cbanner.webp") 1x,
-        url("/mobiled2cbanner@2x.webp") 2x,
-        url("/mobiled2cbanner@3x.webp") 3x
+        url("/mobiled2cbanner.svg") 1x
+          /* url("/mobiled2cbanner@2x.webp") 2x,
+        url("/mobiled2cbanner@3x.webp") 3x */
       );
+
+    background-color: #fff7e4;
     align-items: start;
   }
   .backgroundcover-d2c > .container {
@@ -895,12 +922,13 @@ li {
         rgba(0, 0, 0, 0.1) 100.07%
       ),
       image-set(
-        url("/b2bmobilebanner.webp") 1x,
-        url("/b2bmobilebanner@2x.webp") 2x,
-        url("/b2bmobilebanner@3x.webp") 3x
+        url("/b2bmobilebanner.svg") 1x
+          /* url("/b2bmobilebanner@2x.webp") 2x,
+        url("/b2bmobilebanner@3x.webp") 3x */
       );
-    background-size: 100% 100%;
-    background-position: center;
+    background-size: 100%;
+    background-color: #fff7e4;
+    background-position: top;
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -953,6 +981,12 @@ li {
     margin-top: 280px;
   }
 
+  .backgroundcover-customsclearance > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
+
   .backgroundcover-multichannel {
     background-image:
       linear-gradient(
@@ -982,7 +1016,7 @@ li {
         /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
     );
-    background-size: 100% 100%;
+    background-size: 100%;
     background-position: center;
 
     background-position-y: top;
@@ -1032,7 +1066,7 @@ li {
           /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
       );
-    background-size: contain;
+    background-size: 100%;
     background-position: center;
     background-color: #fff7e4;
     background-position-y: top;
@@ -1050,13 +1084,13 @@ li {
         rgba(228, 216, 189, 0.1) 60.3%,
         rgba(0, 0, 0, 0.1) 100.07%
       ),
-      image-set(
-        url("/ecommerce-integration-mobile.svg")
-          /* url("/B2B_heroimg.webp") 2x, */ /* url("/B2B_heroimg.webp") 3x */
-          /* url("/b2bmobilebanner@2x.webp") 2x,
+      url("/ecommerce-integration-mobile.svg");
+    /* image-set( */
+    /* url("/B2B_heroimg.webp") 2x, */ /* url("/B2B_heroimg.webp") 3x */
+    /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
-      );
-    background-size: contain;
+    /* ); */
+    background-size: 100%;
     background-position: center;
     background-color: #fff7e4;
     background-position-y: top;
@@ -1065,6 +1099,26 @@ li {
   }
 
   .backgroundcover-deliveries {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      url("/Delivery-heroimg-mobile.svg");
+
+    /* background-size: cover; */
+    background-position: center;
+    background-position-y: top;
+    background-color: #fff7e4;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-customsclearance {
     /* background-image: url("/b2bmobilebanner.webp"); */
     background-image:
       linear-gradient(
@@ -1090,7 +1144,7 @@ li {
   }
 
   .backgroundcover-b2b > .container {
-    margin-top: 340px;
+    margin-top: 280px;
   }
   #keyMetricsDiv {
     background-image: url("/keymetricsmobile.png");
@@ -1115,7 +1169,7 @@ li {
   .backgroundcover-d2c > .container {
     padding-top: 0px;
     padding-bottom: 25px;
-    margin-top: 300px;
+    margin-top: 280px;
   }
 }
 
@@ -1138,6 +1192,7 @@ li {
       #fff7e400 100%
     );
     flex-direction: row-reverse;
+    text-align: right;
   }
 }
 
@@ -2771,6 +2826,20 @@ li {
   background-blend-mode: lighten;
 }
 
+.who-we-serve-card-image {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(151, 128, 80, 1) 100%,
+      rgba(157, 128, 80, 1) 100%
+    ),
+    url("/vendor-card-fulfillment.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
 .fbn-inbound-bg-image {
   background:
     linear-gradient(
