@@ -49,7 +49,7 @@ export const heroConfig = {
           E-Commerce
         </>
       ),
-      highlight: "Fulfillment Service",
+      highlight: "Fulfillment Service in UAE",
       description:
         "One fulfillment partner to manage storage, orders, shipping, and returns across Amazon, Noon, and direct sales channels",
     },
