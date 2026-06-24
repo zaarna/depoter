@@ -70,17 +70,17 @@ export default function Header() {
             {
               name: "D2C",
               icon: <D2CIcon />,
-              href: "/services/d2c-fulfillment",
+              href: "/d2c-fulfillment-uae",
             },
             {
               name: "B2B",
               icon: <B2BIcon />,
-              href: "/services/b2b-fulfillment",
+              href: "/b2b-fulfillment-uae",
             },
             {
               name: "Multichannel",
               icon: <MultiChannelIcon />,
-              href: "/services/multichannel-fulfillment",
+              href: "/multichannel-fulfillment-uae",
             },
           ],
         },
@@ -90,17 +90,17 @@ export default function Header() {
             {
               name: "Freight Forwarding",
               icon: <FreightIcon />,
-              href: "/services/freight-forwarding",
+              href: "/freight-forwarding-services-uae",
             },
             {
               name: "Custom Clearance",
               icon: <CustomIcon />,
-              href: "/services/customs-clearance",
+              href: "/services/customs-clearance-services-uae",
             },
             {
               name: "Product Registration",
               icon: <ProductIcon />,
-              href: "/services/product-registration",
+              href: "/services/product-registration-services-uae",
             },
             { name: "IOR/EOR", icon: <IORIcon />, href: "/services/job-eob" },
           ],
@@ -115,7 +115,7 @@ export default function Header() {
             {
               name: "Integrations",
               icon: <IntegrationsIcon />,
-              href: "/technology/Integrations",
+              href: "/technology/ecommerce-integration-services-uae",
             },
             {
               name: "Inventory Management",
@@ -199,12 +199,12 @@ export default function Header() {
             {
               name: "Fulfillment Center",
               icon: <FulfillmentIcon />,
-              href: "/infra/fulfillmentCenter",
+              href: "/infra/fulfillment-center-uae",
             },
             {
               name: "Deliveries",
               icon: <DeliveriesIcon />,
-              href: "/infra/deliveries",
+              href: "/infra/delivery-services-uae",
             },
           ],
         },

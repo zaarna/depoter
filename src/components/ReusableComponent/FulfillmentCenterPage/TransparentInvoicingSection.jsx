@@ -46,12 +46,12 @@ export default function TransparentInvoicingSection() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left Content */}
             <div className="max-w-xl text-center lg:text-left">
-              <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] leading-tight text-white ">
+              <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] leading-tight text-white ">
                 Automated, Accurate
                 <br />& Transparent
               </h2>
 
-              <h2 className="mt-2 text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] text-[#F7BA2C] ">
+              <h2 className="mt-2 text-[clamp(1.5rem,1rem+2vw,3rem)] text-[#F7BA2C] ">
                 Invoicing
               </h2>
 
@@ -77,18 +77,16 @@ export default function TransparentInvoicingSection() {
 function InvoiceFeatureCard({ number, title, description, dark }) {
   return (
     <div
-      className={`flex items-center rounded-2xl px-5 py-5 transition-all duration-300 ${
-        dark ? "bg-[#3F2C07] text-white" : "bg-[#F7BA2C] text-[#1A1A1A]"
-      }`}
+      className={`flex items-center rounded-2xl px-5 py-5 transition-all duration-300 ${dark ? "bg-[#3F2C07] text-white" : "bg-[#F7BA2C] text-[#1A1A1A]"
+        }`}
     >
       {/* Number */}
       <div className="flex items-center">
         <span className="text-4xl font-bold">{number}</span>
 
         <div
-          className={`mx-4 h-14 w-[2px] ${
-            dark ? "bg-white/70" : "bg-black/70"
-          }`}
+          className={`mx-4 h-14 w-[2px] ${dark ? "bg-white/70" : "bg-black/70"
+            }`}
         />
       </div>
 
@@ -97,9 +95,8 @@ function InvoiceFeatureCard({ number, title, description, dark }) {
         <h4 className="text-xl font-bold">{title}</h4>
 
         <p
-          className={`mt-2 text-[18px] leading-relaxed ${
-            dark ? "text-white/90" : "text-black/80"
-          }`}
+          className={`mt-2 text-[18px] leading-relaxed ${dark ? "text-white/90" : "text-black/80"
+            }`}
         >
           {description}
         </p>

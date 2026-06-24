@@ -27,7 +27,7 @@ export default function ControlTowerSection() {
         <div className=" p-6 md:p-12">
           {/* Heading */}
           <div className="text-center mb-20 md:mb-30">
-            <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] font-bold leading-tight">
+            <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] font-bold leading-tight">
               <span className="text-black">Control Tower for </span>
               <span className="text-[#F5B52E]">End-to-End Support</span>
             </h2>

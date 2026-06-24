@@ -47,7 +47,7 @@ export default function WhyChooseFulfillmentCenter() {
         <div className="p-8 lg:p-12">
           {/* Heading */}
           <div className="text-center mt-5">
-            <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] font-bold leading-tight">
+            <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] font-bold leading-tight">
               <span className="text-black">Why Businesses Choose</span>{" "}
               <span className="text-[#F5B52E]">
                 Depoter <br /> Fulfillment Center
@@ -128,9 +128,8 @@ function BenefitCard({ title, description, dark, className = "" }) {
       <h3 className="text-[20px] font-bold">{title}</h3>
 
       <p
-        className={`mt-2 text-[16px] leading-relaxed ${
-          dark ? "text-white/90" : "text-black/80"
-        }`}
+        className={`mt-2 text-[16px] leading-relaxed ${dark ? "text-white/90" : "text-black/80"
+          }`}
       >
         {description}
       </p>

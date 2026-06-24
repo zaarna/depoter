@@ -56,11 +56,10 @@ const HowItWorksSection = () => {
                 key={step.id}
                 className={`grid lg:grid-cols-2 gap-8 items-center rounded-[24px] p-6 md:p-5
           
-          ${
-            isEven
-              ? "bg-gradient-to-l from-[#F7C54A] via-[#FFBE2E] to-[#FFFFFF]"
-              : "bg-gradient-to-r from-[#F7C54A] via-[#FFBE2E] to-[#FFFFFF]"
-          }
+          ${isEven
+                    ? "bg-gradient-to-l from-[#F7C54A] via-[#FFBE2E] to-[#FFFFFF]"
+                    : "bg-gradient-to-r from-[#F7C54A] via-[#FFBE2E] to-[#FFFFFF]"
+                  }
 
           ${isEven ? "lg:[&>*:first-child]:order-2" : ""}
         `}

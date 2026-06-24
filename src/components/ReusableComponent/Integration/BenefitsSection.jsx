@@ -73,9 +73,8 @@ export default function BenefitsAccordionSection() {
               return (
                 <div
                   key={index}
-                  className={`bg-white border border-[#F5B42B] rounded-[28px] transition-all duration-300 overflow-hidden ${
-                    isOpen ? "p-7" : "p-5"
-                  }`}
+                  className={`bg-white border border-[#F5B42B] rounded-[28px] transition-all duration-300 overflow-hidden ${isOpen ? "p-7" : "p-5"
+                    }`}
                 >
                   {/* Header */}
                   <button
@@ -101,11 +100,10 @@ export default function BenefitsAccordionSection() {
 
                   {/* Content */}
                   <div
-                    className={`grid transition-all duration-300 ease-in-out ${
-                      isOpen
-                        ? "grid-rows-[1fr] opacity-100"
-                        : "grid-rows-[0fr] opacity-0"
-                    }`}
+                    className={`grid transition-all duration-300 ease-in-out ${isOpen
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                      }`}
                   >
                     <div className="overflow-hidden">
                       <p className="text-[16px] leading-[1.8] text-[#4A4A4A] pl-[76px]">

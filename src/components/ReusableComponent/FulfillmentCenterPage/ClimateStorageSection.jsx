@@ -34,7 +34,7 @@ export default function ClimateStorageSection() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-[clamp(1.7rem,1.2rem+1vw,2.7rem)] font-bold text-[#212121]">
+          <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] font-bold text-[#212121]">
             Climate-Controlled Storage for
             <span className="block text-[#F5BC36]">Product Safety</span>
           </h2>

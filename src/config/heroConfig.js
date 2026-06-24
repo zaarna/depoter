@@ -12,11 +12,11 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/services/d2c-fulfillment": {
+  "/d2c-fulfillment-uae": {
     className: "backgroundcover-d2c",
     heading: {
       title: "Direct-To-Consumer ",
-      highlight: "Fulfillment Service",
+      highlight: "Fulfillment Service in UAE",
       description:
         "From order capture to last-mile delivery, streamline every step of your direct-to-consumer fulfillment.",
     },
@@ -26,11 +26,11 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/services/b2b-fulfillment": {
+  "/b2b-fulfillment-uae": {
     className: "backgroundcover-b2b",
     heading: {
       title: "Business-to-Business",
-      highlight: "Fulfillment Service",
+      highlight: "Fulfillment Service in UAE",
       description:
         "Seamless bulk distribution, retailer-ready compliance, and real-time control for growing wholesale and enterprise networks.",
     },
@@ -40,7 +40,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/services/multichannel-fulfillment": {
+  "/multichannel-fulfillment-uae": {
     className: "backgroundcover-multichannel",
     heading: {
       title: (
@@ -59,11 +59,11 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/services/freight-forwarding": {
+  "/freight-forwarding-services-uae": {
     className: "backgroundcover-freightforwarding",
     heading: {
       title: "Freight Forwarding",
-      highlight: "Services",
+      highlight: "Services in UAE",
       titleColor: "#978050",
       highlightColor: "#212121",
       description:
@@ -75,7 +75,27 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/infra/fulfillmentcenter": {
+  "/services/customs-clearance-services-uae": {
+    className: "backgroundcover-customsclearance",
+    heading: {
+      title: (
+        <>
+          Customs Clearance <br />
+        </>
+      ),
+      highlight: "Services in UAE",
+      titleColor: "#978050",
+      highlightColor: "#212121",
+      description:
+        "Clear your imports and exports in the UAE with expert customs support, accurate documentation, duty calculation, and smooth handling across all major ports and airports",
+    },
+    button: {
+      text: "Get Expert Customs Support",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+  "/infra/fulfillment-center-uae": {
     className: "backgroundcover-fulfillmentcenter",
     heading: {
       title: "Fulfillment Center UAE: ",
@@ -91,7 +111,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/technology/integrations": {
+  "/technology/ecommerce-integration-services-uae": {
     className: "backgroundcover-EcoIntegration",
     heading: {
       title: "Ecommerce",
@@ -113,7 +133,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-  "/infra/deliveries": {
+  "/infra/delivery-services-uae": {
     className: "backgroundcover-deliveries",
     heading: {
       title: "Delivery Services in UAE for",
