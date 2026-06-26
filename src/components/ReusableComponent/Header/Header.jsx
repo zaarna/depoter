@@ -139,7 +139,7 @@ export default function Header() {
             {
               name: "Health & Wellness",
               icon: <HealthIcon />,
-              href: "/industries/health",
+              href: "/industries/health-wellness-fulfillment-uae",
             },
             {
               name: "Beauty & Personal Care",
@@ -235,7 +235,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[#FFF7E4] absolute drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] border-b border-gray-300 sticky top-0 z-50">
+    <header className="bg-[#FFF7E4] drop-shadow-[0_4px_6px_rgba(0,0,0,0.2)] border-b border-gray-300 sticky top-0 z-50">
       <div className="container">
         <div className="flex items-center space-x-4 h-20 justify-between">
           {/* Logo */}
@@ -295,8 +295,9 @@ export default function Header() {
                       />
 
                       <ChevronDown
-                        className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${activeDropdown === key ? "rotate-180" : ""
-                          }`}
+                        className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${
+                          activeDropdown === key ? "rotate-180" : ""
+                        }`}
                       />
                     </button>
 
@@ -308,10 +309,11 @@ export default function Header() {
                         bg-white rounded-xl shadow-2xl
                         border-b-4 border-[#FFBE2E]
                         grid gap-6 py-3
-                        ${menu.sections.length > 1
+                        ${
+                          menu.sections.length > 1
                             ? "grid-cols-2 w-[600px]"
                             : "grid-cols-1 w-80"
-                          }
+                        }
                       `}
                       >
                         {menu.sections.map((section, idx) => (
@@ -462,8 +464,9 @@ export default function Header() {
                   >
                     {menu.title}
                     <svg
-                      className={`w-4 h-4 transition-transform ${activeDropdown === key ? "rotate-180" : ""
-                        }`}
+                      className={`w-4 h-4 transition-transform ${
+                        activeDropdown === key ? "rotate-180" : ""
+                      }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -492,7 +495,7 @@ export default function Header() {
                               href={item.href}
                               className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
                               onClick={() => setMobileMenuOpen(false)}
-                            // onClick={handleLinkClick}
+                              // onClick={handleLinkClick}
                             >
                               <span className="text-lg">{item.icon}</span>
                               <span className="text-sm text-gray-700">

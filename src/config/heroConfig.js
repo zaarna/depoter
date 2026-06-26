@@ -149,6 +149,22 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+  "/industries/health-wellness-fulfillment-uae": {
+    className: "backgroundcover-healthWellness",
+    heading: {
+      title: "Health & Wellness",
+      highlight: "Fulfillment Solutions\n in UAE",
+      titleColor: "#212121",
+      highlightColor: "#978050",
+      description:
+        "Secure and reliable fulfillment for health and wellness products in the UAE. Manage storage, inventory, and delivery with proper handling, expiry control, and fast shipping for supplements, hygiene kits, and wellness products.",
+    },
+    button: {
+      text: "Fix Your Fulfillment Setup Today",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
   "/pricing": {
     className: "backgroundcover-pricing",
   },

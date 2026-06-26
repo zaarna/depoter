@@ -228,7 +228,8 @@ li {
 .backgroundcover-fulfillmentcenter,
 .backgroundcover-EcoIntegration,
 .backgroundcover-deliveries,
-.backgroundcover-customsclearance {
+.backgroundcover-customsclearance,
+.backgroundcover-healthWellness {
   position: relative;
   background: hsla(42, 100%, 95%, 1);
 
@@ -424,6 +425,27 @@ li {
   z-index: 2;
 }
 
+.backgroundcover-healthWellness::before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: -4%;
+  width: 80%;
+  height: auto;
+  aspect-ratio: 1440 / 920;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
+    url("/healthWellness.svg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
 .backgroundcover-home::after,
 .backgroundcover-d2c::after,
 .backgroundcover-b2b::after,
@@ -433,7 +455,8 @@ li {
 .backgroundcover-fulfillmentcenter::after,
 .backgroundcover-EcoIntegration::after,
 .backgroundcover-deliveries::after,
-.backgroundcover-customsclearance::after {
+.backgroundcover-customsclearance::after,
+.backgroundcover-healthWellness::after {
   position: absolute;
   content: "";
   left: 0;
@@ -868,7 +891,9 @@ li {
   .backgroundcover-deliveries::before,
   .backgroundcover-deliveries::after,
   .backgroundcover-customsclearance::before,
-  .backgroundcover-customsclearance::after {
+  .backgroundcover-customsclearance::after,
+  .backgroundcover-healthWellness::before,
+  .backgroundcover-healthWellness::after {
     content: none;
   }
 
@@ -982,6 +1007,12 @@ li {
   }
 
   .backgroundcover-customsclearance > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
+
+  .backgroundcover-healthWellness > .container {
     padding-top: 0px;
     padding-bottom: 25px;
     margin-top: 280px;
@@ -1135,6 +1166,26 @@ li {
           /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
       );
+    /* background-size: cover; */
+    background-position: center;
+    background-position-y: top;
+    background-color: #fff7e4;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-healthWellness {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      url("/healthWellness-mobile.svg");
+
     /* background-size: cover; */
     background-position: center;
     background-position-y: top;
