@@ -13,11 +13,11 @@ function AddvalueToSupplyChainCard({ industry }) {
             />
           </div>
         </div>
-        <h4 className="text-center md:w-[70%] mx-auto font-semibold group-hover:text-black leading-relaxed text-[23px] mt-5">
+        <h4 className="text-center md:w-[80%] mx-auto font-semibold group-hover:text-black leading-relaxed text-[23px] mt-5">
           {industry.title}
         </h4>
 
-        <p className="text-center group-hover:text-black mx-auto leading-relaxed md:w-[80%] text-[18px] mt-5">
+        <p className="text-center group-hover:text-black mx-auto leading-relaxed md:w-[100%] text-[18px] mt-5">
           {industry.discription}
         </p>
       </div>

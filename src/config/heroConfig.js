@@ -95,6 +95,44 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+  "/services/product-registration-services-uae": {
+    className: "backgroundcover-productregistration",
+    heading: {
+      title: (
+        <>
+          Register Your Products in UAE
+          <br />
+        </>
+      ),
+      highlight: "Without Delays",
+      titleColor: "#212121",
+      highlightColor: "#978050",
+      description:
+        "Register your products in the UAE without delays. We handle documentation, approvals, and compliance so you can import, distribute, and sell your products smoothly across the market without facing rejection or regulatory issues.",
+    },
+    button: {
+      text: "Get Expert Customs Support",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+
+  "/industries/beauty-personal-care-fulfillment-uae": {
+    className: "backgroundcover-productregistration",
+    heading: {
+      title: <>Beauty & Personal Care</>,
+      highlight: "Fulfillment uae",
+      titleColor: "#212121",
+      highlightColor: "#978050",
+      description:
+        "Depoter offers specialized beauty & personal care fulfillment UAE solutions for ecommerce brands. We ensure product safety through climate-controlled storage, precise expiry tracking, and fast shipping, delivering a premium unboxing experience to your customers.",
+    },
+    button: {
+      text: "Get Expert Customs Support",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
   "/infra/fulfillment-center-uae": {
     className: "backgroundcover-fulfillmentcenter",
     heading: {

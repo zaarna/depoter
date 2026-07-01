@@ -178,6 +178,40 @@ li {
 .wcd-card:hover::after {
   opacity: 1;
 }
+.prh-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.prh-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+
+  background: linear-gradient(
+    to top,
+    rgba(192, 126, 29, 1) 0%,
+    rgba(192, 126, 29, 0.7) 20%,
+    rgba(192, 126, 29, 0.35) 50%,
+    rgba(192, 126, 29, 0.1) 100%
+  );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.prh-card:hover::after {
+  opacity: 1;
+}
 
 .socilaicon {
   display: flex;
@@ -227,6 +261,7 @@ li {
 .backgroundcover-freightforwarding,
 .backgroundcover-fulfillmentcenter,
 .backgroundcover-EcoIntegration,
+.backgroundcover-productregistration,
 .backgroundcover-deliveries,
 .backgroundcover-customsclearance,
 .backgroundcover-healthWellness {
@@ -377,6 +412,27 @@ li {
     /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(90.11deg, #fff7e4e7 10.29%, #e4d8bd00 60.3%),
     url("/EcoIntegration-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
+.backgroundcover-productregistration::before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: -6%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 940;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(90.11deg, #ffffff73 15.29%, #e4d8bd00 25.3%),
+    url("/Depoter_Delivery_Illustration_010526_Lemolite.svg");
 
   background-size: contain;
   background-position: center;
@@ -888,6 +944,8 @@ li {
   .bgimage-service::before,
   .backgroundcover-d2c::before,
   .backgroundcover-d2c::after,
+  .backgroundcover-productregistration::before,
+  .backgroundcover-productregistration::after,
   .backgroundcover-deliveries::before,
   .backgroundcover-deliveries::after,
   .backgroundcover-customsclearance::before,
@@ -1013,6 +1071,12 @@ li {
   }
 
   .backgroundcover-healthWellness > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
+
+  .backgroundcover-productregistration > .container {
     padding-top: 0px;
     padding-bottom: 25px;
     margin-top: 280px;
@@ -1166,8 +1230,33 @@ li {
           /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
       );
-    /* background-size: cover; */
-    background-position: center;
+    background-size: 100%;
+    /* background-position: center; */
+    background-position-y: top;
+    background-color: #fff7e4;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-productregistration {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      image-set(
+        url("/Delivery-heroimg-mobile-1x.webp") 1x,
+        url("/Delivery-heroimg-mobile-2x.webp") 2x,
+        url("/Delivery-heroimg-mobile-3x.webp") 3x
+          /* url("/b2bmobilebanner@2x.webp") 2x,
+      url("/b2bmobilebanner@3x.webp") 3x */
+      );
+    background-size: 100%;
+    /* background-position: center; */
     background-position-y: top;
     background-color: #fff7e4;
     background-repeat: no-repeat;
@@ -3161,5 +3250,220 @@ li {
 
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Product Registration Cards Responsive design */
+.registration-process-card-1 h4,
+.registration-process-card-2 h4,
+.registration-process-card-3 h4,
+.registration-process-card-4 h4,
+.registration-process-card-5 h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.registration-process-card-1 {
+  left: 0%;
+  bottom: 17%;
+  width: 200px;
+  font-size: 12px;
+}
+.registration-process-card-2 {
+  left: 37%;
+  top: 35%;
+  width: 200px;
+  font-size: 12px;
+}
+.registration-process-card-3 {
+  left: 36.5%;
+  bottom: 20%;
+  width: 200px;
+  font-size: 12px;
+}
+.registration-process-card-4 {
+  left: 75.5%;
+  top: 35%;
+  width: 200px;
+  font-size: 12px;
+}
+.registration-process-card-5 {
+  left: 75%;
+  bottom: 20%;
+  width: 200px;
+  font-size: 12px;
+}
+
+@media (min-width: 1024px) {
+  .registration-process-card-1 h4,
+  .registration-process-card-2 h4,
+  .registration-process-card-3 h4,
+  .registration-process-card-4 h4,
+  .registration-process-card-5 h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .registration-process-card-1 {
+    left: 0%;
+    bottom: 10%;
+    width: 250px;
+    font-size: 14px;
+  }
+  .registration-process-card-2 {
+    left: 37%;
+    top: 30%;
+    width: 250px;
+    font-size: 14px;
+  }
+  .registration-process-card-3 {
+    left: 36.5%;
+    bottom: 13%;
+    width: 250px;
+    font-size: 14px;
+  }
+  .registration-process-card-4 {
+    left: 75.5%;
+    top: 30%;
+    width: 250px;
+    font-size: 14px;
+  }
+  .registration-process-card-5 {
+    left: 75%;
+    bottom: 13%;
+    width: 250px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .registration-process-card-1 h4,
+  .registration-process-card-2 h4,
+  .registration-process-card-3 h4,
+  .registration-process-card-4 h4,
+  .registration-process-card-5 h4 {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .registration-process-card-1 {
+    left: 3%;
+    bottom: 0%;
+    width: 300px;
+    font-size: 18px;
+  }
+  .registration-process-card-2 {
+    left: 38%;
+    top: 26%;
+    width: 300px;
+    font-size: 18px;
+  }
+  .registration-process-card-3 {
+    left: 37.5%;
+    bottom: 4%;
+    width: 300px;
+    font-size: 18px;
+  }
+  .registration-process-card-4 {
+    left: 74.5%;
+    top: 25.8%;
+    width: 300px;
+    font-size: 18px;
+  }
+  .registration-process-card-5 {
+    left: 74%;
+    bottom: 4%;
+    width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .registration-process-card-1 {
+    left: 6%;
+    bottom: 0%;
+  }
+  .registration-process-card-2 {
+    left: 38.5%;
+    top: 26%;
+  }
+  .registration-process-card-3 {
+    left: 38.5%;
+    bottom: 4%;
+  }
+  .registration-process-card-4 {
+    left: 72.5%;
+    top: 25.8%;
+  }
+  .registration-process-card-5 {
+    left: 71.5%;
+    bottom: 4%;
+  }
+}
+
+.vendor-card-image-bg1 {
+  width: 375px;
+  height: 110px;
+}
+.vendor-card-title-1 {
+  width: 235px;
+  font-size: 16px;
+}
+
+.vendor-card-content-1 {
+  padding: 0;
+}
+
+.vendor-card-icon-left-1 {
+  top: 10%;
+  right: 3%;
+}
+.vendor-card-icon-right-1 {
+  top: 10%;
+  left: 3%;
+}
+
+.vendor-card-title-left-1 {
+  margin-left: 105px;
+}
+
+.vendor-card-title-right-1 {
+  margin-left: 10px;
+}
+.yellow-hexagon-1 {
+  width: 90px;
+  height: 90px;
+}
+
+.right-card-1 {
+  left: 0;
+}
+
+.left-card-1 {
+  left: 5%;
+}
+
+@media (min-width: 768px) {
+  .vendor-card-title-right-1 {
+    margin-left: 20px;
+  }
+  .vendor-card-title-left-1 {
+    margin-left: 120px;
+  }
+  .vendor-card-title-1 {
+    width: 250px;
+    font-size: 18px;
+  }
+}
+
+.lines-bg-cream {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 253, 248, 0.95) 0%,
+      rgba(255, 249, 238, 0.9) 50%,
+      rgba(255, 247, 228, 0.95) 100%
+    ),
+    url("/fbm-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }

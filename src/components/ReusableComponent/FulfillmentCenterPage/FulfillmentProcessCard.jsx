@@ -7,10 +7,10 @@ function FulfillmentProcessCard({ iconsImage, title, description }) {
         <div className="flex justify-center mb-1">
           <div
             className="h-30 w-20 -mt-4 mb-9 flex items-end justify-center"
-            // style={{
-            //   background:
-            //     "linear-gradient(180deg, #FFF8E1 0%, #F5B52E 60%, rgba(245,181,46,0.15) 100%)",
-            // }}
+          // style={{
+          //   background:
+          //     "linear-gradient(180deg, #FFF8E1 0%, #F5B52E 60%, rgba(245,181,46,0.15) 100%)",
+          // }}
           >
             <img src={iconsImage} className="block mx-auto" alt="" />
           </div>

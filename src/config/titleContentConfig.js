@@ -405,18 +405,6 @@ export const titleContentConfig = {
     contentWidth: "w-full md:w-3/4 lg:w-3/5",
   },
 
-  strategicallylocated: {
-    title: "Strategically Located Warehouses\n for ",
-    highlight: "Faster Deliveries",
-    titleTag: "h2",
-    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
-    titleColor: "black",
-    highlightColor: "#ffbe2e",
-    // contentAlign: "right",
-    contentColor: "black",
-    contentWidth: "w-full md:w-3/4 lg:w-3/5",
-  },
-
   westoreanything: {
     title: "We Store ",
     highlight: "Anything You Sell",
@@ -783,6 +771,247 @@ export const titleContentConfig = {
       link: "#",
       className: "px-6 sm:px-12 py-3.5 mt-6 bg-[#FFBE2E]",
     },
+  },
+
+  productregistrationservie: {
+    title: "Our Product ",
+    highlight: "Registration Services",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#FFFFFF",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        Depoter offers complete support for product registration services UAE,
+        covering different industries and regulatory requirements.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    contentColor: "#FFFFFF",
+    contentSize: "text-[1.25rem]",
+    button: {
+      text: "Talk to a Delivery Expert",
+      link: "#",
+      className: "px-6 sm:px-12 py-3.5 mt-6 bg-[#FFBE2E]",
+    },
+  },
+
+  registrationprocessworks: {
+    title: "How Our Product\n ",
+    highlight: "Registration Process Works",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#000000",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>We follow a simple and structured process to ensure fast approval:</>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#000000",
+    contentSize: "text-[1.25rem]",
+  },
+
+  allinonefulfillmentbeauty: {
+    title: "All-in-One Fulfillment for  ",
+    highlight: "Beauty\n E-commerce Brands",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#000000",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        Beauty brands don’t just need storage—they need a fulfillment partner
+        that understands product safety, packaging, and fast delivery. From
+        organized warehouse storage to secure packing, we handle operations so
+        you can focus on growing your brand.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#000000",
+    contentSize: "text-[1.25rem]",
+  },
+
+  connectyourentireecommerce: {
+    title: "Connect Your ",
+    highlight: "Entire Ecommerce System",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#ffffff",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>Manage all your online and offline sales channels from one dashboard.</>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#ffffff",
+    contentSize: "text-[1.25rem]",
+  },
+
+  beautylogisticschallenges: {
+    title: "How We Solve   ",
+    highlight: "Beauty Logistics\n Challenges",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#000000",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        The beauty industry has unique hurdles. Here is how our{" "}
+        <b> beauty product fulfillment UAE</b> infrastructure solves them:
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#000000",
+    contentSize: "text-[1.25rem]",
+  },
+
+  benefitsforyourbeautybrand: {
+    title: "Smart Fulfillment ",
+    highlight: "Benefits for Your\n Beauty Brand",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#ffffff",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        We don’t just provide storage—we act as your fulfillment partner, giving
+        you complete control, visibility, and operational efficiency across your
+        entire supply chain.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    contentColor: "#ffffff",
+    contentSize: "text-[1.25rem]",
+  },
+
+  personalcareproductfulfillment: {
+    title: "Why Choose Depoter for ",
+    highlight: "Personal Care\n Product Fulfillment?",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffffff",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        In the UAE, logistics is more than just moving boxes—it's about
+        compliance, temperature, and speed.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    contentColor: "#ffffff",
+    contentSize: "text-[1.25rem]",
+  },
+
+  beautybrandwithbetterfulfillment: {
+    title: "Ready to Scale Your  ",
+    highlight: "Beauty\n Brand with Better Fulfillment?",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffffff",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        Don’t let logistics slow down your growth. With the right fulfillment
+        partner, you can ensure product safety, faster delivery, and smooth
+        operations.
+        <br />
+        <br />
+        Depoter helps you simplify fulfillment so you can focus on growing your
+        brand.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    contentColor: "#ffffff",
+    contentSize: "text-[1.25rem]",
+  },
+
+  fastdeliverysafereturnsmanagement: {
+    title: "Fast Delivery & Safe Returns\n ",
+    highlight: "Management",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#FFBE2E",
+    highlightColor: "#000000",
+    content: (
+      <>
+        We deliver across the UAE using optimized routing, smart courier
+        selection, and live tracking to meet all logistics needs:
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    contentColor: "#000000",
+    contentSize: "text-[1.25rem]",
+  },
+
+  inventorycontrolbuiltfreshness: {
+    title: "Inventory Control ",
+    highlight: "Built for Freshness",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#FFBE2E",
+    highlightColor: "#ffffff",
+    content: (
+      <>
+        Accuracy in inventory management is what separates successful food
+        brands from others.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#ffffff",
+    contentSize: "text-[1.3rem]",
+  },
+
+  howdepotersupportsfood: {
+    title: "How Depoter ",
+    highlight: "Supports\n Food & Beverage Brands",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#FFFFFF",
+    highlightColor: "#FFBE2E",
+    content: (
+      <>
+        Depoter provides the specialized infrastructure required to manage
+        high-volume food logistics smoothly.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#ffffff",
+    contentSize: "text-[1.3rem]",
+  },
+
+  reliablefulfillmentforfood: {
+    title: "Reliable Fulfillment ",
+    highlight: " for\n Food & Beverage Products",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#FFBE2E",
+    highlightColor: "#000000",
+    content: (
+      <>
+        We support a wide range of food and beverage categories that require
+        structured storage and efficient logistics.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    contentColor: "#000000",
+    contentSize: "text-[1.3rem]",
+  },
+
+  inventorycontrolbeautyhealth: {
+    title: "Inventory Control ",
+    highlight: "Built for \n Health & Beauty",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#FFBE2E",
+    highlightColor: "#000000",
+    content: (
+      <>
+        In <b> cosmetics fulfillment UAE,</b> accuracy is everything. We
+        prioritize <b>product safety</b> through advanced tracking:
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#000000",
+    contentSize: "text-[1.3rem]",
   },
 
   manageeverything: {
