@@ -1045,4 +1045,28 @@ export const titleContentConfig = {
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full md:w-3/4 lg:w-3/5",
   },
+
+  wellnessctabutton: {
+    title: "Ready to Grow Your Health Brand \n with ",
+    highlight: "Better Shipping?",
+    titleColor: "#ffffff",
+    content:
+      "If you want better control, faster processing, and zero expiry headaches, Depoter is the partner you need.",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center",
+    contentColor: "#FFFFFF",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+  faq: {
+    title: "Frequently",
+    highlight: "Asked Questions",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+  },
 };

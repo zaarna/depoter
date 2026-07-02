@@ -14,6 +14,8 @@ const Button = ({
   let variantStyle = "";
   if (variant == "black") {
     variantStyle = "bg-[#212121] text-[#FFBE2E] black";
+  } else if (variant === "yellow") {
+    variantStyle = "bg-[#FFBE2E] text-[#212121]";
   }
   const buttonClasses = `btn-radial transition-all duration-500 ${variantStyle} ${className}`;
 
