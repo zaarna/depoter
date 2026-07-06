@@ -8,11 +8,13 @@ export default function FreightProcessCard({
   description,
   processImage,
   isEven = false,
+  badgeRef,
 }) {
   return (
     <div
-      className={`w-full flex flex-col lg:flex-row items-center ${isEven ? "lg:justify-end" : "lg:justify-start"
-        }`}
+      className={`w-full flex flex-col lg:flex-row items-center ${
+        isEven ? "lg:justify-end" : "lg:justify-start"
+      }`}
     >
       {/* Mobile Image */}
       {processImage && (
@@ -59,7 +61,10 @@ export default function FreightProcessCard({
           </div>
 
           {/* Number Badge */}
-          <div className="absolute left-0.5 lg:left-[4px] top-1/2 z-20 flex h-5 w-5  md:h-7 md:w-7 sm:h-8 sm:w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#3C2C0B] text-sm sm:text-base font-bold text-white">
+          <div
+            ref={badgeRef}
+            className="absolute left-0.5 lg:left-[4px] top-1/2 z-20 flex h-5 w-5  md:h-7 md:w-7 sm:h-8 sm:w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#3C2C0B] text-sm sm:text-base font-bold text-white"
+          >
             {String(number).padStart(2, "0")}
           </div>
         </div>
