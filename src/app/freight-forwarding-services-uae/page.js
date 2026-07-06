@@ -1,4 +1,5 @@
-import FAQSection from "@/components/FAQSection";
+import CtaSection from "@/components/ReusableComponent/CtaSection";
+import FaqSection from "@/components/ReusableComponent/FaqSection";
 import AddvalueToSupplyChain from "@/components/ReusableComponent/FreightForwarding/AddValueToSupplyChain";
 import CustomsClearance from "@/components/ReusableComponent/FreightForwarding/CustomsClearance";
 import FreightForwardingServices from "@/components/ReusableComponent/FreightForwarding/FreightForwardingServices";
@@ -8,7 +9,7 @@ import StrategicHub from "@/components/ReusableComponent/FreightForwarding/Strat
 import WhyChooseDepoter from "@/components/ReusableComponent/FreightForwarding/WhyChooseDepoter";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
 import ShippingWithConfidence from "@/components/ShippingWithConfidence";
-import TestimonialSection from "@/components/TestimonialSection";
+import { freightforwardingfaq } from "@/data/faqdata";
 
 export default function FreightForwarding() {
   return (
@@ -22,8 +23,12 @@ export default function FreightForwarding() {
         <WhyChooseDepoter />
         <StepByStepFreightProcess />
         <IndustriesWeServe />
-        <FAQSection />
-        <ShippingWithConfidence />
+        <FaqSection faqs={freightforwardingfaq} />
+        <CtaSection
+          sectionKey="shippingwithsonfidence"
+          buttonLink={"#"}
+          buttonText="Talk to a Freight Expert"
+        />
       </main>
     </div>
   );

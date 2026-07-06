@@ -106,7 +106,7 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
 function InvoiceFeatureCard({ number, title, description, dark }) {
     return (
         <div
-            className={`flex items-center rounded-2xl h-[150px] px-5 py-5 transition-all duration-300 `}
+            className={`flex items-start md:items-center rounded-2xl md:h-[150px] px-5 py-5 transition-all duration-300 `}
         >
             {/* Number */}
             <div className="flex items-center">

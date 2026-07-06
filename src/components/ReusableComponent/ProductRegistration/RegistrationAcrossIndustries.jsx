@@ -72,7 +72,6 @@ function RegistrationAcrossIndustries({ sectionKey }) {
 
             <div className="flex flex-col lg:flex-row gap-1 mt-5">
                 <div className="w-full relative">
-
                     <Swiper
                         className="overflow-visible"
                         modules={[Navigation, FreeMode]}
@@ -91,9 +90,10 @@ function RegistrationAcrossIndustries({ sectionKey }) {
                         spaceBetween={0}
                         loop={false}
                         breakpoints={{
-                            0: { slidesPerView: 1.1 },
-                            768: { slidesPerView: 2.5 },
-                            1024: { slidesPerView: 3.5 },
+                            0: { slidesPerView: 1.0 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 2.3 },
+                            1440: { slidesPerView: 3.5 },
                         }}
                     >
                         {b2bSliderData.map((item) => (
@@ -140,24 +140,24 @@ function RegistrationAcrossIndustries({ sectionKey }) {
 
 function Card({ title, desc, image }) {
     return (
-        <div className="w-[400px] h-[380px] bg-[#FFF7E4] border-2 border-[#F4B223] rounded-[36px] p-6 md:p-8">
+        <div className="w-[300px] h-[300px] md:h-[380px] md:w-[400px] bg-[#FFF7E4] border-2 border-[#F4B223] rounded-[36px] p-6 md:p-8">
 
             {/* Image */}
-            <div className="mt-10 h-30">
+            <div className="my-5 h-20 md:h-30">
                 <img
                     src={image}
                     alt={title}
-                    className="h-auto object-contain"
+                    className="h-20 md:h-auto object-contain"
                 />
             </div>
 
             {/* Content */}
             <div className="flex flex-col gap-4">
-                <h3 className="text-[#212121] text-[28px] font-bold leading-[1.15]">
+                <h3 className="text-[#212121] text-[1.25rem] md:text-[1.6rem] font-bold leading-[1.15]">
                     {title}
                 </h3>
 
-                <p className="text-[#212121] text-[16px]">
+                <p className="text-[#212121] text-sm md:text-[1em]">
                     {desc}
                 </p>
             </div>

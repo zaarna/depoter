@@ -11,6 +11,9 @@ import SolutionForSection from "@/components/ReusableComponent/Integration/Solut
 import ShippingWithConfidence from "@/components/ShippingWithConfidence";
 import FAQSectionIntegration from "@/components/ReusableComponent/Integration/FAQSectionIntegration";
 import ManageEverything from "@/components/ReusableComponent/Integration/ManageEverything";
+import { ecommerceIntegrationfaq } from "@/data/faqdata";
+import FaqSection from "@/components/ReusableComponent/FaqSection";
+import CtaSection from "@/components/ReusableComponent/CtaSection";
 
 export default function IntegrationsPage() {
   return (
@@ -26,8 +29,12 @@ export default function IntegrationsPage() {
         <SupplyChainSection />
         <WhyChooseSection />
         <SolutionForSection />
-        <FAQSectionIntegration />
-        <ManageEverything />
+        <FaqSection faqs={ecommerceIntegrationfaq} />
+        <CtaSection
+          sectionKey="manageeverythingcta"
+          buttonLink={"#"}
+          buttonText="Connect Your Store Today"
+        />
       </main>
     </div>
   );

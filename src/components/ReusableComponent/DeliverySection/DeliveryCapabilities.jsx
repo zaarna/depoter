@@ -5,7 +5,7 @@ import TitleContent from "../All_Title/TitleContent";
 import Button from "../Button/Button";
 import DeliveryCapabilityCard from "../StepCard/DeliveryCapabilityCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, FreeMode } from "swiper/modules";
+import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import "swiper/css";
 
 const deliverySteps = [
@@ -130,9 +130,16 @@ export default function DeliveryCapabilities() {
         {/* Steps Swiper */}
         <div className="mt-10 md:mt-14">
           <Swiper
-            modules={[Autoplay, FreeMode]}
+            modules={[Autoplay, FreeMode, Navigation]}
+            navigation={{
+              nextEl: ".next-btn",
+              prevEl: ".prev-btn",
+            }}
             freeMode={{ enabled: true, momentum: true }}
-            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
             loop
             spaceBetween={16}
             slidesPerView="auto"
@@ -148,6 +155,34 @@ export default function DeliveryCapabilities() {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="hidden lg:flex justify-center gap-6 mt-15">
+            <button className="prev-btn w-12 h-12 rounded-full bg-[#3A2A0A] flex items-center justify-center cursor-pointer">
+              <img
+                src="/right-control.svg"
+                alt="Previous"
+                className="w-3 h-auto"
+              />
+            </button>
+
+            <button className="next-btn w-12 h-12 rounded-full bg-[#3A2A0A] flex items-center justify-center cursor-pointer">
+              <img src="/left-control.svg" alt="Next" className="w-3 h-auto" />
+            </button>
+          </div>
+
+          {/* CONTROLS — MOBILE / TABLET */}
+          <div className="flex lg:hidden justify-center gap-6 mt-10 mb-6">
+            <button className="prev-btn w-12 h-12 rounded-full bg-[#3A2A0A] flex items-center justify-center cursor-pointer">
+              <img
+                src="/right-control.svg"
+                alt="Previous"
+                className="w-3 h-auto"
+              />
+            </button>
+
+            <button className="next-btn w-12 h-12 rounded-full bg-[#3A2A0A] flex items-center justify-center cursor-pointer">
+              <img src="/left-control.svg" alt="Next" className="w-3 h-auto" />
+            </button>
+          </div>
         </div>
 
         {/* Button Section */}

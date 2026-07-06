@@ -18,7 +18,7 @@ export default function DeliverySolution() {
       title: "Same Day Delivery UAE",
       icons: "/delivery-solution-2.svg",
       list: [
-        "Boost customer loyalty by delivering within 8 hours. Our same day delivery UAE service focuses on intra-city priority processing, making it the perfect choice for time-sensitive products.",
+        "Boost customer loyalty by delivering within 8 hours. Our same day delivery UAE service supports both inter-city and intra-city deliveries with priority processing, making it the perfect choice for time-sensitive products.",
       ],
     },
     {
@@ -26,14 +26,14 @@ export default function DeliverySolution() {
       title: "Standard Next-Day Delivery",
       icons: "/delivery-solution-3.svg",
       list: [
-        "A cost-effective solution for regular shipping needs. We cover all major serviceable locations, including remote and hard-to-reach areas, maintaining high success rates and consistent service levels.",
+        "A cost-effective solution for regular shipping needs. We cover the entire region, including remote and hard-to-reach areas, maintaining high success rates and consistent service levels.",
       ],
     },
     {
       id: 4,
-      title: "Offline Dedicated Deliveries",
+      title: "Bulk and B2B Deliveries",
       description:
-        "Need a dedicated fleet? We provide Cars, Vans, and Trucks with trained drivers for:",
+        " Need a dedicated fleet for your B2B and Bulk business?",
       icons: "/delivery-solution-4.svg",
       list: [
         "Deliveries to malls, stores, and marketplace warehouses.",

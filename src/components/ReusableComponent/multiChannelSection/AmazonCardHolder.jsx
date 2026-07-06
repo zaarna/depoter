@@ -36,7 +36,17 @@ export default function AmazonCardHolder({ industry }) {
       <div
         className={` ${industry.rotate === "rotate-6" ? "icon-wrapper-left" : "icon-wrapper-right"}`}
       >
-        <img src={industry.icons} alt="" className="w-12 h-12" />
+        {industry.icons ? (
+          <img
+            src={industry.icons}
+            alt={industry.title}
+            className="w-12 h-12"
+          />
+        ) : (
+          <span className="text-[40px] font-bold text-[#1F1F1F] block absolute top-5">
+            {String(industry.number).padStart(2, "0")}
+          </span>
+        )}
       </div>
     </div>
   );

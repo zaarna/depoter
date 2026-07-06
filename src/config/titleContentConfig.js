@@ -594,6 +594,7 @@ export const titleContentConfig = {
     highlightColor: "#FFBE2E",
     className: "text-center lg:text-left",
   },
+
   endtoend: {
     title: "End-to-End Return Management \n Built for B2B Precision",
     highlight: "B2B Precision",
@@ -603,6 +604,7 @@ export const titleContentConfig = {
     highlightColor: "#FFBE2E",
     className: "text-center",
   },
+
   moderncommercedeliveries: {
     title: "A Scalable Delivery Network Bult \n for ",
     highlight: "Modern Commerce",
@@ -631,7 +633,7 @@ export const titleContentConfig = {
       "In the UAE, one size does not fit all. Your customers demand choices, and our ecommerce delivery services provide exactly that.",
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
     button: {
-      text: "Choose Your Delivery Speed",
+      text: "Get a Quote",
       link: "#",
       className: "px-6 sm:px-12 py-3.5 mt-6",
     },
@@ -667,11 +669,30 @@ export const titleContentConfig = {
       "Some products require precision handling beyond standard courier services. We specialize in managing high-stakes categories with specific environmental and safety requirements:",
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
     button: {
+      text: "Get a quote",
+      link: "#",
+      className: "px-6 sm:px-12 py-3.5 mt-6",
+    },
+  },
+
+  whychooseproductregistration: {
+    title: "Why Choose Depoter for  ",
+    highlight: "Product\n Registration Services in UAE",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#ffffff",
+    highlightColor: "#ffbe2e",
+    contentColor: "#ffffff",
+    content:
+      "Businesses choose Depoter because we simplify a complex regulatory process.",
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    button: {
       text: "Integrate Your Store with Our Tech",
       link: "#",
       className: "px-6 sm:px-12 py-3.5 mt-6",
     },
   },
+
   deliveryservices: {
     title: "Value-Added ",
     highlight: "Delivery Services",
@@ -794,6 +815,15 @@ export const titleContentConfig = {
       link: "#",
       className: "px-6 sm:px-12 py-3.5 mt-6 bg-[#FFBE2E]",
     },
+  },
+
+  benefitsofproductregistrationservie: {
+    title: "Benefits ",
+    highlight: "of Our Product\n Registration Services",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#000000",
   },
 
   registrationprocessworks: {
@@ -1061,6 +1091,71 @@ export const titleContentConfig = {
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full md:w-3/4 lg:w-3/5",
   },
+
+  shippingwithsonfidence: {
+    title: "Start Shipping with ",
+    highlight: "Confidence",
+    titleColor: "#ffffff",
+    content:
+      "Simplify your international shipping with a reliable freight partner. Depoter ensures smooth, fast, and compliant cargo movement across global routes.",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center",
+    contentColor: "#FFFFFF",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  manageeverythingcta: {
+    title: "Manage Everything Without the\n",
+    highlight: "Confusion",
+    titleColor: "#ffffff",
+    content:
+      "Managing multiple systems can slow down your work. Connect everything in one place and run your operations smoothly without errors or delays.",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center",
+    contentColor: "#FFFFFF",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  fulfillmentcentercta: {
+    title: "Scale Your Operations with a",
+    highlight: "Reliable Logistics Partner",
+    titleColor: "#ffffff",
+    content:
+      "Managing multiple systems can slow down your work. Connect everything in one place and run your operations smoothly without errors or delays.",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center",
+    contentColor: "#FFFFFF",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
+  deliveryservicescta: {
+    title: "Ready to Simplify ",
+    highlight: "Your Delivery\n Operations?",
+    titleColor: "#ffffff",
+    content:
+      "Managing multiple systems can slow down your work. Connect everything in one place and run your operations smoothly without errors or delays.",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-center",
+    contentColor: "#FFFFFF",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
   faq: {
     title: "Frequently",
     highlight: "Asked Questions",
@@ -1182,5 +1277,109 @@ export const titleContentConfig = {
     contentTag: "h3",
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full",
+  },
+  connecttoecommercestack: {
+    title: "Connect Your Entire ",
+    highlight: "Ecommerce Stack",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#000000",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        Manage all your sales channels from one system. We connect your
+        ecommerce platforms, marketplaces, and courier partners to sync orders
+        and inventory in real time. Custom websites can also integrate via
+        secure APIs for smooth, automated operations.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/6",
+    contentColor: "#000000",
+    contentSize: "text-[1.25rem]",
+  },
+
+  challengesfoodnbeverage: {
+    title: "Challenges in ",
+    highlight: "Food & Beverage\n Fulfillment",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#000000",
+    content: (
+      <>
+        We support a wide range of food and beverage categories that require
+        structured storage and efficient logistics.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/6",
+    contentColor: "#000000",
+    contentSize: "text-[1.25rem]",
+  },
+
+  coldchainlogisticsbuiltfoodsafety: {
+    title: "Cold Chain Logistics\n Built for ",
+    highlight: "Food Safety",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#000000",
+    highlightColor: "#ffbe2e",
+    content: (
+      <>
+        Temperature-sensitive products require uninterrupted climate control
+        across the entire supply chain.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-5/6",
+    contentColor: "#000000",
+    contentSize: "text-[1.25rem]",
+  },
+
+  foodsafetycompliancehandling: {
+    title: "Food Safety & Compliance ",
+    highlight: "Handling",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#000000",
+    content: (
+      <>
+        Maintaining compliance is critical in food logistics. We follow
+        structured processes to ensure safe handling and proper documentation
+        for shipments.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#000000",
+    contentSize: "text-[1.25rem]",
+  },
+
+  whychoosedepoterfoodfulfillment: {
+    title: "Why Businesses Choose ",
+    highlight: "Depoter for Food Fulfillment",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#000000",
+    className: "text-start",
+    marginX: "mx-0",
+    content: (
+      <>
+        Built for fast-moving food brands that need reliable storage, cold chain
+        handling, and scalable fulfillment.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#000000",
+    contentAlign: "text-left",
+    contentSize: "text-[1.25rem]",
+  },
+
+  foodcategories: {
+    title: "Food Categories  ",
+    highlight: " We Handle",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#000000",
   },
 };

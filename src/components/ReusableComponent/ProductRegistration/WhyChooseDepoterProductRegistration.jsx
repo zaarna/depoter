@@ -1,49 +1,59 @@
 "use client";
 import React from "react";
 import Button from "../Button/Button";
+import { titleContentConfig } from "@/config/titleContentConfig";
+import TitleContent from "../All_Title/TitleContent";
 
 const industries = [
   {
     id: 1,
-    title: "Purchase order management and confirmations",
-    icons: "/vcf-icon-1.svg",
+    title: "Experienced compliance team",
+    icons: "/wcdpr-icon-1.svg",
   },
   {
     id: 2,
-    title: "ASN creation with carton and pallet-level accuracy",
-    icons: "/vcf-icon-2.svg",
+    title: "Strong understanding of UAE regulatory authorities (MoIAT, MOHAP, Dubai Municipality)",
+    icons: "/wcdpr-icon-2.svg",
   },
   {
     id: 3,
-    title: "Delivery appointment scheduling at Amazon fulfillment centers",
-    icons: "/vcf-icon-3.svg",
+    title: "Deep knowledge of ECAS, ESMA standards, and G-Mark certification requirements",
+    icons: "/wcdpr-icon-3.svg",
   },
   {
     id: 4,
-    title: "SKU labeling and carton setup",
-    icons: "/vcf-icon-4.svg",
+    title: "Expertise in HS Code Classification and Compliance Certification",
+    icons: "/wcdpr-icon-4.svg",
   },
   {
     id: 5,
-    title: "Transport arrangement and delivery execution",
-    icons: "/vcf-icon-5.svg",
+    title: "Fast and accurate processing",
+    icons: "/wcdpr-icon-5.svg",
   },
   {
     id: 6,
-    title: "POD collection and GRN follow-up",
-    icons: "/vcf-icon-6.svg",
+    title: "End-to-end service",
+    icons: "/wcdpr-icon-6.svg",
   },
   {
     id: 7,
-    title: "Dispute handling for shortages and chargebacks",
-    icons: "/vcf-icon-7.svg",
+    title: "Clear communication at every step",
+    icons: "/wcdpr-icon-7.svg",
   },
 ];
 
-export default function WhyChooseDepoterProductRegistration() {
+export default function WhyChooseDepoterProductRegistration({ sectionKey = [] }) {
+  const tc =
+    titleContentConfig[sectionKey] ||
+    titleContentConfig["whychooseproductregistration"];
   return (
     <section className="py-16 bg-[#3B2505]">
       <div className="container mx-auto px-4">
+        <div className="flex justify-center mb-12">
+          <div className="text-center">
+            <TitleContent {...tc} />
+          </div>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
           {/* Left Side (1 column) */}
           <div className="flex items-center justify-center">
@@ -96,38 +106,13 @@ export default function WhyChooseDepoterProductRegistration() {
           </div>
 
         </div>
-        <div className="grid mt-6 md:mt-12">
+        <div className="mt-10 flex justify-center">
           <Button
-            href=""
-            className="
-              group relative overflow-hidden
-              mx-auto block
-              w-full sm:w-[80%] md:w-[25%] lg:w-[25%]
-              py-4 px-10
-              rounded-full
-              bg-[#FFBE2E]
-              text-black
-              font-semibold
-              transition-all duration-500
-              hover:scale-105
-            "
-            variant=""
-          >
-            <span className="relative z-10">
-              Request a Free Consultation
-            </span>
-
-            <span
-              className="
-      absolute inset-0
-      -translate-x-full
-      skew-x-12
-      bg-white/30
-      transition-transform duration-700
-      group-hover:translate-x-[200%]
-    "
-            />
-          </Button>
+            children="Request a Free Consultation"
+            className="px-5 py-2"
+            // href={buttonLink}
+            variant="yellow"
+          />
         </div>
       </div>
 

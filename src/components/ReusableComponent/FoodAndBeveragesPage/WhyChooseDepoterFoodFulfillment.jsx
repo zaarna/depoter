@@ -1,6 +1,8 @@
+import { titleContentConfig } from "@/config/titleContentConfig";
 import React from "react";
+import TitleContent from "../All_Title/TitleContent";
 
-const WhyChooseDepoterFoodFulfillment = () => {
+const WhyChooseDepoterFoodFulfillment = ({ sectionKey = [] }) => {
     const benefits = [
         {
             image: "/benefits-custom-clearance-1.svg",
@@ -29,18 +31,18 @@ const WhyChooseDepoterFoodFulfillment = () => {
         },
     ];
 
+    const tc =
+        titleContentConfig[sectionKey] ||
+        titleContentConfig["whychoosedepoterfoodfulfillment"];
+
     return (
         <section className=" container w-full bg-[#ffffff] py-12 px-6 lg:px-12 relative overflow-hidden">
             <div className="mx-auto grid lg:grid-cols-2 gap-10 items-center">
                 {/* Left Content */}
-                <div>
-                    <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-center md:text-start font-bold leading-tight ">
-                        <span className="text-[#f2b233]">
-                            Why Businesses
-                            Choose
-                        </span> {" "}Depoter
-                        for Food Fulfillment
-                    </h2>
+                <div className="flex justify-center mb-12">
+                    <div className="text-center">
+                        <TitleContent {...tc} />
+                    </div>
                 </div>
 
                 {/* Right Cards */}

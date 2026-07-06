@@ -1,5 +1,9 @@
 "use client";
 
+import { titleContentConfig } from "@/config/titleContentConfig";
+import TitleContent from "../All_Title/TitleContent";
+import FoodCategoryCard from "@/components/FoodCategoryCard";
+
 const cards = [
     {
         icon: "/Food-Categories-1.svg",
@@ -23,58 +27,33 @@ const cards = [
     },
 ];
 
-const HowItWorksSection = () => {
+const FoodCategories = ({ sectionKey = [] }) => {
+
+    const tc =
+        titleContentConfig[sectionKey] ||
+        titleContentConfig["foodcategories"];
+
     return (
-        <section className="py-20 bg-[#FFF7E4]">
+        <section className="py-20 lines-bg-cream">
             <div className="container">
                 {/* Heading */}
-                <div className="max-w-[900px] mx-auto text-center mb-14">
-                    <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] text-[#212121]">
-                        <span className="text-[#F5B42B]">Food Categories </span>We Handle
-                    </h2>
+                <div className="flex justify-center mb-12">
+                    <div className="text-center">
+                        <TitleContent {...tc} />
+                    </div>
                 </div>
 
                 {/* Steps */}
                 <div className="space-y-6">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
                         {cards.map((item, index) => (
-                            <div
+                            <FoodCategoryCard
                                 key={index}
-                                className="prh-card group relative overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-gradient-to-b from-[#f6e5bd00] to-[#EFD188] min-h-[290px] flex flex-col items-center justify-center px-5 pt-7 pb-10"
-                            >
-                                <img
-                                    src={item.icon}
-                                    alt=""
-                                    className="w-[90px] h-[90px] object-contain mb-5 transition-transform duration-500 group-hover:-translate-y-5"
-                                />
-
-                                <h3 className="text-center text-[20px] font-bold leading-[1.3] transition-transform duration-500 group-hover:-translate-y-5">
-                                    {item.title}
-                                </h3>
-
-                                {/* Description */}
-                                <p
-                                    className="
-            absolute
-            left-5
-            right-5
-            bottom-6
-            text-center
-            text-[15px]
-            leading-6
-            text-[#333]
-            opacity-0
-            translate-y-5
-            transition-all
-            duration-500
-            group-hover:opacity-100
-            group-hover:translate-y-0
-        "
-                                >
-                                    {item.description}
-                                </p>
-                            </div>
+                                icon={item.icon}
+                                title={item.title}
+                                description={item.description}
+                            />
                         ))}
                     </div>
                 </div>
@@ -83,4 +62,4 @@ const HowItWorksSection = () => {
     );
 };
 
-export default HowItWorksSection;
+export default FoodCategories;

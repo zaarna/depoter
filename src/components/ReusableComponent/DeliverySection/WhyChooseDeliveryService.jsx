@@ -1,12 +1,16 @@
 import { titleContentConfig } from "@/config/titleContentConfig";
 import TitleContent from "../All_Title/TitleContent";
+import FeatureList from "../FeatureList";
 
 const features = [
-  "Fast shipping with optimized delivery routes",
-  "Reliable last-mile and cross-border operations",
-  "Real-time shipment tracking and visibility",
-  "Scalable infrastructure for growing businesses",
-  "Strong delivery network across UAE and global markets",
+  "One Contract, Multi-Delivery Options – Access Next-Day, Same-Day, Express, GCC, and International deliveries through a single agreement.",
+  "Competitive Shipping Rates – Benefit from our high shipping volumes to secure lower courier rates from leading delivery partners.",
+  "Multi-Courier Network – Seamlessly connect with all major delivery providers and choose the best option for every shipment.",
+  "Automated Shipping & Live Tracking – Instantly generate AWBs and provide customers with real-time shipment tracking.",
+  "Dedicated Customer Success Team – End-to-end operational support from shipment creation to successful delivery.",
+  "COD & Invoice Management – Automated COD reconciliation and thorough validation of courier invoices to eliminate billing discrepancies.",
+  "Centralized Dashboard & Analytics – Monitor all shipments, delivery performance, costs, COD, and courier KPIs from a single dashboard.",
+  "Scalable Logistics Solution – Whether you're shipping hundreds or thousands of orders, Depoter grows with your business.",
 ];
 
 export default function WhyChooseDeliveryService() {
@@ -33,20 +37,11 @@ export default function WhyChooseDeliveryService() {
             />
           </div>
           <div className="flex items-stretch justify-center gap-4">
-            <img
-              src="/delivery-steps.svg"
-              alt="delivery steps"
-              className="object-contain w-auto max-w-[130px] self-stretch"
+            <FeatureList
+              features={features}
+              space="4"
+              textClassName="text-white"
             />
-            <ul className="flex flex-col gap-3 lg:gap-0 justify-between py-3 text-base lg:text-xl">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-center">
-                  <div className="flex flex-1 items-center">
-                    <p className="text-[#FFFFFF] leading-relaxed">{feature}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>

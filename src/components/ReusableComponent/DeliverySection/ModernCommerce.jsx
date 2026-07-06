@@ -7,8 +7,8 @@ import StepCard from "../StepCard/StepCard";
 const defaultSteps = [
   {
     number: "01",
-    title: "Last Mile Delivery",
-    desc: "The final step to the customer, optimized for speed and satisfaction.",
+    title: "First Mile Delivery",
+    desc: "Pickup and movement of goods from manufacturers, suppliers, or sellers to the warehouse or distribution center.",
   },
   {
     number: "02",
@@ -17,17 +17,14 @@ const defaultSteps = [
   },
   {
     number: "03",
-    title: "Line Haul Operations",
-    desc: "High-capacity long-distance transport to keep your supply chain moving.",
+    title: "Last Mile Delivery",
+    desc: "The final step to the customer, optimized for speed and satisfaction.",
   },
 ];
 
 const defaultCallout = (
   <>
-    Whether you are handling B2C orders or B2B bulk requirements, our{" "}
-    <strong className="text-[#212121]">scalable infrastructure</strong> adapts
-    to your volume, ensuring cost efficiency even during seasonal spikes like
-    Ramadan or White Friday.
+    Whether you are handling B2C orders, B2B bulk requirements, or marketplace orders, our scalable infrastructure adapts to changing order volumes during Ramadan, Black Friday, White Friday, Diwali, Thanksgiving, Easter, and other peak shopping seasons.
   </>
 );
 
@@ -35,7 +32,7 @@ export default function ModernCommerce({
   configKey = "moderncommercedeliveries",
   steps = defaultSteps,
   callout = defaultCallout,
-  ctaText = "Scale Your Delivery Operations",
+  ctaText = "Get a Quote",
   ctaHref = "#",
   image = "/deliveryModernCommerce.svg",
   imageAlt = "Modern commerce delivery network",

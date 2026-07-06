@@ -264,7 +264,9 @@ li {
 .backgroundcover-productregistration,
 .backgroundcover-deliveries,
 .backgroundcover-customsclearance,
-.backgroundcover-healthWellness {
+.backgroundcover-healthWellness,
+.backgroundcover-beautypersonalcare,
+.backgroundcover-foodnbeverages {
   position: relative;
   background: hsla(42, 100%, 95%, 1);
 
@@ -502,6 +504,52 @@ li {
   z-index: 2;
 }
 
+.backgroundcover-beautypersonalcare::before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: -4%;
+  width: 80%;
+  height: auto;
+  aspect-ratio: 1440 / 920;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
+    url("/healthWellness.svg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
+.backgroundcover-foodnbeverages::before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: -10%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 920;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
+    url("/foodnbeveragesbackground.svg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
 .backgroundcover-home::after,
 .backgroundcover-d2c::after,
 .backgroundcover-b2b::after,
@@ -512,7 +560,9 @@ li {
 .backgroundcover-EcoIntegration::after,
 .backgroundcover-deliveries::after,
 .backgroundcover-customsclearance::after,
-.backgroundcover-healthWellness::after {
+.backgroundcover-healthWellness::after,
+.backgroundcover-beautypersonalcare::after,
+.backgroundcover-foodnbeverages::after {
   position: absolute;
   content: "";
   left: 0;
@@ -951,7 +1001,11 @@ li {
   .backgroundcover-customsclearance::before,
   .backgroundcover-customsclearance::after,
   .backgroundcover-healthWellness::before,
-  .backgroundcover-healthWellness::after {
+  .backgroundcover-healthWellness::after,
+  .backgroundcover-beautypersonalcare::before,
+  .backgroundcover-beautypersonalcare::after,
+  .backgroundcover-foodnbeverages::before,
+  .backgroundcover-foodnbeverages::after {
     content: none;
   }
 
@@ -1076,10 +1130,22 @@ li {
     margin-top: 280px;
   }
 
-  .backgroundcover-productregistration > .container {
+  .backgroundcover-beautypersonalcare > .container {
     padding-top: 0px;
     padding-bottom: 25px;
     margin-top: 280px;
+  }
+
+  .backgroundcover-foodnbeverages > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
+
+  .backgroundcover-productregistration > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 340px;
   }
 
   .backgroundcover-multichannel {
@@ -1223,13 +1289,12 @@ li {
         rgba(228, 216, 189, 0.1) 60.3%,
         rgba(0, 0, 0, 0.1) 100.07%
       ),
-      image-set(
-        url("/Delivery-heroimg-mobile-1x.webp") 1x,
-        url("/Delivery-heroimg-mobile-2x.webp") 2x,
-        url("/Delivery-heroimg-mobile-3x.webp") 3x
-          /* url("/b2bmobilebanner@2x.webp") 2x,
+      /* image-set( */ url("/customs-clearance-mobile.svg");
+    /* url("/Delivery-heroimg-mobile-2x.webp") 2x,
+        url("/Delivery-heroimg-mobile-3x.webp") 3x */
+    /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
-      );
+    /* ); */
     background-size: 100%;
     /* background-position: center; */
     background-position-y: top;
@@ -1248,13 +1313,12 @@ li {
         rgba(228, 216, 189, 0.1) 60.3%,
         rgba(0, 0, 0, 0.1) 100.07%
       ),
-      image-set(
-        url("/Delivery-heroimg-mobile-1x.webp") 1x,
-        url("/Delivery-heroimg-mobile-2x.webp") 2x,
-        url("/Delivery-heroimg-mobile-3x.webp") 3x
-          /* url("/b2bmobilebanner@2x.webp") 2x,
+      /* image-set( */ url("/product-registration-mobile.svg");
+    /* url("/Delivery-heroimg-mobile-2x.webp") 2x,
+        url("/Delivery-heroimg-mobile-3x.webp") 3x */
+    /* url("/b2bmobilebanner@2x.webp") 2x,
       url("/b2bmobilebanner@3x.webp") 3x */
-      );
+    /* ); */
     background-size: 100%;
     /* background-position: center; */
     background-position-y: top;
@@ -1264,6 +1328,46 @@ li {
   }
 
   .backgroundcover-healthWellness {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      url("/healthWellness-mobile.svg");
+
+    /* background-size: cover; */
+    background-position: center;
+    background-position-y: top;
+    background-color: #fff7e4;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-beautypersonalcare {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      url("/beautypersonalcare-mobile.svg");
+
+    /* background-size: cover; */
+    background-position: center;
+    background-position-y: top;
+    background-color: #fff7e4;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-foodnbeverages {
     /* background-image: url("/b2bmobilebanner.webp"); */
     background-image:
       linear-gradient(
@@ -1902,14 +2006,14 @@ li {
 
 .bg-amazon-rotate-12 {
   background-image: url("/AmazonCardImage.svg");
-  background-size: 100%;
+  background-size: 96%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bg-amazon-rotate-6 {
   background-image: url("/amazonCardMirror.svg");
-  background-size: 100%;
+  background-size: 96%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2666,16 +2770,6 @@ li {
   border-radius: 1.5rem;
 }
 
-.direct-ship-card .box {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  border-radius: 50%;
-  border: 1px solid #ffbe2e;
-  background: white;
-  overflow: hidden;
-}
-
 .direct-ship-card-left-circle {
   position: absolute;
   top: 70px;
@@ -2758,12 +2852,6 @@ li {
   left: -80px;
 }
 
-.direct-ship-card {
-  position: relative;
-  width: 100%;
-  display: flex;
-  margin-top: -30px; /* overlap */
-}
 .direct-ship-card-bg {
   height: 100px;
   width: 30%;
@@ -3293,6 +3381,51 @@ li {
   font-size: 12px;
 }
 
+.vendor-card-image-bg1 {
+  width: 375px;
+  height: 110px;
+}
+
+.vendor-card-title-1 {
+  width: 235px;
+  font-size: 16px;
+}
+
+.vendor-card-content-1 {
+  padding: 0;
+}
+
+.vendor-card-icon-left-1 {
+  top: 10%;
+  right: 3%;
+}
+
+.vendor-card-icon-right-1 {
+  top: 10%;
+  left: 3%;
+}
+
+.vendor-card-title-left-1 {
+  margin-left: 105px;
+}
+
+.vendor-card-title-right-1 {
+  margin-left: 10px;
+}
+
+.yellow-hexagon-1 {
+  width: 90px;
+  height: 90px;
+}
+
+.right-card-1 {
+  left: 0;
+}
+
+.left-card-1 {
+  left: 5%;
+}
+
 @media (min-width: 1024px) {
   .registration-process-card-1 h4,
   .registration-process-card-2 h4,
@@ -3331,6 +3464,83 @@ li {
     bottom: 13%;
     width: 250px;
     font-size: 14px;
+  }
+
+  /* Why Choose Depoter for Product Registration Services in UAE cards section */
+  .vendor-card-image-bg1 {
+    width: 375px;
+    height: 90px;
+  }
+
+  .vendor-card-title-1 {
+    width: 235px;
+    font-size: 16px;
+  }
+
+  .vendor-card-content-1 {
+    padding: 0;
+  }
+
+  .vendor-card-icon-left-1 {
+    top: 9%;
+    right: 6%;
+  }
+
+  .vendor-card-icon-right-1 {
+    top: 9%;
+    left: 6%;
+  }
+
+  .vendor-card-title-left-1 {
+    margin-left: 105px;
+  }
+
+  .vendor-card-title-right-1 {
+    margin-left: 10px;
+  }
+
+  .yellow-hexagon-1 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .right-card-1 {
+    left: 15%;
+    margin-top: -50px;
+  }
+
+  .left-card-1 {
+    left: -10%;
+    margin-top: -30px;
+  }
+  .hexagon-icon {
+    width: 50px;
+  }
+
+  .direct-ship-card-icon-right {
+    right: 32%;
+  }
+
+  .direct-ship-card-icon-left {
+    left: 32%;
+  }
+
+  .direct-ship-left-image {
+    right: 22%;
+  }
+  .direct-ship-right-image {
+    left: 30%;
+  }
+
+  .left-card1 {
+    justify-content: flex-start;
+    position: relative;
+    left: 70px;
+  }
+  .right-card1 {
+    justify-content: flex-end;
+    position: relative;
+    left: -70px;
   }
 }
 
@@ -3373,6 +3583,39 @@ li {
     width: 300px;
     font-size: 18px;
   }
+
+  .direct-ship-card-icon-right {
+    right: 32%;
+  }
+
+  .direct-ship-card-icon-left {
+    left: 32%;
+  }
+
+  .direct-ship-left-image {
+    right: 24%;
+  }
+  .direct-ship-right-image {
+    left: 30%;
+  }
+  .left-card1 {
+    justify-content: flex-start;
+    position: relative;
+    left: 100px;
+  }
+  .right-card1 {
+    justify-content: flex-end;
+    position: relative;
+    left: -100px;
+  }
+  .right-card-1 {
+    left: 5%;
+    margin-top: -50px;
+  }
+  .left-card-1 {
+    left: 5%;
+    margin-top: -30px;
+  }
 }
 
 @media (min-width: 1320px) {
@@ -3396,48 +3639,88 @@ li {
     left: 71.5%;
     bottom: 4%;
   }
-}
 
-.vendor-card-image-bg1 {
-  width: 375px;
-  height: 110px;
-}
-.vendor-card-title-1 {
-  width: 235px;
-  font-size: 16px;
-}
+  .vendor-card-image-bg1 {
+    width: 375px;
+    height: 110px;
+  }
+  .vendor-card-title-1 {
+    width: 235px;
+    font-size: 16px;
+  }
+  .vendor-card-content-1 {
+    padding: 0;
+  }
+  .vendor-card-icon-left-1 {
+    top: 10%;
+    right: 3%;
+  }
+  .vendor-card-icon-right-1 {
+    top: 10%;
+    left: 3%;
+  }
+  .vendor-card-title-left-1 {
+    margin-left: 105px;
+  }
+  .vendor-card-title-right-1 {
+    margin-left: 10px;
+  }
+  .yellow-hexagon-1 {
+    width: 90px;
+    height: 90px;
+  }
+  .right-card-1 {
+    left: 0;
+    margin-top: -50px;
+  }
+  .left-card-1 {
+    left: 5%;
+    margin-top: -30px;
+  }
 
-.vendor-card-content-1 {
-  padding: 0;
-}
+  .direct-ship-card-icon-right {
+    position: absolute;
+    top: 0px;
+    right: 375px;
+    z-index: 3;
+  }
+  .direct-ship-card-icon-left {
+    position: absolute;
+    top: 0px;
+    left: 375px;
+    z-index: 3;
+  }
+  .direct-ship-left-image {
+    position: absolute;
+    width: 100px;
+    top: 18px;
+    right: 295px;
+  }
 
-.vendor-card-icon-left-1 {
-  top: 10%;
-  right: 3%;
-}
-.vendor-card-icon-right-1 {
-  top: 10%;
-  left: 3%;
-}
+  .direct-ship-right-image {
+    position: absolute;
+    width: 100px;
+    top: 18px;
+    left: 359px;
+  }
 
-.vendor-card-title-left-1 {
-  margin-left: 105px;
-}
+  .direct-ship-card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: -30px; /* overlap */
+  }
 
-.vendor-card-title-right-1 {
-  margin-left: 10px;
-}
-.yellow-hexagon-1 {
-  width: 90px;
-  height: 90px;
-}
-
-.right-card-1 {
-  left: 0;
-}
-
-.left-card-1 {
-  left: 5%;
+  .left-card1 {
+    justify-content: flex-start;
+    position: relative;
+    left: 130px;
+  }
+  .right-card1 {
+    justify-content: flex-end;
+    position: relative;
+    left: -130px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -3445,7 +3728,7 @@ li {
     margin-left: 20px;
   }
   .vendor-card-title-left-1 {
-    margin-left: 120px;
+    margin-left: 110px;
   }
   .vendor-card-title-1 {
     width: 250px;
@@ -3457,13 +3740,76 @@ li {
   background:
     linear-gradient(
       180deg,
-      rgba(255, 253, 248, 0.95) 0%,
-      rgba(255, 249, 238, 0.9) 50%,
-      rgba(255, 247, 228, 0.95) 100%
+      rgba(255, 242, 208, 0.9) 0%,
+      rgba(255, 242, 208, 0.9) 50%,
+      rgba(255, 242, 208, 0.95) 100%
     ),
     url("/fbm-bg.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.direct-ship-card1 .box {
+  border: 1px solid #000000;
+}
+
+.merchant-section.direct-ship-section-1 {
+  position: relative;
+  min-height: 400px;
+}
+
+.benefits-Product-card-1 {
+  top: 20%;
+  left: 1%;
+  width: 30%;
+}
+.benefits-Product-card-2 {
+  top: 20%;
+  left: 74%;
+  width: 30%;
+}
+.benefits-Product-card-3 {
+  top: 52%;
+  left: 1%;
+  width: 30%;
+}
+.benefits-Product-card-4 {
+  top: 50%;
+  left: 74%;
+  width: 30%;
+}
+.benefits-Product-card-5 {
+  top: 71%;
+  left: 40%;
+  width: 30%;
+}
+
+@media (min-width: 1320px) {
+  .benefits-Product-card-1 {
+    top: 16%;
+    left: 3%;
+    width: 30%;
+  }
+  .benefits-Product-card-2 {
+    top: 16%;
+    left: 75%;
+    width: 30%;
+  }
+  .benefits-Product-card-3 {
+    top: 54%;
+    left: 3%;
+    width: 30%;
+  }
+  .benefits-Product-card-4 {
+    top: 51%;
+    left: 75%;
+    width: 25%;
+  }
+  .benefits-Product-card-5 {
+    top: 76%;
+    left: 42%;
+    width: 30%;
+  }
 }

@@ -1,14 +1,14 @@
-import EndToEndSection from "@/components/ReusableComponent/B2b_Sections/EndToEndSection";
+import CtaSection from "@/components/ReusableComponent/CtaSection";
 import ClearYourShipment from "@/components/ReusableComponent/CustomClearance/ClearYourShipment";
 import CustomsClearanceBenefits from "@/components/ReusableComponent/CustomClearance/CustomsClearanceBenefits";
 import CustomsClearanceProcessWorks from "@/components/ReusableComponent/CustomClearance/CustomsClearanceProcessWorks";
 import CustomsClearanceServices from "@/components/ReusableComponent/CustomClearance/CustomsClearanceServices";
-import FAQsCustomsClearance from "@/components/ReusableComponent/CustomClearance/FAQsCustomsClearance";
 import PortsAirportsCoverage from "@/components/ReusableComponent/CustomClearance/PortsAirportsCoverage";
 import WhoWeServe from "@/components/ReusableComponent/CustomClearance/WhoWeServe";
 import WhyChooseDepoterForCustomsClearance from "@/components/ReusableComponent/CustomClearance/WhyChooseDepoterForCustomsClearance";
-import ScaleOperations from "@/components/ReusableComponent/FulfillmentCenterPage/ScaleOperations";
+import FaqSection from "@/components/ReusableComponent/FaqSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import { customsclearancefaq } from "@/data/faqdata";
 
 export default function CustomClearance() {
   return (
@@ -22,8 +22,12 @@ export default function CustomClearance() {
         <WhyChooseDepoterForCustomsClearance />
         <CustomsClearanceBenefits />
         <WhoWeServe />
-        <FAQsCustomsClearance />
-        <ClearYourShipment />
+        <FaqSection faqs={customsclearancefaq} />
+        <CtaSection
+          sectionKey="clearyourshipment"
+          buttonLink={"#"}
+          buttonText="Request Customs Clearance Support Now"
+        />
       </main>
     </div>
   );

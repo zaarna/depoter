@@ -1,46 +1,66 @@
+import { titleContentConfig } from "@/config/titleContentConfig";
+import TitleContent from "../All_Title/TitleContent";
+import AmazonCardHolder from "../multiChannelSection/AmazonCardHolder";
+
 const benefits = [
     {
         number: "1",
         title: "Faster product approval",
-        className: "absolute top-11 left-15",
+        className: "absolute benefits-Product-card-1",
+        rotate: "rotate-6",
     },
     {
         number: "2",
         title: "Reduced risk of rejection",
-        className: "absolute top-11 -right-15 ",
+        className: "absolute benefits-Product-card-2",
+        rotate: "rotate-6",
     },
     {
         number: "3",
         title: "Accurate documentation",
-        className: "absolute top-61 left-15",
+        className: "absolute benefits-Product-card-3",
+        rotate: "rotate-6",
     },
     {
         number: "4",
         title: "Compliance with UAE regulations",
-        className: "absolute top-61 -right-15",
+        className: "absolute benefits-Product-card-4",
+        rotate: "rotate-6",
     },
     {
         number: "5",
         title: "Smooth market entry",
-        className: "absolute top-91 left-120",
+        className: "absolute benefits-Product-card-5",
+        rotate: "rotate-6",
     },
 ];
 
-export default function BenefitsOurProductRegistrationServices() {
+export default function BenefitsOurProductRegistrationServices({ sectionKey = {} }) {
+    const tc =
+        titleContentConfig[sectionKey] || titleContentConfig["benefitsofproductregistrationservie"];
     return (
         <section className="pt-20 bg-white">
             <div className="container mx-auto px-4">
-                {/* Heading */}
-                <h2 className="text-center text-[clamp(1.3rem,1rem+2vw,3rem)] font-bold text-[#1F1F1F] mb-20 ">
-                    <span className="text-[#F2B233]">Benefits</span> of Our Product
-                    <br />
-                    Registration Services
-                </h2>
+                <div className="grid text-center relative z-10">
+                    <TitleContent {...tc} />
+                </div>
+                <div className="lg:hidden mt-6 md:mt-12 relative">
+                    <div className="flex flex-col gap-4 mb-10">
 
+                        <img src="/AmazonCard.png" alt="" />
+                        {benefits.map((category, index) => (
+                            //   <>
+                            <div key={index}>
+                                <AmazonCardHolder industry={category} />
+                            </div>
+                            //   </>
+                        ))}
+                    </div>
+                </div>
                 {/* Benefits Layout */}
-                <div className="relative mx-auto h-[500px] max-w-[1100px]">
+                <div className="hidden lg:block relative mx-auto h-[500px] max-w-[1100px]">
                     {/* Center Circle */}
-                    <svg width="1158" height="450" viewBox="0 0 1158 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="100%" viewBox="0 0 1158 450" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_18_224830)">
                             <path d="M288.676 21.7998H338.32C343.39 21.7998 347.5 25.9097 347.5 30.9795V87.3627C347.5 93.9901 342.127 99.3627 335.5 99.3627H299.11C294.571 99.3627 290.892 103.042 290.892 107.581C290.892 112.12 287.212 115.8 282.673 115.8H27.5C20.8726 115.8 15.5 110.427 15.5 103.8V55.8872C15.5 49.2598 20.8726 43.8872 27.5 43.8872H266.588C272.688 43.8872 277.632 38.9428 277.632 32.8435C277.632 26.7442 282.577 21.7998 288.676 21.7998Z" fill="#FFBE2E" />
                             <path d="M288.676 21.7998H338.32C343.39 21.7998 347.5 25.9097 347.5 30.9795V87.3627C347.5 93.9901 342.127 99.3627 335.5 99.3627H299.11C294.571 99.3627 290.892 103.042 290.892 107.581C290.892 112.12 287.212 115.8 282.673 115.8H27.5C20.8726 115.8 15.5 110.427 15.5 103.8V55.8872C15.5 49.2598 20.8726 43.8872 27.5 43.8872H266.588C272.688 43.8872 277.632 38.9428 277.632 32.8435C277.632 26.7442 282.577 21.7998 288.676 21.7998Z" stroke="#212121" />
@@ -146,7 +166,7 @@ export default function BenefitsOurProductRegistrationServices() {
                     {benefits.map((item) => (
                         <div
                             key={item.number}
-                            className={`${item.className} w-[290px] rounded-xl px-6 py-5.5`}
+                            className={`${item.className} rounded-xl px-6 py-5.5`}
                         >
                             <p className="text-[1rem] text-[#1F1F1F]">
                                 {item.title}

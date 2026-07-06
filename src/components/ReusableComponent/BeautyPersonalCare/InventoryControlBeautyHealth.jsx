@@ -3,6 +3,7 @@
 import { titleContentConfig } from "@/config/titleContentConfig";
 import TitleContent from "../All_Title/TitleContent";
 import Button from "../Button/Button";
+import InvoiceFeatureCard from "@/components/InvoiceFeatureCard";
 
 const invoiceFeatures = [
     {
@@ -65,36 +66,5 @@ export default function InventoryControlBeautyHealth({ sectionKey = [] }) {
                 </div>
             </div>
         </section>
-    );
-}
-
-function InvoiceFeatureCard({ number, title, description, dark }) {
-    return (
-        <div
-            className={`flex items-center rounded-2xl h-[150px] px-5 py-5 transition-all duration-300 ${dark ? "bg-[#3F2C07] text-white" : "bg-[#F7BA2C] text-[#1A1A1A]"
-                }`}
-        >
-            {/* Number */}
-            <div className="flex items-center">
-                <span className="text-4xl font-bold">{number}</span>
-
-                <div
-                    className={`mx-4 h-25 w-[2px] ${dark ? "bg-white/70" : "bg-black/70"
-                        }`}
-                />
-            </div>
-
-            {/* Content */}
-            <div>
-                <h4 className="text-xl font-semibold">{title}</h4>
-
-                <p
-                    className={`mt-2 text-[18px] leading-relaxed ${dark ? "text-white/90" : "text-black/80"
-                        }`}
-                >
-                    {description}
-                </p>
-            </div>
-        </div>
     );
 }
