@@ -60,7 +60,7 @@ export default function RegistrationProcessWorks({
                     </div>
                 </div>
 
-                <div className="relative w-full min-h-[720px] hidden xl:block ">
+                <div className="relative w-full min-h-[720px] hidden md:block ">
 
                     {/* Timeline SVG */}
                     <div className="absolute inset-0 flex justify-center items-center z-0">
@@ -138,7 +138,7 @@ export default function RegistrationProcessWorks({
                     ))}
                 </div>
                 {/* Tablet & Mobile */}
-                <div className="xl:hidden mt-12 space-y-8">
+                <div className="md:hidden mt-12 space-y-8">
                     {processSteps.map((step) => (
                         <div
                             key={step.number}

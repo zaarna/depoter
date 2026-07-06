@@ -5,7 +5,7 @@ import GradientStepCard from "../GradientStepCard/GradientStepCard";
 const steps = [
   {
     id: 1,
-    title: "Returns & Exchange Management",
+    title: "Returns Management",
     description: [
       "Reverse pickup from customer locations (local & international)",
       "Smooth handling of return orders",
@@ -16,7 +16,7 @@ const steps = [
   },
   {
     id: 2,
-    title: "Smart Replacement Deliveries",
+    title: "Exchange Management",
     description: [
       "Simultaneous pickup of old product and delivery of new one",
       "Available for local deliveries",

@@ -29,9 +29,8 @@ export default function Accordion({
           >
             <button
               onClick={() => toggle(index)}
-              className={`flex w-full items-center justify-between px-6 py-5 text-left cursor-pointer ${
-                isOpen ? questionClassName : ""
-              }`}
+              className={`flex w-full items-center justify-between px-6 py-5 text-left cursor-pointer ${isOpen ? questionClassName : ""
+                }`}
             >
               <h3 className="pr-4 text-xl font-semibold text-black">
                 {item.question}
@@ -39,19 +38,18 @@ export default function Accordion({
 
               {showIcon && (
                 <div
-                  className={`flex h-10 w-10 min-w-10 items-center justify-center rounded-full text-xl font-bold ${iconClassName}`}
+                  className={`flex h-10 w-10 min-w-10 items-center justify-center border rounded-full text-xl font-bold ${iconClassName} ${isOpen ? "bg-[#ffffff]" : "bg-[#ffbe2e]"}`}
                 >
-                  {isOpen ? "×" : "+"}
+                  {isOpen ? "-" : "+"}
                 </div>
               )}
             </button>
 
             <div
-              className={`grid transition-all duration-300 ease-in-out ${
-                isOpen
-                  ? "grid-rows-[1fr] opacity-100"
-                  : "grid-rows-[0fr] opacity-0"
-              }`}
+              className={`grid transition-all duration-300 ease-in-out ${isOpen
+                ? "grid-rows-[1fr] opacity-100"
+                : "grid-rows-[0fr] opacity-0"
+                }`}
             >
               <div className="overflow-hidden">
                 <div className={`px-6 pb-6 ${contentClassName}`}>

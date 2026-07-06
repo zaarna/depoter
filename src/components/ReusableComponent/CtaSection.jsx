@@ -13,7 +13,7 @@ function CtaSection({ sectionKey = [], buttonText, buttonLink }) {
           <TitleContent {...tc} />
           <Button
             children={buttonText}
-            className="py-2 px-5 mt-3"
+            className="py-2 px-5 mt-10"
             href={buttonLink}
             variant="yellow"
           />

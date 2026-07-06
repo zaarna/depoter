@@ -3,27 +3,28 @@
 import { titleContentConfig } from "@/config/titleContentConfig";
 import TitleContent from "../All_Title/TitleContent";
 import Button from "../Button/Button";
+import InvoiceFeatureCard from "@/components/InvoiceFeatureCard";
 
 const invoiceFeatures = [
     {
         number: "01",
-        title: "Automated Batch Tracking",
+        title: "Chilled & Deep-Freeze Storage",
         description:
-            "Every SKU is tracked by its batch and lot number.",
+            "Tailored chilled and deep-freeze zones to protect sensitive goods like dairy, meats, and organic juices.",
         dark: false,
     },
     {
         number: "02",
-        title: "Expiry-Based Inventory",
+        title: "Refrigerated Transit",
         description:
-            `Our system proactively alerts you 3-6 months before a product expires, allowing you to run "Flash Sales" and reduce waste.`,
+            `Temperature-controlled fleet management for safe last-mile delivery.`,
         dark: true,
     },
     {
         number: "03",
-        title: "SKU-Wise Sales Insights",
+        title: "Continuous Monitoring",
         description:
-            "Detailed reports on which shades or products are selling the most, helping you forecast seasonal demand for Ramadan or Black Friday.",
+            "24/7 data tracking to guarantee zero spoilage from storage to destination.",
         dark: false,
     },
 ];
@@ -31,7 +32,7 @@ const invoiceFeatures = [
 export default function ColdChainLogisticsBuiltFoodSafety({ sectionKey = [] }) {
     const tc =
         titleContentConfig[sectionKey] ||
-        titleContentConfig["beautylogisticschallenges"];
+        titleContentConfig["coldchainlogisticsbuiltfoodsafety"];
 
     return (
         <section className="bg-[#ffffff]">
@@ -62,44 +63,8 @@ export default function ColdChainLogisticsBuiltFoodSafety({ sectionKey = [] }) {
                             ))}
                         </div>
                     </div>
-                    <div className="text-center mt-20">
-                        <Button href="" className="px-5 py-3" variant="black">
-                            Talk to a Fulfillment Expert
-                        </Button>
-                    </div>
                 </div>
             </div>
         </section>
-    );
-}
-
-function InvoiceFeatureCard({ number, title, description, dark }) {
-    return (
-        <div
-            className={`flex items-center rounded-2xl h-[140px] px-5 py-5 transition-all duration-300 ${dark ? "bg-[#3F2C07] text-white" : "bg-[#F7BA2C] text-[#1A1A1A]"
-                }`}
-        >
-            {/* Number */}
-            <div className="flex items-center">
-                <span className="text-4xl font-bold">{number}</span>
-
-                <div
-                    className={`mx-4 h-25 w-[2px] ${dark ? "bg-white/70" : "bg-black/70"
-                        }`}
-                />
-            </div>
-
-            {/* Content */}
-            <div>
-                <h4 className="text-xl font-semibold">{title}</h4>
-
-                <p
-                    className={`mt-2 text-[18px] leading-relaxed ${dark ? "text-white/90" : "text-black/80"
-                        }`}
-                >
-                    {description}
-                </p>
-            </div>
-        </div>
     );
 }

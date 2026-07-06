@@ -22,41 +22,16 @@ function ReadyToLaunchProduct({ sectionKey = [] }) {
                         Get your product registration done the right way and enter the UAE market without delays.
                     </p>
                 </div>
-                <div className="grid mt-6 md:mt-12">
+                <div className="mt-10 flex justify-center">
                     <Button
-                        href=""
-                        className="
-    group relative overflow-hidden
-    mx-auto block
-    w-full sm:w-[80%] md:w-[60%] lg:w-[40%]
-    py-4 px-10
-    rounded-full
-    bg-[#FFBE2E]
-    text-black
-    font-semibold
-    transition-all duration-500
-    hover:scale-105
-  "
-                        variant=""
-                    >
-                        <span className="relative z-10">
-                            Get Started with Product Registration Today
-                        </span>
-
-                        <span
-                            className="
-      absolute inset-0
-      -translate-x-full
-      skew-x-12
-      bg-white/30
-      transition-transform duration-700
-      group-hover:translate-x-[200%]
-    "
-                        />
-                    </Button>
+                        children="Get Started with Product Registration Today"
+                        className="px-5 py-2"
+                        // href={buttonLink}
+                        variant="yellow"
+                    />
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
 

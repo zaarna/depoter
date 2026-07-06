@@ -8,35 +8,35 @@ const industries = [
     {
         id: 1,
         title: "Packaged food and FMCG products",
-        icons: "/direct-ship-icon-1.svg",
+        icons: "/Food-Beverage-Icon-1.svg",
         desktopcolor: "black",
         mobilecolor: "black",
     },
     {
         id: 2,
         title: "Beverages and liquid-based items",
-        icons: "/direct-ship-icon-2.svg",
+        icons: "/Food-Beverage-Icon-2.svg",
         desktopcolor: "black",
         mobilecolor: "white",
     },
     {
         id: 3,
         title: "Perishable goods and ready-to-eat items",
-        icons: "/direct-ship-icon-3.svg",
+        icons: "/Food-Beverage-Icon-3.svg",
         desktopcolor: "white",
         mobilecolor: "black",
     },
     {
         id: 4,
         title: "Temperature-sensitive & cold chain products",
-        icons: "/direct-ship-icon-4.svg",
+        icons: "/Food-Beverage-Icon-4.svg",
         desktopcolor: "white",
         mobilecolor: "white",
     },
     {
         id: 5,
         title: "Bulk supplies for B2B distribution",
-        icons: "/direct-ship-icon-5.svg",
+        icons: "/Food-Beverage-Icon-5.svg",
         desktopcolor: "black",
         mobilecolor: "black",
     },
@@ -68,9 +68,9 @@ export default function ReliableFulfillmentForFood({ sectionKey = [] }) {
                     <TitleContent {...tc} />
                 </div>
 
-                <div className="md:mt-6">
+                <div className="py-8">
 
-                    <div className="merchant-section direct-ship-section ">
+                    <div className="merchant-section direct-ship-section direct-ship-section-1 min-h-[400px] ">
                         <div className="merchant-wrapper direct-ship-wrapper">
                             {industries.map((industry, index) => {
                                 const isEven = index % 2 === 0;
@@ -78,7 +78,7 @@ export default function ReliableFulfillmentForFood({ sectionKey = [] }) {
                                 return (
                                     <div
                                         key={industry.id}
-                                        className={`direct-ship-card ${isEven ? "left-card1" : "right-card1"}`}
+                                        className={`direct-ship-card direct-ship-card1 ${isEven ? "left-card1" : "right-card1"}`}
                                     >
                                         <div className="direct-ship-card-bg border-1 ">
                                             <div

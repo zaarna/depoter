@@ -13,6 +13,7 @@ function TitleContent({
   contentColor = "#4A4A4A",
   contentAlign = "center",
   contentWidth = "w-full",
+  marginX = "mx-auto",
   className = "",
 }) {
   // If highlight exists, replace it inside the title text
@@ -61,7 +62,7 @@ function TitleContent({
       </TitleTag>
 
       <ContentTag
-        className={`${contentSize} mx-auto leading-relaxed ${contentAlignClass} ${contentWidthClass}`}
+        className={`${contentSize} ${marginX} leading-relaxed ${contentAlignClass} ${contentWidthClass}`}
         style={{ color: contentColor, fontSize: contentSize }}
       >
         {content}

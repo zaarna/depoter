@@ -48,7 +48,6 @@ export default function ALLInOneFulfillmentBeauty({ sectionKey = [] }) {
                     <h3 className="text-2xl md:text-3xl font-semibold text-[#222]">
                         The Depoter Advantage
                     </h3>
-
                     <div className="w-68 h-[2px] bg-[#8D8D8D] mx-auto mt-3"></div>
                 </div>
                 {/* Cards */}

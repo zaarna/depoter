@@ -1,9 +1,10 @@
+import CtaSection from "@/components/ReusableComponent/CtaSection";
+import FaqSection from "@/components/ReusableComponent/FaqSection";
 import AutomatedOrderFlow from "@/components/ReusableComponent/FulfillmentCenterPage/AutomatedOrderFlow";
 import ClimateStorageSection from "@/components/ReusableComponent/FulfillmentCenterPage/ClimateStorageSection";
 import ControlTowerSection from "@/components/ReusableComponent/FulfillmentCenterPage/ControlTowerSection";
 import EfficientStorageArchitecture from "@/components/ReusableComponent/FulfillmentCenterPage/EfficientStorageArchitecture";
 import ExpertHandsSection from "@/components/ReusableComponent/FulfillmentCenterPage/ExpertHandsSection";
-import FAQsFulfillmentSection from "@/components/ReusableComponent/FulfillmentCenterPage/FAQsFulfillmentSection";
 import FulfillmentCenterWorks from "@/components/ReusableComponent/FulfillmentCenterPage/FulfillmentProcess";
 import ScaleOperations from "@/components/ReusableComponent/FulfillmentCenterPage/ScaleOperations";
 import StrategicallyLocatedWarehouses from "@/components/ReusableComponent/FulfillmentCenterPage/StrategicallyLocatedWarehouses";
@@ -11,6 +12,7 @@ import TransparentInvoicingSection from "@/components/ReusableComponent/Fulfillm
 import WeStoreAnything from "@/components/ReusableComponent/FulfillmentCenterPage/WeStoreAnything";
 import WhyChooseFulfillmentCenter from "@/components/ReusableComponent/FulfillmentCenterPage/WhyChooseFulfillmentCenter";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import { fulfillmentcenterfaq } from "@/data/faqdata";
 
 export default function FulfillmentCenterPage() {
   return (
@@ -27,8 +29,12 @@ export default function FulfillmentCenterPage() {
         <ControlTowerSection />
         <TransparentInvoicingSection />
         <WhyChooseFulfillmentCenter />
-        <FAQsFulfillmentSection />
-        <ScaleOperations />
+        <FaqSection faqs={fulfillmentcenterfaq} />
+        <CtaSection
+          sectionKey="fulfillmentcentercta"
+          buttonLink={"#"}
+          buttonText="Start Your Fulfillment Journey Today"
+        />
       </main>
     </div>
   );

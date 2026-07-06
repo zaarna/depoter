@@ -1,7 +1,8 @@
+import CtaSection from "@/components/ReusableComponent/CtaSection";
+import FaqSection from "@/components/ReusableComponent/FaqSection";
 import ChallengesFoodNBeverage from "@/components/ReusableComponent/FoodAndBeveragesPage/ChallengesFoodNBeverage";
 import ColdChainLogisticsBuiltFoodSafety from "@/components/ReusableComponent/FoodAndBeveragesPage/ColdChainLogisticsBuiltFoodSafety";
 import ConnectYourEntireEcommerceSystem from "@/components/ReusableComponent/FoodAndBeveragesPage/ConnectYourEntireEcommerceSystem";
-import FAQsFoodAndBeverages from "@/components/ReusableComponent/FoodAndBeveragesPage/FAQsFoodAndBeverages";
 import FastDeliveryNSafeReturnsManagement from "@/components/ReusableComponent/FoodAndBeveragesPage/FastDeliveryNSafeReturnsManagement";
 import FoodCategories from "@/components/ReusableComponent/FoodAndBeveragesPage/FoodCategories";
 import FoodSafetyComplianceHandling from "@/components/ReusableComponent/FoodAndBeveragesPage/FoodSafetyComplianceHandling";
@@ -11,6 +12,7 @@ import ReadyToScaleYourFoodAndBeverage from "@/components/ReusableComponent/Food
 import ReliableFulfillmentForFood from "@/components/ReusableComponent/FoodAndBeveragesPage/ReliableFulfillmentForFood";
 import WhyChooseDepoterFoodFulfillment from "@/components/ReusableComponent/FoodAndBeveragesPage/WhyChooseDepoterFoodFulfillment";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import { foodandbeveragesfaq } from "@/data/faqdata";
 
 export default function FoodAndBeveragesFulfillment() {
   return (
@@ -27,8 +29,12 @@ export default function FoodAndBeveragesFulfillment() {
         <FoodSafetyComplianceHandling />
         <ConnectYourEntireEcommerceSystem />
         <WhyChooseDepoterFoodFulfillment />
-        <FAQsFoodAndBeverages />
-        <ReadyToScaleYourFoodAndBeverage />
+        <FaqSection faqs={foodandbeveragesfaq} />
+        <CtaSection
+          sectionKey="beautybrandwithbetterfulfillment"
+          buttonLink={"#"}
+          buttonText="Talk to a Fulfillment Expert"
+        />
       </main>
     </div>
   );

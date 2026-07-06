@@ -12,6 +12,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/d2c-fulfillment-uae": {
     className: "backgroundcover-d2c",
     heading: {
@@ -26,6 +27,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/b2b-fulfillment-uae": {
     className: "backgroundcover-b2b",
     heading: {
@@ -40,6 +42,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/multichannel-fulfillment-uae": {
     className: "backgroundcover-multichannel",
     heading: {
@@ -59,6 +62,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/freight-forwarding-services-uae": {
     className: "backgroundcover-freightforwarding",
     heading: {
@@ -75,6 +79,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/services/customs-clearance-services-uae": {
     className: "backgroundcover-customsclearance",
     heading: {
@@ -95,6 +100,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/services/product-registration-services-uae": {
     className: "backgroundcover-productregistration",
     heading: {
@@ -133,6 +139,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/infra/fulfillment-center-uae": {
     className: "backgroundcover-fulfillmentcenter",
     heading: {
@@ -149,6 +156,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/technology/ecommerce-integration-services-uae": {
     className: "backgroundcover-EcoIntegration",
     heading: {
@@ -171,6 +179,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/infra/delivery-services-uae": {
     className: "backgroundcover-deliveries",
     heading: {
@@ -187,6 +196,7 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
   "/industries/health-wellness-fulfillment-uae": {
     className: "backgroundcover-healthWellness",
     heading: {
@@ -203,9 +213,45 @@ export const heroConfig = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
+
+  "/industries/beauty-personal-care-fulfillment-uae": {
+    className: "backgroundcover-beautypersonalcare",
+    heading: {
+      title: "Beauty & Personal\n Care",
+      highlight: "Fulfillment UAE",
+      titleColor: "#212121",
+      highlightColor: "#978050",
+      description:
+        "Depoter offers specialized beauty & personal care fulfillment UAE solutions for ecommerce brands. We ensure product safety through climate-controlled storage, precise expiry tracking, and fast shipping, delivering a premium unboxing experience to your customers.",
+    },
+    button: {
+      text: "Fix Your Beauty Fulfillment",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+
+  "/industries/food-beverage-fulfillment-uae": {
+    className: "backgroundcover-foodnbeverages",
+    heading: {
+      title: "Food & Beverage",
+      highlight: "Fulfillment Services\n in UAE",
+      titleColor: "#978050",
+      highlightColor: "#212121",
+      description:
+        "Manage your food and beverage operations with safe storage, multi-zone temperature control, and fast delivery. Our food & beverage fulfillment UAE solutions help maintain product freshness with real-time batch tracking and reliable shipping for B2B distributors and e-commerce brands.",
+    },
+    button: {
+      text: "Optimize Your Food Fulfillment",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+
   "/pricing": {
     className: "backgroundcover-pricing",
   },
+
   "/about": {
     className: "backgroundcover-about",
   },

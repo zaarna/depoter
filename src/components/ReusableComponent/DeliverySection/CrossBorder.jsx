@@ -10,15 +10,15 @@ const crossBorderCards = [
       {
         label: "Fast Connectivity",
         value:
-          "Next-day delivery to major GCC countries with both <strong>Air and Ground shipping</strong> options available.",
+          "1–3 working days delivery to major GCC countries with both Air and Ground shipping options available.",
       },
       {
-        label: "Financial Flexibility:",
+        label: "Financial Flexibility",
         value:
           "<strong>Cash on Delivery (COD)</strong> is fully supported to meet regional market demands and boost customer trust.",
       },
       {
-        label: "Smooth Operations:",
+        label: "Smooth Operations",
         value:
           "Reliable <strong>customs handling</strong> and faster clearance to ensure your shipments move across borders without delays.",
       },
@@ -38,9 +38,9 @@ const crossBorderCards = [
           "Secure and reliable cross-border shipping with fast delivery in <strong>3–4 business days</strong>.",
       },
       {
-        label: "Flexible Payments",
+        label: "Documentation Support",
         value:
-          "Optimized for <strong>prepaid (paid) orders</strong>, providing a smooth checkout-to-delivery experience.",
+          "System generated documents to clear shipments in customs for both origin and destination. Includes invoices, packing list, HS codes, COO, etc.",
       },
     ],
   },
@@ -88,7 +88,7 @@ export default function CrossBorder() {
           <div className="relative z-10 mt-8 md:mt-0">
             <Accordion
               items={crossBorderCards}
-              showIcon={false}
+              showIcon={true}
               cardClassName="rounded-2xl border-2 border-[#212121] bg-[#FFF7E4] shadow-sm"
               contentClassName="bg-[#FFBE2E]"
               questionClassName="bg-[#FFBE2E]"
