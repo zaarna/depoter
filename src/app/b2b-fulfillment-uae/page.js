@@ -12,6 +12,8 @@ import TestimonialSection from "@/components/TestimonialSection";
 import ExpandBuisnessSection from "@/components/ReusableComponent/B2b_Sections/ExpandBuisnessSection";
 import EndToEndSection from "@/components/ReusableComponent/B2b_Sections/EndToEndSection";
 import { testimonialsb2b } from "@/data/home";
+import { b2bpagefaq } from "@/data/faqdata";
+import FaqSection from "@/components/ReusableComponent/FaqSection";
 
 export default function b2cPage() {
   const data = [
@@ -41,6 +43,7 @@ export default function b2cPage() {
         <LongTermGrowth />
         <AdvanceTechnologySection />
         <TestimonialSection testimonials={testimonialsb2b} />
+        <FaqSection faqs={b2bpagefaq} />
       </main>
     </div>
   );
