@@ -29,6 +29,104 @@ export const wellnessfaq = [
   },
 ];
 
+export const d2cpagefaq = [
+  {
+    question: "How quickly can you onboard our brand?",
+    answer:
+      "Once the client signed the contract and service offer, our onboarding process takes 1 day to finish the account setup, system integration, and product master creation. Inventory receiving will be done based on volume & our team will give you a tentative timeline based on the packing list info.",
+  },
+  {
+    question: "Which sales channels do you integrate with?",
+    answer:
+      "We integrate with leading ecommerce platforms and marketplaces including Shopify, WooCommerce, Amazon, Noon, Magento, Salla, Zid, and custom APIs, enabling seamless order and inventory synchronization.",
+  },
+  {
+    question: "How quickly are orders processed?",
+    answer:
+      "Orders are processed based on the selected SLA. Standard orders received before the cut-off time are dispatched on the same day, while express and on-demand orders are processed within mins subjected to the SLA timing.",
+  },
+  {
+    question: "Can I monitor my inventory and orders in real time?",
+    answer:
+      "Yes. Our cloud-based platform provides real-time visibility of inventory, order status, inbound shipments, and returns through a dedicated client dashboard.",
+  },
+  {
+    question: "How do you ensure inventory accuracy?",
+    answer:
+      "We use barcode-driven operations, multiple quality checkpoints, cycle counting, and regular audits to maintain inventory accuracy above 99%.",
+  },
+  {
+    question: "What are your storage and fulfillment charges?",
+    answer:
+      "Our pricing typically includes storage charges, pick & pack fees, shipping charges, and value-added services. We offer flexible pricing models based on your business requirements and order volumes.",
+  },
+  {
+    question: "Can you handle peak season demand and large order volumes?",
+    answer:
+      "Yes. Our infrastructure and operational team are designed to scale quickly during seasonal peaks, promotional campaigns, and sudden order spikes without compromising service levels.",
+  },
+  {
+    question: "Do you offer kitting, bundling, and customized packaging?",
+    answer:
+      "Yes. We provide value-added services including kitting, bundling, gift wrapping, custom packaging, promotional inserts, labeling, and rework activities.",
+  },
+  {
+    question: "How do you manage returns and exchanges?",
+    answer:
+      "We offer complete reverse logistics management, including return receipt, quality inspection, grading, restocking, and reporting, helping brands efficiently manage customer returns.",
+  },
+  {
+    question: "What delivery options do you provide?",
+    answer:
+      "We offer multiple delivery solutions, including Same-Day Delivery, Next-Day Delivery, Scheduled Delivery, Marketplace Fulfillment, GCC Shipping, and International Delivery through our network of courier partners.",
+  },
+];
+
+export const b2bpagefaq = [
+  {
+    question: "What Is B2B Fulfillment and How Does It Work?",
+    answer:
+      "B2B fulfillment is the process of storing, processing, and delivering bulk orders from manufacturers, wholesalers, or distributors to business customers, retailers, and retail chains. It includes inventory management, picking, packing, and scheduled distribution.",
+  },
+  {
+    question:
+      "Can You Deliver to Retail Chains, Distributors, and Multiple Delivery Locations?",
+    answer:
+      "Yes. We support deliveries to retail chains, distributors, wholesalers, hotels, restaurants, and multiple business locations based on your operational requirements.",
+  },
+  {
+    question:
+      "Can You Manage Batch, Expiry, and Multiple Units of Measurement?",
+    answer:
+      "Yes. Our Warehouse Management System (WMS) supports batch tracking, expiry management, and multiple units of measurement (UOM), including pieces, cartons, boxes, and pallets for accurate inventory control.",
+  },
+  {
+    question: "Do You Help with Municipality Inspections?",
+    answer:
+      "Yes. We assist clients during municipality inspections by preparing sample products, coordinating with inspectors, and providing the relevant documents and information supplied by the client to help ensure a smooth inspection process.",
+  },
+  {
+    question: "Do You Support B2B Deliveries?",
+    answer:
+      "Yes. We offer a range of B2B delivery options based on your business requirements, including cars, B2B couriers, vans, open and closed trucks, and temperature-controlled vehicles for sensitive products.",
+  },
+  {
+    question: "How Do You Manage Proof of Delivery (POD)?",
+    answer:
+      "We provide Proof of Delivery (POD) in the format that best suits your business. Clients can access signed POD images through our Warehouse Management System (WMS). If the original signed document is required, it can be collected from our warehouse or couriered to your office upon request.",
+  },
+  {
+    question: "How Do You Handle Returns and Quality Checks?",
+    answer:
+      "Returned products are received, inspected, and categorized based on their condition. Inventory is updated after quality checks, and products can be restocked, returned to the vendor, refurbished, or processed according to your instructions.",
+  },
+  {
+    question: "Can You Scale Operations During High-Volume Business Periods?",
+    answer:
+      "Yes. Our warehousing and fulfillment operations are designed to support changing order volumes, additional storage requirements, and large B2B shipments as your business grows.",
+  },
+];
+
 export const foodandbeveragesfaq = [
   {
     question: "What is Food & Beverage Fulfillment?",
@@ -217,6 +315,7 @@ export const deliveryservicesfaq = [
       "Depoter's centralized dashboard provides real-time visibility into shipment status, delivery success rates, courier performance, shipping costs, COD reconciliation, invoice validation, and operational reports—all from one platform.",
   },
 ];
+
 export const freightforwardingfaq = [
   {
     question: "What are freight forwarding services?",

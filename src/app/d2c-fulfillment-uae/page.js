@@ -5,9 +5,11 @@ import D2cFulfillmentCenter from "@/components/d2cPageSection/D2cFulfillmentCent
 import EasyReturns from "@/components/d2cPageSection/EasyReturns";
 import FastAndFlexible from "@/components/d2cPageSection/FastAndFlexible";
 import WhyChooseDepotter from "@/components/d2cPageSection/WhyChooseDepotter";
+import FaqSection from "@/components/ReusableComponent/FaqSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
 import KeyMetrics from "@/components/ReusableComponent/Inner_Hero/KeyMetrics";
 import TestimonialSection from "@/components/TestimonialSection";
+import { d2cpagefaq } from "@/data/faqdata";
 import { testimonialsd2c } from "@/data/home";
 
 export default function d2cPage() {
@@ -24,6 +26,7 @@ export default function d2cPage() {
         <Crossdocking />
         <WhyChooseDepotter />
         <TestimonialSection testimonials={testimonialsd2c} />
+        <FaqSection faqs={d2cpagefaq} />
       </main>
     </div>
   );
