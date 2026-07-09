@@ -36,9 +36,9 @@ function WhyFulfillmentMatters({ sectionKey = [] }) {
           <TitleContent {...tc} />
         </div>
         <FeatureHighlight
-          title="Key Benefits of Fulfillment"
+          title="A structured fulfillment system ensures:"
           cards={fulfillmentFeatures}
-          description="Discover how effective fulfillment strategies can transform your business and enhance customer satisfaction."
+          description="With the right fulfillment partner, businesses can maintain quality while scaling operations efficiently."
         />
       </div>
     </section>
