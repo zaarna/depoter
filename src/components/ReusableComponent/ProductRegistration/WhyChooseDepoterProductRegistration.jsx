@@ -47,8 +47,8 @@ export default function WhyChooseDepoterProductRegistration({ sectionKey = [] })
     titleContentConfig[sectionKey] ||
     titleContentConfig["whychooseproductregistration"];
   return (
-    <section className="py-16 brand-bg">
-      <div className="relative z-10 container mx-auto px-4">
+    <section className="py-16 bg-[#3B2505]">
+      <div className="container mx-auto px-4">
         <div className="flex justify-center mb-12">
           <div className="text-center">
             <TitleContent {...tc} />

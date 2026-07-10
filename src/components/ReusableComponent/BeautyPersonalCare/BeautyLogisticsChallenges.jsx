@@ -53,7 +53,7 @@ export default function BeautyLogisticsChallenges({ sectionKey = [] }) {
                 </div>
                 <div className="space-y-7">
                     <div className="w-full rounded-xl border border-[#F2B233] bg-white overflow-hidden mb-10">
-                        <div className="grid  grid-cols-1 md:grid-cols-5">
+                        <div className="grid grid-cols-5">
                             <div className="py-4 px-6 text-center text-[1.4rem] font-semibold text-[#2A2A2A]">
                                 The Challenge
                             </div>
@@ -70,7 +70,7 @@ export default function BeautyLogisticsChallenges({ sectionKey = [] }) {
                         />
                     ))}
                 </div>
-                <div className="text-center mt-15">
+                <div className="text-center mt-25">
                     <Button href="" className="px-5 py-3" variant="black">
                         Talk to a Beauty Fulfillment Expert
                     </Button>

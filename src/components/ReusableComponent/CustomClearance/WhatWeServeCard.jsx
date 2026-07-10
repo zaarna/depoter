@@ -58,7 +58,6 @@ export default function WhatWeServeCard() {
                                         ? "vendor-card-title-right"
                                         : "vendor-card-title-left"
                                         }`}
-                                    style={{ fontSize: "1.7rem" }}
                                 >
                                     {industry.title}
                                 </p>

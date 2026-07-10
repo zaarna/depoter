@@ -22,7 +22,7 @@ export default function FAQAccordion({ faqs }) {
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="flex w-full cursor-pointer items-center justify-between px-6 py-5 text-left"
+              className="flex w-full items-center justify-between px-6 py-5 text-left"
             >
               <h3 className="pr-4 text-xl font-semibold text-black">
                 {faq.question}

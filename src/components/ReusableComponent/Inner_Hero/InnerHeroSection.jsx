@@ -16,7 +16,7 @@ function InnerHeroSection({ bottomSection }) {
       className={`relative overflow-hidden min-h-[700px] sm:min-h-[650px] md:min-h-[900px] h-auto ${selectedHero.className}`}
     >
       <div className="container">
-        <div className={`flex flex-col items-center md:items-start w-full max-w-[571px] pt-0 ${selectedHero.paddingTop} relative z-10`}>
+        <div className="flex flex-col items-center md:items-start w-full max-w-[571px] pt-0 md:pt-[230px] relative z-10">
           <BannerHeading
             title={heading.title}
             highlight={heading.highlight}

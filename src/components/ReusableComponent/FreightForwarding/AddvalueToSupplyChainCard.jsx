@@ -9,11 +9,11 @@ function AddvalueToSupplyChainCard({ industry }) {
             <img
               src={industry.icon}
               alt={industry.title}
-              className="w-60 block object-contain"
+              className="w-50 block object-contain"
             />
           </div>
         </div>
-        <h4 className="text-center md:w-[100%] mx-auto font-semibold group-hover:text-black leading-relaxed text-[23px] mt-5">
+        <h4 className="text-center md:w-[80%] mx-auto font-semibold group-hover:text-black leading-relaxed text-[23px] mt-5">
           {industry.title}
         </h4>
 

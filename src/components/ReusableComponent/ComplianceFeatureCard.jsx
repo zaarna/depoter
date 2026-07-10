@@ -1,6 +1,6 @@
 const ComplianceFeatureCard = ({ title, icon, hoverIcon }) => {
     return (
-        <div className="relative h-[260px] w-[250px]">
+        <div className="relative h-[260px] w-[260px]">
             {/* Outer Border */}
             <div className="absolute inset-0 rounded-[32px] rounded-tl-none border border-[#3F3F3F]" />
 

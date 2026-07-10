@@ -7,27 +7,27 @@ import { titleContentConfig } from "@/config/titleContentConfig";
 const advantages = [
   {
     number: "01",
-    title: "Inventory Transparency",
+    title: "Omnichannel Fulfillment",
     description:
-      "100% visibility into your operations from a single login.",
+      "Manage orders across your D2C website, retail stores, and marketplaces from a single inventory.",
   },
   {
     number: "02",
-    title: "One-Stop-Shop",
+    title: "Fast Delivery Across UAE",
     description:
-      "We handle D2C, B2B, and Retail fulfillment under one roof.",
+      "Optimized warehouse locations help enable quick and reliable delivery across Emirates.",
   },
   {
     number: "03",
-    title: "Unified Finance Management",
+    title: "Lower RTO & Shipping Costs",
     description:
-      "Auto-reconciliation and payout visibility so you can track your profits accurately.",
+      "Smart courier selection and structured processes help reduce returns and improve delivery success.",
   },
   {
     number: "04",
-    title: "Premium Unboxing",
+    title: "Scalable Operations",
     description:
-      "Build brand loyalty with packaging that looks and feels high-end.",
+      "Our infrastructure adapts to your growth, handling seasonal spikes and increasing order volumes with ease.",
   },
 ];
 

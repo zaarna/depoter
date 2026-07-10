@@ -131,43 +131,27 @@ export const foodandbeveragesfaq = [
   {
     question: "What is Food & Beverage Fulfillment?",
     answer:
-      "It is a logistics process designed for storing, handling, and delivering food products while maintaining safety, freshness, and quality.",
+      "Food & beverage fulfillment is a logistics process designed for storing, handling, and delivering food products while maintaining safety, freshness, and quality throughout the supply chain.",
   },
   {
     question: "Do You Provide Cold Chain Logistics in UAE?",
     answer:
-      "Yes, we provide cold chain logistics with temperature-controlled storage and delivery for sensitive products. ",
+      "Yes. We provide cold chain logistics with temperature-controlled storage and delivery to ensure sensitive and perishable products remain safe and compliant during storage and transportation.",
   },
   {
     question: "How Do You Handle Product Expiration and Batch Codes?",
-    answer: (
-      <>
-        <b>FEFO Operations:</b> Our software automatically sequences picking
-        routines based on <b>First-Expiry, First-Out</b> parameters. Every
-        incoming stock batch is uniquely logged for complete tracking
-        visibility.
-      </>
-    ),
+    answer:
+      "We follow FEFO (First-Expiry, First-Out) operations. Our warehouse management system automatically prioritizes picking based on expiry dates, while every incoming stock batch is uniquely logged for complete traceability and inventory visibility.",
   },
   {
     question: "Can I Track Inventory in Real Time?",
-    answer: (
-      <>
-        <b>Yes.</b> You get 24/7 access to our cloud dashboard showing real-time
-        SKU volumes, batch counts, expiry logs, and individual order tracking
-        updates.
-      </>
-    ),
+    answer:
+      "Yes. You receive 24/7 access to our cloud-based dashboard, allowing you to monitor real-time SKU quantities, batch information, expiry records, and individual order tracking updates.",
   },
   {
     question: "Do You Support Both B2C E-commerce and Bulk B2B Distribution?",
-    answer: (
-      <>
-        Yes, completely. Our system routes individual e-commerce
-        direct-to-consumer orders as well as large bulk pallet shipments
-        destined for retail stores or regional distributors.
-      </>
-    ),
+    answer:
+      "Yes. Our fulfillment system efficiently handles both direct-to-consumer (B2C) e-commerce orders and large-volume B2B pallet shipments for retailers, wholesalers, and regional distributors.",
   },
 ];
 
@@ -189,13 +173,8 @@ export const beautyandppersonalcarefaq = [
   },
   {
     question: "How does FEFO picking save my business money?",
-    answer: (
-      <>
-        <b>FEFO (First Expiry, First Out)</b> ensures that products closest to
-        their expiry date are shipped first. This prevents "dead stock" and
-        ensures your customers always receive fresh, potent products.{" "}
-      </>
-    ),
+    answer:
+      'FEFO (First Expiry, First Out) ensures that products closest to their expiry date are shipped first. This prevents "dead stock" and ensures your customers always receive fresh, potent products.',
   },
   {
     question: "Can I track inventory and orders in real time?",

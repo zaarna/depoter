@@ -50,7 +50,7 @@ export default function HowDepoterSupportsFood({ sectionKey = [] }) {
                     </div>
                 </div>
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-[90%] mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-15 w-[90%] mx-auto">
                     {advantages.map((item) => (
                         <InvoiceFeatureCard key={item.number} {...item} />
                     ))}

@@ -55,7 +55,7 @@ export default function RegistrationProcessWorks({
         <section className="py-10 md:py-16 bg-[#fff7e4] ">
             <div className="container mx-auto px-4">
                 <div className="relative z-10 flex justify-center">
-                    <div className="text-center">
+                    <div className=" text-center">
                         <TitleContent {...tc} />
                     </div>
                 </div>

@@ -21,7 +21,7 @@ function BenefitsForYourBeautyBrand({ sectionKey = "" }) {
         },
         {
             title: "Structured Returns & Loss Control",
-            icon: "/Structured Returns Loss Control.svg",
+            icon: "/Structured Returns & Loss Control.svg",
             discription:
                 "Returns in beauty products require careful handling. Our reverse logistics system includes quality checks and controlled workflows to manage returns efficiently and reduce losses caused by damaged or used products.",
         },
@@ -38,7 +38,7 @@ function BenefitsForYourBeautyBrand({ sectionKey = "" }) {
                     <TitleContent {...tc} />
                 </div>
 
-                <div className="">
+                <div className="md:mt-6">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 justify-items-center justify-center">
                         {industries.map((industry, index) => (
                             <AddvalueToSupplyChainCard key={index} industry={industry} />

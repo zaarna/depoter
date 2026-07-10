@@ -1,6 +1,6 @@
 const ChallengeCard = ({ item }) => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-5 md:gap-12 items-center mb-5">
+        <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-5 md:gap-20 items-center mb-10">
             {/* Left Card */}
             <div className="relative inline-flex">
                 {/* Back Layer */}

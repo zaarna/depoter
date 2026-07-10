@@ -16,9 +16,8 @@ const platformCards = [
             "/opencartnew.svg",
             "/j.svg",
             "/wixnew.svg",
-            // "/custom.svg",
+            "/custom.svg",
         ],
-        showFooter1: "true",
     },
     {
         title: "Marketplaces",
@@ -27,7 +26,6 @@ const platformCards = [
     {
         title: "Shipping Platforms",
         items: ["/dhl.png", "/fedx.svg", "/aramex.svg", "/ups.svg"],
-        showFooter2: "true",
     },
 ];
 

@@ -4,7 +4,6 @@ import React from "react";
 import { titleContentConfig } from "@/config/titleContentConfig";
 import TitleContent from "../All_Title/TitleContent";
 import AddvalueToSupplyChainCard from "../FreightForwarding/AddvalueToSupplyChainCard";
-import Button from "../Button/Button";
 
 function ConnectYourEntireEcommerceSystem({ sectionKey = "" }) {
     const industries = [
@@ -45,14 +44,6 @@ function ConnectYourEntireEcommerceSystem({ sectionKey = "" }) {
                             <AddvalueToSupplyChainCard key={index} industry={industry} />
                         ))}
                     </div>
-                </div>
-                <div className="mt-5 text-center">
-                    <Button
-                        children="Connect Your Store"
-                        className="py-2 px-10"
-                        href=""
-                        variant="black"
-                    />
                 </div>
             </div>
         </section>

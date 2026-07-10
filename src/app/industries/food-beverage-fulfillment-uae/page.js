@@ -8,6 +8,7 @@ import FoodCategories from "@/components/ReusableComponent/FoodAndBeveragesPage/
 import FoodSafetyComplianceHandling from "@/components/ReusableComponent/FoodAndBeveragesPage/FoodSafetyComplianceHandling";
 import HowDepoterSupportsFood from "@/components/ReusableComponent/FoodAndBeveragesPage/HowDepoterSupportsFood";
 import InventoryControlBuiltFreshness from "@/components/ReusableComponent/FoodAndBeveragesPage/InventoryControlBuiltFreshness";
+import ReadyToScaleYourFoodAndBeverage from "@/components/ReusableComponent/FoodAndBeveragesPage/ReadyToScaleYourFoodAndBeverage";
 import ReliableFulfillmentForFood from "@/components/ReusableComponent/FoodAndBeveragesPage/ReliableFulfillmentForFood";
 import WhyChooseDepoterFoodFulfillment from "@/components/ReusableComponent/FoodAndBeveragesPage/WhyChooseDepoterFoodFulfillment";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
