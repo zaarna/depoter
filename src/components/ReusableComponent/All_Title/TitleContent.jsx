@@ -64,10 +64,17 @@ function TitleContent({
       <ContentTag
         className={`${contentSize} ${marginX} leading-relaxed ${contentAlignClass} ${contentWidthClass}`}
         style={{ color: contentColor }}
-        dangerouslySetInnerHTML={{
-          __html: content.replace(/\n/g, "<br />"),
-        }}
-      />
+      >
+        {typeof content === "string" ? (
+          <span
+            dangerouslySetInnerHTML={{
+              __html: content.replace(/\n/g, "<br />"),
+            }}
+          />
+        ) : (
+          content
+        )}
+      </ContentTag>
     </div>
   );
 }
