@@ -9,8 +9,8 @@ import Button from "../Button/Button";
 const features = [
     {
         title: "Regulatory Approval & Compliance",
-        description:
-            "We help you identify the correct regulatory authority and approval pathway based on your product category. This includes platforms such as Montaji (Dubai Municipality), MoIAT certification schemes, ECAS (Emirates Conformity Assessment Scheme), ESMA standards, and MOHAP approvals.",
+        description: (<>We help you identify the correct regulatory authority and approval pathway based on your product category. This includes platforms such as Montaji (Dubai Municipality), MoIAT certification schemes, <strong style={{ fontWeight: "600" }}>ECAS (Emirates Conformity Assessment Scheme), ESMA standards,</strong> and MOHAP approvals.</>)
+        ,
         icon: "/regulatory-approval.svg",
     },
     {

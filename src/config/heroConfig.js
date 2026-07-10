@@ -1,6 +1,7 @@
 export const heroConfig = {
   "/": {
     className: "backgroundcover-home",
+    paddingTop: "md:pt-[230px]",
     heading: {
       title: "Depoter Delivers",
       highlight: "Multi-Channel Fulfillment",
@@ -15,6 +16,7 @@ export const heroConfig = {
 
   "/d2c-fulfillment-uae": {
     className: "backgroundcover-d2c",
+    paddingTop: "md:pt-[230px]",
     heading: {
       title: "Direct-To-Consumer ",
       highlight: "Fulfillment Service in UAE",
@@ -30,6 +32,7 @@ export const heroConfig = {
 
   "/b2b-fulfillment-uae": {
     className: "backgroundcover-b2b",
+    paddingTop: "md:pt-[230px]",
     heading: {
       title: "Business-to-Business",
       highlight: "Fulfillment Service in UAE",
@@ -45,6 +48,7 @@ export const heroConfig = {
 
   "/multichannel-fulfillment-uae": {
     className: "backgroundcover-multichannel",
+    paddingTop: "md:pt-[230px]",
     heading: {
       title: (
         <>
@@ -65,6 +69,7 @@ export const heroConfig = {
 
   "/freight-forwarding-services-uae": {
     className: "backgroundcover-freightforwarding",
+    paddingTop: "md:pt-[230px]",
     heading: {
       title: "Freight Forwarding",
       highlight: "Services in UAE",
@@ -82,6 +87,7 @@ export const heroConfig = {
 
   "/services/customs-clearance-services-uae": {
     className: "backgroundcover-customsclearance",
+    paddingTop: "md:pt-[450px]",
     heading: {
       title: (
         <>
@@ -89,8 +95,8 @@ export const heroConfig = {
         </>
       ),
       highlight: "Services in UAE",
-      titleColor: "#978050",
-      highlightColor: "#212121",
+      titleColor: "#212121",
+      highlightColor: "#978050",
       description:
         "Clear your imports and exports in the UAE with expert customs support, accurate documentation, duty calculation, and smooth handling across all major ports and airports",
     },
@@ -103,6 +109,7 @@ export const heroConfig = {
 
   "/services/product-registration-services-uae": {
     className: "backgroundcover-productregistration",
+    paddingTop: "md:pt-[400px]",
     heading: {
       title: (
         <>
@@ -117,24 +124,7 @@ export const heroConfig = {
         "Register your products in the UAE without delays. We handle documentation, approvals, and compliance so you can import, distribute, and sell your products smoothly across the market without facing rejection or regulatory issues.",
     },
     button: {
-      text: "Get Expert Customs Support",
-      link: "/#",
-      className: "px-6 sm:px-12 py-3.5",
-    },
-  },
-
-  "/industries/beauty-personal-care-fulfillment-uae": {
-    className: "backgroundcover-productregistration",
-    heading: {
-      title: <>Beauty & Personal Care</>,
-      highlight: "Fulfillment uae",
-      titleColor: "#212121",
-      highlightColor: "#978050",
-      description:
-        "Depoter offers specialized beauty & personal care fulfillment UAE solutions for ecommerce brands. We ensure product safety through climate-controlled storage, precise expiry tracking, and fast shipping, delivering a premium unboxing experience to your customers.",
-    },
-    button: {
-      text: "Get Expert Customs Support",
+      text: "Talk to a Product Registration Expert",
       link: "/#",
       className: "px-6 sm:px-12 py-3.5",
     },
@@ -142,6 +132,7 @@ export const heroConfig = {
 
   "/infra/fulfillment-center-uae": {
     className: "backgroundcover-fulfillmentcenter",
+    paddingTop: "md:pt-[230px]",
     heading: {
       title: "Fulfillment Center UAE: ",
       highlight: "Smart Space & Fast Shipping for Your Brand",
@@ -159,6 +150,7 @@ export const heroConfig = {
 
   "/technology/ecommerce-integration-services-uae": {
     className: "backgroundcover-EcoIntegration",
+    paddingTop: "md:pt-[230px]",
     heading: {
       title: "Ecommerce",
       highlight: "Integration Services UAE",
@@ -182,6 +174,7 @@ export const heroConfig = {
 
   "/infra/delivery-services-uae": {
     className: "backgroundcover-deliveries",
+    paddingTop: "md:pt-[230px]",
     heading: {
       title: "Delivery Services in UAE for",
       highlight: "Fast, Reliable & Scalable Shipping",
@@ -199,6 +192,7 @@ export const heroConfig = {
 
   "/industries/health-wellness-fulfillment-uae": {
     className: "backgroundcover-healthWellness",
+    paddingTop: "md:pt-[400px]",
     heading: {
       title: "Health & Wellness",
       highlight: "Fulfillment Solutions\n in UAE",
@@ -216,6 +210,7 @@ export const heroConfig = {
 
   "/industries/beauty-personal-care-fulfillment-uae": {
     className: "backgroundcover-beautypersonalcare",
+    paddingTop: "md:pt-[400px]",
     heading: {
       title: "Beauty & Personal\n Care",
       highlight: "Fulfillment UAE",
@@ -233,6 +228,7 @@ export const heroConfig = {
 
   "/industries/food-beverage-fulfillment-uae": {
     className: "backgroundcover-foodnbeverages",
+    paddingTop: "md:pt-[380px]",
     heading: {
       title: "Food & Beverage",
       highlight: "Fulfillment Services\n in UAE",

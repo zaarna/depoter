@@ -33,13 +33,15 @@ function FastDeliveryNSafeReturnsManagement({ sectionKey }) {
                 <div className="grid text-center relative z-10">
                     <TitleContent {...tc} />
 
-                    <div className="flex flex-wrap justify-center gap-20 mt-15">
+                    <div className="flex flex-wrap justify-center gap-15 mt-15">
                         {cards.map((card, index) => (
                             <FulfillmentProcessCard
                                 key={index}
                                 iconsImage={card.iconsImage}
                                 title={card.title}
                                 description={card.description}
+                                background="bg-[#fff7e4]"
+                                Margin="-mt-6.5"
                             />
                         ))}
                     </div>

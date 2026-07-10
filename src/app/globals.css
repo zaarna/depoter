@@ -257,7 +257,6 @@ li {
 .backgroundcover-d2c,
 .backgroundcover-b2b,
 .backgroundcover-multichannel,
-.backgroundcover-customs-clearance,
 .backgroundcover-freightforwarding,
 .backgroundcover-fulfillmentcenter,
 .backgroundcover-EcoIntegration,
@@ -348,27 +347,13 @@ li {
   z-index: 2;
 }
 
-.backgroundcover-customs-clearance::before {
-  position: absolute;
-  content: "";
-  right: 0%;
-  top: -20%;
-  width: 100%;
-  height: 990px;
-  background-image: url("/customs-clearance-desktop.svg");
-  /* background-color: #212121; */
-  background-size: cover;
-  background-position: center;
-  z-index: 2;
-}
-
 .backgroundcover-freightforwarding::before {
   position: absolute;
   content: "";
   right: -2%;
   top: -20%;
   width: 100%;
-  height: 990px;
+  height: 1080px;
 
   background-image:
     /* linear-gradient(0deg, #ffffff, #ffffff00), */
@@ -508,15 +493,15 @@ li {
   position: absolute;
   content: "";
   right: 0%;
-  top: -4%;
-  width: 80%;
+  top: -10%;
+  width: 100%;
   height: auto;
   aspect-ratio: 1440 / 920;
 
   background-image:
     /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
-    url("/healthWellness.svg");
+    url("/beautyandpersonalcare.svg");
 
   background-size: cover;
   background-position: center;
@@ -554,7 +539,6 @@ li {
 .backgroundcover-d2c::after,
 .backgroundcover-b2b::after,
 .backgroundcover-multichannel::after,
-.backgroundcover-customs-clearance::after,
 .backgroundcover-freightforwarding::after,
 .backgroundcover-fulfillmentcenter::after,
 .backgroundcover-EcoIntegration::after,
@@ -567,13 +551,16 @@ li {
   content: "";
   left: 0;
   top: 0;
-  width: 80%;
+  width: 100%;
   height: 1190px;
   background: linear-gradient(
-      90deg,
-      rgba(255, 247, 228, 1) 15%,
+      130deg,
+      rgba(255, 247, 228, 1) 10%,
       rgba(255, 247, 228, 0.5) 22%,
-      rgba(255, 247, 228, 0) 100%
+      rgba(255, 247, 228, 0) 30%,
+      rgba(255, 247, 228, 0) 40%,
+      rgba(255, 247, 228, 0) 25%,
+      rgba(8, 8, 8, 0.2) 100%
     )
     22% 0;
   background-size: cover;
@@ -626,7 +613,7 @@ li {
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26));
 
   z-index: 1;
 }
@@ -998,8 +985,6 @@ li {
   .backgroundcover-b2b::after,
   .backgroundcover-multichannel::before,
   .backgroundcover-multichannel::after,
-  .backgroundcover-customs-clearance::before,
-  .backgroundcover-customs-clearance::after,
   .backgroundcover-freightforwarding::before,
   .backgroundcover-freightforwarding::after,
   .backgroundcover-fulfillmentcenter::before,
@@ -1104,12 +1089,6 @@ li {
     margin-top: 280px;
   }
 
-  .backgroundcover-customs-clearance > .container {
-    padding-top: 0px;
-    padding-bottom: 25px;
-    margin-top: 280px;
-  }
-
   .backgroundcover-freightforwarding > .container {
     padding-top: 0px;
     padding-bottom: 25px;
@@ -1180,23 +1159,6 @@ li {
       center top;
     background-repeat: no-repeat, no-repeat;
     background-color: #fff7e4;
-    z-index: 2;
-  }
-
-  .backgroundcover-customs-clearance {
-    /* background-image: url("/b2bmobilebanner.webp"); */
-    background-image: image-set(
-      url("/MultichannelMobile.svg") 1x,
-      url("/MultichannelMobile.svg") 2x,
-      url("/MultichannelMobile.svg") 3x
-        /* url("/b2bmobilebanner@2x.webp") 2x,
-      url("/b2bmobilebanner@3x.webp") 3x */
-    );
-    background-size: 100%;
-    background-position: center;
-
-    background-position-y: top;
-    background-repeat: no-repeat;
     z-index: 2;
   }
 
@@ -2361,7 +2323,7 @@ li {
 }
 @media (max-width: 400px) {
   .amazon-card h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -3402,8 +3364,8 @@ li {
 }
 
 .vendor-card-title-1 {
-  width: 235px;
-  font-size: 16px;
+  width: 220px;
+  font-size: 14px;
 }
 
 .vendor-card-content-1 {
@@ -3747,7 +3709,7 @@ li {
   }
   .vendor-card-title-1 {
     width: 250px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -3755,9 +3717,9 @@ li {
   background:
     linear-gradient(
       180deg,
-      rgba(255, 242, 208, 0.9) 0%,
-      rgba(255, 242, 208, 0.9) 50%,
-      rgba(255, 242, 208, 0.95) 100%
+      rgba(253, 242, 215, 0.9) 0%,
+      rgba(253, 242, 215, 0.9) 50%,
+      rgba(253, 242, 215, 0.95) 100%
     ),
     url("/fbm-bg.jpg");
 
@@ -3776,44 +3738,72 @@ li {
 }
 
 .benefits-Product-card-1 {
-  top: 20%;
-  left: 1%;
+  top: 19%;
+  left: 0%;
   width: 30%;
 }
 .benefits-Product-card-2 {
-  top: 20%;
+  top: 19%;
   left: 74%;
   width: 30%;
 }
 .benefits-Product-card-3 {
-  top: 52%;
-  left: 1%;
+  top: 51%;
+  left: 0%;
   width: 30%;
 }
 .benefits-Product-card-4 {
-  top: 50%;
+  top: 49%;
   left: 74%;
   width: 30%;
 }
 .benefits-Product-card-5 {
-  top: 71%;
+  top: 70%;
   left: 40%;
   width: 30%;
 }
 
-@media (min-width: 1320px) {
+@media (min-width: 1280px) {
   .benefits-Product-card-1 {
-    top: 16%;
-    left: 3%;
+    top: 15%;
+    left: 2%;
     width: 30%;
   }
   .benefits-Product-card-2 {
-    top: 16%;
+    top: 15%;
     left: 75%;
     width: 30%;
   }
   .benefits-Product-card-3 {
-    top: 54%;
+    top: 53%;
+    left: 2%;
+    width: 30%;
+  }
+  .benefits-Product-card-4 {
+    top: 50.5%;
+    left: 75%;
+    width: 25%;
+  }
+  .benefits-Product-card-5 {
+    top: 75%;
+    left: 42%;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1320px) {
+  .benefits-Product-card-1 {
+    top: 15%;
+    left: 3%;
+    width: 30%;
+  }
+  .benefits-Product-card-2 {
+    top: 15%;
+    left: 75%;
+    width: 30%;
+  }
+  .benefits-Product-card-3 {
+    top: 53%;
     left: 3%;
     width: 30%;
   }
@@ -3823,7 +3813,7 @@ li {
     width: 25%;
   }
   .benefits-Product-card-5 {
-    top: 76%;
+    top: 75%;
     left: 42%;
     width: 30%;
   }

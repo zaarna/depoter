@@ -39,7 +39,7 @@ export default function BenefitsOurProductRegistrationServices({ sectionKey = {}
     const tc =
         titleContentConfig[sectionKey] || titleContentConfig["benefitsofproductregistrationservie"];
     return (
-        <section className="pt-20 bg-white">
+        <section className="pt-15 bg-white">
             <div className="container mx-auto px-4">
                 <div className="grid text-center relative z-10">
                     <TitleContent {...tc} />
@@ -168,7 +168,7 @@ export default function BenefitsOurProductRegistrationServices({ sectionKey = {}
                             key={item.number}
                             className={`${item.className} rounded-xl px-6 py-5.5`}
                         >
-                            <p className="text-[1rem] text-[#1F1F1F]">
+                            <p className="text-[1.15rem] text-[#1F1F1F]">
                                 {item.title}
                             </p>
                         </div>

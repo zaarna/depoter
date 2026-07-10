@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 function RegistrationAcrossIndustries({ sectionKey }) {
     const tc =
         titleContentConfig[sectionKey] ||
-        titleContentConfig["strategicallylocated"];
+        titleContentConfig["registrationacrossindustries"];
 
     // data/b2bSliderData.js
     const b2bSliderData = [
@@ -58,7 +58,7 @@ function RegistrationAcrossIndustries({ sectionKey }) {
         {
             id: 7,
             title: "Sports, Toys & Games",
-            desc: "These products require safety approvals, especially for children’s use, including compliance with G-Mark (Gulf Conformity Mark) for regulated items such as toys and electronics.",
+            desc: (<>These products require safety approvals, especially for children’s use, including compliance with <b>G-Mark (Gulf Conformity Mark)</b> for regulated items such as toys and electronics.</>),
             image: "/SportsToysGames.svg",
         },
     ];
@@ -66,7 +66,7 @@ function RegistrationAcrossIndustries({ sectionKey }) {
     return (
         <section className=" py-10 lg:py-25 px-6 lg:pl-14 lg:pr-0 overflow-hidden">
             {/* TITLE */}
-            <div className="grid text-center lg:text-start relative z-10">
+            <div className="grid text-center relative z-10">
                 <TitleContent {...tc} />
             </div>
 
@@ -91,8 +91,8 @@ function RegistrationAcrossIndustries({ sectionKey }) {
                         loop={false}
                         breakpoints={{
                             0: { slidesPerView: 1.0 },
-                            768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 2.3 },
+                            768: { slidesPerView: 2.3 },
+                            1024: { slidesPerView: 2.8 },
                             1440: { slidesPerView: 3.5 },
                         }}
                     >
@@ -140,7 +140,7 @@ function RegistrationAcrossIndustries({ sectionKey }) {
 
 function Card({ title, desc, image }) {
     return (
-        <div className="w-[300px] h-[300px] md:h-[380px] md:w-[400px] bg-[#FFF7E4] border-2 border-[#F4B223] rounded-[36px] p-6 md:p-8">
+        <div className="w-[300px] h-[300px] md:h-[380px] md:w-[370px] bg-[#FFF7E4] border-2 border-[#F4B223] rounded-[36px] p-6 md:p-8">
 
             {/* Image */}
             <div className="my-5 h-20 md:h-30">

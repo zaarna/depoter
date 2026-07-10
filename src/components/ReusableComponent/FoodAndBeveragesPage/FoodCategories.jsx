@@ -7,22 +7,22 @@ import FoodCategoryCard from "@/components/FoodCategoryCard";
 const cards = [
     {
         icon: "/Food-Categories-1.svg",
-        title: "Ensure your product meets UAE standards",
+        title: "Perishables",
         description: "Fruits, vegetables, dairy, and fresh proteins.",
     },
     {
         icon: "/Food-Categories-2.svg",
-        title: "Avoid customs delays or shipment holds",
+        title: "Frozen Products",
         description: "Quick and reliable delivery services across the UAE with real-time tracking.",
     },
     {
         icon: "/Food-Categories-3.svg",
-        title: "Prevent penalties or rejection",
+        title: "Beverages",
         description: "Quick and reliable delivery services across the UAE with real-time tracking.",
     },
     {
         icon: "/Food-Categories-4.svg",
-        title: "Allow legal sale in retail and online markets",
+        title: "Dry & Packaged Foods",
         description: "Quick and reliable delivery services across the UAE with real-time tracking.",
     },
 ];
