@@ -64,9 +64,9 @@ export default function ChallengesFoodNBeverage({ sectionKey = [] }) {
                         />
                     ))}
                 </div>
-                <div className="text-center mt-25">
-                    <Button href="" className="px-5 py-3" variant="black">
-                        Talk to a Beauty Fulfillment Expert
+                <div className="text-center mt-15">
+                    <Button href="" className="px-10 py-3" variant="black">
+                        Talk to a Food Logistics Expert
                     </Button>
                 </div>
             </div>

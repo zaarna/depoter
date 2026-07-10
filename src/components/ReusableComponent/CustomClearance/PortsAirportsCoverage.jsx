@@ -122,7 +122,7 @@ export default function PortsAirportsCoverage() {
 
 const LocationCard = ({ title, description, keyServices, bestFor }) => (
     <div
-        className="rounded-2xl p-4 md:p-5 h-auto lg:h-[350px]"
+        className="rounded-2xl p-4 md:p-5 h-auto min-h-[350px]"
         style={{
             background:
                 "linear-gradient(358.44deg, #FFBE2E -111.88%, rgba(255, 190, 46, 0.799014) -43.36%, rgba(255, 190, 46, 0) 76.18%)",
@@ -140,14 +140,14 @@ const LocationCard = ({ title, description, keyServices, bestFor }) => (
             <div className="flex gap-2 items-start">
                 <span className="text-[15px] md:text-[15px] mt-1">◉</span>
                 <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed">
-                    <strong>Key Services:</strong> {keyServices}
+                    <strong className="font-semibold" >Key Services:</strong> {keyServices}
                 </p>
             </div>
 
             <div className="flex gap-2 items-start">
                 <span className="text-[15px] md:text-[15px] mt-1">◉</span>
                 <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed">
-                    <strong>Best For:</strong> {bestFor}
+                    <strong className="font-semibold">Best For:</strong> <span className="font-semibold"> {bestFor}</span>
                 </p>
             </div>
         </div>

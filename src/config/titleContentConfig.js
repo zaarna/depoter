@@ -153,6 +153,19 @@ export const titleContentConfig = {
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
   },
 
+  registrationacrossindustries: {
+    title: "Product Registration ",
+    highlight: "Across Industries",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    titleColor: "#212121",
+    content:
+      "Different industries have different requirements. Our team understands the process for each category and ensures smooth approval.",
+    highlightColor: "#ffbe2e",
+    contentAlign: "center",
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+  },
+
   freightforwardingservices: {
     title: "Our Freight ",
     highlight: "Forwarding Services",
@@ -233,7 +246,7 @@ export const titleContentConfig = {
     contentAlign: "center",
     contentColor: "#212121",
     contentSize: "text-[1.3rem]",
-    contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    contentWidth: "w-full md:w-3/4 lg:w-6/7",
     titleColor: "#212121",
   },
 
@@ -981,8 +994,8 @@ export const titleContentConfig = {
     highlightColor: "#ffffff",
     content: (
       <>
-        Accuracy in inventory management is what separates successful food
-        brands from others.
+        Accuracy in <b style={{ fontWeight: "600" }}>inventory management</b> is
+        what separates successful food brands from others.
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-4/5",
@@ -1157,7 +1170,7 @@ export const titleContentConfig = {
   },
 
   faq: {
-    title: "Frequently",
+    title: "Frequently ",
     highlight: "Asked Questions",
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
@@ -1307,11 +1320,12 @@ export const titleContentConfig = {
     highlightColor: "#000000",
     content: (
       <>
-        We support a wide range of food and beverage categories that require
-        structured storage and efficient logistics.
+        Food and beverage logistics requires precision. Even small issues in
+        storage, temperature, or tracking can affect product quality and lead to
+        losses.
       </>
     ),
-    contentWidth: "w-full md:w-3/4 lg:w-4/6",
+    contentWidth: "w-full md:w-3/4 lg:w-5/7",
     contentColor: "#000000",
     contentSize: "text-[1.25rem]",
   },

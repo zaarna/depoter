@@ -55,7 +55,6 @@ function CustomsClearanceProcessWorks({ sectionKey = [] }) {
             ],
         },
     ];
-
     const calculate = () => {
         if (!containerRef.current) return;
 
@@ -66,8 +65,7 @@ function CustomsClearanceProcessWorks({ sectionKey = [] }) {
         const paths = [];
         const dots = [];
 
-        // Distance of side dots from center line
-        const offset = 80;
+        const offset = 40;
 
         const collect = (refs, side) => {
             refs.current.forEach((card) => {
@@ -91,11 +89,12 @@ function CustomsClearanceProcessWorks({ sectionKey = [] }) {
         const minY = Math.min(...nodes.map((n) => n.y));
         const maxY = Math.max(...nodes.map((n) => n.y));
 
-        // Extend line above & below
-        const extraLength = 100;
+        // Different extensions
+        const topExtra = 60;
+        const bottomExtra = 180;
 
-        const topY = minY - extraLength;
-        const bottomY = maxY + extraLength;
+        const topY = minY - topExtra;
+        const bottomY = maxY + bottomExtra;
 
         // Main vertical line
         paths.push({
@@ -136,7 +135,6 @@ function CustomsClearanceProcessWorks({ sectionKey = [] }) {
             dots,
         });
     };
-
     useLayoutEffect(() => {
         const timer = setTimeout(() => {
             calculate();
@@ -187,7 +185,7 @@ function CustomsClearanceProcessWorks({ sectionKey = [] }) {
                                     d={path.d}
                                     stroke="#3C2C0B"
                                     strokeWidth="1"
-                                    strokeDasharray="6 6"
+                                    strokeDasharray="4 6"
                                     fill="none"
                                 />
                             ))}
@@ -209,7 +207,7 @@ function CustomsClearanceProcessWorks({ sectionKey = [] }) {
                     />
                   </circle> */}
 
-                                    <circle cx={dot.cx} cy={dot.cy} r="4" fill="#3C2C0B" />
+                                    <circle cx={dot.cx} cy={dot.cy} r="3" fill="#3C2C0B" />
                                 </g>
                             ))}
                         </svg>
@@ -228,7 +226,7 @@ function CustomsClearanceProcessWorks({ sectionKey = [] }) {
                     </div>
 
                     {/* Center Space */}
-                    <div className="w-[100px] shrink-0" />
+                    <div className="w-[5px] shrink-0" />
 
                     {/* Right Column */}
                     <div className="flex-1 flex flex-col gap-y-32 mt-40 relative z-10">

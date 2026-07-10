@@ -1,8 +1,11 @@
-const PlatformCard = ({ title, items, showFooter = false }) => {
+const PlatformCard = ({
+    title,
+    items,
+    showFooter1 = false,
+    showFooter2 = false,
+}) => {
     return (
-        <div
-            className="min-h-[430px] rounded-[28px] border-2 p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
-        >
+        <div className="min-h-[430px] rounded-[28px] border-2 p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <h3 className="text-[28px] font-semibold text-[#212121]">
                 {title}
             </h3>
@@ -22,13 +25,23 @@ const PlatformCard = ({ title, items, showFooter = false }) => {
                         />
                     </div>
                 ))}
-            </div>
 
-            {showFooter && (
-                <p className="mt-6 w-40 border-b-3 border-[#D8D0C0] pb-5 text-[20px] font-semibold leading-[1.7] text-[#212121]">
-                    Other global and regional carriers
-                </p>
-            )}
+                {showFooter1 && (
+                    <div className="flex min-h-[70px] items-center border-b-3 border-[#D8D0C0] pb-5">
+                        <p className="text-[20px] text-center font-semibold leading-[1.7] text-[#212121]">
+                            Custom-built websites
+                        </p>
+                    </div>
+                )}
+
+                {showFooter2 && (
+                    <div className="flex min-h-[70px] items-center border-b-3 border-[#D8D0C0] pb-5">
+                        <p className="text-[20px] font-semibold leading-[1.7] text-[#212121]">
+                            Other global and regional carriers
+                        </p>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };

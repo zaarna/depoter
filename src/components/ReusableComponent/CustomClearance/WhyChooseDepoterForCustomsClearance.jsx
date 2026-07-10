@@ -15,8 +15,8 @@ const features = [
 export default function WhyChooseDepoterForCustomsClearance() {
     const tc = titleContentConfig["whychoosedepotercustomclearance"];
     return (
-        <section className="py-20 bg-[#3C2C0B]">
-            <div className="container">
+        <section className="py-20 brand-bg">
+            <div className="container relative z-10">
                 <div className="grid text-center relative z-10">
                     <TitleContent {...tc} />
                 </div>

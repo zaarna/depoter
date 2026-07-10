@@ -34,13 +34,14 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
         titleContentConfig["inventorycontrolbuiltfreshness"];
 
     return (
-        <section className="bg-[#3C2C0B]">
-            <div className="container mx-auto px-4">
-                <div className="flex justify-center mb-12 md: mt-15">
+        <section className="brand-bg">
+            <div className="container mx-auto px-4 relative z-5">
+                <div className="mb-12 flex justify-center md:mt-15">
                     <div className="text-center">
                         <TitleContent {...tc} />
                     </div>
                 </div>
+
                 <div
                     className="overflow-hidden rounded-lg px-8 py-14 lg:px-16"
                     style={{
@@ -49,51 +50,40 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
                         backgroundPosition: "center",
                     }}
                 >
-                    <div className="grid items-start gap-12 lg:grid-cols-2">
-                        {/* Left Content */}
-                        <div className="max-w-xl text-center lg:text-left rounded-4xl border-1-[#FFF7E4] p-20 bg-[#FFF7E4]">
-                            <img src="/inventory-control-image.svg" alt="" />
+                    <div className="grid items-stretch gap-12 lg:grid-cols-2">
+                        {/* Left Section */}
+                        <div className="flex h-full items-center justify-center rounded-4xl border border-[#FFF7E4] bg-[#FFF7E4] p-10">
+                            <img
+                                src="/inventory-control-image.svg"
+                                alt=""
+                                className="max-w-full h-auto"
+                            />
                         </div>
 
-                        <div className="">
-                            {/* Right Cards */}
-                            <div className="flex flex-col items-start rounded-2xl border-3 border-[#ffbe2e] bg-[#FFF7E4]">
-                                {invoiceFeatures.map((item) => (
-                                    <InvoiceFeatureCard key={item.number} {...item} />
+                        {/* Right Section */}
+                        <div className="flex h-full flex-col">
+                            <div className="flex flex-1 flex-col overflow-hidden rounded-2xl border-2 border-[#ffbe2e] bg-[#FFF7E4]">
+                                {invoiceFeatures.map((item, index) => (
+                                    <div
+                                        key={item.number}
+                                        className={
+                                            index !== invoiceFeatures.length - 1
+                                                ? "flex-1 border-b border-[#00000020]"
+                                                : "flex-1"
+                                        }
+                                    >
+                                        <InvoiceFeatureCard {...item} />
+                                    </div>
                                 ))}
                             </div>
-                            <div className="text-center mt-15">
-                                <Button
-                                    href=""
-                                    className="
-    group relative overflow-hidden
-    mx-auto block
-    w-full sm:w-[80%] md:w-[60%] lg:w-[60%]
-    py-4 px-10
-    rounded-full
-    bg-[#FFBE2E]
-    text-black
-    font-semibold
-    transition-all duration-500
-    hover:scale-105
-  "
-                                    variant=""
-                                >
-                                    <span className="relative z-10">
-                                        Secure Your Inventory
-                                    </span>
 
-                                    <span
-                                        className="
-      absolute inset-0
-      -translate-x-full
-      skew-x-12
-      bg-white/30
-      transition-transform duration-700
-      group-hover:translate-x-[200%]
-    "
-                                    />
-                                </Button>
+                            <div className="mt-15 text-center">
+                                <Button
+                                    children="Secure Your Inventory"
+                                    className="py-2 px-10"
+                                    href=""
+                                    variant="yellow"
+                                />
                             </div>
                         </div>
                     </div>
@@ -103,27 +93,21 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
     );
 }
 
-function InvoiceFeatureCard({ number, title, description, dark }) {
+function InvoiceFeatureCard({ number, title, description }) {
     return (
-        <div
-            className={`flex items-start md:items-center rounded-2xl md:h-[150px] px-5 py-5 transition-all duration-300 `}
-        >
+        <div className="flex flex-1 items-center px-5 py-6 transition-all duration-300">
             {/* Number */}
-            <div className="flex items-center">
+            <div className="flex shrink-0 items-center">
                 <span className="text-4xl font-bold">{number}</span>
 
-                <div
-                    className={`mx-4 h-14 w-[2px] bg-black/70`}
-                />
+                <div className="mx-4 h-25 w-[2px] bg-black/70" />
             </div>
 
             {/* Content */}
-            <div>
+            <div className="flex-1">
                 <h4 className="text-xl font-semibold">{title}</h4>
 
-                <p
-                    className={`mt-2 text-[18px] leading-relaxed `}
-                >
+                <p className="mt-2 text-[18px] leading-relaxed">
                     {description}
                 </p>
             </div>

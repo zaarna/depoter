@@ -43,7 +43,7 @@ export default function InventoryControlBeautyHealth({ sectionKey = [] }) {
                     </div>
                 </div>
                 <div
-                    className="overflow-hidden rounded-lg  px-8 py-14 lg:px-16"
+                    className="overflow-hidden rounded-lg  px-8 py-5 lg:px-16"
                 >
                     <div className="grid items-center gap-12 lg:grid-cols-2">
                         {/* Left Content */}
@@ -58,7 +58,7 @@ export default function InventoryControlBeautyHealth({ sectionKey = [] }) {
                             ))}
                         </div>
                     </div>
-                    <div className="text-center mt-20">
+                    <div className="text-center my-20 ">
                         <Button href="" className="px-5 py-3" variant="black">
                             Talk to a Fulfillment Expert
                         </Button>

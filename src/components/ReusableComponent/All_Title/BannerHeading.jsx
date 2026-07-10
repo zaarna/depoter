@@ -30,7 +30,6 @@ export default function BannerHeading({
         <p
           className="
             mt-4 
-            font-medium
             text-[clamp(1rem,0.8rem+1vw,1.5rem)]
           "
           style={{ color: descriptionColor }}
