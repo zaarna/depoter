@@ -42,9 +42,9 @@ export default function ReliableFulfillment({ sectionKey = [] }) {
 
   return (
     <section className="py-8 md:py-16 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {/* Title */}
-        <div className="flex justify-center">
+        <div className="flex justify-center max-w-full md:max-w-6xl mx-auto">
           <div className="text-center">
             <TitleContent {...tc} />
           </div>

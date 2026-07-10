@@ -7,7 +7,7 @@ export const wellnessfaq = [
   {
     question: "How do you manage product expiry and batch tracking?",
     answer:
-      "We use FEFO (First Expiry, First-Out) and batch tracking to ship products with the nearest expiry date first.",
+      "We use FEFO (First-Expiry, First-Out) and batch tracking to ship products with the nearest expiry date first.",
   },
   {
     question:

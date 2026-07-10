@@ -8,7 +8,7 @@ export default function FeatureHighlight({ title, cards = [], description }) {
       <div className="container">
         <div className="rounded-[24px] md:rounded-[32px] border-2 border-[#F4A300] bg-white p-5 md:p-8 lg:p-10">
           {/* Heading */}
-          <h2 className="text-center text-xl font-bold text-[#2A2A2A] md:text-3xl lg:text-4xl">
+          <h2 className="text-center text-lg font-semibold text-[#2A2A2A] md:text-xl">
             {title}
           </h2>
 

@@ -36,7 +36,7 @@ export default function FlexibleFulfillment({ sectionKey = [], image }) {
           <div className="order-1 flex justify-center lg:order-2 lg:col-span-6">
             <div className="relative aspect-square w-full max-w-[520px] overflow-hidden rounded-2xl bg-[#FFF7E8] ">
               <Image
-                src={image || "/FlexibleFulfillment.svg"}
+                src={image || "/flexiblefulfillment.svg"}
                 alt={tc.title}
                 fill
                 className="object-contain p-4"

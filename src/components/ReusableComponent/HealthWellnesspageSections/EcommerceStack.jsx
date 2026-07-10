@@ -9,7 +9,7 @@ export default function EcommerceStack({ sectionKey = [] }) {
       number: "01",
       title: "Seamless Integration",
       description:
-        "Connect directly with Shopify, Amazon, and Noon in just a few clicks.",
+        "Connect directly with <strong>Shopify, Amazon, and Noon</strong> in just a few clicks.",
     },
     {
       number: "02",
@@ -34,9 +34,9 @@ export default function EcommerceStack({ sectionKey = [] }) {
     titleContentConfig[sectionKey] || titleContentConfig["EcommerceStack"];
 
   return (
-    <section className="py-8 md:py-16 bg-[#FFFBF2]">
+    <section className="py-8 md:py-16 ecommercestack-bg ">
       <div className="container">
-        <div className="grid items-center gap-10 lg:grid-cols-12">
+        <div className="z-10 relative grid items-center gap-10 lg:grid-cols-12">
           {/* Left Content */}
           <div className="lg:col-span-6 text-left">
             <TitleContent {...tc} />
@@ -74,11 +74,10 @@ export default function EcommerceStack({ sectionKey = [] }) {
 
                     <p
                       className={`mt-2 leading-7 ${
-                        index % 2 === 0 ? "text-[#3A3A3A]" : "text-white/80"
+                        index % 2 === 0 ? "text-[#212121]" : "text-white"
                       }`}
-                    >
-                      {card.description}
-                    </p>
+                      dangerouslySetInnerHTML={{ __html: card.description }}
+                    />
                   </div>
                 </div>
               ))}

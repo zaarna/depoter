@@ -4,6 +4,7 @@ import React from "react";
 import TitleContent from "../All_Title/TitleContent";
 import { titleContentConfig } from "@/config/titleContentConfig";
 import FreightProcessCard from "../FreightForwarding/ShipmentCard";
+import Button from "../Button/Button";
 
 function InventoryControl({ sectionKey = "" }) {
   const industries = [
@@ -39,11 +40,11 @@ function InventoryControl({ sectionKey = "" }) {
           <TitleContent {...tc} />
         </div>
 
-        <div className="relative mx-auto max-w-5xl">
-          <div className="absolute inset-0 -translate-x-[200px] translate-y-16 hidden lg:flex justify-center pointer-events-none">
+        <div className="relative mx-auto max-w-6xl">
+          <div className="absolute left-[34px] top-[40px] hidden lg:flex justify-center pointer-events-none">
             <svg
-              width="560"
-              height="600"
+              width="625"
+              height="652"
               viewBox="0 0 640 652"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -128,6 +129,13 @@ function InventoryControl({ sectionKey = "" }) {
               />
             ))}
           </div>
+        </div>
+        <div className="text-center mt-6 md:mt-12">
+          <Button
+            children={"Talk to a Fulfillment Expert"}
+            className="py-2 px-5"
+            href={"#"}
+          />
         </div>
       </div>
     </section>

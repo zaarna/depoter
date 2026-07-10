@@ -1223,7 +1223,7 @@ export const titleContentConfig = {
     highlight: "Health & Wellness Brands",
     titleColor: "#ffffff",
     content:
-      "Our fulfillment solution works great for any product, but we specialize in the high-stakes world of health and wellness. We provide the infrastructure you need to scale without worrying about the backend.",
+      'Our <span style="font-weight:600;">fulfillment solution works great for any product </span>, but we specialize in the high-stakes world of health and wellness. We provide the infrastructure you need to scale without worrying about the backend.',
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
     highlightColor: "#FFBE2E",

@@ -43,11 +43,13 @@ function WhyDepoterHealthFulfillment({ sectionKey = [] }) {
             {advantages.map((item) => (
               <div
                 key={item.number}
-                className="flex items-stretch gap-4 rounded-2xl border border-[#F2B233] bg-white p-5 transition-all duration-300 hover:shadow-md"
+                className="flex items-stretch gap-4 rounded-2xl border border-[#F2B233] bg-white p-2 transition-all duration-300 hover:shadow-md"
               >
                 {/* Number */}
-                <div className="flex w-13 flex-shrink-0 items-center justify-center rounded-lg bg-[#FDBD2D] text-3xl font-bold text-[#222]">
-                  {item.number}
+                <div className="flex w-13 flex-shrink-0 items-center justify-center rounded-lg bg-[#FDBD2D] text-3xl font-bold text-[#222] ">
+                  <p className="[text-shadow:3px_3px_1px_rgba(0,0,0,0.27)]">
+                    {item.number}
+                  </p>
                 </div>
 
                 {/* Divider */}
@@ -56,7 +58,7 @@ function WhyDepoterHealthFulfillment({ sectionKey = [] }) {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1">
+                <div className="flex-1 py-3">
                   <h3 className="text-2xl font-bold text-[#212121] text-left">
                     {item.title}
                   </h3>
