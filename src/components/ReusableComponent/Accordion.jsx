@@ -6,6 +6,7 @@ import BulletDot from "./BulletDot";
 export default function Accordion({
   items,
   showIcon = true,
+  ShowBulletDot = true,
   cardClassName = "rounded-[30px] border border-[#D2A847] bg-[#F3E0A8]",
   iconClassName = "bg-[#D8B04D]",
   contentClassName = "",
@@ -60,15 +61,19 @@ export default function Accordion({
                           key={i}
                           className="flex items-start gap-2 leading-relaxed text-gray-800"
                         >
-                          <BulletDot className="mt-1" />
-                          <span>
-                            <span className="block font-semibold">
-                              {point.label}:
+                          {ShowBulletDot &&
+                            <BulletDot className="mt-1 " />
+                          }
+                          {point.label &&
+                            <span>
+                              <span className="block font-semibold">
+                                {point.label}:
+                              </span>
+                              <span
+                                dangerouslySetInnerHTML={{ __html: point.value }}
+                              />
                             </span>
-                            <span
-                              dangerouslySetInnerHTML={{ __html: point.value }}
-                            />
-                          </span>
+                          }
                         </li>
                       ))}
                     </ul>

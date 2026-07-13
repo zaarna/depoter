@@ -6,7 +6,7 @@ import FulfillmentProcessCard from "../FulfillmentCenterPage/FulfillmentProcessC
 function FastDeliveryFashionECommerce({ sectionKey }) {
     const tc =
         titleContentConfig[sectionKey] ||
-        titleContentConfig["fastdeliverysafereturnsmanagement"];
+        titleContentConfig["fastdeliveryfashionecommerce"];
     const cards = [
         {
             iconsImage: "/Fast-Delivery-apparel-1.svg",

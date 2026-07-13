@@ -19,13 +19,13 @@ function EveryFashionCategory({ sectionKey }) {
             id: 1,
             title: "Clothing Items",
             desc: "Structured storage for men’s, women’s, and kids' wear across all fabrics. ",
-            image: "/faster-deliveries-icon-1.svg",
+            image: "/reliable-fulfillment-icon-1.svg",
         },
         {
             id: 2,
             title: "Footwear & Accessories",
             desc: "Dedicated setups for shoes, handbags, belts, and jewelry.",
-            image: "/faster-deliveries-icon-2.svg",
+            image: "/reliable-fulfillment-icon-2.svg",
         },
         {
             id: 3,
@@ -35,7 +35,7 @@ function EveryFashionCategory({ sectionKey }) {
                     Rapid scaling and storage prep for new "Drops" and seasonal inventory shifts.
                 </>
             ),
-            image: "/faster-deliveries-icon-3.svg",
+            image: "/reliable-fulfillment-icon-3.svg",
         },
         {
             id: 4,
@@ -45,13 +45,13 @@ function EveryFashionCategory({ sectionKey }) {
                     Secure, dust-free handling for luxury garments and designer labels.
                 </>
             ),
-            image: "/faster-deliveries-icon-4.svg",
+            image: "/reliable-fulfillment-icon-4.svg",
         },
         {
             id: 5,
             title: "B2B & DTC Distribution",
             desc: "Seamless multi-channel routing for both retail store supply and online customers. ",
-            image: "/faster-deliveries-icon-5.svg",
+            image: "/reliable-fulfillment-icon-5.svg",
         },
     ];
 
@@ -163,7 +163,7 @@ function EveryFashionCategory({ sectionKey }) {
 
 function Card({ title, desc, image }) {
     return (
-        <div className="h-full bg-[#FFF7E4] rounded-[28px] border border-[#C9A86A] p-8 flex flex-col">
+        <div className="h-full bg-[#FFF7E4] rounded-[28px] border border-[#978050] p-8 flex flex-col">
             <h3
                 className="
     mb-4 text-black

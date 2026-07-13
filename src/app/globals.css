@@ -1405,7 +1405,7 @@ li {
         rgba(228, 216, 189, 0.1) 60.3%,
         rgba(0, 0, 0, 0.1) 100.07%
       ),
-      url("/healthWellness-mobile.svg");
+      url("/apparel-mobile.svg");
 
     /* background-size: cover; */
     background-position: center;
@@ -2468,6 +2468,21 @@ li {
 
   position: relative;
 }
+.vendor-card-image-white-bg {
+  width: 600px;
+  height: 140px;
+
+  background-image: url("/Vendor_hexagon_white.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
 
 /* Title */
 .vendor-card-title {
@@ -2524,6 +2539,15 @@ li {
   width: 125px;
 }
 
+.white-hexagon {
+  background-image: url("/white-hexagon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 125px;
+  width: 125px;
+}
+
 .vendor-card-title {
   width: 320px;
 }
@@ -2547,7 +2571,8 @@ li {
     margin-top: -15px;
   }
 
-  .vendor-card-image-bg {
+  .vendor-card-image-bg,
+  .vendor-card-image-white-bg {
     width: 100%;
     max-width: 350px;
     height: 100px;
@@ -2577,12 +2602,14 @@ li {
     right: 2%;
   }
 
-  .yellow-hexagon {
+  .yellow-hexagon,
+  .white-hexagon {
     height: 80px;
     width: 80px;
   }
 
-  .yellow-hexagon img {
+  .yellow-hexagon img,
+  .white-hexagon img {
     width: 40px;
     height: 40px;
   }

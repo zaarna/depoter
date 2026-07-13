@@ -1514,6 +1514,90 @@ export const titleContentConfig = {
     // contentSize: "text-[1.25rem]",
   },
 
+  flexiblefulfillmentgrowingbrands: {
+    title: "Flexible Fulfillment for ",
+    highlight: "Growing Brands",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+    className: "text-center",
+    // marginX: "mx-0",
+    content: (
+      <>
+        Every brand grows differently, and your fulfillment partner should
+        support that growth without friction.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/6",
+    contentColor: "#212121",
+    contentAlign: "center",
+    // contentSize: "text-[1.25rem]",
+  },
+
+  dtcmarketplaceintegration: {
+    title: "DTC & Marketplace\n ",
+    highlight: "Integration",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#ffffff",
+    className: "text-start",
+    marginX: "mx-0",
+    content: (
+      <>
+        We help you sell across multiple regional and global platforms without
+        operational complexity
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#ffffff",
+    contentAlign: "start",
+    // contentSize: "text-[1.25rem]",
+  },
+
+  whychoosedepoterfashionfulfillment: {
+    title: "Why Brands Choose",
+    highlight: " Depoter\n for Fashion Fulfillment",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#212121",
+    className: "text-center",
+    // marginX: "mx-0",
+    content: (
+      <>
+        Businesses choose Depoter because we focus on performance, accuracy, and
+        reliability.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#212121",
+    contentAlign: "center",
+    // contentSize: "text-[1.25rem]",
+  },
+
+  fastdeliveryfashionecommerce: {
+    title: "Fast Delivery ",
+    highlight: "for Fashion E-commerce",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#212121",
+    className: "text-center",
+    // marginX: "mx-0",
+    content: (
+      <>
+        Speed plays a key role in customer satisfaction and reducing Cash on
+        Delivery (COD) rejection rates.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-3/5",
+    contentColor: "#212121",
+    contentAlign: "center",
+    // contentSize: "text-[1.25rem]",
+  },
+
   foodcategories: {
     title: "Food Categories  ",
     highlight: " We Handle",

@@ -1,9 +1,12 @@
+import DTCMarketplaceIntegration from "@/components/ReusableComponent/ApparelAccessoriesPage/DTCMarketplaceIntegration";
 import EveryFashionCategory from "@/components/ReusableComponent/ApparelAccessoriesPage/EveryFashionCategory";
 import FashionFulfillment from "@/components/ReusableComponent/ApparelAccessoriesPage/FashionFulfillment";
 import FastDeliveryFashionECommerce from "@/components/ReusableComponent/ApparelAccessoriesPage/FastDeliveryFashionECommerce";
+import FlexibleFulfillmentGrowingBrands from "@/components/ReusableComponent/ApparelAccessoriesPage/FlexibleFulfillmentGrowingBrands";
 import ReverseLogisticsManagement from "@/components/ReusableComponent/ApparelAccessoriesPage/ReverseLogisticsManagement";
 import SolvingApparelBiggestChallenges from "@/components/ReusableComponent/ApparelAccessoriesPage/SolvingApparelBiggestChallenges";
 import SupportsFashionBrands from "@/components/ReusableComponent/ApparelAccessoriesPage/SupportsFashionBrands";
+import WhyChooseDepoterFashionFulfillment from "@/components/ReusableComponent/ApparelAccessoriesPage/WhyChooseDepoterFashionFulfillment";
 import AdvancedSKUManagementApparel from "@/components/ReusableComponent/ApparelAccessoriesPage/WhyChooseDepoterFreezoneFulfillment";
 import CtaSection from "@/components/ReusableComponent/CtaSection";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
@@ -21,6 +24,9 @@ export default function ApparelAccessoriesPage() {
         <AdvancedSKUManagementApparel />
         <ReverseLogisticsManagement />
         <FastDeliveryFashionECommerce />
+        <FlexibleFulfillmentGrowingBrands />
+        <DTCMarketplaceIntegration />
+        <WhyChooseDepoterFashionFulfillment />
         <FashionFulfillment />
         <FaqSection faqs={apparelfaq} />
         <CtaSection
