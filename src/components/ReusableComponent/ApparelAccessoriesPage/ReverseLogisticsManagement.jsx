@@ -7,43 +7,50 @@ import Button from "../Button/Button";
 const invoiceFeatures = [
     {
         number: "01",
-        title: "Automated Batch Tracking",
+        title: " Immediate Quality Inspection",
         description:
-            "Every SKU is tracked by its batch and lot number.",
+            "We check for signs of wear, odor, or damage the moment a return package arrives at the warehouse.",
         dark: false,
     },
     {
         number: "02",
-        title: "Expiry-Based Inventory",
+        title: "Premium Repackaging",
         description:
-            `Our system proactively alerts you 3-6 months before a product expires, allowing you to run "Flash Sales" and reduce waste.`,
+            `We replace damaged poly-bags, re-tag if necessary, and ensure the item looks brand new.`,
         dark: true,
     },
     {
         number: "03",
-        title: "SKU-Wise Sales Insights",
+        title: "Fast Restocking Loop",
         description:
-            "Detailed reports on which shades or products are selling the most, helping you forecast seasonal demand for Ramadan or Black Friday.",
+            "We push sellable items back into your active online inventory within 24 hours.",
+        dark: false,
+    },
+    {
+        number: "04",
+        title: "Clear Liquidation Reporting",
+        description:
+            "Detailed logs on damaged items to help you make fast decisions on liquidation or discount sales.",
         dark: false,
     },
 ];
 
-export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
+export default function ReverseLogisticsManagement({ sectionKey = [] }) {
     const tc =
         titleContentConfig[sectionKey] ||
-        titleContentConfig["inventorycontrolbuiltfreshness"];
+        titleContentConfig["reverselogisticsmanagement"];
 
     return (
         <section className="brand-bg">
-            <div className="container mx-auto px-4 relative z-5">
-                <div className="mb-12 flex justify-center md:mt-15">
+            <div className="container mx-auto px-4 py-8 relative z-5">
+                <div className="mb-5 flex justify-center md:mt-10">
                     <div className="text-center">
                         <TitleContent {...tc} />
                     </div>
                 </div>
 
                 <div
-                    className="overflow-hidden rounded-lg px-8 py-14 lg:px-16"
+                    className="overflow-hidden rounded-lg px-8 py-14 lg:px-14"
                     style={{
                         backgroundImage: "url('/invoice-pattern.webp')",
                         backgroundSize: "cover",
@@ -54,7 +61,7 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
                         {/* Left Section */}
                         <div className="flex h-full items-center justify-center rounded-4xl border border-[#FFF7E4] bg-[#FFF7E4] p-10">
                             <img
-                                src="/inventory-control-image.svg"
+                                src="/reverse-logistics-management.svg"
                                 alt=""
                                 className="max-w-full h-auto"
                             />
@@ -71,15 +78,6 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
                                     </div>
                                 ))}
                             </div>
-
-                            <div className="mt-15 text-center">
-                                <Button
-                                    children="Secure Your Inventory"
-                                    className="py-2 px-10"
-                                    href=""
-                                    variant="yellow"
-                                />
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,12 +88,12 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
 
 function InvoiceFeatureCard({ number, title, description }) {
     return (
-        <div className="flex flex-1 items-center px-5 py-6 transition-all duration-300">
+        <div className="flex flex-1 items-center px-5 py-3 transition-all duration-300">
             {/* Number */}
             <div className="flex shrink-0 items-center">
                 <span className="text-4xl font-bold">{number}</span>
 
-                <div className="mx-4 h-25 w-[2px] bg-black/70" />
+                <div className="mx-4 h-18 w-[2px] bg-black/70" />
             </div>
 
             {/* Content */}

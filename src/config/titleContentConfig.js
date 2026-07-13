@@ -40,6 +40,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   Howtowork: {
     title: "How Depoter Works",
     highlight: "Works",
@@ -51,8 +52,9 @@ export const titleContentConfig = {
     highlightColor: "#ffbe2e",
     contentSize: "text-[1.125rem]",
     titleColor: "#212121",
-    contentColor: "#000000",
+    contentColor: "#212121",
   },
+
   buildtohandle: {
     title: "Built to Handle What You Sell",
     highlight: "Sell",
@@ -61,6 +63,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   global: {
     title: "Global Network of Fulfilment Centres",
     highlight: "Fulfilment Centres",
@@ -69,6 +72,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   insights: {
     title: "Insights from the Fulfillment Floor",
     highlight: "Fulfillment Floor",
@@ -77,6 +81,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   testimonials: {
     title: "Deeds Over Words",
     highlight: "Over Words",
@@ -89,6 +94,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     contentColor: "#212121",
   },
+
   case: {
     title: "Delivered by Depoter",
     highlight: "Depoter",
@@ -97,6 +103,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   buildtohandleservice: {
     title: "Built to Handle What You Sell",
     highlight: "You Sell",
@@ -502,6 +509,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   whychoosedepoter: {
     title: "Why Choose Depoter \n for ",
     highlight: "Freezone \n Fulfillment",
@@ -510,6 +518,7 @@ export const titleContentConfig = {
     titleColor: "#ffffff",
     highlightColor: "#ffbe2e",
   },
+
   b2bgradient: {
     title: "The Numbers That Define Us",
     highlight: "Define Us",
@@ -518,6 +527,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   smarttechnology: {
     title: "Smart Technology That \n Simplifies Every B2B Order",
     highlight: "B2B Order",
@@ -526,6 +536,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   flexiblestorage: {
     title: "Flexible Storage Solutions \n for Every Product Type",
     content:
@@ -537,8 +548,9 @@ export const titleContentConfig = {
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
-    contentColor: "#000000",
+    contentColor: "#212121",
   },
+
   fasterexpansion: {
     title: "Your Gateway to Duty-Free Storage \n and Faster GCC Expansion",
     highlight: "Faster GCC Expansion",
@@ -547,6 +559,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   managemesaurment: {
     title: "Manage Multiple Units of \n Measurement with Total Control",
     highlight: "Total Control",
@@ -556,10 +569,11 @@ export const titleContentConfig = {
     highlightColor: "#ffbe2e",
     content:
       "Our advanced inventory management system is designed for flexibility and accuracy. It handles multiple measurement levels seamlessly so that you can sell and ship products in any format without manual conversions.",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentTag: "h3",
     contentSize: "text-[1.3rem]",
   },
+
   deliverretail: {
     title: "Deliver to Every Retail Shelf \n with Ease",
     highlight: "with Ease",
@@ -573,22 +587,25 @@ export const titleContentConfig = {
     contentTag: "h3",
     contentSize: "text-[1.3rem]",
   },
+
   scalabilitygrowth: {
     title: "Scalability That Supports Long- \n Term B2B Growth",
     highlight: "B2B Growth",
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
-    titleColor: "#000000",
+    titleColor: "#212121",
     highlightColor: "#FFBE2E",
   },
+
   advancetechnology: {
     title: "Advanced Technology That \n Powers Modern B2B Fulfillment",
     highlight: "B2B Fulfillment",
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
-    titleColor: "#000000",
+    titleColor: "#212121",
     highlightColor: "#FFBE2E",
   },
+
   defineeverytechnology: {
     title: "Define Every \n Experience",
     highlight: "Experience",
@@ -598,6 +615,7 @@ export const titleContentConfig = {
     highlightColor: "#FFBE2E",
     className: "text-center md:text-left",
   },
+
   expandbuisness: {
     title: "Expand Your Business\n Across Every Channel",
     highlight: "Every Channel",
@@ -635,6 +653,7 @@ export const titleContentConfig = {
     ),
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
   },
+
   deliverysolution: {
     title: "Domestic Delivery Solutions: \n",
     highlight: "Speed Tiers for Every Need",
@@ -651,6 +670,7 @@ export const titleContentConfig = {
       className: "px-6 sm:px-12 py-3.5 mt-6",
     },
   },
+
   crossborderdelivery: {
     title: "Cross-Border\n Delivery Solutions:\n  ",
     highlight: "Expanding Across\n the GCC & Beyond",
@@ -671,6 +691,7 @@ export const titleContentConfig = {
       className: "px-6 sm:px-12 py-3.5 mt-6",
     },
   },
+
   deliverycapabilities: {
     title: "Specialized ",
     highlight: "Delivery Capabilites",
@@ -717,6 +738,7 @@ export const titleContentConfig = {
       "We support your deliveries with additional services that improve customer experience and make your operations easier.",
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
   },
+
   whychoosedeliveryservice: {
     title: "Why Choose ",
     highlight: "Depoter Delivery Services",
@@ -836,7 +858,7 @@ export const titleContentConfig = {
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
     titleColor: "#ffbe2e",
-    highlightColor: "#000000",
+    highlightColor: "#212121",
   },
 
   registrationprocessworks: {
@@ -844,13 +866,13 @@ export const titleContentConfig = {
     highlight: "Registration Process Works",
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
-    titleColor: "#000000",
+    titleColor: "#212121",
     highlightColor: "#ffbe2e",
     content: (
       <>We follow a simple and structured process to ensure fast approval:</>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-4/5",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.25rem]",
   },
 
@@ -859,7 +881,7 @@ export const titleContentConfig = {
     highlight: "Beauty\n E-commerce Brands",
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
-    titleColor: "#000000",
+    titleColor: "#212121",
     highlightColor: "#ffbe2e",
     content: (
       <>
@@ -870,7 +892,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-4/5",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.25rem]",
   },
 
@@ -894,7 +916,7 @@ export const titleContentConfig = {
     highlight: "Beauty Logistics\n Challenges",
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
-    titleColor: "#000000",
+    titleColor: "#212121",
     highlightColor: "#ffbe2e",
     content: (
       <>
@@ -903,7 +925,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-4/5",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.25rem]",
   },
 
@@ -973,7 +995,7 @@ export const titleContentConfig = {
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
     titleColor: "#FFBE2E",
-    highlightColor: "#000000",
+    highlightColor: "#212121",
     content: (
       <>
         We deliver across the UAE using optimized routing, smart courier
@@ -981,7 +1003,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-3/5",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.25rem]",
   },
 
@@ -1027,7 +1049,7 @@ export const titleContentConfig = {
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
     titleColor: "#FFBE2E",
-    highlightColor: "#000000",
+    highlightColor: "#212121",
     content: (
       <>
         We support a wide range of food and beverage categories that require
@@ -1035,7 +1057,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-3/5",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.3rem]",
   },
 
@@ -1045,7 +1067,7 @@ export const titleContentConfig = {
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
     titleColor: "#FFBE2E",
-    highlightColor: "#000000",
+    highlightColor: "#212121",
     content: (
       <>
         In <b> cosmetics fulfillment UAE,</b> accuracy is everything. We
@@ -1053,7 +1075,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-4/5",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.3rem]",
   },
 
@@ -1177,6 +1199,7 @@ export const titleContentConfig = {
     titleColor: "#212121",
     highlightColor: "#ffbe2e",
   },
+
   WhyFulfillmentMatters: {
     title: "Why Fulfillment Matters for \n Health & Wellness",
     highlight: "Fulfillment Matters",
@@ -1192,6 +1215,7 @@ export const titleContentConfig = {
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full md:w-3/4 ",
   },
+
   WhyDepoterHealthFulfillment: {
     title: "Why Choose Depoter for ",
     highlight: "Health \n Fulfillment",
@@ -1207,6 +1231,7 @@ export const titleContentConfig = {
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full md:w-3/4 ",
   },
+
   productType: {
     title: "Flexible Fulfillment for ",
     highlight: "Every Product Type",
@@ -1215,6 +1240,7 @@ export const titleContentConfig = {
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
     highlightColor: "#FFBE2E",
   },
+
   EcommerceStack: {
     title: "Connect Your Entire ",
     highlight: "Ecommerce Stack",
@@ -1231,6 +1257,7 @@ export const titleContentConfig = {
     contentWidth: "w-full ",
     contentAlign: "left",
   },
+
   wellnessSupport: {
     title: "How Depoter Supports Health & Wellness Brands",
     highlight: "Health & Wellness Brands",
@@ -1246,6 +1273,7 @@ export const titleContentConfig = {
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full ",
   },
+
   ChallengesFulfillment: {
     title: "Challenges in \n",
     highlight: "Health & Wellness Fulfillment",
@@ -1261,6 +1289,7 @@ export const titleContentConfig = {
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full ",
   },
+
   reliablefulfillment: {
     title: "Reliable Fulfillment for ",
     highlight: "Specialized \n Health Productst",
@@ -1276,6 +1305,7 @@ export const titleContentConfig = {
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full ",
   },
+
   inventoryControl: {
     title: "Inventory Control Built for Health Products",
     highlight: "Inventory Control Built",
@@ -1291,12 +1321,13 @@ export const titleContentConfig = {
     contentSize: "text-[1.3rem]",
     contentWidth: "w-full",
   },
+
   connecttoecommercestack: {
     title: "Connect Your Entire ",
     highlight: "Ecommerce Stack",
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
-    titleColor: "#000000",
+    titleColor: "#212121",
     highlightColor: "#ffbe2e",
     content: (
       <>
@@ -1307,7 +1338,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-4/6",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.25rem]",
   },
 
@@ -1317,7 +1348,7 @@ export const titleContentConfig = {
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
     titleColor: "#ffbe2e",
-    highlightColor: "#000000",
+    highlightColor: "#212121",
     content: (
       <>
         Food and beverage logistics requires precision. Even small issues in
@@ -1326,7 +1357,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-5/7",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.25rem]",
   },
 
@@ -1335,7 +1366,7 @@ export const titleContentConfig = {
     highlight: "Food Safety",
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
-    titleColor: "#000000",
+    titleColor: "#212121",
     highlightColor: "#ffbe2e",
     content: (
       <>
@@ -1344,7 +1375,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-5/6",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.25rem]",
   },
 
@@ -1354,7 +1385,7 @@ export const titleContentConfig = {
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
     titleColor: "#ffbe2e",
-    highlightColor: "#000000",
+    highlightColor: "#212121",
     content: (
       <>
         Maintaining compliance is critical in food logistics. We follow
@@ -1363,7 +1394,7 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-4/5",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentSize: "text-[1.25rem]",
   },
 
@@ -1373,7 +1404,7 @@ export const titleContentConfig = {
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
     titleColor: "#ffbe2e",
-    highlightColor: "#000000",
+    highlightColor: "#212121",
     className: "text-start",
     marginX: "mx-0",
     content: (
@@ -1383,9 +1414,104 @@ export const titleContentConfig = {
       </>
     ),
     contentWidth: "w-full md:w-3/4 lg:w-4/5",
-    contentColor: "#000000",
+    contentColor: "#212121",
     contentAlign: "text-left",
     contentSize: "text-[1.25rem]",
+  },
+
+  everyfashioncategory: {
+    title: "Reliable Fulfillment for\n",
+    highlight: "Every Fashion Category",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+    className: "text-start",
+    marginX: "mx-0",
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#212121",
+    contentAlign: "text-left",
+    contentSize: "text-[1.25rem]",
+  },
+
+  solvingapparelbiggestchallenges: {
+    title: "Solving the Apparel Industry’s\n",
+    highlight: "Biggest Challenges",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#212121",
+    content: (
+      <>
+        Every fashion business faces key operational challenges. Our system is
+        built to solve them efficiently.
+      </>
+    ),
+    highlightColor: "#ffbe2e",
+    className: "text-center",
+    // marginX: "mx-0",
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#212121",
+    contentAlign: "center",
+    contentSize: "text-[1.25rem]",
+  },
+
+  supportsfashionbrands: {
+    title: "How Depoter \n",
+    highlight: "Supports Fashion Brands",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffffff",
+    highlightColor: "#ffbe2e",
+    className: "text-start",
+    marginX: "mx-0",
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#212121",
+    contentAlign: "start",
+    contentSize: "text-[1.25rem]",
+  },
+
+  advancedskumanagementapparel: {
+    title: "Advanced SKU\n",
+    highlight: "Management for Apparel",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#212121",
+    highlightColor: "#ffbe2e",
+    className: "text-center",
+    // marginX: "mx-0",
+    content: (
+      <>
+        Managing multiple sizes and variants is one of the biggest challenges in
+        fashion. Our system provides SKU-level tracking to help you manage every
+        product variation accurately.
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/5",
+    contentColor: "#212121",
+    contentAlign: "center",
+    // contentSize: "text-[1.25rem]",
+  },
+
+  reverselogisticsmanagement: {
+    title: "Reverse Logistics ",
+    highlight: "(Returns) Management",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
+    titleColor: "#ffbe2e",
+    highlightColor: "#ffffff",
+    className: "text-center",
+    // marginX: "mx-0",
+    content: (
+      <>
+        In the UAE, fashion return rates can reach up to 30%. Slow processing
+        means dead capital trapped in transit. Our reverse logistics for fashion
+        UAE is optimized to save your margins:
+      </>
+    ),
+    contentWidth: "w-full md:w-3/4 lg:w-4/6",
+    contentColor: "#ffffff",
+    contentAlign: "center",
+    // contentSize: "text-[1.25rem]",
   },
 
   foodcategories: {
@@ -1394,6 +1520,6 @@ export const titleContentConfig = {
     titleTag: "h2",
     titleSize: "text-[clamp(1.3rem,1rem+2vw,3rem)]",
     titleColor: "#ffbe2e",
-    highlightColor: "#000000",
+    highlightColor: "#212121",
   },
 };

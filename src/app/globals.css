@@ -265,7 +265,8 @@ li {
 .backgroundcover-customsclearance,
 .backgroundcover-healthWellness,
 .backgroundcover-beautypersonalcare,
-.backgroundcover-foodnbeverages {
+.backgroundcover-foodnbeverages,
+.backgroundcover-apparelaccessories {
   position: relative;
   background: hsla(42, 100%, 95%, 1);
 
@@ -531,6 +532,27 @@ li {
   z-index: 2;
 }
 
+.backgroundcover-apparelaccessories::before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: -9%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 920;
+
+  background-image:
+    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+    linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
+    url("/apparel-accessories-bg.svg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
@@ -546,7 +568,8 @@ li {
 .backgroundcover-customsclearance::after,
 .backgroundcover-healthWellness::after,
 .backgroundcover-beautypersonalcare::after,
-.backgroundcover-foodnbeverages::after {
+.backgroundcover-foodnbeverages::after,
+.backgroundcover-apparelaccessories::after {
   position: absolute;
   content: "";
   left: 0;
@@ -1005,7 +1028,9 @@ li {
   .backgroundcover-beautypersonalcare::before,
   .backgroundcover-beautypersonalcare::after,
   .backgroundcover-foodnbeverages::before,
-  .backgroundcover-foodnbeverages::after {
+  .backgroundcover-foodnbeverages::after,
+  .backgroundcover-apparelaccessories::before,
+  .backgroundcover-apparelaccessories::after {
     content: none;
   }
 
@@ -1131,6 +1156,12 @@ li {
   }
 
   .backgroundcover-foodnbeverages > .container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-top: 280px;
+  }
+
+  .backgroundcover-apparelaccessories > .container {
     padding-top: 0px;
     padding-bottom: 25px;
     margin-top: 280px;
@@ -1345,6 +1376,26 @@ li {
   }
 
   .backgroundcover-foodnbeverages {
+    /* background-image: url("/b2bmobilebanner.webp"); */
+    background-image:
+      linear-gradient(
+        128.11deg,
+        rgba(255, 247, 228, 0.6) 5.07%,
+        rgba(255, 247, 228, 0.2) 20.07%,
+        rgba(228, 216, 189, 0.1) 60.3%,
+        rgba(0, 0, 0, 0.1) 100.07%
+      ),
+      url("/healthWellness-mobile.svg");
+
+    /* background-size: cover; */
+    background-position: center;
+    background-position-y: top;
+    background-color: #fff7e4;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .backgroundcover-apparelaccessories {
     /* background-image: url("/b2bmobilebanner.webp"); */
     background-image:
       linear-gradient(
@@ -3238,6 +3289,87 @@ li {
   }
 }
 
+@media (min-width: 1024px) {
+  .featurecard2 .carditem:first-child {
+    animation: featurecard2Card1Move 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .featurecard2 .carditem:nth-child(2) {
+    animation: featurecard2Card2Move 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .featurecard2 .carditem:nth-child(3) {
+    animation: featurecard2Card3Move 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .featurecard2 .carditem:last-child {
+    animation: featurecard2Card4Move 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* Top Left Card */
+  @keyframes featurecard2Card1Move {
+    0%,
+    20% {
+      transform: translate3d(-110px, 50px, 0);
+    }
+    50%,
+    70% {
+      transform: translate3d(-80px, 30px, 0);
+    }
+    100% {
+      transform: translate3d(-110px, 50px, 0);
+    }
+  }
+
+  /* Top Right Card */
+  @keyframes featurecard2Card2Move {
+    0%,
+    20% {
+      transform: translate3d(110px, -50px, 0);
+    }
+    50%,
+    70% {
+      transform: translate3d(110px, -70px, 0);
+    }
+    100% {
+      transform: translate3d(110px, -50px, 0);
+    }
+  }
+
+  /* Bottom Left Card */
+  @keyframes featurecard2Card3Move {
+    0%,
+    20% {
+      transform: translate3d(-80px, 70px, 0);
+    }
+    50%,
+    70% {
+      transform: translate3d(-100px, 90px, 0);
+    }
+    100% {
+      transform: translate3d(-80px, 70px, 0);
+    }
+  }
+
+  /* Bottom Right Card */
+  @keyframes featurecard2Card4Move {
+    0%,
+    20% {
+      transform: translate3d(125px, -60px, 0);
+    }
+    50%,
+    70% {
+      transform: translate3d(145px, -60px, 0);
+    }
+    100% {
+      transform: translate3d(125px, -60px, 0);
+    }
+  }
+}
 .point-card-bg {
   background-image: url("/point-card-bg.svg");
   background-size: 100%;
