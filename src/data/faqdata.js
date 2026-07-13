@@ -421,3 +421,31 @@ export const fulfillmentcenterfaq = [
       "Yes, our infrastructure is industry-agnostic and supports D2C, B2B, and bulk marketplace fulfillment with the same level of accuracy and speed.",
   },
 ];
+export const apparelfaq = [
+  {
+    question:
+      "How do you handle different sizes and colors of the same product?",
+    answer:
+      "We use SKU-level tracking where each variant has a unique barcode to ensure accurate picking and packing.",
+  },
+  {
+    question: "Can you handle high return volumes?",
+    answer:
+      "Yes, our reverse logistics system is designed for fast inspection, processing, and restocking of returns.",
+  },
+  {
+    question: "Can I track my inventory in real time?",
+    answer:
+      "Yes, our system provides real-time visibility of inventory and order status.",
+  },
+  {
+    question: "Can you help me sell on Amazon and Noon?",
+    answer:
+      "Yes, we provide marketplace preparation services to meet platform requirements.",
+  },
+  {
+    question: "Do you provide international shipping for GCC markets?",
+    answer:
+      "Yes, we support cross-border fashion shipping across the GCC region and global markets with complete documentation support.",
+  },
+];
