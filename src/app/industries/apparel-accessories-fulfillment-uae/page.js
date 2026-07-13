@@ -5,6 +5,7 @@ import FastDeliveryFashionECommerce from "@/components/ReusableComponent/Apparel
 import FlexibleFulfillmentGrowingBrands from "@/components/ReusableComponent/ApparelAccessoriesPage/FlexibleFulfillmentGrowingBrands";
 import ReverseLogisticsManagement from "@/components/ReusableComponent/ApparelAccessoriesPage/ReverseLogisticsManagement";
 import SolvingApparelBiggestChallenges from "@/components/ReusableComponent/ApparelAccessoriesPage/SolvingApparelBiggestChallenges";
+import SpecializedStorage from "@/components/ReusableComponent/ApparelAccessoriesPage/SpecializedStorage";
 import SupportsFashionBrands from "@/components/ReusableComponent/ApparelAccessoriesPage/SupportsFashionBrands";
 import WhyChooseDepoterFashionFulfillment from "@/components/ReusableComponent/ApparelAccessoriesPage/WhyChooseDepoterFashionFulfillment";
 import AdvancedSKUManagementApparel from "@/components/ReusableComponent/ApparelAccessoriesPage/WhyChooseDepoterFreezoneFulfillment";
@@ -23,6 +24,7 @@ export default function ApparelAccessoriesPage() {
         <SupportsFashionBrands />
         <AdvancedSKUManagementApparel />
         <ReverseLogisticsManagement />
+        <SpecializedStorage />
         <FastDeliveryFashionECommerce />
         <FlexibleFulfillmentGrowingBrands />
         <DTCMarketplaceIntegration />

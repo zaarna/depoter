@@ -1637,4 +1637,20 @@ export const titleContentConfig = {
     contentWidth: "w-full",
     contentAlign: "text-left",
   },
+  SpecializedStorage: {
+    title: "Specialized \n Storage & Handling",
+    highlight: "Storage & Handling",
+    titleColor: "#212121",
+    content:
+      "Not all fashion items are created equal. Depoter provides customized storage environments to preserve product quality:",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
+    highlightColor: "#FFBE2E",
+    className: "text-left",
+    contentColor: "#212121",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full",
+    contentAlign: "text-left",
+  },
 };
