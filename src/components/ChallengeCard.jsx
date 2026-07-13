@@ -7,7 +7,7 @@ const ChallengeCard = ({ item }) => {
                 <div className="absolute -inset-0 md:w-55 w-65 -translate-x-2 -translate-y-2 rounded-[18px] bg-[#FDBD2D]" />
                 <div className="absolute -inset-0 md:w-55 w-65 -translate-x-2 translate-y-2 rounded-[18px] bg-[#FDBD2D]" />
                 {/* Front Card */}
-                <div className="relative flex min-h-[90px] w-80 items-center justify-center rounded-[18px] border border-[#8E6B28] bg-[#F8F8F8] px-6 py-6">
+                <div className="relative flex min-h-[90px] w-80 items-center justify-center rounded-[18px] border-2 border-[#978050] bg-[#F8F8F8] px-6 py-6">
                     <h3 className="w-full md:w-50 text-center text-[1.25rem] font-semibold leading-[1.35] text-[#2B2B2B]">
                         {item.leftTitle}
                     </h3>
@@ -32,12 +32,12 @@ const ChallengeCard = ({ item }) => {
             </div>
 
             {/* Right Card */}
-            <div className="rounded-[18px] border border-[#FDBD2D] bg-white px-8 py-6">
+            <div className="rounded-[18px] border-2 border-[#FDBD2D] bg-white px-8 py-6">
                 <h3 className="text-[1.25rem] font-semibold text-[#2B2B2B]">
                     {item.rightTitle}
                 </h3>
 
-                <p className="mt-2 text-[18px] leading-8 text-[#4F4F4F]">
+                <p className="mt-2 text-[20px] leading-8 text-[#4F4F4F]">
                     {item.description}
                 </p>
             </div>
