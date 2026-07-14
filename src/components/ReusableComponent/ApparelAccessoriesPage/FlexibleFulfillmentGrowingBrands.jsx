@@ -42,7 +42,7 @@ export default function FlexibleFulfillmentGrowingBrands({ sectionKey = [] }) {
                 </div>
 
                 <div
-                    className="overflow-hidden rounded-lg px-8 py-14 lg:px-14"
+                    className="overflow-hidden rounded-lg px-8 py-8 lg:py-14 lg:px-14"
                     style={{
                         backgroundImage: "url('/invoice-pattern.webp')",
                         backgroundSize: "cover",
@@ -75,33 +75,51 @@ export default function FlexibleFulfillmentGrowingBrands({ sectionKey = [] }) {
         </section>
     );
 }
-
 function InvoiceFeatureCard({ number, title, description }) {
     return (
-        <div className="flex flex-1 w-full items-center transition-all duration-300">
-            {/* Number */}
-            <div className="flex shrink-0 items-center">
-                <div className="me-4">
-                    <svg width="79" height="36" viewBox="0 0 79 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 18H59" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4" />
-                        <circle cx="60.5" cy="18" r="8" fill="#3C2C0B" fill-opacity="0.3" />
-                        <circle cx="60.5" cy="18" r="6" fill="#3C2C0B" />
-                    </svg>
+        <div className="flex flex-col md:flex-row w-full transition-all duration-300">
+            {/* Top (Mobile) / Left (Desktop) */}
+            <div className="flex shrink-0 flex-col md:flex-row">
+                {/* SVG + Number */}
+                <div className="flex items-center">
+                    <div className="me-4">
+                        <svg
+                            width="79"
+                            height="36"
+                            viewBox="0 0 79 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M1 18H59"
+                                stroke="black"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeDasharray="4 4"
+                            />
+                            <circle cx="60.5" cy="18" r="8" fill="#3C2C0B" fillOpacity="0.3" />
+                            <circle cx="60.5" cy="18" r="6" fill="#3C2C0B" />
+                        </svg>
+                    </div>
+
+                    <div className="relative inline-block">
+                        <span className="absolute bottom-0 left-0 h-5 w-5 rounded-full bg-[#FFBE2E]"></span>
+
+                        <span className="relative z-10 text-[36px] font-extrabold leading-none text-[#212121]">
+                            {number}
+                        </span>
+                    </div>
+
+                    {/* Desktop Divider */}
+                    <div className="mx-4 hidden h-18 w-[2px] bg-black/70 md:block" />
                 </div>
 
-                <div className="relative inline-block">
-                    <span className="absolute bottom-0 left-0 w-5 h-5 bg-[#FFBE2E] rounded-full"></span>
-
-                    <span className="relative z-10 text-[36px] font-extrabold leading-none text-[#212121]">
-                        {number}
-                    </span>
-                </div>
-
-                <div className="mx-4 h-18 w-[2px] bg-black/70" />
+                {/* Mobile Divider */}
+                <div className="mt-5 mb-5 h-[2px] w-full bg-black/70 md:hidden" />
             </div>
 
             {/* Content */}
-            <div className="flex-1">
+            <div className="mt-5 flex-1 md:mt-0">
                 <h4 className="text-xl font-semibold">{title}</h4>
 
                 <p className="mt-2 text-[18px] leading-relaxed">

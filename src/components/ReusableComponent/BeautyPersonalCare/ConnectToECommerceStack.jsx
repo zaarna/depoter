@@ -19,15 +19,18 @@ const platformCards = [
             // "/custom.svg",
         ],
         showFooter1: "true",
+        isHover: "false",
     },
     {
         title: "Marketplaces",
         items: ["/amazon.svg", "/Noon.svg"],
+        isHover: "false",
     },
     {
         title: "Shipping Platforms",
         items: ["/dhl.png", "/fedx.svg", "/aramex.svg", "/ups.svg"],
         showFooter2: "true",
+        isHover: "false",
     },
 ];
 

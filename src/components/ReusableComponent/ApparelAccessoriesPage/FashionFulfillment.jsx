@@ -22,7 +22,7 @@ export default function FashionFulfillment({ sectionKey = [], image }) {
 
           {/* Right Image */}
           <div className="order-1 flex justify-center lg:order-2 lg:col-span-6">
-            <div className="relative aspect-square w-full max-w-[520px] overflow-hidden rounded-2xl bg-[#FFF7E8] ">
+            <div className="relative aspect-square w-full max-w-[520px] overflow-hidden rounded-2xl bg-[#FFE9B4] ">
               <Image
                 src={image || "/FashionFulfillment.svg"}
                 alt={tc.title}

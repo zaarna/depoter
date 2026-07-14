@@ -31,7 +31,7 @@ export default function DTCMarketplaceIntegration() {
     return (
         <div className="py-8 md:py-16 bg-[#978050]">
             <div className="container">
-                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-start">
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-start mb-10">
                     <div className="relative z-10 text-start md:text-left">
                         <TitleContent {...tc} />
                         <div className="relative -bottom-29 -left-31 hidden md:block">

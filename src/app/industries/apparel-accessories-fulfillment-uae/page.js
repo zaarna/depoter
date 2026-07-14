@@ -8,7 +8,7 @@ import SolvingApparelBiggestChallenges from "@/components/ReusableComponent/Appa
 import SpecializedStorage from "@/components/ReusableComponent/ApparelAccessoriesPage/SpecializedStorage";
 import SupportsFashionBrands from "@/components/ReusableComponent/ApparelAccessoriesPage/SupportsFashionBrands";
 import WhyChooseDepoterFashionFulfillment from "@/components/ReusableComponent/ApparelAccessoriesPage/WhyChooseDepoterFashionFulfillment";
-import AdvancedSKUManagementApparel from "@/components/ReusableComponent/ApparelAccessoriesPage/WhyChooseDepoterFreezoneFulfillment";
+import AdvancedSKUManagementApparel from "@/components/ReusableComponent/ApparelAccessoriesPage/AdvancedSKUManagementApparel";
 import CtaSection from "@/components/ReusableComponent/CtaSection";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";

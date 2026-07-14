@@ -38,7 +38,7 @@ export default function WhyChooseDepoterForCustomsClearance() {
                 </div>
                 <div className="mt-15 justify-center text-[22px] items-center flex border-2 border-[#FFBE2E] mx-auto rounded-2xl p-2 w-full md:w-2/4 text-center">
                     <p className="text-[#FFFFFF]">
-                        We don’t just clear shipments — we make the process easy. .
+                        We don’t just clear shipments — we make the process easy.
                     </p>
                 </div>
                 <div className="pt-8 mt-5 flex justify-center">

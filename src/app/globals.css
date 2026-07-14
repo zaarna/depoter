@@ -2440,18 +2440,76 @@ li {
 
 /* Left Card Position */
 .left-card {
+  /* justify-content: flex-start; */
+  position: relative;
+  left: 0; /* slight overlap */
+}
+
+/* Right Card Position */
+.right-card {
+  /* justify-content: flex-end; */
+  position: relative;
+  left: 0; /* slight overlap */
+}
+/* Left Card Position */
+.left-card {
   justify-content: flex-start;
   position: relative;
-  left: 50px; /* slight overlap */
+  left: 0px; /* slight overlap */
 }
 
 /* Right Card Position */
 .right-card {
   justify-content: flex-end;
   position: relative;
-  left: -50px; /* slight overlap */
+  left: -0px; /* slight overlap */
 }
 
+@media (min-width: 1024px) {
+  /* Left Card Position */
+  .left-card {
+    justify-content: flex-start;
+    position: relative;
+    left: -100px; /* slight overlap */
+  }
+
+  /* Right Card Position */
+  .right-card {
+    justify-content: flex-end;
+    position: relative;
+    left: 100px; /* slight overlap */
+  }
+}
+@media (min-width: 1280px) {
+  /* Left Card Position */
+  .left-card {
+    justify-content: flex-start;
+    position: relative;
+    left: 0px; /* slight overlap */
+  }
+
+  /* Right Card Position */
+  .right-card {
+    justify-content: flex-end;
+    position: relative;
+    left: 0px; /* slight overlap */
+  }
+}
+@media (min-width: 1320px) {
+  /* Left Card Position */
+  .left-card {
+    justify-content: flex-start;
+    position: relative;
+    left: 50px; /* slight overlap */
+  }
+
+  /* Right Card Position */
+  .right-card {
+    justify-content: flex-end;
+    position: relative;
+    left: -50px; /* slight overlap */
+  }
+}
 /* Hexagon Card */
 .vendor-card-image-bg {
   width: 600px;
@@ -2579,19 +2637,6 @@ li {
     margin: 20px auto;
   }
 
-  /* Left Card Position */
-  .left-card {
-    /* justify-content: flex-start; */
-    position: relative;
-    left: 0; /* slight overlap */
-  }
-
-  /* Right Card Position */
-  .right-card {
-    /* justify-content: flex-end; */
-    position: relative;
-    left: 0; /* slight overlap */
-  }
   .vendor-card-icon-right {
     top: 10%;
     left: 2%;

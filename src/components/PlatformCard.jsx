@@ -2,10 +2,11 @@ const PlatformCard = ({
     title,
     items,
     showFooter1 = false,
+    isHover = true,
     showFooter2 = false,
 }) => {
     return (
-        <div className="min-h-[430px] rounded-[28px] border-2 p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+        <div className={`min-h-[430px] rounded-[28px] border-2 p-8 transition-all duration-300 ease-out  ${isHover === true ? "hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]" : " "} `}>
             <h3 className="text-[28px] font-semibold text-[#212121]">
                 {title}
             </h3>
