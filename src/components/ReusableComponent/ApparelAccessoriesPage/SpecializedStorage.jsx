@@ -2,19 +2,20 @@
 
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import TitleContent from "../All_Title/TitleContent";
 import { titleContentConfig } from "@/config/titleContentConfig";
 import GarmentCard from "./GarmentCard";
 
-// --- Tunables -------------------------------------------------------
-const GAP = 20; // space between the active card and the next one (0 = flush, negative = overlap)
-const PEEK = 40; // how much of the NEXT card is visible below the active one
-const WHEEL_PER_CARD = 500; // wheel pixels needed to advance one card (higher = slower)
-const SMOOTHING = 0.12; // 0..1, how quickly the deck follows the wheel (higher = snappier)
-// ---------------------------------------------------------------------
+gsap.registerPlugin(ScrollTrigger);
 
-const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+// --- Tunables -------------------------------------------------------
+const GAP = 8; // space between the active card and the next one (0 = flush, negative = overlap)
+const PEEK = 40; // how much of the NEXT card is visible below the active one
+const SCROLL_PER_CARD = 0.9; // scroll distance per card, as a fraction of viewport height
+const TOP_OFFSET = 96; // px of breathing room above the section while it's pinned
+// ---------------------------------------------------------------------
 
 export default function SpecializedStorage({ sectionKey = "" }) {
   const tc =
@@ -68,9 +69,8 @@ export default function SpecializedStorage({ sectionKey = "" }) {
       const wrapper = wrapperRef.current;
       if (!wrapper || n === 0) return;
 
-      // Measure the REAL rendered card height instead of guessing it. This is
-      // what removes the dead space between cards: the next card is parked right
-      // under the active card's actual bottom edge (+ GAP), not at a fixed 372px.
+      // Measure the REAL rendered card height instead of guessing it — this is
+      // what keeps the space between cards equal to GAP (no dead gap).
       const cardH = cardEls[0].offsetHeight;
       const PEEK_Y = cardH + GAP; // next card's top sits GAP px below active card's bottom
       const CONTAINER_HEIGHT = cardH + GAP + PEEK; // one card + gap + a sliver of the next
@@ -87,10 +87,21 @@ export default function SpecializedStorage({ sectionKey = "" }) {
         if (cardEls[1]) gsap.set(cardEls[1], { y: PEEK_Y });
         for (let i = 2; i < n; i++) gsap.set(cardEls[i], { y: HIDDEN_Y });
 
-        // PAUSED timeline — no ScrollTrigger. We drive its progress manually.
+        // Pin the whole section and scrub the deck as the page scrolls.
+        // Scroll happens ANYWHERE on the page — no need to hover the cards.
+        // After the last card, the pin releases and the section scrolls up.
         const tl = gsap.timeline({
-          paused: true,
           defaults: { ease: "none", duration: 1 },
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: `top top+=${TOP_OFFSET}`,
+            end: () => "+=" + (n - 1) * window.innerHeight * SCROLL_PER_CARD,
+            scrub: true,
+            pin: true,
+            pinSpacing: true,
+            anticipatePin: 1,
+            invalidateOnRefresh: true,
+          },
         });
 
         for (let i = 1; i < n; i++) {
@@ -101,42 +112,8 @@ export default function SpecializedStorage({ sectionKey = "" }) {
           if (cardEls[i + 1]) tl.to(cardEls[i + 1], { y: PEEK_Y }, step);
         }
 
-        // ---- wheel-driven progress (only while pointer is over the deck) ----
-        const totalWheel = (n - 1) * WHEEL_PER_CARD;
-        let target = 0; // where the wheel wants us (0..1)
-        let current = 0; // smoothed value actually applied (0..1)
-        let rafId = 0;
-
-        const tick = () => {
-          current += (target - current) * SMOOTHING;
-          if (Math.abs(target - current) < 0.0001) current = target;
-          tl.progress(current);
-          rafId = requestAnimationFrame(tick);
-        };
-        rafId = requestAnimationFrame(tick);
-
-        const onWheel = (e) => {
-          const scrollingDown = e.deltaY > 0;
-          const atEnd = target >= 1;
-          const atStart = target <= 0;
-
-          // Once the deck is fully consumed in the scroll direction, release
-          // the wheel so the page scrolls normally.
-          if ((atEnd && scrollingDown) || (atStart && !scrollingDown)) return;
-
-          // Otherwise hijack the scroll and advance/reverse the deck.
-          e.preventDefault();
-          target = clamp(target + e.deltaY / totalWheel, 0, 1);
-        };
-
-        // passive:false is required so preventDefault() can stop the page scroll
-        wrapper.addEventListener("wheel", onWheel, { passive: false });
-
-        // gsap.context runs this on revert (unmount / breakpoint change)
-        return () => {
-          wrapper.removeEventListener("wheel", onWheel);
-          cancelAnimationFrame(rafId);
-        };
+        const raf = requestAnimationFrame(() => ScrollTrigger.refresh());
+        return () => cancelAnimationFrame(raf);
       }, sectionRef);
 
       return () => ctx.revert();
@@ -154,7 +131,7 @@ export default function SpecializedStorage({ sectionKey = "" }) {
             <TitleContent {...tc} />
           </div>
 
-          {/* RIGHT - Desktop: single-card window, cards animate on hover + wheel */}
+          {/* RIGHT - Desktop: single-card window, cards animate on section scroll */}
           <div
             ref={wrapperRef}
             className="cards-wrapper relative hidden lg:block overflow-hidden"
