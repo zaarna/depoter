@@ -14,14 +14,14 @@ export default function FashionFulfillment({ sectionKey = [], image }) {
       <div className="container">
         <div className="grid items-center gap-10 lg:grid-cols-12">
           {/* Left Content */}
-          <div className="order-2 lg:order-1 lg:col-span-6">
+          <div className="order-1 lg:order-1 lg:col-span-6">
             <div className="relative z-10">
               <TitleContent {...tc} />
             </div>
           </div>
 
           {/* Right Image */}
-          <div className="order-1 flex justify-center lg:order-2 lg:col-span-6">
+          <div className="order-2 flex justify-center lg:order-2 lg:col-span-6">
             <div className="relative aspect-square w-full max-w-[520px] overflow-hidden rounded-2xl bg-[#FFE9B4] ">
               <Image
                 src={image || "/FashionFulfillment.svg"}

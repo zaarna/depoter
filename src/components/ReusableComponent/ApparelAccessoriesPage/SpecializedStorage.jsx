@@ -13,8 +13,9 @@ gsap.registerPlugin(ScrollTrigger);
 // --- Tunables -------------------------------------------------------
 const GAP = 8; // space between the active card and the next one (0 = flush, negative = overlap)
 const PEEK = 40; // how much of the NEXT card is visible below the active one
-const SCROLL_PER_CARD = 0.9; // scroll distance per card, as a fraction of viewport height
+const SCROLL_PER_CARD = 1.2; // scroll distance per card, as a fraction of viewport height
 const TOP_OFFSET = 96; // px of breathing room above the section while it's pinned
+const SCRUB = 1;
 // ---------------------------------------------------------------------
 
 export default function SpecializedStorage({ sectionKey = "" }) {
@@ -94,13 +95,14 @@ export default function SpecializedStorage({ sectionKey = "" }) {
           defaults: { ease: "none", duration: 1 },
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: `top top+=${TOP_OFFSET}`,
-            end: () => "+=" + (n - 1) * window.innerHeight * SCROLL_PER_CARD,
-            scrub: true,
+            start: "top top",
+            end: () => `+=${(n - 1) * SCROLL_PER_CARD * window.innerHeight}`,
             pin: true,
             pinSpacing: true,
+            scrub: SCRUB,
             anticipatePin: 1,
             invalidateOnRefresh: true,
+            // markers: true,
           },
         });
 
@@ -123,15 +125,18 @@ export default function SpecializedStorage({ sectionKey = "" }) {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-8 md:py-16 buildtohandleser relative">
-      <div className="container">
-        <div className="grid lg:grid-cols-2 gap-16">
+    <section
+      ref={sectionRef}
+      className="buildtohandleser relative py-8 md:py-8 lg:py-0 lg:min-h-screen lg:flex lg:items-center lg:overflow-hidden"
+    >
+      <div className="container w-full">
+        <div className="grid lg:grid-cols-2 gap-16 lg:items-center w-full">
           {/* LEFT */}
-          <div className="lg:sticky lg:top-24 lg:self-start">
+          <div className="z-10">
             <TitleContent {...tc} />
           </div>
 
-          {/* RIGHT - Desktop: single-card window, cards animate on section scroll */}
+          {/* RIGHT - Desktop: single-card window, cards scrub with the section */}
           <div
             ref={wrapperRef}
             className="cards-wrapper relative hidden lg:block overflow-hidden"
@@ -148,7 +153,7 @@ export default function SpecializedStorage({ sectionKey = "" }) {
             ))}
           </div>
 
-          {/* RIGHT - Mobile/Tablet: plain stacked list, no overlap */}
+          {/* RIGHT - Mobile/Tablet: plain stacked list */}
           <div className="flex flex-col gap-6 lg:hidden">
             {cards.map((card) => (
               <GarmentCard key={card.title} {...card} />

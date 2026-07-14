@@ -34,7 +34,7 @@ export default function DTCMarketplaceIntegration() {
                 <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-start mb-10">
                     <div className="relative z-10 text-start md:text-left">
                         <TitleContent {...tc} />
-                        <div className="relative -bottom-29 -left-31 hidden md:block">
+                        <div className="relative -bottom-39 -left-31 hidden md:block">
                             <img src="/marketplace-integration-logo.svg" alt="" />
                         </div>
                     </div>

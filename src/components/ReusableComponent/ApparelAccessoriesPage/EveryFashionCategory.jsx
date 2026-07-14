@@ -108,7 +108,7 @@ function EveryFashionCategory({ sectionKey }) {
                 </div>
 
                 {/* RIGHT SLIDER */}
-                <div className="w-full lg:w-[65%] relative">
+                <div className="w-full lg:w-[70%] relative">
                     <div className="hidden lg:block absolute -top-28 left-80 w-[calc(100%-2rem)] h-[calc(100%+5rem)] border-2 border-[#C4A574] rounded-[2rem] z-0" />
 
                     <Swiper

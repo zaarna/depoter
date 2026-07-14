@@ -51,7 +51,7 @@ export default function FlexibleFulfillmentGrowingBrands({ sectionKey = [] }) {
                 >
                     <div className="grid items-stretch lg:grid-cols-2">
                         {/* Left Section */}
-                        <div className="flex w-full items-center justify-center rounded-4xl border border-[#FFF7E4] bg-[#FFF7E4] p-10">
+                        <div className="flex w-full items-center justify-center rounded-4xl border border-[#FFF7E4] bg-[#FFF7E4] p-2">
                             <img
                                 src="/fulfillment-for-growing-brands.svg"
                                 alt=""

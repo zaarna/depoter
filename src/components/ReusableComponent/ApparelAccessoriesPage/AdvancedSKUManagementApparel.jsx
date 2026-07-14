@@ -70,7 +70,7 @@ export default function AdvancedSKUManagementApparel({ sectionKey = [] }) {
               {features.map((item, i) => (
                 <div
                   key={i}
-                  className={`group carditem relative ${item.translatestyle} w-full md:w-[450px] rounded-[32px] border border-[#1D1D1D] bg-[#FFBE2E] px-3 py-3 transition-all duration-300 hover:shadow-[5px_5px_0px_#1D1D1D]`}
+                  className={`group carditem relative ${item.translatestyle} w-full md:w-[450px] rounded-[32px] border border-[#1D1D1D] bg-[#FFBE2E] px-3 py-3 transition-all duration-300 hover:shadow-[4px_4px_0px_#1D1D1D]`}
                 >
                   <div className="flex items-center gap-5">
                     {/* Number / Image */}

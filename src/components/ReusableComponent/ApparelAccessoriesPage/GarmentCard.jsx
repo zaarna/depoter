@@ -16,7 +16,6 @@ export default function GarmentCard({
       p-8
       border
       border-[#212121]
-      shadow-xl
       relative
       overflow-hidden
       origin-top

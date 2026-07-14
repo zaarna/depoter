@@ -23,8 +23,8 @@ export default function ApparelAccessoriesPage() {
         <SolvingApparelBiggestChallenges />
         <SupportsFashionBrands />
         <AdvancedSKUManagementApparel />
-        <ReverseLogisticsManagement />
         <SpecializedStorage />
+        <ReverseLogisticsManagement />
         <FastDeliveryFashionECommerce />
         <FlexibleFulfillmentGrowingBrands />
         <DTCMarketplaceIntegration />
