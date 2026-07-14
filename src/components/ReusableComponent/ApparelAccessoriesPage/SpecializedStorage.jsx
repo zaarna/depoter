@@ -2,31 +2,26 @@
 
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import TitleContent from "../All_Title/TitleContent";
 import { titleContentConfig } from "@/config/titleContentConfig";
 import GarmentCard from "./GarmentCard";
 
-gsap.registerPlugin(ScrollTrigger);
-
 // --- Tunables -------------------------------------------------------
-const CONTAINER_HEIGHT = 532; // fixed height of the whole stack (matches your design)
-const CARD_HEIGHT = 372; // GarmentCard's actual natural height (from your Figma spec)
-const SCROLL_PER_CARD = 0.9; // fraction of viewport height of scroll used per card transition
+const GAP = 20; // space between the active card and the next one (0 = flush, negative = overlap)
+const PEEK = 40; // how much of the NEXT card is visible below the active one
+const WHEEL_PER_CARD = 500; // wheel pixels needed to advance one card (higher = slower)
+const SMOOTHING = 0.12; // 0..1, how quickly the deck follows the wheel (higher = snappier)
 // ---------------------------------------------------------------------
 
-// A peeking card's top sits exactly where the active card's bottom edge is,
-// which naturally reveals CONTAINER_HEIGHT - CARD_HEIGHT (= 160px here) of it
-// inside the clipped box — no ratio guessing needed.
-const PEEK_Y = CARD_HEIGHT;
-const HIDDEN_Y = CONTAINER_HEIGHT + CARD_HEIGHT; // fully below the box, invisible
+const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 
 export default function SpecializedStorage({ sectionKey = "" }) {
   const tc =
     titleContentConfig[sectionKey] || titleContentConfig["SpecializedStorage"];
 
   const sectionRef = useRef(null);
+  const wrapperRef = useRef(null);
   const cardRefs = useRef([]);
 
   const cards = [
@@ -68,48 +63,80 @@ export default function SpecializedStorage({ sectionKey = "" }) {
     const mm = gsap.matchMedia();
 
     mm.add("(min-width: 1024px)", () => {
-      const ctx = gsap.context(() => {
-        const cardEls = cardRefs.current;
-        const n = cardEls.length;
+      const cardEls = cardRefs.current.filter(Boolean);
+      const n = cardEls.length;
+      const wrapper = wrapperRef.current;
+      if (!wrapper || n === 0) return;
 
+      // Measure the REAL rendered card height instead of guessing it. This is
+      // what removes the dead space between cards: the next card is parked right
+      // under the active card's actual bottom edge (+ GAP), not at a fixed 372px.
+      const cardH = cardEls[0].offsetHeight;
+      const PEEK_Y = cardH + GAP; // next card's top sits GAP px below active card's bottom
+      const CONTAINER_HEIGHT = cardH + GAP + PEEK; // one card + gap + a sliver of the next
+      const HIDDEN_Y = CONTAINER_HEIGHT + cardH; // parked fully below the box, invisible
+
+      wrapper.style.height = `${CONTAINER_HEIGHT}px`;
+
+      const ctx = gsap.context(() => {
         // Stacking order: later cards render above earlier ones
         cardEls.forEach((el, i) => gsap.set(el, { zIndex: i + 1 }));
 
-        // Initial state: card 0 fully active, card 1 peeking (160px) below it,
-        // every later card parked fully off-screen until its turn.
+        // Initial state: card 0 active, card 1 peeking, the rest parked off-screen
         gsap.set(cardEls[0], { y: 0 });
         if (cardEls[1]) gsap.set(cardEls[1], { y: PEEK_Y });
-        for (let i = 2; i < n; i++) {
-          gsap.set(cardEls[i], { y: HIDDEN_Y });
-        }
+        for (let i = 2; i < n; i++) gsap.set(cardEls[i], { y: HIDDEN_Y });
 
-        // Single timeline driven by one pinned ScrollTrigger — avoids the
-        // manual pixel-offset math that breaks once pin injects its spacer.
+        // PAUSED timeline — no ScrollTrigger. We drive its progress manually.
         const tl = gsap.timeline({
+          paused: true,
           defaults: { ease: "none", duration: 1 },
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top top",
-            end: () => "+=" + (n - 1) * window.innerHeight * SCROLL_PER_CARD,
-            scrub: true,
-            pin: ".cards-wrapper",
-            pinSpacing: true,
-          },
         });
 
         for (let i = 1; i < n; i++) {
           const step = i - 1;
-          // card i slides up from its peek position into the active slot,
-          // fully replacing the previous card
+          // card i slides up from its peek into the active slot
           tl.to(cardEls[i], { y: 0 }, step);
-          // the next card (i+1), if any, rises from hidden into its own peek
-          if (cardEls[i + 1]) {
-            tl.to(cardEls[i + 1], { y: PEEK_Y }, step);
-          }
+          // the following card rises from hidden into its own peek
+          if (cardEls[i + 1]) tl.to(cardEls[i + 1], { y: PEEK_Y }, step);
         }
 
-        const raf = requestAnimationFrame(() => ScrollTrigger.refresh());
-        return () => cancelAnimationFrame(raf);
+        // ---- wheel-driven progress (only while pointer is over the deck) ----
+        const totalWheel = (n - 1) * WHEEL_PER_CARD;
+        let target = 0; // where the wheel wants us (0..1)
+        let current = 0; // smoothed value actually applied (0..1)
+        let rafId = 0;
+
+        const tick = () => {
+          current += (target - current) * SMOOTHING;
+          if (Math.abs(target - current) < 0.0001) current = target;
+          tl.progress(current);
+          rafId = requestAnimationFrame(tick);
+        };
+        rafId = requestAnimationFrame(tick);
+
+        const onWheel = (e) => {
+          const scrollingDown = e.deltaY > 0;
+          const atEnd = target >= 1;
+          const atStart = target <= 0;
+
+          // Once the deck is fully consumed in the scroll direction, release
+          // the wheel so the page scrolls normally.
+          if ((atEnd && scrollingDown) || (atStart && !scrollingDown)) return;
+
+          // Otherwise hijack the scroll and advance/reverse the deck.
+          e.preventDefault();
+          target = clamp(target + e.deltaY / totalWheel, 0, 1);
+        };
+
+        // passive:false is required so preventDefault() can stop the page scroll
+        wrapper.addEventListener("wheel", onWheel, { passive: false });
+
+        // gsap.context runs this on revert (unmount / breakpoint change)
+        return () => {
+          wrapper.removeEventListener("wheel", onWheel);
+          cancelAnimationFrame(rafId);
+        };
       }, sectionRef);
 
       return () => ctx.revert();
@@ -119,10 +146,7 @@ export default function SpecializedStorage({ sectionKey = "" }) {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="py-8 md:py-16 buildtohandleser relative"
-    >
+    <section ref={sectionRef} className="py-8 md:py-16 buildtohandleser relative">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* LEFT */}
@@ -130,14 +154,14 @@ export default function SpecializedStorage({ sectionKey = "" }) {
             <TitleContent {...tc} />
           </div>
 
-          {/* RIGHT - Desktop: fixed-height pinned deck */}
+          {/* RIGHT - Desktop: single-card window, cards animate on hover + wheel */}
           <div
+            ref={wrapperRef}
             className="cards-wrapper relative hidden lg:block overflow-hidden"
-            style={{ height: `${CONTAINER_HEIGHT}px` }}
           >
             {cards.map((card, index) => (
               <div
-                key={card.number}
+                key={card.title}
                 ref={(el) => (cardRefs.current[index] = el)}
                 className="absolute inset-x-0 top-0"
                 style={{ willChange: "transform" }}
@@ -150,7 +174,7 @@ export default function SpecializedStorage({ sectionKey = "" }) {
           {/* RIGHT - Mobile/Tablet: plain stacked list, no overlap */}
           <div className="flex flex-col gap-6 lg:hidden">
             {cards.map((card) => (
-              <GarmentCard key={card.number} {...card} />
+              <GarmentCard key={card.title} {...card} />
             ))}
           </div>
         </div>
