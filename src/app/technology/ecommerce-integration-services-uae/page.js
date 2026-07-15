@@ -14,11 +14,13 @@ import ManageEverything from "@/components/ReusableComponent/Integration/ManageE
 import { ecommerceIntegrationfaq } from "@/data/faqdata";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
 import CtaSection from "@/components/ReusableComponent/CtaSection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function IntegrationsPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
+        <ScrollToTop />
         <InnerHeroSection />
         <IntegrationBenefits />
         <HowItWorksSection />

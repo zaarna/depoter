@@ -8,6 +8,7 @@ import StepByStepFreightProcess from "@/components/ReusableComponent/FreightForw
 import StrategicHub from "@/components/ReusableComponent/FreightForwarding/StrategicHub";
 import WhyChooseDepoter from "@/components/ReusableComponent/FreightForwarding/WhyChooseDepoter";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import ScrollToTop from "@/components/ScrollToTop";
 import ShippingWithConfidence from "@/components/ShippingWithConfidence";
 import { freightforwardingfaq } from "@/data/faqdata";
 
@@ -15,6 +16,7 @@ export default function FreightForwarding() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
+        <ScrollToTop />
         <InnerHeroSection />
         <StrategicHub />
         <FreightForwardingServices />

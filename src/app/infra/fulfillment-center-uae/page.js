@@ -12,12 +12,14 @@ import TransparentInvoicingSection from "@/components/ReusableComponent/Fulfillm
 import WeStoreAnything from "@/components/ReusableComponent/FulfillmentCenterPage/WeStoreAnything";
 import WhyChooseFulfillmentCenter from "@/components/ReusableComponent/FulfillmentCenterPage/WhyChooseFulfillmentCenter";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import ScrollToTop from "@/components/ScrollToTop";
 import { fulfillmentcenterfaq } from "@/data/faqdata";
 
 export default function FulfillmentCenterPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
+        <ScrollToTop />
         <InnerHeroSection />
         <StrategicallyLocatedWarehouses />
         <FulfillmentCenterWorks />

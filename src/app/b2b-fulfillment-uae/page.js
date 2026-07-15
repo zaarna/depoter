@@ -14,6 +14,7 @@ import EndToEndSection from "@/components/ReusableComponent/B2b_Sections/EndToEn
 import { testimonialsb2b } from "@/data/home";
 import { b2bpagefaq } from "@/data/faqdata";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function b2cPage() {
   const data = [
@@ -31,6 +32,7 @@ export default function b2cPage() {
     <div className="flex min-h-screen items-center justify-center ">
       <main className="flex flex-col min-h-screen w-full bg-white ">
         {/* B2B Page */}
+        <ScrollToTop />
         <InnerHeroSection />
         <NumbersGradieantCards data={data} />
         <ExpandBuisnessSection />

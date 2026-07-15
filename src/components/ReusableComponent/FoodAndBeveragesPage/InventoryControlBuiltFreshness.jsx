@@ -7,23 +7,23 @@ import Button from "../Button/Button";
 const invoiceFeatures = [
     {
         number: "01",
-        title: "Automated Batch Tracking",
+        title: "Automated Expiry Alerts",
         description:
-            "Every SKU is tracked by its batch and lot number.",
+            "Our system proactively alerts you when stock is approaching its expiry(30/ 60 / 90 days), allowing you to run flash sales.",
         dark: false,
     },
     {
         number: "02",
-        title: "Expiry-Based Inventory",
+        title: "SKU-Wise Variant Insights",
         description:
-            `Our system proactively alerts you 3-6 months before a product expires, allowing you to run "Flash Sales" and reduce waste.`,
+            ` Identify your top-performing product flavors or packaging volumes to plan next procurement cycles with data accuracy.`,
         dark: true,
     },
     {
         number: "03",
-        title: "SKU-Wise Sales Insights",
+        title: "High-Priority Picking",
         description:
-            "Detailed reports on which shades or products are selling the most, helping you forecast seasonal demand for Ramadan or Black Friday.",
+            "Perishable items bypass general queues for immediate dispatch, minimizing transit time.",
         dark: false,
     },
 ];

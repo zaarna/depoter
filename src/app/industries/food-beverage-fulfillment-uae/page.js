@@ -11,12 +11,14 @@ import InventoryControlBuiltFreshness from "@/components/ReusableComponent/FoodA
 import ReliableFulfillmentForFood from "@/components/ReusableComponent/FoodAndBeveragesPage/ReliableFulfillmentForFood";
 import WhyChooseDepoterFoodFulfillment from "@/components/ReusableComponent/FoodAndBeveragesPage/WhyChooseDepoterFoodFulfillment";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import ScrollToTop from "@/components/ScrollToTop";
 import { foodandbeveragesfaq } from "@/data/faqdata";
 
 export default function FoodAndBeveragesFulfillment() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
+        <ScrollToTop />
         <InnerHeroSection />
         <ReliableFulfillmentForFood />
         <ChallengesFoodNBeverage />

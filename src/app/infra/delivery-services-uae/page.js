@@ -8,12 +8,14 @@ import ModernCommerce from "@/components/ReusableComponent/DeliverySection/Moder
 import WhyChooseDeliveryService from "@/components/ReusableComponent/DeliverySection/WhyChooseDeliveryService";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import ScrollToTop from "@/components/ScrollToTop";
 import { deliveryservicesfaq } from "@/data/faqdata";
 
 export default function DeliveriesPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
+        <ScrollToTop />
         <InnerHeroSection />
         <ModernCommerce />
         <DeliverySolution />

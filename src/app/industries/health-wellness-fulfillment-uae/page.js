@@ -9,12 +9,14 @@ import WellnessSupportSection from "@/components/ReusableComponent/HealthWellnes
 import WhyDepoterHealthFulfillment from "@/components/ReusableComponent/HealthWellnesspageSections/WhyDepoterHealthFulfillment";
 import WhyFulfillmentMatters from "@/components/ReusableComponent/HealthWellnesspageSections/WhyFulfillmentMatters";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import ScrollToTop from "@/components/ScrollToTop";
 import { wellnessfaq } from "@/data/faqdata";
 
 export default function HealthWellnessPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
+        <ScrollToTop />
         <InnerHeroSection />
         <ReliableFulfillment />
         <ChallengesFulfillment />

@@ -7,6 +7,7 @@ import WhoWeServe from "@/components/ReusableComponent/CustomClearance/WhoWeServ
 import WhyChooseDepoterForCustomsClearance from "@/components/ReusableComponent/CustomClearance/WhyChooseDepoterForCustomsClearance";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import ScrollToTop from "@/components/ScrollToTop";
 import { customsclearancefaq } from "@/data/faqdata";
 
 export default function CustomClearance() {
@@ -14,6 +15,7 @@ export default function CustomClearance() {
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
         {/* multiChannelPage */}
+        <ScrollToTop />
         <InnerHeroSection />
         <CustomsClearanceServices />
         <PortsAirportsCoverage />

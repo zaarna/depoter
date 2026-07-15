@@ -12,7 +12,7 @@ const FoodCategoryCard = ({ icon, title, description }) => {
             </h3>
 
             {/* Description */}
-            <p className="absolute right-5 bottom-6 left-5 translate-y-5 text-center text-[15px] leading-6 text-[#333] opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+            <p className="absolute right-5 top-50 md:bottom-6 md:left-5 translate-y-5 text-center text-[15px] leading-6 text-[#333] opacity-100 md:opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                 {description}
             </p>
         </div>

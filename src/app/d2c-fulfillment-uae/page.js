@@ -8,6 +8,7 @@ import WhyChooseDepotter from "@/components/d2cPageSection/WhyChooseDepotter";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
 import KeyMetrics from "@/components/ReusableComponent/Inner_Hero/KeyMetrics";
+import ScrollToTop from "@/components/ScrollToTop";
 import TestimonialSection from "@/components/TestimonialSection";
 import { d2cpagefaq } from "@/data/faqdata";
 import { testimonialsd2c } from "@/data/home";
@@ -17,6 +18,7 @@ export default function d2cPage() {
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
         {/* D2C page */}
+        <ScrollToTop />
         <InnerHeroSection bottomSection={<KeyMetrics />} />
         <BuiltHandleService />
         <D2cFulfillmentCenter />

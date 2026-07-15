@@ -7,6 +7,7 @@ import InsightsSection from "@/components/InsightsSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
 import ScrollingBanner from "@/components/ReusableComponent/Inner_Hero/ScrollingBanner";
 import ScalabilitySection from "@/components/ScalabilitySection";
+import ScrollToTop from "@/components/ScrollToTop";
 import ServiceSection from "@/components/ServiceSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import WhyChoose from "@/components/WhyChoose";
@@ -17,6 +18,7 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center ">
       <main className="flex flex-col min-h-screen w-full  ">
         {/* main page */}
+        <ScrollToTop />
         <InnerHeroSection
           bottomSection={<ScrollingBanner features={features} />}
         />

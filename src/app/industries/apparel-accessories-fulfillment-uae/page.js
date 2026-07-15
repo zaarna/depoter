@@ -13,11 +13,13 @@ import CtaSection from "@/components/ReusableComponent/CtaSection";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
 import { apparelfaq, wellnessfaq } from "@/data/faqdata";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function ApparelAccessoriesPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
+        <ScrollToTop />
         <InnerHeroSection />
         <EveryFashionCategory />
         <SolvingApparelBiggestChallenges />

@@ -7,6 +7,7 @@ import HandleEveryOrder from "@/components/ReusableComponent/multiChannelSection
 import ReturnNExchange from "@/components/ReusableComponent/multiChannelSection/ReturnNExchange";
 import SeamlessNoonOrder from "@/components/ReusableComponent/multiChannelSection/SeamlessNoonOrder";
 import VendorCentralFulfillment from "@/components/ReusableComponent/multiChannelSection/VendorCentralFulfillment";
+import ScrollToTop from "@/components/ScrollToTop";
 import TestimonialSection from "@/components/TestimonialSection";
 import { testimonialsMultichannel } from "@/data/home";
 
@@ -15,6 +16,7 @@ export default function multiChannelPage() {
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full  ">
         {/* multiChannelPage */}
+        <ScrollToTop />
         <InnerHeroSection />
         <BetterChoiceSection />
         <HandleEveryOrder />

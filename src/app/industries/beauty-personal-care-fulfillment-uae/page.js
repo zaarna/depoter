@@ -7,12 +7,14 @@ import PersonalCareProductFulfillment from "@/components/ReusableComponent/Beaut
 import CtaSection from "@/components/ReusableComponent/CtaSection";
 import FaqSection from "@/components/ReusableComponent/FaqSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
+import ScrollToTop from "@/components/ScrollToTop";
 import { beautyandppersonalcarefaq } from "@/data/faqdata";
 
 export default function ProductRegistration() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col min-h-screen w-full">
+        <ScrollToTop />
         <InnerHeroSection />
         <ALLInOneFulfillmentBeauty />
         <BeautyLogisticsChallenges />

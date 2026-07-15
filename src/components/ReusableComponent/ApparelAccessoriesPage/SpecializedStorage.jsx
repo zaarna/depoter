@@ -62,8 +62,9 @@ export default function SpecializedStorage({ sectionKey = "" }) {
   ];
 
   useLayoutEffect(() => {
-    const mm = gsap.matchMedia();
+    ScrollTrigger.clearScrollMemory();
 
+    const mm = gsap.matchMedia();
     mm.add("(min-width: 1024px)", () => {
       const cardEls = cardRefs.current.filter(Boolean);
       const n = cardEls.length;
