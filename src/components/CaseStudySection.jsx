@@ -15,7 +15,7 @@ function CaseStudySection({ sectionKey = [] }) {
         <div className="grid text-center relative z-10">
           <TitleContent {...tc} />
         </div>
-        <div className="grid mt-6 md:mt-12">
+        <div className="grid">
           <CaseStudyCard />
           <Button
             children="View More"

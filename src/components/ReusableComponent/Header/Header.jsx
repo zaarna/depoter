@@ -102,7 +102,8 @@ export default function Header() {
               icon: <ProductIcon />,
               href: "/services/product-registration-services-uae",
             },
-            { name: "IOR/EOR", icon: <IORIcon />, href: "/services/job-eob" },
+            // { name: "IOR/EOR", icon: <IORIcon />, href: "/services/job-eob" },
+            { name: "IOR/EOR", icon: <IORIcon />, href: "/" },
           ],
         },
       ],
@@ -120,12 +121,14 @@ export default function Header() {
             {
               name: "Inventory Management",
               icon: <InventoryIcon />,
-              href: "/technology/inventory",
+              // href: "/technology/inventory",
+              href: "/",
             },
             {
               name: "Warehouse Management System",
               icon: <WarehouseIcon />,
-              href: "/technology/wms",
+              // href: "/technology/wms",
+              href: "/",
             },
           ],
         },
@@ -159,13 +162,20 @@ export default function Header() {
             {
               name: "Home Goods",
               icon: <HomeIcon />,
-              href: "/industries/home",
+              // href: "/industries/home",
+              href: "/",
             },
-            { name: "Pets", icon: <PetsIcon />, href: "/industries/pets" },
+            {
+              name: "Pets",
+              icon: <PetsIcon />,
+              // href: "/industries/pets",
+              href: "/",
+            },
             {
               name: "Sports, Toys, & Games",
               icon: <SportsIcon />,
-              href: "/industries/sports",
+              // href: "/industries/sports",
+              href: "/",
             },
           ],
         },
@@ -179,14 +189,21 @@ export default function Header() {
             {
               name: "UAE Mainland",
               icon: <UAEIcon />,
-              href: "/geographies/uae-mainland",
+              // href: "/geographies/uae-mainland",
+              href: "/",
             },
             {
               name: "UAE Freezone",
               icon: <UAEFreezoneIcon />,
-              href: "/geographies/uae-freezone",
+              // href: "/geographies/uae-freezone",
+              href: "/",
             },
-            { name: "KSA", icon: <KSAIcon />, href: "/geographies/ksa" },
+            {
+              name: "KSA",
+              icon: <KSAIcon />,
+              //  href: "/geographies/ksa"
+              href: "/",
+            },
           ],
         },
       ],
@@ -215,14 +232,30 @@ export default function Header() {
       sections: [
         {
           items: [
-            { name: "About us", icon: <AboutIcon />, href: "/about" },
-            { name: "Blog", icon: <BlogIcon />, href: "/blog" },
+            {
+              name: "About us",
+              icon: <AboutIcon />,
+              // href: "/about"
+              href: "/",
+            },
+            {
+              name: "Blog",
+              icon: <BlogIcon />,
+              // href: "/blog"
+              href: "/",
+            },
             {
               name: "Case Study",
               icon: <CaseStudyIcon />,
-              href: "/case-study",
+              // href: "/case-study",
+              href: "/",
             },
-            { name: "Contact Us", icon: <ContactIcon />, href: "/contact" },
+            {
+              name: "Contact Us",
+              icon: <ContactIcon />,
+              //  href: "/contact"
+              href: "/",
+            },
           ],
         },
       ],
@@ -295,8 +328,9 @@ export default function Header() {
                       />
 
                       <ChevronDown
-                        className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${activeDropdown === key ? "rotate-180" : ""
-                          }`}
+                        className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${
+                          activeDropdown === key ? "rotate-180" : ""
+                        }`}
                       />
                     </button>
 
@@ -308,10 +342,11 @@ export default function Header() {
                         bg-white rounded-xl shadow-2xl
                         border-b-4 border-[#FFBE2E]
                         grid gap-6 py-3
-                        ${menu.sections.length > 1
+                        ${
+                          menu.sections.length > 1
                             ? "grid-cols-2 w-[600px]"
                             : "grid-cols-1 w-80"
-                          }
+                        }
                       `}
                       >
                         {menu.sections.map((section, idx) => (
@@ -362,7 +397,7 @@ export default function Header() {
               <div className="w-px h-8 bg-black mx-3"></div>
               <div className=" flex items-center space-x-3">
                 <Link
-                  href="/partner"
+                  href="/"
                   className="text-[#212121] lg:text-sm xl:text-base hover:border-b-2 transition-colors duration-300"
                 >
                   Partner With Us
@@ -411,7 +446,7 @@ export default function Header() {
             <div className="flex items-center justify-between gap-3 border-b-2 border-black py-4 px-4">
               {/* Left text */}
               <Link
-                href="/partner"
+                href="/"
                 onClick={handleLinkClick}
                 className="
       font-semibold text-black
@@ -462,8 +497,9 @@ export default function Header() {
                   >
                     {menu.title}
                     <svg
-                      className={`w-4 h-4 transition-transform ${activeDropdown === key ? "rotate-180" : ""
-                        }`}
+                      className={`w-4 h-4 transition-transform ${
+                        activeDropdown === key ? "rotate-180" : ""
+                      }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -492,7 +528,7 @@ export default function Header() {
                               href={item.href}
                               className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
                               onClick={() => setMobileMenuOpen(false)}
-                            // onClick={handleLinkClick}
+                              // onClick={handleLinkClick}
                             >
                               <span className="text-lg">{item.icon}</span>
                               <span className="text-sm text-gray-700">

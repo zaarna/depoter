@@ -23,7 +23,7 @@ export default function CardsSection() {
     },
   ];
   return (
-    <section className="container mx-auto px-4 py-10">
+    <>
       {/* Top Section */}
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-6">
         {/* First Card - 60% */}
@@ -187,6 +187,6 @@ export default function CardsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }
