@@ -230,7 +230,7 @@ li {
 
 .socilaicon:hover {
   border-color: var(--color-dark-bg);
-  background-color: var(--color-accent);
+  background-color: #ffbe2e;
 }
 .animatedlogo {
   z-index: 1;

@@ -137,8 +137,9 @@ export default function RegistrationProcessWorks({
                         </div>
                     ))}
                 </div>
+
                 {/* Tablet & Mobile */}
-                <div className="md:hidden mt-12 space-y-8">
+                <div className="md:hidden mt-6 md:mt-12 space-y-4 md:space-y-8">
                     {processSteps.map((step) => (
                         <div
                             key={step.number}
@@ -163,18 +164,18 @@ export default function RegistrationProcessWorks({
 
                             {/* Number */}
                             <div className="flex w-14 sm:w-16 md:w-20 items-center justify-center self-stretch">
-                                <span className="text-4xl sm:text-5xl md:text-5xl font-bold text-[#232323] leading-none">
+                                <span className="text-3xl md:text-5xl font-bold text-[#232323] leading-none">
                                     {step.number}
                                 </span>
                             </div>
 
                             {/* Description */}
                             <div className="flex-1 min-w-0">
-                                <h3 className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold leading-[1.3] text-[#232323]">
+                                <h3 className="text-[18px] md:text-[20px] font-semibold leading-[1.3] text-[#232323]">
                                     {step.title}
                                 </h3>
 
-                                <p className="mt-2 text-[12px] sm:text-[13px] md:text-[15px] leading-[1.6] text-[#5F5F5F]">
+                                <p className="mt-2 text-[14px] sm:text-[13px] md:text-[15px] leading-[1.6] text-[#5F5F5F]">
                                     {step.description}
                                 </p>
                             </div>

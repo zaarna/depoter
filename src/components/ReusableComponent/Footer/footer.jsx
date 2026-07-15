@@ -119,7 +119,7 @@ export default function Footer() {
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className="text-sm text-color-text-primary transition-colors"
+                      className="text-sm text-color-text-primary hover:font-medium transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -138,7 +138,7 @@ export default function Footer() {
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className="text-sm text-color-text-primary transition-colors"
+                      className="text-sm text-color-text-primary hover:font-medium transition-colors"
                     >
                       {link.name}
                     </Link>

@@ -28,7 +28,7 @@ export default function HowToConnect() {
         <h2 className="text-3xl font-semibold text-[#212121]">
           How to <span className="text-[#FFBE2E]">Connect</span>
         </h2>
-        <div className="mt-3 w-16 h-[2px] bg-[#212121]" />
+        <div className="mt-3 w-45 h-[1px] bg-[#212121]" />
       </div>
 
       {/* STEPS */}
