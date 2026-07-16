@@ -8,7 +8,7 @@ import WhyChooseCard from "./ReusableComponent/WhyChooseCard/WhyChooseCard";
 function WhyChoose({ sectionKey = [] }) {
   const tc = titleContentConfig[sectionKey] || titleContentConfig["WhyChoose"];
   return (
-    <section className="py-8 md:py-16 relative overflow-hidden">
+    <section className="py-8 md:pt-16 relative overflow-hidden">
       <div className="container">
         <div className="grid text-center">
           <TitleContent {...tc} />

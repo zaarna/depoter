@@ -6,9 +6,43 @@ import BannerHeading from "../All_Title/BannerHeading";
 import { usePathname } from "next/navigation";
 import { heroConfig } from "@/config/heroConfig";
 
+const RouteData = {
+  "/d2c-fulfillment-uae": {
+    className: "backgroundcover-d2c",
+    paddingTop: "md:pt-[230px]",
+    heading: {
+      title: "Direct-To-Consumer ",
+      highlight: "Fulfillment Service in UAE",
+      description:
+        "From order capture to last-mile delivery, streamline every step of your direct-to-consumer fulfillment.",
+    },
+    button: {
+      text: "Start Your D2C Journey",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+
+  "/b2b-fulfillment-uae": {
+    className: "backgroundcover-b2b",
+    paddingTop: "md:pt-[230px]",
+    heading: {
+      title: "Business-to-Business",
+      highlight: "Fulfillment Service in UAE",
+      description:
+        "Seamless bulk distribution, retailer-ready compliance, and real-time control for growing wholesale and enterprise networks.",
+    },
+    button: {
+      text: "Talk to Our Experts",
+      link: "/#",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+}
+
 function InnerHeroSection({ bottomSection }) {
   const pathname = usePathname();
-  const selectedHero = heroConfig[pathname.toLowerCase()] || heroConfig["/"];
+  const selectedHero = RouteData[pathname.toLowerCase()] || heroConfig[pathname.toLowerCase()] || heroConfig["/"];
   const heading = selectedHero.heading;
   const button = selectedHero.button;
   return (

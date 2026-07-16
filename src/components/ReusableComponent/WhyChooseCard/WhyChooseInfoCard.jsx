@@ -137,35 +137,21 @@ export default function WhyChooseInfoCard() {
     const ctx = gsap.context(() => {
       const cards = cardsRef.current;
 
-      // Update z-index
-      const updateZIndex = (activeIndex) => {
-        cards.forEach((card, index) => {
-          gsap.set(card, {
-            // Active card always comes to the front
-            zIndex:
-              index === activeIndex
-                ? cards.length + 100
-                : index > activeIndex
-                  ? cards.length - index
-                  : index + 1,
-          });
-        });
-      };
+      const OFFSET = 20; // visible stack gap like screenshot
 
-      // Initial Position
+      // Initial stacked layout
       gsap.set(cards, {
-        y: (i) => i * 30,
-        scale: 1,
-        transformOrigin: "top center",
+        x: (i) => i * OFFSET,
+        y: (i) => i * OFFSET,
+        zIndex: (i) => i + 1,
+        transformOrigin: "top left",
       });
-
-      updateZIndex(0);
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: `+=${cards.length * 650}`,
+          end: `+=${cards.length * 900}`,
           pin: true,
           scrub: 1,
           anticipatePin: 1,
@@ -175,35 +161,25 @@ export default function WhyChooseInfoCard() {
       cards.forEach((card, i) => {
         if (i === cards.length - 1) return;
 
-        // Current card scales down
-        tl.to(
-          card,
-          {
-            y: -70,
-            scale: 0.93,
-            opacity: 0.95,
-            ease: "none",
-            duration: 1,
-            onStart: () => updateZIndex(i + 1),
-            onReverseComplete: () => updateZIndex(i),
-          },
-          i,
-        );
+        const nextCard = cards[i + 1];
 
-        // Next card moves upward
+        // Keep next card above previous ones
+        tl.set(nextCard, { zIndex: cards.length + i }, i);
+
+        // Next card comes from bottom and lands in stack position
         tl.fromTo(
-          cards[i + 1],
+          nextCard,
           {
-            y: (i + 1) * 30 + 80,
-            scale: 1,
+            y: window.innerHeight + 200,
+            x: (i + 1) * OFFSET,
           },
           {
-            y: (i + 1) * 30,
-            scale: 1,
-            ease: "none",
+            y: (i + 1) * OFFSET,
+            x: (i + 1) * OFFSET,
+            ease: "power2.out",
             duration: 1,
           },
-          i,
+          i
         );
       });
     }, sectionRef);
@@ -212,72 +188,131 @@ export default function WhyChooseInfoCard() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-20">
-      <div className="relative h-screen">
-        <div className="relative h-[650px]">
+    <section className="relative">
+
+      {/* ================= Desktop ================= */}
+      <div ref={sectionRef} className="relative hidden lg:block pt-20">
+        <div className="relative h-screen">
+          <div className="relative h-[650px]">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                ref={(el) => (cardsRef.current[index] = el)}
+                className="absolute inset-0 flex items-center justify-center"
+              >
+                <div
+                  className="w-full rounded-3xl border border-yellow-200 shadow-2xl py-8"
+                  style={{
+                    background: step.bg,
+                    maxWidth: "1400px",
+                    height: "625px",
+                  }}
+                >
+
+                  <div className="mb-8 px-8">
+                    <div className="inline-flex rounded-full bg-[#212121] px-5 py-2 text-sm">
+                      <span className="text-[#FFBE2E]">{step.step}</span>
+
+                      <span className="mx-2 text-[#8F6C17]">/</span>
+
+                      <span className="text-[#8F6C17]">{step.total}</span>
+                    </div>
+
+                    <div className="mt-5 flex items-center gap-4">
+                      <h2 className="text-3xl font-semibold">{step.title}</h2>
+
+                      <div className="h-[2px] flex-1 bg-[#FFBE2E]" />
+                    </div>
+                  </div>
+
+                  {/* Features */}
+
+                  <div className="grid grid-cols-1 gap-6 px-8 md:grid-cols-3">
+                    {step.features.map((feature) => (
+                      <div
+                        key={feature.id}
+                        className="rounded-3xl border border-[#FFBE2E] bg-white p-6 shadow-md"
+                      >
+                        <div className="relative mb-6 h-48">
+                          <Image
+                            src={feature.image}
+                            alt={feature.title}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+
+                        <h3 className="mb-3 text-xl font-bold">
+                          {feature.title}
+                        </h3>
+
+                        <p className="leading-relaxed text-gray-600">
+                          {feature.subtitle}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ================= Mobile ================= */}
+      <div className="block lg:hidden">
+        <div className="space-y-8">
           {steps.map((step, index) => (
             <div
               key={index}
-              ref={(el) => (cardsRef.current[index] = el)}
-              className="absolute inset-0 flex items-center justify-center"
+              className="rounded-3xl border border-yellow-200 shadow-xl py-6"
+              style={{ background: step.bg }}
             >
-              <div
-                className="w-full rounded-3xl border border-yellow-200 shadow-2xl py-8"
-                style={{
-                  background: step.bg,
-                  maxWidth: "1400px",
-                }}
-              >
-                {/* Badge */}
-
-                <div className="mb-8 px-8">
-                  <div className="inline-flex rounded-full bg-[#212121] px-5 py-2 text-sm">
-                    <span className="text-[#FFBE2E]">{step.step}</span>
-
-                    <span className="mx-2 text-[#8F6C17]">/</span>
-
-                    <span className="text-[#8F6C17]">{step.total}</span>
-                  </div>
-
-                  <div className="mt-5 flex items-center gap-4">
-                    <h2 className="text-3xl font-semibold">{step.title}</h2>
-
-                    <div className="h-[2px] flex-1 bg-[#FFBE2E]" />
-                  </div>
+              {/* Badge */}
+              <div className="px-5">
+                <div className="inline-flex rounded-full bg-[#212121] px-4 py-2 text-sm">
+                  <span className="text-[#FFBE2E]">{step.step}</span>
+                  <span className="mx-2 text-[#8F6C17]">/</span>
+                  <span className="text-[#8F6C17]">{step.total}</span>
                 </div>
 
-                {/* Features */}
+                <div className="mt-5">
+                  <h2 className="text-2xl font-semibold">{step.title}</h2>
+                  <div className="mt-3 h-[2px] w-full bg-[#FFBE2E]" />
+                </div>
+              </div>
 
-                <div className="grid grid-cols-1 gap-6 px-8 md:grid-cols-3">
-                  {step.features.map((feature) => (
-                    <div
-                      key={feature.id}
-                      className="rounded-3xl border border-[#FFBE2E] bg-white p-6 shadow-md"
-                    >
-                      <div className="relative mb-6 h-48">
-                        <Image
-                          src={feature.image}
-                          alt={feature.title}
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-
-                      <h3 className="mb-3 text-xl font-bold">
-                        {feature.title}
-                      </h3>
-
-                      <p className="leading-relaxed text-gray-600">
-                        {feature.subtitle}
-                      </p>
+              {/* Features */}
+              <div className="mt-6 grid grid-cols-1 gap-5 px-5">
+                {step.features.map((feature) => (
+                  <div
+                    key={feature.id}
+                    className="rounded-2xl border border-[#FFBE2E] bg-white p-5 shadow-md"
+                  >
+                    <div className="relative mb-5 h-44">
+                      <Image
+                        src={feature.image}
+                        alt={feature.title}
+                        fill
+                        className="object-contain"
+                      />
                     </div>
-                  ))}
-                </div>
+
+                    <h3 className="mb-3 text-xl font-bold">
+                      {feature.title}
+                    </h3>
+
+                    <p className="leading-relaxed text-gray-600">
+                      {feature.subtitle}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
         </div>
       </div>
+
     </section>
   );
 }
