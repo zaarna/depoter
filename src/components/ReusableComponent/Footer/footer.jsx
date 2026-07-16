@@ -20,31 +20,31 @@ export default function Footer() {
     setOpenAccordion(openAccordion === section ? null : section);
   };
 
-  const companyLinks = [
-    { name: "About Us", href: "/about" },
-    { name: "Contact Us", href: "/contact" },
-    { name: "Partner With Us", href: "/partner" },
-    { name: "Blog", href: "/blog" },
-    { name: "Privacy Policies", href: "/privacy" },
-    { name: "Terms & Conditions", href: "/terms" },
-  ];
+  // const companyLinks = [
+  //   { name: "About Us", href: "/about" },
+  //   { name: "Contact Us", href: "/contact" },
+  //   { name: "Partner With Us", href: "/partner" },
+  //   { name: "Blog", href: "/blog" },
+  //   { name: "Privacy Policies", href: "/privacy" },
+  //   { name: "Terms & Conditions", href: "/terms" },
+  // ];
 
   // industriesLinks
   const industriesLinks = [
-    { name: "Health & Wellness", href: "/industries/health" },
-    { name: "Beauty & Personal Care", href: "/industries/beauty" },
-    { name: "Food & Beverages", href: "/industries/food" },
-    { name: "Apparel & Accessories", href: "/industries/apparel" },
-    { name: "Home Goods", href: "/industries/home" },
-    { name: "Pets", href: "/industries/pets" },
-    { name: "Sports, Toys & Games", href: "/industries/sports" },
+    { name: "Health & Wellness", href: "/industries/health-wellness-fulfillment-uae" },
+    { name: "Beauty & Personal Care", href: "/industries/beauty-personal-care-fulfillment-uae" },
+    { name: "Food & Beverages", href: "/industries/food-beverage-fulfillment-uae" },
+    { name: "Apparel & Accessories", href: "/industries/apparel-accessories-fulfillment-uae" },
+    // { name: "Home Goods", href: "/industries/home" },
+    // { name: "Pets", href: "/industries/pets" },
+    // { name: "Sports, Toys & Games", href: "/industries/sports" },
   ];
 
   const quickLinks = [
-    { name: "D2C", href: "/services/D2C" },
-    { name: "B2B", href: "/services/B2B" },
-    { name: "Multichannel", href: "/multichannel" },
-    { name: "Integration", href: "/integration" },
+    { name: "D2C", href: "/d2c-fulfillment-uae" },
+    { name: "B2B", href: "/b2b-fulfillment-uae" },
+    { name: "Multichannel", href: "/multichannel-fulfillment-uae" },
+    { name: "Integration", href: "/technology/ecommerce-integration-services-uae" },
   ];
 
   return (
@@ -79,7 +79,7 @@ export default function Footer() {
                   icon={LocationIcon}
                   label="Address:"
                   value="Depoter General Warehousing OPC LLC Media One Tower, Media City, Dubai, UAE"
-                  href="https://www.google.com/maps?q=Lorem+ipsum"
+                  href="https://www.google.com/maps/place/Media+1+Tower+-+Dubai+Media+City,+Plot+No.+1+-+Al+Sufouh+-+Al+Sufouh+2+-+Dubai+-+United+Arab+Emirates/@25.0900112,55.1499263,797m/data=!3m1!1e3!4m6!3m5!1s0x3e5f6b5b141c66bb:0x5e88a4a6e940ec3!8m2!3d25.0900112!4d55.1525012!16s%2Fg%2F11bc6r4q12?entry=ttu&g_ep=EgoyMDI2MDcxMy4wIKXMDSoASAFQAw%3D%3D"
                 />
                 <ContactItem
                   icon={PhoneIcon}
@@ -110,7 +110,7 @@ export default function Footer() {
             </div>
 
             {/* Company Links */}
-            <div>
+            {/* <div>
               <h4 className="text-base font-medium text-color-text-primary mb-4">
                 Company
               </h4>
@@ -126,7 +126,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             {/* Industries Links */}
             <div>
@@ -237,7 +237,7 @@ export default function Footer() {
                 />
               </svg>
             </button>
-            {openAccordion === "company" && (
+            {/* {openAccordion === "company" && (
               <ul className="pb-4 space-y-2">
                 {companyLinks.map((link, index) => (
                   <li key={index}>
@@ -250,7 +250,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            )}
+            )} */}
           </div>
 
           {/* Accordion: Industries */}

@@ -42,11 +42,6 @@ export default function FlexibleFulfillmentGrowingBrands({ sectionKey = [] }) {
 
         <div
           className="overflow-hidden"
-          style={{
-            backgroundImage: "url('/invoice-pattern.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
         >
           <div className="grid items-stretch lg:grid-cols-2">
             {/* Left Section */}

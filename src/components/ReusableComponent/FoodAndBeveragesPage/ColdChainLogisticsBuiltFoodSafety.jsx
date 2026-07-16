@@ -44,11 +44,6 @@ export default function ColdChainLogisticsBuiltFoodSafety({ sectionKey = [] }) {
                 </div>
                 <div
                     className="overflow-hidden rounded-lg  px-8  lg:px-16 mb-20"
-                    style={{
-                        backgroundImage: "url('/invoice-pattern.webp')",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                    }}
                 >
                     <div className="grid items-center gap-12 lg:grid-cols-2">
                         {/* Left Content */}

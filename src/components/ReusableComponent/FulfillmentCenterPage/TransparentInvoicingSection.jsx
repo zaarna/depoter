@@ -37,11 +37,6 @@ export default function TransparentInvoicingSection() {
       <div className="container mx-auto px-4">
         <div
           className="overflow-hidden rounded-lg  px-8 py-14 lg:px-16"
-          style={{
-            backgroundImage: "url('/invoice-pattern.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
         >
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left Content */}

@@ -51,11 +51,7 @@ export default function ReverseLogisticsManagement({ sectionKey = [] }) {
 
                 <div
                     className="overflow-hidden rounded-lg px-8 py-14 lg:px-14"
-                    style={{
-                        backgroundImage: "url('/invoice-pattern.webp')",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                    }}
+
                 >
                     <div className="grid items-stretch gap-12 lg:grid-cols-2">
                         {/* Left Section */}
