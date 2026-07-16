@@ -42,7 +42,11 @@ const RouteData = {
 
 function InnerHeroSection({ bottomSection }) {
   const pathname = usePathname();
-  const selectedHero = RouteData[pathname.toLowerCase()] || heroConfig[pathname.toLowerCase()] || heroConfig["/"];
+  console.log('====================================');
+  console.log(pathname);
+  console.log('====================================');
+  const cleanPath = pathname.replace(/\/$/, "").toLowerCase();
+  const selectedHero = RouteData[cleanPath.toLowerCase()] || heroConfig[cleanPath.toLowerCase()] || heroConfig["/"];
   const heading = selectedHero.heading;
   const button = selectedHero.button;
   return (
