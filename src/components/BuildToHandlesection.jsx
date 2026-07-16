@@ -27,7 +27,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       description:
         "Fast, secure fulfillment for supplements, hygiene kits, and wellness products.",
       link: "Explore Health Fulfillment",
-      href: "/industries/health",
+      href: "/industries/health-wellness-fulfillment-uae",
       // accentColor: "bg-[#FFBE2E]",
       // hoverColor: "bg-white",
       // ContentTitlecolor: "text-black",
@@ -48,7 +48,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       description:
         "Careful handling and quick shipping for cosmetics, skincare, and grooming items.",
       link: "Discover Beauty Logistics",
-      href: "/industries/beauty",
+      href: "/industries/beauty-personal-care-fulfillment-uae",
       // accentColor: "bg-[#978050]",
       // hoverColor: "bg-[#FFBE2E]",
       // ContentTitlecolor: "text-black",
@@ -70,7 +70,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       description:
         "Neat packing and smooth delivery for clothing, shoes, and accessories.",
       link: "Simplify Apparel Fulfillment",
-      href: "/industries/apparel",
+      href: "/industries/apparel-accessories-fulfillment-uae",
       // accentColor: "bg-[#978050]",
       // hoverColor: "bg-[#FFBE2E]",
       // ContentTitlecolor: "text-black",
@@ -91,7 +91,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       description:
         "Reliable fulfillment for pet food, toys, and everyday pet care items.",
       link: "Ship Pet Supplies",
-      href: "/industries/pets",
+      href: "#",
       // accentColor: "bg-[#978050]",
       // hoverColor: "bg-[#FFBE2E]",
       // ContentTitlecolor: "text-black",
@@ -113,7 +113,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       description:
         "Efficient fulfillment for furniture, home decor, and daily-use essentials.",
       link: "Fulfill Home Essentials",
-      href: "/industries/home",
+      href: "#",
       // accentColor: "bg-[#FFBE2E]",
       // hoverColor: "bg-white",
       // ContentTitlecolor: "text-black",
@@ -135,7 +135,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       description:
         "Safe storage and timely delivery for packaged snacks, drinks, and more.",
       link: "Enable Food Fulfillment",
-      href: "/industries/food",
+      href: "/industries/food-beverage-fulfillment-uae",
       // accentColor: "bg-[#FFBE2E]",
       // hoverColor: "bg-white",
       // ContentTitlecolor: "text-black",
@@ -157,7 +157,7 @@ function BuildToHandlesection({ sectionKey = [] }) {
       description:
         "Quick dispatch for active gear, kids' toys, and high-volume seasonal orders.",
       link: "Speed Up Shipping",
-      href: "/industries/sports",
+      href: "#",
       // accentColor: "bg-[#978050]",
       // hoverColor: "bg-[#FFBE2E]",
       // ContentTitlecolor: "text-black",

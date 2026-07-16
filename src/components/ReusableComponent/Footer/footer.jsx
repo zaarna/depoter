@@ -100,10 +100,10 @@ export default function Footer() {
               <div className="flex gap-4">
                 <SocialIcons
                   items={[
-                    { href: "#", icon: <LinkedinIcon /> },
-                    { href: "#", icon: <TwitterIcon /> },
-                    { href: "#", icon: <FacebookIcon /> },
-                    { href: "#", icon: <InstagramIcon /> },
+                    { href: "https://www.linkedin.com/company/depoter2020", icon: <LinkedinIcon /> },
+                    // { href: "#", icon: <TwitterIcon /> },
+                    { href: "https://www.facebook.com/depoter2020/", icon: <FacebookIcon /> },
+                    { href: "https://www.instagram.com/depoterr/", icon: <InstagramIcon /> },
                   ]}
                 />
               </div>
@@ -204,10 +204,10 @@ export default function Footer() {
             <div className="flex gap-4">
               <SocialIcons
                 items={[
-                  { href: "#", icon: <LinkedinIcon /> },
-                  { href: "#", icon: <TwitterIcon /> },
-                  { href: "#", icon: <FacebookIcon /> },
-                  { href: "#", icon: <InstagramIcon /> },
+                  { href: "https://www.linkedin.com/company/depoter2020", icon: <LinkedinIcon /> },
+                  // { href: "#", icon: <TwitterIcon /> },
+                  { href: "https://www.facebook.com/depoter2020/", icon: <FacebookIcon /> },
+                  { href: "https://www.instagram.com/depoterr/", icon: <InstagramIcon /> },
                 ]}
               />
             </div>

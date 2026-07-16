@@ -31,7 +31,7 @@ export const services = [
     description:
       "We help you deliver a seamless shopping experience to your customers with fast, accurate, and trackable direct-to-consumer shipments. From order processing to last-mile delivery, we make it easy for you to exceed customer expectations and boost brand loyalty.",
     buttonText: "Deliver Happiness to Customers ",
-    buttonLink: "/",
+    buttonLink: "/d2c-fulfillment-uae",
     image: "/d2c.webp",
     bgColor:
       "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
@@ -42,7 +42,7 @@ export const services = [
     description:
       "We process, package, and dispatch your wholesale and bulk orders with speed and precision. From warehousing to dispatch, every order is handled within one system to ensure order fulfillment solutions reliability and business scalability.",
     buttonText: "Simplify B2B Logistics",
-    buttonLink: "/",
+    buttonLink: "/b2b-fulfillment-uae",
     image: "/b2b.webp",
     bgColor:
       "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
@@ -53,7 +53,7 @@ export const services = [
     description:
       "We bring all your sales channels together under one system. With our multichannel order fulfillment solutions, your online stores, marketplaces, and retail outlets run in sync, making inventory management simple and ensuring smooth, reliable deliveries across every channel.",
     buttonText: "Centralize Your Orders",
-    buttonLink: "/",
+    buttonLink: "/multichannel-fulfillment-uae",
     image: "/Multichannel.webp",
     bgColor:
       "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",
@@ -64,7 +64,7 @@ export const services = [
     description:
       "We simplify both outbound and inbound logistics with our comprehensive delivery and warehousing solutions, ensuring timely delivery, hassle-free returns, and transparent tracking, helping you maintain customer satisfaction and operational efficiency.",
     buttonText: "Simplify Shipping & Returns",
-    buttonLink: "/",
+    buttonLink: "/infra/delivery-services-uae",
     image: "/Delivery.webp",
     bgColor:
       "bg-[linear-gradient(110deg,rgba(255,190,46,0.75)_30%,rgba(255,247,228,0.5)_56%,rgba(255,242,212,0.522)_57%,rgba(255,247,228,0)_100%)]",

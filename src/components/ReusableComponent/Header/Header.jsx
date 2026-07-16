@@ -103,7 +103,7 @@ export default function Header() {
               href: "/services/product-registration-services-uae",
             },
             // { name: "IOR/EOR", icon: <IORIcon />, href: "/services/job-eob" },
-            { name: "IOR/EOR", icon: <IORIcon />, href: "" },
+            // { name: "IOR/EOR", icon: <IORIcon />, href: "" },
           ],
         },
       ],
@@ -118,18 +118,18 @@ export default function Header() {
               icon: <IntegrationsIcon />,
               href: "/technology/ecommerce-integration-services-uae",
             },
-            {
-              name: "Inventory Management",
-              icon: <InventoryIcon />,
-              // href: "/technology/inventory",
-              href: "",
-            },
-            {
-              name: "Warehouse Management System",
-              icon: <WarehouseIcon />,
-              // href: "/technology/wms",
-              href: "",
-            },
+            // {
+            // name: "Inventory Management",
+            // icon: <InventoryIcon />,
+            // href: "/technology/inventory",
+            // href: "",
+            // },
+            // {
+            // name: "Warehouse Management System",
+            // icon: <WarehouseIcon />,
+            // href: "/technology/wms",
+            // href: "",
+            // },
           ],
         },
       ],
@@ -159,24 +159,24 @@ export default function Header() {
               icon: <ApparelIcon />,
               href: "/industries/apparel-accessories-fulfillment-uae",
             },
-            {
-              name: "Home Goods",
-              icon: <HomeIcon />,
-              // href: "/industries/home",
-              href: "",
-            },
-            {
-              name: "Pets",
-              icon: <PetsIcon />,
-              // href: "/industries/pets",
-              href: "",
-            },
-            {
-              name: "Sports, Toys, & Games",
-              icon: <SportsIcon />,
-              // href: "/industries/sports",
-              href: "",
-            },
+            // {
+            // name: "Home Goods",
+            // icon: <HomeIcon />,
+            // href: "/industries/home",
+            // href: "",
+            // },
+            // {
+            // name: "Pets",
+            // icon: <PetsIcon />,
+            // href: "/industries/pets",
+            // href: "",
+            // },
+            // {
+            // name: "Sports, Toys, & Games",
+            // icon: <SportsIcon />,
+            // href: "/industries/sports",
+            // href: "",
+            // },
           ],
         },
       ],
@@ -184,28 +184,28 @@ export default function Header() {
     geographies: {
       title: "Geographies",
       sections: [
-        {
-          items: [
-            {
-              name: "UAE Mainland",
-              icon: <UAEIcon />,
-              // href: "/geographies/uae-mainland",
-              href: "",
-            },
-            {
-              name: "UAE Freezone",
-              icon: <UAEFreezoneIcon />,
-              // href: "/geographies/uae-freezone",
-              href: "",
-            },
-            {
-              name: "KSA",
-              icon: <KSAIcon />,
-              //  href: "/geographies/ksa"
-              href: "",
-            },
-          ],
-        },
+        // {
+        //   items: [
+        //     {
+        //       name: "UAE Mainland",
+        //       icon: <UAEIcon />,
+        //       // href: "/geographies/uae-mainland",
+        //       href: "",
+        //     },
+        //     {
+        //       name: "UAE Freezone",
+        //       icon: <UAEFreezoneIcon />,
+        //       // href: "/geographies/uae-freezone",
+        //       href: "",
+        //     },
+        //     {
+        //       name: "KSA",
+        //       icon: <KSAIcon />,
+        //       //  href: "/geographies/ksa"
+        //       href: "",
+        //     },
+        //   ],
+        // },
       ],
     },
     infra: {
@@ -230,34 +230,34 @@ export default function Header() {
     company: {
       title: "Company",
       sections: [
-        {
-          items: [
-            {
-              name: "About us",
-              icon: <AboutIcon />,
-              // href: "/about"
-              href: "",
-            },
-            {
-              name: "Blog",
-              icon: <BlogIcon />,
-              // href: "/blog"
-              href: "",
-            },
-            {
-              name: "Case Study",
-              icon: <CaseStudyIcon />,
-              // href: "/case-study",
-              href: "",
-            },
-            {
-              name: "Contact Us",
-              icon: <ContactIcon />,
-              //  href: "/contact"
-              href: "",
-            },
-          ],
-        },
+        // {
+        //   items: [
+        // {
+        //   name: "About us",
+        //   icon: <AboutIcon />,
+        //   // href: "/about"
+        //   href: "",
+        // },
+        // {
+        //   name: "Blog",
+        //   icon: <BlogIcon />,
+        //   // href: "/blog"
+        //   href: "",
+        // },
+        // {
+        //   name: "Case Study",
+        //   icon: <CaseStudyIcon />,
+        //   // href: "/case-study",
+        //   href: "",
+        // },
+        // {
+        //   name: "Contact Us",
+        //   icon: <ContactIcon />,
+        //   //  href: "/contact"
+        //   href: "",
+        // },
+        //   ],
+        // },
       ],
     },
   };
@@ -334,36 +334,32 @@ export default function Header() {
                     </button>
 
                     {/* Dropdown */}
-                    {activeDropdown === key && (
+                    {activeDropdown === key && menu.sections?.length > 0 && (
                       <div
                         className={`
-                        absolute left-0 top-16
-                        bg-white rounded-xl shadow-2xl
-                        border-b-4 border-[#FFBE2E]
-                        grid gap-6 py-3
-                        ${menu.sections.length > 1
+      absolute left-0 top-16
+      bg-white rounded-xl shadow-2xl
+      border-b-4 border-[#FFBE2E]
+      grid gap-6 py-3
+      ${menu.sections.length > 1
                             ? "grid-cols-2 w-[600px]"
                             : "grid-cols-1 w-80"
                           }
-                      `}
+    `}
                       >
                         {menu.sections.map((section, idx) => (
                           <div key={idx}>
-                            {/* Section Title */}
                             {section.title && (
                               <h3 className="text-lg px-5 font-bold text-[#1C1C1C] uppercase tracking-wider mb-3">
                                 {section.title}
                               </h3>
                             )}
 
-                            {/* Items */}
                             <ul className="space-y-2">
                               {section.items.map((item, itemIdx) => (
                                 <li
                                   key={itemIdx}
-                                  className={`py-1.5 ${item.href
-                                    ? "hover:bg-[#FFF7E4]"
-                                    : " cursor-not-allowed"
+                                  className={`py-1.5 ${item.href ? "hover:bg-[#FFF7E4]" : "cursor-not-allowed"
                                     }`}
                                 >
                                   <Link
@@ -373,25 +369,21 @@ export default function Header() {
                                         e.preventDefault();
                                         return;
                                       }
-
                                       setActiveDropdown(null);
                                     }}
                                     className={`
-                                            flex items-center gap-3
-                                            px-3 py-1 rounded-lg
-                                            transition-all duration-200
-                                            group
-                                            ${item.href
-                                        ? "text-[#1C1C1C] "
-                                        : " pointer-events-none "
+                  flex items-center gap-3
+                  px-3 py-1 rounded-lg
+                  transition-all duration-200
+                  group
+                  ${item.href
+                                        ? "text-[#1C1C1C]"
+                                        : "pointer-events-none"
                                       }
-                                          `}
+                `}
                                   >
                                     <span className="text-lg">{item.icon}</span>
-
-                                    <span className="text-base font-medium">
-                                      {item.name}
-                                    </span>
+                                    <span className="text-base font-medium">{item.name}</span>
                                   </Link>
                                 </li>
                               ))}
