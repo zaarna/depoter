@@ -38,15 +38,18 @@ const RouteData = {
       className: "px-6 sm:px-12 py-3.5",
     },
   },
-}
+};
 
 function InnerHeroSection({ bottomSection }) {
   const pathname = usePathname();
-  console.log('====================================');
+  console.log("====================================");
   console.log(pathname);
-  console.log('====================================');
+  console.log("====================================");
   const cleanPath = pathname.replace(/\/$/, "").toLowerCase();
-  const selectedHero = RouteData[cleanPath.toLowerCase()] || heroConfig[cleanPath.toLowerCase()] || heroConfig["/"];
+  const selectedHero =
+    RouteData[cleanPath.toLowerCase()] ||
+    heroConfig[cleanPath.toLowerCase()] ||
+    heroConfig["/"];
   const heading = selectedHero.heading;
   const button = selectedHero.button;
   return (
@@ -54,7 +57,9 @@ function InnerHeroSection({ bottomSection }) {
       className={`relative overflow-hidden min-h-[700px] sm:min-h-[650px] md:min-h-[900px] h-auto ${selectedHero.className}`}
     >
       <div className="container">
-        <div className={`flex flex-col items-center md:items-start w-full max-w-[571px] pt-0 ${selectedHero.paddingTop} relative z-10`}>
+        <div
+          className={`flex flex-col items-center md:items-start w-full max-w-[571px] pt-0 ${selectedHero.paddingTop} relative z-10`}
+        >
           <BannerHeading
             title={heading.title}
             highlight={heading.highlight}

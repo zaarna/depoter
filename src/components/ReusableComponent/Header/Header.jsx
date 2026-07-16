@@ -122,13 +122,13 @@ export default function Header() {
               name: "Inventory Management",
               icon: <InventoryIcon />,
               // href: "/technology/inventory",
-              href: "/",
+              href: "",
             },
             {
               name: "Warehouse Management System",
               icon: <WarehouseIcon />,
               // href: "/technology/wms",
-              href: "/",
+              href: "",
             },
           ],
         },
@@ -163,19 +163,19 @@ export default function Header() {
               name: "Home Goods",
               icon: <HomeIcon />,
               // href: "/industries/home",
-              href: "/",
+              href: "",
             },
             {
               name: "Pets",
               icon: <PetsIcon />,
               // href: "/industries/pets",
-              href: "/",
+              href: "",
             },
             {
               name: "Sports, Toys, & Games",
               icon: <SportsIcon />,
               // href: "/industries/sports",
-              href: "/",
+              href: "",
             },
           ],
         },
@@ -190,19 +190,19 @@ export default function Header() {
               name: "UAE Mainland",
               icon: <UAEIcon />,
               // href: "/geographies/uae-mainland",
-              href: "/",
+              href: "",
             },
             {
               name: "UAE Freezone",
               icon: <UAEFreezoneIcon />,
               // href: "/geographies/uae-freezone",
-              href: "/",
+              href: "",
             },
             {
               name: "KSA",
               icon: <KSAIcon />,
               //  href: "/geographies/ksa"
-              href: "/",
+              href: "",
             },
           ],
         },
@@ -236,25 +236,25 @@ export default function Header() {
               name: "About us",
               icon: <AboutIcon />,
               // href: "/about"
-              href: "/",
+              href: "",
             },
             {
               name: "Blog",
               icon: <BlogIcon />,
               // href: "/blog"
-              href: "/",
+              href: "",
             },
             {
               name: "Case Study",
               icon: <CaseStudyIcon />,
               // href: "/case-study",
-              href: "/",
+              href: "",
             },
             {
               name: "Contact Us",
               icon: <ContactIcon />,
               //  href: "/contact"
-              href: "/",
+              href: "",
             },
           ],
         },
@@ -295,12 +295,12 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
-            <div className="flex items-center">
+            <div className="flex items-center space-x-6">
               <nav
                 ref={menuRef}
                 className="hidden lg:flex items-center lg:space-x-3 xl:space-x-8"
               >
-                <Link
+                {/* <Link
                   href="/"
                   className="text-[#212121] lg:text-sm xl:text-base relative group"
                 >
@@ -309,7 +309,7 @@ export default function Header() {
                     className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300"
                     style={{ backgroundColor: "var(--color-text-accent)" }}
                   ></span>
-                </Link>
+                </Link> */}
 
                 {Object.entries(menuData).map(([key, menu]) => (
                   <div key={key} className="relative">
@@ -363,24 +363,37 @@ export default function Header() {
                               {section.items.map((item, itemIdx) => (
                                 <li
                                   key={itemIdx}
-                                  className="hover:bg-[#FFF7E4] py-1.5"
+                                  className={`py-1.5 ${
+                                    item.href
+                                      ? "hover:bg-[#FFF7E4]"
+                                      : " cursor-not-allowed"
+                                  }`}
                                 >
                                   <Link
-                                    href={item.href}
-                                    onClick={() => {
+                                    href={item.href || "#"}
+                                    onClick={(e) => {
+                                      if (!item.href) {
+                                        e.preventDefault();
+                                        return;
+                                      }
+
                                       setActiveDropdown(null);
                                     }}
-                                    className="
-                                    flex items-center gap-3
-                                    px-3 py-1 rounded-lg
-                                    transition-all duration-200
-                                    
-                                    group text-[#1C1C1C]
-                                  "
+                                    className={`
+                                            flex items-center gap-3
+                                            px-3 py-1 rounded-lg
+                                            transition-all duration-200
+                                            group
+                                            ${
+                                              item.href
+                                                ? "text-[#1C1C1C] "
+                                                : " pointer-events-none "
+                                            }
+                                          `}
                                   >
                                     <span className="text-lg">{item.icon}</span>
 
-                                    <span className="text-base font-medium  relative">
+                                    <span className="text-base font-medium">
                                       {item.name}
                                     </span>
                                   </Link>
@@ -394,14 +407,14 @@ export default function Header() {
                   </div>
                 ))}
               </nav>
-              <div className="w-px h-8 bg-black mx-3"></div>
+              {/* <div className="w-px h-8 bg-black mx-3"></div> */}
               <div className=" flex items-center space-x-3">
-                <Link
+                {/* <Link
                   href="/"
                   className="text-[#212121] lg:text-sm xl:text-base hover:border-b-2 transition-colors duration-300"
                 >
                   Partner With Us
-                </Link>
+                </Link> */}
                 {/* Get a Quote Button - Desktop */}
                 <Button href="/" className="px-4 py-2.5">
                   Get a Quote
@@ -445,7 +458,7 @@ export default function Header() {
           <div className="lg:hidden py-4">
             <div className="flex items-center justify-between gap-3 border-b-2 border-black py-4 px-4">
               {/* Left text */}
-              <Link
+              {/* <Link
                 href="/"
                 onClick={handleLinkClick}
                 className="
@@ -456,7 +469,7 @@ export default function Header() {
     "
               >
                 Partner With Us
-              </Link>
+              </Link> */}
 
               {/* Right button */}
               <Link
@@ -480,14 +493,14 @@ export default function Header() {
             </div>
 
             <div className="space-y-2">
-              <Link
+              {/* <Link
                 href="/"
                 className="block px-4 py-2 text-gray-900 hover:bg-gray-100 rounded-lg transition-colors font-medium"
                 // onClick={() => setMobileMenuOpen(false)}
                 onClick={handleLinkClick}
               >
                 Home
-              </Link>
+              </Link> */}
 
               {Object.entries(menuData).map(([key, menu]) => (
                 <div key={key}>
