@@ -103,7 +103,7 @@ export default function Header() {
               href: "/services/product-registration-services-uae",
             },
             // { name: "IOR/EOR", icon: <IORIcon />, href: "/services/job-eob" },
-            { name: "IOR/EOR", icon: <IORIcon />, href: "/" },
+            { name: "IOR/EOR", icon: <IORIcon />, href: "" },
           ],
         },
       ],
@@ -407,14 +407,14 @@ export default function Header() {
                   </div>
                 ))}
               </nav>
-              {/* <div className="w-px h-8 bg-black mx-3"></div> */}
+              <div className="w-[2px] h-8 bg-black me-6"></div>
               <div className=" flex items-center space-x-3">
-                {/* <Link
+                <Link
                   href="/"
-                  className="text-[#212121] lg:text-sm xl:text-base hover:border-b-2 transition-colors duration-300"
+                  className="text-[#212121] font-semibold lg:text-sm xl:text-base hover:border-b-2 transition-colors duration-300"
                 >
                   Partner With Us
-                </Link> */}
+                </Link>
                 {/* Get a Quote Button - Desktop */}
                 <Button href="/" className="px-4 py-2.5">
                   Get a Quote
@@ -458,7 +458,7 @@ export default function Header() {
           <div className="lg:hidden py-4">
             <div className="flex items-center justify-between gap-3 border-b-2 border-black py-4 px-4">
               {/* Left text */}
-              {/* <Link
+              <Link
                 href="/"
                 onClick={handleLinkClick}
                 className="
@@ -469,7 +469,7 @@ export default function Header() {
     "
               >
                 Partner With Us
-              </Link> */}
+              </Link>
 
               {/* Right button */}
               <Link
