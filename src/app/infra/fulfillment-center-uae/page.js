@@ -34,7 +34,7 @@ export default function FulfillmentCenterPage() {
         <FaqSection faqs={fulfillmentcenterfaq} />
         <CtaSection
           sectionKey="fulfillmentcentercta"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="Start Your Fulfillment Journey Today"
         />
       </main>

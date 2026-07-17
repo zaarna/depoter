@@ -26,7 +26,7 @@ function ReadyToLaunchProduct({ sectionKey = [] }) {
                     <Button
                         children="Get Started with Product Registration Today"
                         className="px-5 py-2"
-                        // href={buttonLink}
+                        href={"/company/contact-us"}
                         variant="yellow"
                     />
                 </div>

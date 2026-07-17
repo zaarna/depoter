@@ -33,7 +33,7 @@ export default function ModernCommerce({
   steps = defaultSteps,
   callout = defaultCallout,
   ctaText = "Get a Quote",
-  ctaHref = "#",
+  ctaHref = "/company/contact-us",
   image = "/deliveryModernCommerce.svg",
   imageAlt = "Modern commerce delivery network",
 }) {

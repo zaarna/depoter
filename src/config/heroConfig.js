@@ -9,7 +9,39 @@ export const heroConfig = {
     },
     button: {
       text: "Speak to a Fulfillment Expert",
-      link: "/#",
+      link: "/company/contact-us",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+
+  "/d2c-fulfillment-uae": {
+    className: "backgroundcover-d2c",
+    paddingTop: "md:pt-[230px]",
+    heading: {
+      title: "Direct-To-Consumer ",
+      highlight: "Fulfillment Service in UAE",
+      description:
+        "From order capture to last-mile delivery, streamline every step of your direct-to-consumer fulfillment.",
+    },
+    button: {
+      text: "Start Your D2C Journey",
+      link: "/company/contact-us",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+
+  "/b2b-fulfillment-uae": {
+    className: "backgroundcover-b2b",
+    paddingTop: "md:pt-[230px]",
+    heading: {
+      title: "Business-to-Business",
+      highlight: "Fulfillment Service in UAE",
+      description:
+        "Seamless bulk distribution, retailer-ready compliance, and real-time control for growing wholesale and enterprise networks.",
+    },
+    button: {
+      text: "Talk to Our Experts",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -30,7 +62,7 @@ export const heroConfig = {
     },
     button: {
       text: "Scale Your Fulfillment",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -48,7 +80,7 @@ export const heroConfig = {
     },
     button: {
       text: "Get a Freight Quote",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -70,7 +102,7 @@ export const heroConfig = {
     },
     button: {
       text: "Get Expert Customs Support",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -93,7 +125,7 @@ export const heroConfig = {
     },
     button: {
       text: "Talk to a Product Registration Expert",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -111,7 +143,7 @@ export const heroConfig = {
     },
     button: {
       text: "Get a Fulfillment Quote",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -135,7 +167,7 @@ export const heroConfig = {
     },
     button: {
       text: "Connect Your Store in Minutes",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -153,7 +185,7 @@ export const heroConfig = {
     },
     button: {
       text: "Get A Delivery Quote",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -171,7 +203,7 @@ export const heroConfig = {
     },
     button: {
       text: "Fix Your Fulfillment Setup Today",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -189,7 +221,7 @@ export const heroConfig = {
     },
     button: {
       text: "Fix Your Beauty Fulfillment",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -207,7 +239,7 @@ export const heroConfig = {
     },
     button: {
       text: "Optimize Your Food Fulfillment",
-      link: "/#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },
@@ -232,7 +264,32 @@ export const heroConfig = {
     },
     button: {
       text: "Scale Your Fashion Brand Today",
-      link: "/#",
+      link: "/company/contact-us",
+      className: "px-6 sm:px-12 py-3.5",
+    },
+  },
+
+  "/company/contact-us": {
+    className: "backgroundcover-contact-us",
+    paddingTop: "md:pt-[380px]",
+    heading: {
+      title: "Apparel & Accessories",
+      highlight: "Fulfillment  UAE",
+      titleColor: "#978050",
+      highlightColor: "#212121",
+      description: (
+        <>
+          Manage your fashion operations with fast, accurate, and scalable
+          logistics. Our <b>apparel & accessories fulfillment</b> UAE solutions
+          handle complex sizes, color variants, and returns efficiently,
+          ensuring smooth order processing, reliable last-mile delivery, and
+          better inventory control for growing clothing brands.
+        </>
+      ),
+    },
+    button: {
+      text: "Scale Your Fashion Brand Today",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5",
     },
   },

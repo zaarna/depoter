@@ -110,7 +110,7 @@ export default function WhyChooseDepoterProductRegistration({ sectionKey = [] })
           <Button
             children="Request a Free Consultation"
             className="px-5 py-2"
-            // href={buttonLink}
+            href={"/company/contact-us"}
             variant="yellow"
           />
         </div>

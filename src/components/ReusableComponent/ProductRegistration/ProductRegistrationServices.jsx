@@ -56,7 +56,7 @@ const ProductRegistrationServices = ({ sectionKey = [] }) => {
             <RegistrationServiceCards features={features} />
             <div className="flex justify-center mt-5 md:mt-15">
                 <Button
-                    href=""
+                    href="/company/contact-us"
                     className="px-6 sm:px-12 py-3.5"
                     variant="black"
                 >

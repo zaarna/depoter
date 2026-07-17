@@ -71,7 +71,7 @@ export default function BeautyLogisticsChallenges({ sectionKey = [] }) {
                     ))}
                 </div>
                 <div className="text-center mt-15">
-                    <Button href="" className="px-5 py-3" variant="black">
+                    <Button href="/company/contact-us" className="px-5 py-3" variant="black">
                         Talk to a Beauty Fulfillment Expert
                     </Button>
                 </div>

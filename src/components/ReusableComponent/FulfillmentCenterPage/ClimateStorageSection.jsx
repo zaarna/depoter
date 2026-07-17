@@ -61,7 +61,7 @@ export default function ClimateStorageSection() {
 
         {/* Button */}
         <div className="flex justify-center mt-12">
-          <Button className="py-2 px-10">Talk to a Fulfillment Expert</Button>
+          <Button href={"/company/contact-us"} className="py-2 px-10">Talk to a Fulfillment Expert</Button>
         </div>
       </div>
     </section>

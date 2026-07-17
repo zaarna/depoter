@@ -34,7 +34,7 @@ export default function IntegrationsPage() {
         <FaqSection faqs={ecommerceIntegrationfaq} />
         <CtaSection
           sectionKey="manageeverythingcta"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="Connect Your Store Today"
         />
       </main>

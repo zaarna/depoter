@@ -4022,3 +4022,18 @@ li {
     width: 30%;
   }
 }
+
+/* Default */
+.swiper-slide .testimonial-card {
+  border-color: black;
+  opacity: 0.4;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+/* Highlight the center visible card */
+.swiper-slide-next .testimonial-card {
+  border-color: rgba(255, 190, 46, 0.5);
+  opacity: 1;
+  transform: scale(1);
+}

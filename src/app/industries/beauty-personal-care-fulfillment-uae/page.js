@@ -25,7 +25,7 @@ export default function ProductRegistration() {
         <FaqSection faqs={beautyandppersonalcarefaq} />
         <CtaSection
           sectionKey="beautybrandwithbetterfulfillment"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="  Talk to a Fulfillment Expert"
         />
       </main>

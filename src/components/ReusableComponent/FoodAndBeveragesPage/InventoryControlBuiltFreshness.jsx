@@ -71,7 +71,7 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
                                 <Button
                                     children="Secure Your Inventory"
                                     className="py-2 px-10"
-                                    href=""
+                                    href="/company/contact-us"
                                     variant="yellow"
                                 />
                             </div>

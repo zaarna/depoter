@@ -50,7 +50,7 @@ function ConnectYourEntireEcommerceSystem({ sectionKey = "" }) {
                     <Button
                         children="Connect Your Store"
                         className="py-2 px-10"
-                        href=""
+                        href="/company/contact-us"
                         variant="black"
                     />
                 </div>

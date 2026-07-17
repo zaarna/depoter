@@ -26,7 +26,7 @@ export default function CustomClearance() {
         <FaqSection faqs={customsclearancefaq} />
         <CtaSection
           sectionKey="clearyourshipment"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="Request Customs Clearance Support Now"
         />
       </main>

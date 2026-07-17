@@ -134,7 +134,7 @@ function InventoryControl({ sectionKey = "" }) {
           <Button
             children={"Talk to a Fulfillment Expert"}
             className="py-2 px-5"
-            href={"#"}
+            href={"/company/contact-us"}
           />
         </div>
       </div>

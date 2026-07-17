@@ -34,19 +34,19 @@ export default function SeamlessOrderCard() {
       </div>
       <div className="seamless-order-lines hidden lg:block ">
         <div className="line-1">
-          <img src="/line 254.svg" alt="line" className="w-50" />
+          <img src="/line_254.svg" alt="line" className="w-50" />
         </div>
         <div className="line-2">
-          <img src="/line 255.svg" alt="line" className="w-42" />
+          <img src="/line_255.svg" alt="line" className="w-42" />
         </div>
         <div className="line-3">
-          <img src="/line 256.svg" alt="line" className="w-35" />
+          <img src="/line_256.svg" alt="line" className="w-35" />
         </div>
         <div className="line-4">
-          <img src="/line 259.svg" alt="line" className="w-42" />
+          <img src="/line_259.svg" alt="line" className="w-42" />
         </div>
         <div className="line-5">
-          <img src="/line 258.svg" alt="line" className="w-50" />
+          <img src="/line_258.svg" alt="line" className="w-50" />
         </div>
         <div className="polygone block ">
           <img src="/Polygone-brown.svg" alt="" className="h-60" />
@@ -54,10 +54,10 @@ export default function SeamlessOrderCard() {
       </div>
       <div className="seamless-order-lines lg:hidden">
         <div className="line-6">
-          <img src="/Vector 7153.svg" alt="line" className="w-10" />
+          <img src="/Vector_7153.svg" alt="line" className="w-10" />
         </div>
         <div className="line-7">
-          <img src="/Vector 7154.svg" alt="line" className="w-10" />
+          <img src="/Vector_7154.svg" alt="line" className="w-10" />
         </div>
       </div>
     </>

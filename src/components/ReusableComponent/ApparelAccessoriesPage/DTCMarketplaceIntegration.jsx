@@ -55,7 +55,7 @@ export default function DTCMarketplaceIntegration() {
         </div>
         <div className="text-center">
           <Button
-            href=""
+            href="/company/contact-us"
             className="px-10 py-3"
             variant="black"
             children="Talk to an Integration Expert"

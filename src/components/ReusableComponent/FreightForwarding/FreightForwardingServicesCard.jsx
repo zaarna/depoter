@@ -116,10 +116,9 @@ export default function freightForwardingServicesCard() {
                   <button
                     onClick={() => setActiveTab(index)}
                     className={`relative text-start overflow-hidden px-5 py-4 w-full rounded-xl min-h-[72px] transition-all border-t border-b
-                      ${
-                        activeTab === index
-                          ? "bg-[#ffbe2e] border text-black border-black"
-                          : "border-none"
+                      ${activeTab === index
+                        ? "bg-[#ffbe2e] border text-black border-black"
+                        : "border-none"
                       }`}
                   >
                     <span>
@@ -167,7 +166,7 @@ export default function freightForwardingServicesCard() {
         </div>
       </div>
       <div className="pt-8 my-5 w-100 mx-auto">
-        <Button href="" className="mx-3 block py-3 px-20" variant="black">
+        <Button href="/company/contact-us" className="mx-3 block py-3 px-20" variant="black">
           Request Shipping Quote
         </Button>
       </div>

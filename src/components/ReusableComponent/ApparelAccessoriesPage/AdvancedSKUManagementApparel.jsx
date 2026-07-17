@@ -121,7 +121,7 @@ export default function AdvancedSKUManagementApparel({ sectionKey = [] }) {
           </div>
         </div>
         <div className="text-center">
-          <Button href="" className="px-10 py-3" variant="black">
+          <Button href="/company/contact-us" className="px-10 py-3" variant="black">
             Get expert support today
           </Button>
         </div>

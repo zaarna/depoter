@@ -60,7 +60,7 @@ export default function BenefitsAccordionSection() {
               </span>
             </h2>
 
-            <Button className="py-4 px-15 mt-20">
+            <Button href={"/company/contact-us"} className="py-4 px-15 mt-20">
               Request an Integration Demo
             </Button>
           </div>

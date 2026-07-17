@@ -60,7 +60,7 @@ export default function ConnectToECommerceStack({ sectionKey = [] }) {
 
 
                 <div className="text-center mt-25">
-                    <Button href="" className="px-15 py-3" variant="black">
+                    <Button href="/company/contact-us" className="px-15 py-3" variant="black">
                         Connect Your Store
                     </Button>
                 </div>

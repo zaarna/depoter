@@ -230,34 +230,34 @@ export default function Header() {
     company: {
       title: "Company",
       sections: [
-        // {
-        //   items: [
-        // {
-        //   name: "About us",
-        //   icon: <AboutIcon />,
-        //   // href: "/about"
-        //   href: "",
-        // },
-        // {
-        //   name: "Blog",
-        //   icon: <BlogIcon />,
-        //   // href: "/blog"
-        //   href: "",
-        // },
-        // {
-        //   name: "Case Study",
-        //   icon: <CaseStudyIcon />,
-        //   // href: "/case-study",
-        //   href: "",
-        // },
-        // {
-        //   name: "Contact Us",
-        //   icon: <ContactIcon />,
-        //   //  href: "/contact"
-        //   href: "",
-        // },
-        //   ],
-        // },
+        {
+          items: [
+            // {
+            //   name: "About us",
+            //   icon: <AboutIcon />,
+            //   // href: "/about"
+            //   href: "",
+            // },
+            // {
+            //   name: "Blog",
+            //   icon: <BlogIcon />,
+            //   // href: "/blog"
+            //   href: "",
+            // },
+            // {
+            //   name: "Case Study",
+            //   icon: <CaseStudyIcon />,
+            //   // href: "/case-study",
+            //   href: "",
+            // },
+            {
+              name: "Contact Us",
+              icon: <ContactIcon />,
+              href: "/company/contact-us"
+              // href: "/",
+            },
+          ],
+        },
       ],
     },
   };
@@ -327,10 +327,12 @@ export default function Header() {
                         style={{ backgroundColor: "var(--color-text-accent)" }}
                       />
 
-                      <ChevronDown
-                        className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${activeDropdown === key ? "rotate-180" : ""
-                          }`}
-                      />
+                      {menu.sections?.length > 0 &&
+                        <ChevronDown
+                          className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${activeDropdown === key ? "rotate-180" : ""
+                            }`}
+                        />
+                      }
                     </button>
 
                     {/* Dropdown */}
@@ -398,13 +400,13 @@ export default function Header() {
               <div className="w-[2px] h-8 bg-black me-6"></div>
               <div className=" flex items-center space-x-3">
                 <Link
-                  href="/"
+                  href="/company/contact-us"
                   className="text-[#212121] font-semibold lg:text-sm xl:text-base pointer-events-none"
                 >
                   Partner With Us
                 </Link>
                 {/* Get a Quote Button - Desktop */}
-                <Button href="/" className="px-4 py-2.5">
+                <Button href="/company/contact-us" className="px-4 py-2.5">
                   Get a Quote
                 </Button>
               </div>
@@ -447,7 +449,7 @@ export default function Header() {
             <div className="flex items-center justify-between gap-3 border-b-2 border-black py-4 px-4">
               {/* Left text */}
               <Link
-                href="/"
+                href="/company/contact-us"
                 onClick={handleLinkClick}
                 className="
       font-semibold text-black
@@ -461,20 +463,20 @@ export default function Header() {
 
               {/* Right button */}
               <Link
-                href="/quote"
+                href="/company/contact-us"
                 onClick={handleLinkClick}
                 className="
-      bg-[#1C1C1C] text-white
-      rounded-full
-      px-6 py-4
-      font-semibold
-      whitespace-nowrap
-      text-[clamp(13px,3.5vw,16px)]
-      leading-none
-      shadow-md
-      hover:bg-[#2A2A2A]
-      transition-colors
-    "
+                          bg-[#1C1C1C] text-white
+                          rounded-full
+                          px-6 py-4
+                          font-semibold
+                          whitespace-nowrap
+                          text-[clamp(13px,3.5vw,16px)]
+                          leading-none
+                          shadow-md
+                          hover:bg-[#2A2A2A]
+                          transition-colors
+                        "
               >
                 Get a Quote
               </Link>

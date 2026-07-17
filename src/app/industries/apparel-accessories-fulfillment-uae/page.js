@@ -35,7 +35,7 @@ export default function ApparelAccessoriesPage() {
         <FaqSection faqs={apparelfaq} />
         <CtaSection
           sectionKey="apparelctabutton"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="Get a Quote for Your Brand"
         />
       </main>

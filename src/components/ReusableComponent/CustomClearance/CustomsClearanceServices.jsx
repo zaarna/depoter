@@ -15,7 +15,7 @@ function CustomsClearanceServices({ sectionKey }) {
                 </div>
                 <CustomsClearanceServicesSection />
                 <div className="text-center">
-                    <Button href="" className="px-5 py-3" variant="black">
+                    <Button href="/company/contact-us" className="px-5 py-3" variant="black">
                         Talk to a Customs Expert
                     </Button>
                 </div>

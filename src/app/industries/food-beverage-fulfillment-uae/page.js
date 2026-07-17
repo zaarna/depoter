@@ -33,7 +33,7 @@ export default function FoodAndBeveragesFulfillment() {
         <FaqSection faqs={foodandbeveragesfaq} />
         <CtaSection
           sectionKey="beautybrandwithbetterfulfillment"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="Talk to a Fulfillment Expert"
         />
       </main>

@@ -59,7 +59,7 @@ export default function InventoryControlBeautyHealth({ sectionKey = [] }) {
                         </div>
                     </div>
                     <div className="text-center my-20 ">
-                        <Button href="" className="px-5 py-3" variant="black">
+                        <Button href="/company/contact-us" className="px-5 py-3" variant="black">
                             Talk to a Fulfillment Expert
                         </Button>
                     </div>

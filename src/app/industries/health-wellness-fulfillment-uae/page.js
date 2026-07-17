@@ -29,7 +29,7 @@ export default function HealthWellnessPage() {
         <FaqSection faqs={wellnessfaq} />
         <CtaSection
           sectionKey="wellnessctabutton"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="Talk to an Expert Today"
         />
       </main>

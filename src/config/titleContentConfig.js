@@ -666,7 +666,7 @@ export const titleContentConfig = {
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
     button: {
       text: "Get a Quote",
-      link: "#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5 mt-6",
     },
   },
@@ -687,7 +687,7 @@ export const titleContentConfig = {
     contentColor: "#FFFFFF",
     button: {
       text: "Start Shipping Globally Today",
-      link: "#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5 mt-6",
     },
   },
@@ -704,7 +704,7 @@ export const titleContentConfig = {
     contentWidth: "w-full md:w-3/4 lg:w-2/3",
     button: {
       text: "Get a quote",
-      link: "#",
+      link: "/company/contact-us",
       className: "px-6 sm:px-12 py-3.5 mt-6",
     },
   },

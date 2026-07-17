@@ -26,7 +26,7 @@ export default function DeliveriesPage() {
         <FaqSection faqs={deliveryservicesfaq} />
         <CtaSection
           sectionKey="deliveryoperations"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="Talk to a Delivery Expert"
         />
       </main>

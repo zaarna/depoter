@@ -28,7 +28,7 @@ export default function FreightForwarding() {
         <FaqSection faqs={freightforwardingfaq} />
         <CtaSection
           sectionKey="shippingwithsonfidence"
-          buttonLink={"#"}
+          buttonLink={"/company/contact-us"}
           buttonText="Talk to a Freight Expert"
         />
       </main>

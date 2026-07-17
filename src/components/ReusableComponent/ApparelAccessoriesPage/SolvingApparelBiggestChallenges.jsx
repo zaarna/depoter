@@ -65,7 +65,7 @@ export default function SolvingApparelBiggestChallenges({ sectionKey = [] }) {
                     ))}
                 </div>
                 <div className="text-center mt-15">
-                    <Button href="" className="px-10 py-3" variant="black">
+                    <Button href="/company/contact-us" className="px-10 py-3" variant="black">
                         Talk to a Fashion Fulfillment Expert
                     </Button>
                 </div>
