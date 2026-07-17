@@ -273,24 +273,9 @@ export const heroConfig = {
     className: "backgroundcover-contact-us",
     paddingTop: "md:pt-[380px]",
     heading: {
-      title: "Apparel & Accessories",
-      highlight: "Fulfillment  UAE",
-      titleColor: "#978050",
-      highlightColor: "#212121",
-      description: (
-        <>
-          Manage your fashion operations with fast, accurate, and scalable
-          logistics. Our <b>apparel & accessories fulfillment</b> UAE solutions
-          handle complex sizes, color variants, and returns efficiently,
-          ensuring smooth order processing, reliable last-mile delivery, and
-          better inventory control for growing clothing brands.
-        </>
-      ),
-    },
-    button: {
-      text: "Scale Your Fashion Brand Today",
-      link: "/company/contact-us",
-      className: "px-6 sm:px-12 py-3.5",
+      title: "Contact Us",
+      titleColor: "#212121",
+      titlealignment: "md:text-left",
     },
   },
 

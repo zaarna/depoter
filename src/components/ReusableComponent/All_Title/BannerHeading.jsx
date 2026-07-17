@@ -7,9 +7,10 @@ export default function BannerHeading({
   titleColor = "#212121",
   highlightColor = "#978050",
   descriptionColor = "#4A4A4A",
+  titlealignment = "md:text-left",
 }) {
   return (
-    <div className="text-center md:text-left">
+    <div className={`text-center ${titlealignment}`}>
       {/* Main Heading */}
       <h1
         className="
