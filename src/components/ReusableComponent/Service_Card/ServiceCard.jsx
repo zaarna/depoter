@@ -29,7 +29,7 @@ export default function ServiceCard({ services }) {
               content={service.description}
               titleTag="h3"
               contentTag="p"
-              titleSize="text-[clamp(1.25rem,0.9rem+2vw,2.5rem)]"
+              titleSize="text-[clamp(1.25rem,0.9rem+2vw,2rem)]"
               contentSize="text-base lg:text-lg"
               titleColor="#212121"
               contentColor="#4A4A4A"

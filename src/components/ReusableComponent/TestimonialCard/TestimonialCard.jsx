@@ -9,29 +9,50 @@ import "swiper/css/navigation";
 export default function TestimonialCard({ testimonials = [] }) {
   const [prevEl, setPrevEl] = useState(null);
   const [nextEl, setNextEl] = useState(null);
-  const [centerIndex, setCenterIndex] = useState(0);
+  const [highlightIndex, setHighlightIndex] = useState(0);
 
   return (
     <>
       <div className="relative h-full flex">
         <Swiper
           modules={[Navigation]}
-          loop={true}
+          loop
+          initialSlide={0}
           spaceBetween={20}
           slidesPerView={3}
           navigation={{ prevEl, nextEl }}
-          watchSlidesProgress
-          onSlideChange={(swiper) => setCenterIndex(swiper.realIndex)}
+          onSwiper={(swiper) => {
+            const isDesktop = window.innerWidth >= 1024;
+            setHighlightIndex(
+              isDesktop ? (swiper.realIndex + 1) % testimonials.length : swiper.realIndex
+            );
+          }}
+          onSlideChange={(swiper) => {
+            const isDesktop = window.innerWidth >= 1024;
+            setHighlightIndex(
+              isDesktop ? (swiper.realIndex + 1) % testimonials.length : swiper.realIndex
+            );
+          }}
           breakpoints={{
-            0: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
           }}
         >
-          {testimonials.map((item) => (
+          {testimonials.map((item, index) => (
             <SwiperSlide key={item.id} className="h-full flex">
               <div
-                className="testimonial-card h-full flex flex-col rounded-2xl p-6 transition-all duration-500 border-2 bg-[#FFBE2E1A]"
+                className={`h-full flex flex-col rounded-2xl p-6 transition-all duration-500 border-2 bg-[#FFBE2E1A]
+          ${index === highlightIndex
+                    ? "border-[#FFBE2E80] opacity-100 scale-100"
+                    : "border-black opacity-40 scale-95"
+                  }`}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold text-lg">

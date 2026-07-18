@@ -6,12 +6,14 @@ const InvoiceFeatureCard = ({ number, title, description, dark }) => {
                 : "bg-[#F7BA2C] text-[#1A1A1A]"
                 }`}
         >
+
             {/* Number */}
-            <div className="flex items-center">
-                <span className="text-4xl font-bold">{number}</span>
+            {/* Number */}
+            <div className="flex items-center self-center">
+                <span className="text-4xl font-bold leading-none">{number}</span>
 
                 <div
-                    className={`mx-4 h-25 w-[2px] ${dark ? "bg-white/70" : "bg-black/70"
+                    className={`mx-4 h-25 w-[2px] self-center ${dark ? "bg-white/70" : "bg-black/70"
                         }`}
                 />
             </div>

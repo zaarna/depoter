@@ -64,7 +64,7 @@ const WhyChooseDepoterFoodFulfillment = ({ sectionKey = [] }) => {
                                     </div>
                                 </div>
 
-                                <p className="text-[20px] text-[#1F2937]">
+                                <p className="text-clip md:text-[20px] text-[#1F2937]">
                                     {item.title}
                                 </p>
                             </div>

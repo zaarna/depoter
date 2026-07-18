@@ -8,7 +8,7 @@ function GlobalSection({ sectionKey = [] }) {
   const tc = titleContentConfig[sectionKey] || titleContentConfig["global"];
   return (
     <section className="py-8 md:py-16 global-bg relative overflow-hidden">
-      <div className="max-w-[500px] mx-auto">
+      <div className="mx-auto">
         <div className="grid text-center relative z-10">
           <TitleContent {...tc} />
         </div>

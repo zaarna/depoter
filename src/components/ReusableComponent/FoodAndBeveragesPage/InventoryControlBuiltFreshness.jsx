@@ -35,8 +35,8 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
 
     return (
         <section className="brand-bg">
-            <div className="container mx-auto px-4 relative z-5">
-                <div className="mb-12 flex justify-center md:mt-15">
+            <div className="container mx-auto px-4 relative z-5 py-8 md:py-16 ">
+                <div className="mb-12 flex justify-center">
                     <div className="text-center">
                         <TitleContent {...tc} />
                     </div>
@@ -85,19 +85,33 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
 
 function InvoiceFeatureCard({ number, title, description }) {
     return (
-        <div className="flex flex-1 items-center px-5 py-6 transition-all duration-300">
-            {/* Number */}
-            <div className="flex shrink-0 items-center">
-                <span className="text-4xl font-bold">{number}</span>
+        <div className="flex flex-col md:flex-row flex-1 px-5 py-6 transition-all duration-300">
+            {/* Top Row (Mobile) / Left Side (Desktop) */}
+            <div className="flex items-center">
+                {/* Number */}
+                <div className="flex shrink-0 items-center">
+                    <span className="text-4xl font-bold">{number}</span>
 
-                <div className="mx-4 h-25 w-[2px] bg-black/70" />
+                    <div className="mx-4 h-12 md:h-24 w-[2px] bg-[#212121]" />
+                </div>
+
+                {/* Title (Mobile only) */}
+                <h4 className="text-xl font-semibold md:hidden">
+                    {title}
+                </h4>
             </div>
+
+            {/* Mobile Underline */}
+            <div className="my-4 h-[2px] w-full bg-[#212121] md:hidden" />
 
             {/* Content */}
             <div className="flex-1">
-                <h4 className="text-xl font-semibold">{title}</h4>
+                {/* Title (Desktop only) */}
+                <h4 className="hidden md:block text-lg md:text-xl font-semibold">
+                    {title}
+                </h4>
 
-                <p className="mt-2 text-[18px] leading-relaxed">
+                <p className="mt-2 text-clip md:text-[18px] leading-relaxed">
                     {description}
                 </p>
             </div>

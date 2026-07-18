@@ -3473,14 +3473,14 @@ li {
 }
 
 .expert-card-section {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .expert-card-section .number-section {
   height: 80px;
   width: 80px;
-  font-size: 50px;
-  margin-left: 10px;
+  font-size: 45px;
+  /* margin-left: 10px; */
 }
 
 .expert-card-section .description-section {
@@ -3510,6 +3510,12 @@ li {
 @media (max-width: 400px) {
   .expert-card-section {
     padding: 10px 0;
+  }
+}
+
+@media (min-width: 1320px) {
+  .expert-card-section {
+    padding: 20px 0;
   }
 }
 .transparent-invoicing-bg {

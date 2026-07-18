@@ -17,10 +17,11 @@ function CaseStudySection({ sectionKey = [] }) {
         </div>
         <div className="grid">
           <CaseStudyCard />
-          <Button
-            children="View More"
-            className="mt-0 md:mt-10 w-[300px] px-5 py-3 mx-auto cursor-pointer"
-          />
+          <div className="text-center mt-10">
+            <Button href="" className="px-10 py-3" variant="black">
+              View More
+            </Button>
+          </div>
         </div>
       </div>
     </section>

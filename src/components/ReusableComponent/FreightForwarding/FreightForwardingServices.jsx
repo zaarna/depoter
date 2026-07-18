@@ -7,29 +7,6 @@ import BetterChoiceMultiChannel from "../BetterChoiceCardMultiChannel/BetterChoi
 import FreightForwardingServicesCard from "./FreightForwardingServicesCard";
 
 function FreightForwardingServices({ sectionKey = "" }) {
-  const industries = [
-    {
-      title: "Ocean Freight",
-      boxes: ["FCL Shipping", "LCL Shipping", "Port Handling"],
-      items: [
-        "End-to-end ocean freight management",
-        "Container consolidation services",
-        "Customs documentation support",
-        "Global carrier network access",
-      ],
-    },
-    {
-      title: "Air Freight",
-      boxes: ["Express", "Standard", "Charter"],
-      items: [
-        "Priority cargo handling",
-        "Airport-to-airport shipping",
-        "Temperature-controlled logistics",
-        "Real-time shipment tracking",
-      ],
-    },
-  ];
-
   const tc =
     titleContentConfig[sectionKey] ||
     titleContentConfig["freightforwardingservices"];
@@ -42,11 +19,7 @@ function FreightForwardingServices({ sectionKey = "" }) {
         </div>
 
         <div className="mt-6 md:mt-12">
-          {/* <div className="grid grid-cols-1 lg:grid-cols-1 gap-6"> */}
-          {/* {industries.map((industry, index) => ( */}
           <FreightForwardingServicesCard />
-          {/* ))} */}
-          {/* </div> */}
         </div>
       </div>
     </section>

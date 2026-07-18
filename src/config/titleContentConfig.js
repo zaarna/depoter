@@ -65,7 +65,7 @@ export const titleContentConfig = {
   },
 
   global: {
-    title: "Global Network of Fulfilment Centres",
+    title: "Global Network of\n",
     highlight: "Fulfilment Centres",
     titleTag: "h2",
     titleSize: "text-[clamp(1.5rem,1rem+2vw,3rem)]",
@@ -352,10 +352,10 @@ export const titleContentConfig = {
     content:
       "Space utilization is a science at Depoter. Our logistics infrastructure is engineered to reduce movement time and increase productivity.",
     highlightColor: "#ffbe2e",
-    contentAlign: "right",
+    // contentAlign: "centre",
     contentColor: "#212121",
     contentSize: "text-[1.3rem]",
-    // contentWidth: "w-full md:w-3/4 lg:w-2/3",
+    contentWidth: "w-full md:w-3/4 lg:w-2/3",
     titleColor: "#212121",
   },
 

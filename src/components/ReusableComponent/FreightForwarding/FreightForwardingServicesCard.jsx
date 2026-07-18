@@ -145,7 +145,7 @@ export default function freightForwardingServicesCard() {
                 {services[activeIndex].items.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-start gap-5 text-[18px] mb-5"
+                    className="flex items-start gap-5 text-sm md:text-[14px] lg:text-[16px] xl:text-[18px] mb-5"
                   >
                     <span className="w-4 h-4 rounded-full border border-[#978050] flex items-center justify-center bg-white mt-1 flex-shrink-0">
                       <span className="w-2 h-2 rounded-full bg-[#978050]"></span>

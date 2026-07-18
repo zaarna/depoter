@@ -67,13 +67,13 @@ export default function EfficientStorageArchitecture({ sectionKey = [] }) {
                   <span
                     className={`w-14 h-14 rounded-full opacity-0 md:opacity-100 absolute -right-3 -top-3 ${item.roundcolor}`}
                   ></span>
-                  <h4 className="text-lg md:text-xl font-bold text-[#212121] w-50">
+                  <h4 className="text-lg md:text-xl font-bold text-[#212121] w-full md:w-50 text-start">
                     {item.title}
                   </h4>
                   <span
                     className={`w-20 h-px opacity-0 md:opacity-100 rounded-full block my-0 md:my-3 ${item.roundcolor}`}
                   ></span>
-                  <p className="text-base md:text-lg text-[#212121] font-light leading-relaxe">
+                  <p className="text-base md:text-lg text-start text-[#212121] font-light leading-relaxe">
                     {item.text}
                   </p>
                 </div>

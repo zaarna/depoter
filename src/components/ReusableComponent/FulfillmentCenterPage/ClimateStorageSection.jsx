@@ -1,7 +1,9 @@
+import { titleContentConfig } from "@/config/titleContentConfig";
 import Button from "../Button/Button";
 import ClimateStorageCard from "./ClimateStorageCard";
+import TitleContent from "../All_Title/TitleContent";
 
-export default function ClimateStorageSection() {
+export default function ClimateStorageSection({ sectionKey = [] }) {
   const climateStorageData = [
     {
       id: 1,
@@ -29,21 +31,15 @@ export default function ClimateStorageSection() {
     },
   ];
 
+  const tc =
+    titleContentConfig[sectionKey] ||
+    titleContentConfig["climatestoragecontrol"];
   return (
     <section className="py-16 bg-[#FFF7E4]">
       <div className="container mx-auto px-4">
         {/* Heading */}
-        <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] font-bold text-[#212121]">
-            Climate-Controlled Storage for
-            <span className="block text-[#F5BC36]">Product Safety</span>
-          </h2>
-
-          <p className="mt-6 text-[1.3rem] text-[#4A4A4A]">
-            UAE's climate requires specialized care for sensitive products. We
-            ensure your items stay in "factory-fresh" condition by maintaining
-            the perfect environment.
-          </p>
+        <div className="text-center relative z-10 mb-25">
+          <TitleContent {...tc} />
         </div>
 
         {/* Cards */}

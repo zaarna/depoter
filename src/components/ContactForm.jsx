@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { Loader2, X } from "lucide-react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import Image from "next/image";
 
 const initialData = {
   fullName: "",
@@ -263,7 +264,6 @@ export default function ContactForm() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
           <div className="mx-auto w-full max-w-lg rounded-[32px] bg-[#FDF6E8] p-10 text-center shadow-2xl">
             <div className="mx-auto mb-6 w-24">
-              import Image from "next/image";
               <div className="mx-auto mb-6 flex justify-center">
                 <Image
                   src="/success.gif"
@@ -309,11 +309,10 @@ function Input({ label, required, error, ...props }) {
       <input
         {...props}
         required={required}
-        className={`h-5 w-full border-b-2 bg-transparent outline-none placeholder:text-[#B9A983] ${
-          error
-            ? "border-[#D64545] focus:border-[#D64545]"
-            : "border-[#C4AC77] focus:border-[#212121]"
-        }`}
+        className={`h-5 w-full border-b-2 bg-transparent outline-none placeholder:text-[#B9A983] ${error
+          ? "border-[#D64545] focus:border-[#D64545]"
+          : "border-[#C4AC77] focus:border-[#212121]"
+          }`}
       />
 
       {error && <p className="mt-1 text-sm text-[#D64545]">{error}</p>}
