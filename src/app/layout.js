@@ -2,6 +2,7 @@ import { Outfit, Unbounded } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/ReusableComponent/Footer/footer";
 import Header from "@/components/ReusableComponent/Header/Header";
+import Whatsappwidget from "@/components/ReusableComponent/Whatsappwidget ";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <body className={`${outfit.variable} ${unbounded.variable} antialiased`}>
         <Header />
         {children}
+        <Whatsappwidget />
         <Footer />
       </body>
     </html>

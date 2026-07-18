@@ -253,7 +253,7 @@ export default function Header() {
             {
               name: "Contact Us",
               icon: <ContactIcon />,
-              href: "/company/contact-us"
+              href: "/company/contact-us",
               // href: "/",
             },
           ],
@@ -327,12 +327,13 @@ export default function Header() {
                         style={{ backgroundColor: "var(--color-text-accent)" }}
                       />
 
-                      {menu.sections?.length > 0 &&
+                      {menu.sections?.length > 0 && (
                         <ChevronDown
-                          className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${activeDropdown === key ? "rotate-180" : ""
-                            }`}
+                          className={`w-4 h-4 lg:w-5 lg:h-5 pt-0.5 transition-transform duration-300 ${
+                            activeDropdown === key ? "rotate-180" : ""
+                          }`}
                         />
-                      }
+                      )}
                     </button>
 
                     {/* Dropdown */}
@@ -343,10 +344,7 @@ export default function Header() {
       bg-white rounded-xl shadow-2xl
       border-b-4 border-[#FFBE2E]
       grid gap-6 py-3
-      ${menu.sections.length > 1
-                            ? "grid-cols-2 w-[600px]"
-                            : "grid-cols-1 w-80"
-                          }
+      ${menu.sections.length > 1 ? "grid-cols-2 w-[600px]" : "grid-cols-1 w-80"}
     `}
                       >
                         {menu.sections.map((section, idx) => (
@@ -361,8 +359,11 @@ export default function Header() {
                               {section.items.map((item, itemIdx) => (
                                 <li
                                   key={itemIdx}
-                                  className={`py-1.5 ${item.href ? "hover:bg-[#FFF7E4]" : "cursor-not-allowed"
-                                    }`}
+                                  className={`py-1.5 ${
+                                    item.href
+                                      ? "hover:bg-[#FFF7E4]"
+                                      : "cursor-not-allowed"
+                                  }`}
                                 >
                                   <Link
                                     href={item.href || "#"}
@@ -378,14 +379,13 @@ export default function Header() {
                   px-3 py-1 rounded-lg
                   transition-all duration-200
                   group
-                  ${item.href
-                                        ? "text-[#1C1C1C]"
-                                        : "pointer-events-none"
-                                      }
+                  ${item.href ? "text-[#1C1C1C]" : "pointer-events-none"}
                 `}
                                   >
                                     <span className="text-lg">{item.icon}</span>
-                                    <span className="text-base font-medium">{item.name}</span>
+                                    <span className="text-base font-medium">
+                                      {item.name}
+                                    </span>
                                   </Link>
                                 </li>
                               ))}
@@ -500,8 +500,9 @@ export default function Header() {
                   >
                     {menu.title}
                     <svg
-                      className={`w-4 h-4 transition-transform ${activeDropdown === key ? "rotate-180" : ""
-                        }`}
+                      className={`w-4 h-4 transition-transform ${
+                        activeDropdown === key ? "rotate-180" : ""
+                      }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -530,7 +531,7 @@ export default function Header() {
                               href={item.href}
                               className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
                               onClick={() => setMobileMenuOpen(false)}
-                            // onClick={handleLinkClick}
+                              // onClick={handleLinkClick}
                             >
                               <span className="text-lg">{item.icon}</span>
                               <span className="text-sm text-gray-700">

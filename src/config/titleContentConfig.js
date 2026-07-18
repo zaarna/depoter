@@ -1653,4 +1653,20 @@ export const titleContentConfig = {
     contentWidth: "w-full",
     contentAlign: "text-left",
   },
+  contactinfo: {
+    title: "Tell Us About \n Your Requirements",
+    highlight: "Your Requirements",
+    titleColor: "#212121",
+    content:
+      "Share your requirements, and our team will get back to you shortly with the right solution for your business.",
+    titleTag: "h2",
+    titleSize: "text-[clamp(1.5rem,1rem+2vw,2.65rem)]",
+    highlightColor: "#978050",
+    className: "text-left",
+    contentColor: "#212121",
+    contentTag: "h3",
+    contentSize: "text-[1.3rem]",
+    contentWidth: "w-full ",
+    contentAlign: "text-left",
+  },
 };
