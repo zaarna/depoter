@@ -1,3 +1,4 @@
+import ContactusSection from "@/components/ContactusSection";
 import GlobalSection from "@/components/GlobalSection";
 import InnerHeroSection from "@/components/ReusableComponent/Inner_Hero/InnerHeroSection";
 import TitleSectionHero from "@/components/ReusableComponent/Inner_Hero/TitleSectionHero";
@@ -9,6 +10,7 @@ export default function DeliveriesPage() {
       <main className="flex flex-col min-h-screen w-full  ">
         <ScrollToTop />
         <TitleSectionHero />
+        <ContactusSection />
         <GlobalSection />
       </main>
     </div>
