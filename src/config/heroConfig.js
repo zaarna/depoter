@@ -1,7 +1,7 @@
 export const heroConfig = {
   "/": {
     className: "backgroundcover-home",
-    paddingTop: "md:pt-[230px]",
+    paddingTop: "md:pt-[350px] 2xl:pt-[230px]",
     heading: {
       title: "Depoter Delivers",
       highlight: "Multi-Channel Fulfillment",
@@ -32,7 +32,7 @@ export const heroConfig = {
 
   "/b2b-fulfillment-uae": {
     className: "backgroundcover-b2b",
-    paddingTop: "md:pt-[230px]",
+    paddingTop: "md:pt-[280px] 2xl:pt-[230px]",
     heading: {
       title: "Business-to-Business",
       highlight: "Fulfillment Service in UAE",
@@ -48,7 +48,7 @@ export const heroConfig = {
 
   "/multichannel-fulfillment-uae": {
     className: "backgroundcover-multichannel",
-    paddingTop: "md:pt-[230px]",
+    paddingTop: "md:pt-[280px] 2xl:pt-[230px]",
     heading: {
       title: (
         <>

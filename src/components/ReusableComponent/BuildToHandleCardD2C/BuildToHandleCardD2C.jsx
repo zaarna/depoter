@@ -22,7 +22,7 @@ export default function BuildToHandleCardD2C() {
       description:
         "Fast, secure fulfillment for supplements, hygiene kits, and wellness products.",
       link: "Explore Health Fulfillment",
-      href: "/industries/health",
+      href: "/industries/health-wellness-fulfillment-uae",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export default function BuildToHandleCardD2C() {
       description:
         "Careful handling and quick shipping for cosmetics, skincare, and grooming items.",
       link: "Discover Beauty Logistics",
-      href: "/industries/beauty",
+      href: "/industries/beauty-personal-care-fulfillment-uae",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export default function BuildToHandleCardD2C() {
       description:
         "Neat packing and smooth delivery for clothing, shoes, and accessories.",
       link: "Simplify Apparel Fulfillment",
-      href: "/industries/apparel",
+      href: "/industries/apparel-accessories-fulfillment-uae",
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ export default function BuildToHandleCardD2C() {
       description:
         "Reliable fulfillment for pet food, toys, and everyday pet care items.",
       link: "Ship Pet Supplies",
-      href: "/industries/pets",
+      href: "#",
     },
     {
       id: 5,
@@ -59,7 +59,7 @@ export default function BuildToHandleCardD2C() {
       description:
         "Efficient fulfillment for furniture, home decor, and daily-use essentials.",
       link: "Fulfill Home Essentials",
-      href: "/industries/home",
+      href: "#",
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ export default function BuildToHandleCardD2C() {
       description:
         "Safe storage and timely delivery for packaged snacks, drinks, and more.",
       link: "Enable Food Fulfillment",
-      href: "/industries/food",
+      href: "/industries/food-beverage-fulfillment-uae",
     },
     {
       id: 7,
@@ -78,7 +78,7 @@ export default function BuildToHandleCardD2C() {
       description:
         "Quick dispatch for active gear, kids' toys, and high-volume seasonal orders.",
       link: "Speed Up Shipping",
-      href: "/industries/sports",
+      href: "#",
     },
   ];
 

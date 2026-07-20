@@ -20,14 +20,14 @@ export default function Footer() {
     setOpenAccordion(openAccordion === section ? null : section);
   };
 
-  // const companyLinks = [
-  //   { name: "About Us", href: "/about" },
-  //   { name: "Contact Us", href: "/contact" },
-  //   { name: "Partner With Us", href: "/partner" },
-  //   { name: "Blog", href: "/blog" },
-  //   { name: "Privacy Policies", href: "/privacy" },
-  //   { name: "Terms & Conditions", href: "/terms" },
-  // ];
+  const companyLinks = [
+    // { name: "About Us", href: "/about" },
+    { name: "Contact Us", href: "/company/contact-us" },
+    // { name: "Partner With Us", href: "/partner" },
+    // { name: "Blog", href: "/blog" },
+    // { name: "Privacy Policies", href: "/privacy" },
+    // { name: "Terms & Conditions", href: "/terms" },
+  ];
 
   // industriesLinks
   const industriesLinks = [
@@ -110,7 +110,7 @@ export default function Footer() {
             </div>
 
             {/* Company Links */}
-            {/* <div>
+            <div>
               <h4 className="text-base font-medium text-color-text-primary mb-4">
                 Company
               </h4>
@@ -126,7 +126,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div> */}
+            </div>
 
             {/* Industries Links */}
             <div>
@@ -237,7 +237,7 @@ export default function Footer() {
                 />
               </svg>
             </button>
-            {/* {openAccordion === "company" && (
+            {openAccordion === "company" && (
               <ul className="pb-4 space-y-2">
                 {companyLinks.map((link, index) => (
                   <li key={index}>
@@ -250,7 +250,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            )} */}
+            )}
           </div>
 
           {/* Accordion: Industries */}

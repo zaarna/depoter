@@ -233,7 +233,7 @@ export default function WhyChooseInfoCard() {
                         key={feature.id}
                         className="rounded-3xl border border-[#FFBE2E] bg-white p-6 shadow-md"
                       >
-                        <div className="relative mb-6 h-48">
+                        <div className="relative mb-6 h-40">
                           <Image
                             src={feature.image}
                             alt={feature.title}
@@ -242,7 +242,7 @@ export default function WhyChooseInfoCard() {
                           />
                         </div>
 
-                        <h3 className="mb-3 text-xl font-bold">
+                        <h3 className="mb-2 text-xl font-bold">
                           {feature.title}
                         </h3>
 

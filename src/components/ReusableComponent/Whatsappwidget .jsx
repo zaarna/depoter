@@ -5,14 +5,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
 const WHATSAPP_LINK = "https://wa.me/+971569902345";
-const AUTO_CLOSE_MS = 5000;
+const AUTO_CLOSE_MS = 3000;
 
 export default function WhatsAppWidget() {
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     // Show on every page load, auto-close after 5s unless the user closes it first
-    const timer = setTimeout(() => setShowPopup(false), AUTO_CLOSE_MS);
+    const timer = setTimeout(() => setShowPopup(true), AUTO_CLOSE_MS);
     return () => clearTimeout(timer);
   }, []);
 
@@ -26,12 +26,12 @@ export default function WhatsAppWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.9 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="fixed bottom-20 right-4 z-50 w-[220px] rounded-2xl border-2 border-[#FFBE2E] bg-[#1B1712] px-6 py-4 shadow-2xl sm:right-6"
+            className="fixed bottom-23 right-4 z-50 w-[220px] rounded-2xl border-2 border-[#FFBE2E] bg-[#1B1712] px-2 py-2 shadow-2xl sm:right-6"
           >
             <button
               onClick={() => setShowPopup(false)}
               aria-label="Close"
-              className="absolute -left-3 -top-3 flex h-8 w-8 items-center justify-center rounded-full border-2 border-[#FFBE2E] bg-[#1B1712]"
+              className="absolute -left-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full border-2 border-[#FFBE2E] bg-[#1B1712]"
             >
               <X className="h-4 w-4 text-[#FFBE2E]" strokeWidth={2.5} />
             </button>
@@ -48,7 +48,7 @@ export default function WhatsAppWidget() {
         href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed h-12 w-12 bottom-6 right-6 z-50 flex items-center justify-center rounded-full"
+        className="fixed h-15 w-15 bottom-6 right-6 z-50 flex items-center justify-center rounded-full"
         whileHover={{ scale: 1.15 }}
         whileTap={{ scale: 0.95 }}
         animate={{

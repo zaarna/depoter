@@ -165,7 +165,7 @@ export default function ContactForm() {
       `}</style>
 
       <div className="rounded-3xl border border-[#21212180] bg-[#FFE7B2] p-10">
-        <form onSubmit={submitHandler} noValidate>
+        <form noValidate>
           <div className="space-y-6">
             <Input
               label="Full Name"
@@ -249,20 +249,21 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <button
-            disabled={loading}
-            className="mt-8 flex w-full items-center justify-center gap-3 rounded-xl bg-[#1B1712] py-4 text-lg font-semibold text-[#FFBE2E] transition hover:bg-[#2A241C] disabled:opacity-70"
-          >
-            {loading && <Loader2 className="h-5 w-5 animate-spin" />}
-            Submit
-          </button>
         </form>
       </div>
+      <button
+        disabled={loading}
+        onClick={submitHandler}
+        className="mt-8 flex w-full items-center justify-center gap-3 rounded-full bg-[#1B1712] py-2 text-lg font-semibold text-[#FFBE2E] transition hover:bg-[#2A241C] disabled:opacity-70"
+      >
+        {loading && <Loader2 className="h-5 w-5 animate-spin" />}
+        Submit
+      </button>
 
       {/* Thank you popup */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
-          <div className="mx-auto w-full max-w-lg rounded-[32px] bg-[#FDF6E8] p-10 text-center shadow-2xl">
+          <div className="mx-auto w-full max-w-lg rounded-[32px] bg-[#FFF7E4] p-10 text-center shadow-2xl">
             <div className="mx-auto mb-6 w-24">
               <div className="mx-auto mb-6 flex justify-center">
                 <Image
