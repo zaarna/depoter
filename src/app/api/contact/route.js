@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const RECIPIENTS = process.env.CONTACT_RECIPIENTS.split(",");
+const RECIPIENTS = (process.env.CONTACT_RECIPIENTS || "")
+  .split(",")
+  .filter(Boolean);
 
 function escapeHtml(value = "") {
   return String(value)
@@ -64,13 +66,6 @@ export async function POST(req) {
         { status: 400 },
       );
     }
-
-    /**
-     * Save to DB
-     * Hubspot
-     * Zoho
-     * Salesforce
-     */
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
