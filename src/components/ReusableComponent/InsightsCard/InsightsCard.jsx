@@ -70,9 +70,9 @@ function InsightsGrid({ insights = [] }) {
           </div>
         ))}
       </div>
-      <div className="text-center mt-12">
+      {/* <div className="text-center mt-12">
         <Button children="View All" className="px-28 md:px-36 py-3" />
-      </div>
+      </div> */}
     </>
   );
 }

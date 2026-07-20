@@ -58,7 +58,7 @@ export default function CardsSection() {
               z-20
             "
           >
-            <Link
+            {/* <Link
               href="#"
               className="
                 text-[#FFB703]
@@ -83,7 +83,7 @@ export default function CardsSection() {
                   />
                 </svg>
               </span>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -129,7 +129,7 @@ export default function CardsSection() {
       z-10
     "
           >
-            <Link
+            {/* <Link
               href="#"
               className="
         text-[#FFB703]
@@ -140,7 +140,7 @@ export default function CardsSection() {
       "
             >
               View Case Study
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
