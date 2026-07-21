@@ -4045,3 +4045,37 @@ li {
   opacity: 1;
   transform: scale(1);
 }
+
+.depoter-phone .PhoneInput {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #b8a67b;
+  padding: 12px 0;
+}
+
+.depoter-phone .PhoneInputCountry {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.depoter-phone .PhoneInputCountrySelect {
+  cursor: pointer;
+}
+
+.depoter-phone .PhoneInputInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  color: #000;
+  padding: 0;
+}
+
+.depoter-phone .PhoneInputInput::placeholder {
+  color: #000;
+  opacity: 1;
+}

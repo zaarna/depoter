@@ -201,13 +201,12 @@ export default function ContactForm() {
             {/* Phone with country code dropdown (react-phone-number-input) */}
             <div className="depoter-phone">
               <PhoneInput
-                international
                 defaultCountry="AE"
+                international={false}
                 countryCallingCodeEditable={false}
                 placeholder="Phone Number"
                 value={form.phone}
                 onChange={handlePhoneChange}
-                className={errors.phone ? "has-error" : ""}
               />
               {errors.phone && (
                 <p className="mt-1 text-sm text-[#D64545]">{errors.phone}</p>
