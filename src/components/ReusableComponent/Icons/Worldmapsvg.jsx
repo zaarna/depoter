@@ -16689,7 +16689,7 @@ export default function WorldMapSVG() {
         stroke="black"
         strokeDasharray="2 2"
       />
-      <g className="map-pin" style={{ animationDelay: "0.35s" }}>
+      <g className="map-pin" style={{ animationDelay: "0.00s" }}>
         <circle cx="564.242" cy="118.244" r="5" fill="#DAA946" />
         <circle
           cx="564.242"
@@ -16745,7 +16745,7 @@ export default function WorldMapSVG() {
         stroke="black"
         strokeDasharray="2 2"
       />
-      <g className="map-pin" style={{ animationDelay: "0.70s" }}>
+      <g className="map-pin" style={{ animationDelay: "0.00s" }}>
         <circle cx="779.242" cy="248.244" r="5" fill="#DAA946" />
         <circle
           cx="779.242"
@@ -16781,7 +16781,7 @@ export default function WorldMapSVG() {
         stroke="black"
         strokeDasharray="2 2"
       />
-      <g className="map-pin" style={{ animationDelay: "1.05s" }}>
+      <g className="map-pin" style={{ animationDelay: "0.00s" }}>
         <circle cx="771.242" cy="253.244" r="5" fill="#DAA946" />
         <circle
           cx="771.242"
@@ -16798,7 +16798,7 @@ export default function WorldMapSVG() {
         strokeWidth="0.8"
         strokeDasharray="2 2"
       />
-      <g className="map-pin" style={{ animationDelay: "1.40s" }}>
+      <g className="map-pin" style={{ animationDelay: "0.00s" }}>
         <circle cx="202.242" cy="177.244" r="5" fill="#DAA946" />
         <circle
           cx="202.242"
@@ -16815,7 +16815,7 @@ export default function WorldMapSVG() {
         strokeWidth="0.8"
         strokeDasharray="2 2"
       />
-      <g className="map-pin" style={{ animationDelay: "1.75s" }}>
+      <g className="map-pin" style={{ animationDelay: "0.00s" }}>
         <circle cx="126.242" cy="65.244" r="5" fill="#DAA946" />
         <circle
           cx="126.242"

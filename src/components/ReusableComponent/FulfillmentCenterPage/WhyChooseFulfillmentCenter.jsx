@@ -44,7 +44,7 @@ export default function WhyChooseFulfillmentCenter() {
   return (
     <section className="bg-white ">
       <div className="container mx-auto px-4">
-        <div className="p-8 lg:p-12">
+        <div className="py-8 lg:py-12">
           {/* Heading */}
           <div className="text-center mt-5">
             <h2 className="text-[clamp(1.5rem,1rem+2vw,3rem)] font-bold leading-tight">

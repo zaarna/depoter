@@ -37,7 +37,7 @@ const WhyChooseDepoterFoodFulfillment = ({ sectionKey = [] }) => {
 
     return (
         <section className=" container w-full bg-[#ffffff] py-12 px-6 lg:px-12 relative overflow-hidden">
-            <div className="mx-auto grid lg:grid-cols-2 gap-10 items-center">
+            <div className="mx-auto grid lg:grid-cols-2 md:gap-10 items-center">
                 {/* Left Content */}
                 <div className="flex justify-center mb-12">
                     <div className="text-center">

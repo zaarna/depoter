@@ -79,7 +79,7 @@ function PointCard({ number, title, description }) {
       <div className="absolute inset-0" />
 
       {/* Content */}
-      <div className="relative z-10 expert-card-section flex items-center lg:gap-8 md:gap-7 gap-5 -mt-2 px-2">
+      <div className="relative z-10 expert-card-section flex items-center ms-3 md:ms-0 lg:gap-8 md:gap-7 gap-5 -mt-2 px-2">
         {/* Number */}
         <div className="flex number-section shrink-0 items-center justify-center rounded-full  font-bold text-black">
           {number}

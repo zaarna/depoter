@@ -54,7 +54,7 @@ export default function HowDepoterSupportsFood({ sectionKey = [] }) {
                 </div>
                 {/* Cards */}
                 {/* Mobile */}
-                <div className="grid grid-cols-1 gap-10 w-[90%] mx-auto md:hidden">
+                <div className="grid grid-cols-1 gap-10 w-[100%] mx-auto md:hidden">
                     {mobileAdvantages.map((item) => (
                         <InvoiceFeatureCard key={item.number} {...item} />
                     ))}

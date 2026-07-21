@@ -43,7 +43,7 @@ export default function InventoryControlBuiltFreshness({ sectionKey = [] }) {
                 </div>
 
                 <div
-                    className="overflow-hidden rounded-lg px-8 py-14 lg:px-16"
+                    className="overflow-hidden rounded-lg lg:py-14 lg:px-16"
                 >
                     <div className="grid items-stretch gap-12 lg:grid-cols-2">
                         {/* Left Section */}

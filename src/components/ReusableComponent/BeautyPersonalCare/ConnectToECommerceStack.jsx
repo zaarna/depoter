@@ -41,7 +41,7 @@ export default function ConnectToECommerceStack({ sectionKey = [] }) {
         titleContentConfig["connecttoecommercestack"];
 
     return (
-        <section className="lines-bg-cream py-16 md:py-16 overflow-hidden">
+        <section className="lines-bg-cream pb-8 md:py-16 overflow-hidden">
             <div className="container mx-auto px-4">
                 {/* Heading */}
                 <div className="flex justify-center mb-12 md: mt-15">
@@ -59,7 +59,7 @@ export default function ConnectToECommerceStack({ sectionKey = [] }) {
 
 
 
-                <div className="text-center mt-25">
+                <div className="text-center mt-10 md:mt-25">
                     <Button href="/company/contact-us" className="px-15 py-3" variant="black">
                         Connect Your Store
                     </Button>

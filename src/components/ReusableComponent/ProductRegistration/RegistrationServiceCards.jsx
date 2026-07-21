@@ -194,7 +194,7 @@ function RegistrationServiceCards({ features }) {
             <div className="container relative px-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-12 relative z-10">
                     {features.map((item, index) => (
-                        <div className=" w-60 xl:w-90 mx-auto" key={index} ref={(el) => (cardRefs.current[index] = el)}>
+                        <div className=" w-80 xl:w-90 mx-auto" key={index} ref={(el) => (cardRefs.current[index] = el)}>
                             <div className="mb-6 flex justify-center md:justify-start">
                                 <img src={item.icon} alt={item.title} className="w-25 h-25" />
                             </div>
@@ -203,7 +203,7 @@ function RegistrationServiceCards({ features }) {
                                 {item.title}
                             </h3>
 
-                            <p className="text-[#ffffff] font-light text-base text-center md:text-left">
+                            <p className="text-[#ffffff] font-light text-base text-start md:text-left">
                                 {item.description}
                             </p>
 

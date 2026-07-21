@@ -50,7 +50,7 @@ export default function ReverseLogisticsManagement({ sectionKey = [] }) {
                 </div>
 
                 <div
-                    className="overflow-hidden rounded-lg px-8 py-14 lg:px-14"
+                    className="overflow-hidden rounded-lg px-0 lg:py-14 lg:px-14"
 
                 >
                     <div className="grid items-stretch gap-12 lg:grid-cols-2">

@@ -1166,7 +1166,7 @@ li {
   .backgroundcover-apparelaccessories > .container {
     padding-top: 0px;
     padding-bottom: 25px;
-    margin-top: 280px;
+    margin-top: 320px;
   }
 
   .backgroundcover-productregistration > .container {
@@ -1284,6 +1284,7 @@ li {
     /* background-size: cover; */
     background-position: center;
     background-position-y: top;
+    background-size: 100%;
     background-color: #fff7e4;
     background-repeat: no-repeat;
     z-index: 2;
@@ -1353,6 +1354,7 @@ li {
     background-position: center;
     background-position-y: top;
     background-color: #fff7e4;
+    background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -1373,6 +1375,7 @@ li {
     background-position: center;
     background-position-y: top;
     background-color: #fff7e4;
+    background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -1394,6 +1397,7 @@ li {
     background-position-y: top;
     background-color: #fff7e4;
     background-repeat: no-repeat;
+    background-size: 100%;
     z-index: 2;
   }
 
@@ -1413,6 +1417,7 @@ li {
     background-position: center;
     background-position-y: top;
     background-color: #fff7e4;
+    background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
   }

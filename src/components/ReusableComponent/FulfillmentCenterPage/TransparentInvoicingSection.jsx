@@ -36,7 +36,7 @@ export default function TransparentInvoicingSection() {
     <section className="transparent-invoicing-bg">
       <div className="container mx-auto px-4">
         <div
-          className="overflow-hidden rounded-lg  px-8 py-14 lg:px-16"
+          className="overflow-hidden rounded-lg  py-8 lg:py-14 lg:px-16"
         >
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left Content */}
