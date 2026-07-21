@@ -51,7 +51,7 @@ export default function ContactForm() {
 
     if (!form.email.trim()) {
       newErrors.email = "Please enter your work email.";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
+    } else if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(form.email.trim())) {
       newErrors.email = "Enter a valid email address.";
     }
 
@@ -164,7 +164,7 @@ export default function ContactForm() {
         }
       `}</style>
 
-      <div className="rounded-3xl border border-[#21212180] bg-[#FFE7B2] p-10">
+      <div className="rounded-[20px] border-2 border-[#21212180] bg-[#FFE7B2] p-10">
         <form noValidate>
           <div className="space-y-6">
             <Input

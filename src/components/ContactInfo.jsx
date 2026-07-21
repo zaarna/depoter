@@ -9,7 +9,7 @@ export default function ContactInfo({ sectionKey = [] }) {
   const tc =
     titleContentConfig[sectionKey] || titleContentConfig["contactinfo"];
   return (
-    <div className="relative overflow-hidden rounded-[30px] border border-[#9C8555] bg-[#FFE8B0] p-8 lg:p-10 flex flex-col justify-end">
+    <div className="relative overflow-hidden rounded-[20px] border-2 border-[#9C8555] bg-[#FFE8B0] p-8 lg:p-10 flex flex-col justify-end">
       {/* Background Watermark */}
       <div class="absolute top-0 right-0">
         <img alt="" src="/watermark.svg" />
