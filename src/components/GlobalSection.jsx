@@ -8,13 +8,14 @@ function GlobalSection({ sectionKey = [] }) {
   const tc = titleContentConfig[sectionKey] || titleContentConfig["global"];
   return (
     <section className="py-8 md:py-16 global-bg relative overflow-hidden">
-      <div className="mx-auto">
+      <div className="container mx-auto">
         <div className="grid text-center relative z-10">
           <TitleContent {...tc} />
         </div>
-      </div>
-      <div className="mt-6 md:mt-12 relative grid">
-        <MapSection />
+
+        <div className="mt-5 md:mt-10 relative grid">
+          <MapSection />
+        </div>
       </div>
     </section>
   );
