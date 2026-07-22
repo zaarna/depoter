@@ -8,38 +8,51 @@ export default function AmazonFulfillment() {
       title: "FNSKU labeling and carton preparation",
       icons: "/fba-icon-1.svg",
       rotate: "rotate-12",
+      className: "amazon-process-card-1",
+      iconClassName: "amazon-card-icon-1",
     },
     {
       id: 2,
       title: "Shipment creation in Seller Central",
       icons: "/fba-icon-2.svg",
       rotate: "rotate-6",
+      className: "amazon-process-card-2",
+      iconClassName: "amazon-card-icon-2",
     },
     {
       id: 3,
       title: "Carton and pallet setup as per Amazon standards",
       icons: "/fba-icon-3.svg",
       rotate: "rotate-12",
+      className: "amazon-process-card-3",
+      iconClassName: "amazon-card-icon-3",
     },
     {
       id: 4,
       title: "Inbound scheduling and tracking",
       icons: "/fba-icon-4.svg",
       rotate: "rotate-6",
+      className: "amazon-process-card-4",
+      iconClassName: "amazon-card-icon-4",
     },
     {
       id: 5,
       title: "Inventory planning and replenishment support",
       icons: "/fba-icon-5.svg",
       rotate: "rotate-12",
+      className: "amazon-process-card-5",
+      iconClassName: "amazon-card-icon-5",
     },
     {
       id: 6,
       title: "Compliance documentation and issue resolution",
       icons: "/fba-icon-6.svg",
       rotate: "rotate-6",
+      className: "amazon-process-card-6",
+      iconClassName: "amazon-card-icon-6",
     },
   ];
+
   return (
     <>
       <div className="text-center w-full mt-20 ">
@@ -64,7 +77,7 @@ export default function AmazonFulfillment() {
           {/* Tablet and Desktop: Masonry Layout */}
           <div className="hidden lg:flex gap-5">
             {/* Odd Data Section */}
-            <div className="flex flex-col gap-x-25 flex-1 gap-y-9 relative">
+            {/* <div className="flex flex-col gap-x-25 flex-1 gap-y-9 relative">
               {industries
                 .filter((_, index) => index % 2 === 0)
                 .map((category, index) => (
@@ -75,11 +88,45 @@ export default function AmazonFulfillment() {
                     <AmazonCardHolder industry={category} />
                   </div>
                 ))}
-            </div>
+            </div> */}
 
-            <div className="flex items-center justify-center ">
-              <img className="w-100" src="/AmazonCard.png" alt="" />
-              <div className="amazon-lines-1">
+            {/* <div className="flex items-center justify-center "> */}
+            <img className="w-full" src="/amazon-fba-bg.svg" alt="" />
+            {industries.map((item, index) => (
+              <div
+                key={index}
+                className={`absolute z-10 border flex items-center w-[250px] px-8 ${item.className}`}
+              >
+                {index % 2 === 0 ? (
+                  <>
+                    {/* Left Side Cards (1,3,5) */}
+                    <h4 className="flex-1 text-center text-[18px] font-semibold leading-[1.4] text-[#232323]">
+                      {item.title}
+                    </h4>
+
+                    <img
+                      src={item.icons}
+                      alt=""
+                      className={`w-12 h-12 object-contain absolute flex-shrink-0 ${item.iconClassName}`}
+                    />
+                  </>
+                ) : (
+                  <>
+                    {/* Right Side Cards (2,4,6) */}
+                    <img
+                      src={item.icons}
+                      alt=""
+                      className={`w-12 h-12 object-contain absolute flex-shrink-0 ${item.iconClassName}`}
+                    />
+
+                    <h4 className="flex-1 text-center text-[18px] font-semibold leading-[1.4] text-[#232323]">
+                      {item.title}
+                    </h4>
+                  </>
+                )}
+              </div>
+            ))}
+            {/* <div className="amazon-lines-1">
                 <div className="">
                   <svg
                     width="180"
@@ -192,11 +239,11 @@ export default function AmazonFulfillment() {
                     stroke-dasharray="4 4"
                   />
                 </svg>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
 
             {/* Even Data Section */}
-            <div className="flex flex-col gap-x-25 flex-1 gap-y-9 relative">
+            {/* <div className="flex flex-col gap-x-25 flex-1 gap-y-9 relative">
               {industries
                 .filter((_, index) => index % 2 !== 0)
                 .map((category, index) => (
@@ -207,7 +254,7 @@ export default function AmazonFulfillment() {
                     <AmazonCardHolder industry={category} />
                   </div>
                 ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

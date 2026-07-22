@@ -2741,8 +2741,8 @@ li {
 .seamless-order-lines .polygone {
   position: absolute;
   /* width: 300px; */
-  top: 170px;
-  right: 130px;
+  top: 0;
+  right: 0;
 }
 
 /* Line 1 */
@@ -2770,16 +2770,21 @@ li {
 
 .vertical-line-container {
   position: relative;
-  top: -205px;
-  right: 0px;
+  bottom: 46.7%; /* adjust */
+  left: 59%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .fbn-dot-1 {
-  position: relative;
-  top: 38px;
-  left: 108px;
+  position: absolute;
+  top: 46%;
+  left: 30%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
+
 .fbn-services-bg {
   margin-top: 40px;
   margin-bottom: 25px;
@@ -2802,6 +2807,7 @@ li {
   top: -10px;
   left: 00px;
 }
+
 .order-horizontal-bottom-container {
   position: relative;
   /* width: 100%; */
@@ -2810,24 +2816,80 @@ li {
 }
 
 .order-dot-1 {
-  position: relative;
-  top: 216px;
-  left: 145px;
+  position: absolute;
+  bottom: -490%;
+  left: 18%;
   z-index: 2;
 }
 
 .order-dot-2 {
-  position: relative;
-  top: 192px;
-  left: 450px;
+  position: absolute;
+  bottom: -490%;
+  left: 48.7%;
   z-index: 2;
 }
 
 .order-dot-3 {
-  position: relative;
-  top: 168px;
-  left: 755px;
+  position: absolute;
+  bottom: -490%;
+  left: 79%;
   z-index: 2;
+}
+
+@media (min-width: 1280px) {
+  .order-dot-1 {
+    position: absolute;
+    bottom: -490%;
+    left: 18%;
+    z-index: 2;
+  }
+
+  .order-dot-2 {
+    position: absolute;
+    bottom: -490%;
+    left: 48.7%;
+    z-index: 2;
+  }
+
+  .order-dot-3 {
+    position: absolute;
+    bottom: -490%;
+    left: 79%;
+    z-index: 2;
+  }
+
+  .vertical-line-container {
+    position: relative;
+    left: 55%;
+  }
+}
+
+@media (min-width: 1320px) {
+  .order-dot-1 {
+    position: absolute;
+    bottom: -490%;
+    left: 15%;
+    z-index: 2;
+  }
+
+  .order-dot-3 {
+    position: absolute;
+    bottom: -490%;
+    left: 82.5%;
+    z-index: 2;
+  }
+
+  .vertical-line-container {
+    position: relative;
+    left: 59%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .vertical-line-container {
+    position: relative;
+    left: 60%;
+  }
 }
 
 .direct-ship-card {
@@ -3620,6 +3682,19 @@ li {
   left: 5%;
 }
 
+@media (min-width: 768px) {
+  .vendor-card-title-right-1 {
+    margin-left: 20px;
+  }
+  .vendor-card-title-left-1 {
+    margin-left: 110px;
+  }
+  .vendor-card-title-1 {
+    width: 250px;
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 1024px) {
   .registration-process-card-1 h4,
   .registration-process-card-2 h4,
@@ -3668,7 +3743,7 @@ li {
 
   .vendor-card-title-1 {
     width: 235px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .vendor-card-content-1 {
@@ -3690,7 +3765,7 @@ li {
   }
 
   .vendor-card-title-right-1 {
-    margin-left: 10px;
+    margin-left: 25px;
   }
 
   .yellow-hexagon-1 {
@@ -3840,7 +3915,7 @@ li {
   }
   .vendor-card-title-1 {
     width: 235px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .vendor-card-content-1 {
     padding: 0;
@@ -3857,7 +3932,7 @@ li {
     margin-left: 105px;
   }
   .vendor-card-title-right-1 {
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .yellow-hexagon-1 {
     width: 90px;
@@ -3914,19 +3989,6 @@ li {
     justify-content: flex-end;
     position: relative;
     left: -130px;
-  }
-}
-
-@media (min-width: 768px) {
-  .vendor-card-title-right-1 {
-    margin-left: 20px;
-  }
-  .vendor-card-title-left-1 {
-    margin-left: 110px;
-  }
-  .vendor-card-title-1 {
-    width: 250px;
-    font-size: 16px;
   }
 }
 
@@ -4083,4 +4145,64 @@ li {
 .depoter-phone .PhoneInputInput::placeholder {
   color: #000;
   opacity: 1;
+}
+
+.amazon-process-card-1 h4,
+.amazon-process-card-2 h4,
+.amazon-process-card-3 h4,
+.amazon-process-card-4 h4,
+.amazon-process-card-5 h4,
+.amazon-process-card-6 h4 {
+  font-size: 16px;
+}
+
+.amazon-process-card-1 {
+  top: 12%;
+  left: 0%;
+}
+.amazon-process-card-2 {
+  top: 12%;
+  left: 72%;
+}
+.amazon-process-card-3 {
+  top: 46%;
+  left: 5%;
+}
+.amazon-process-card-4 {
+  top: 45%;
+  left: 68%;
+}
+.amazon-process-card-5 {
+  top: 65%;
+  left: 10%;
+}
+.amazon-process-card-6 {
+  top: 65%;
+  left: 60%;
+}
+
+.amazon-card-icon-1 {
+  /* position: relative; */
+  top: -45%;
+  left: 90%;
+}
+.amazon-card-icon-2 {
+  top: -42%;
+  left: -7%;
+}
+.amazon-card-icon-3 {
+  top: -43%;
+  left: 90%;
+}
+.amazon-card-icon-4 {
+  top: -42%;
+  left: -7%;
+}
+.amazon-card-icon-5 {
+  top: -10%;
+  /* left: 10%; */
+}
+.amazon-card-icon-6 {
+  top: -10%;
+  /* left: 60%; */
 }

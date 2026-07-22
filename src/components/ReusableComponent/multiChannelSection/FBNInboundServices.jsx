@@ -124,7 +124,7 @@ function FBNInboundServices({ sectionKey }) {
               </h2>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-6 mt-15">
+            <div className="relative flex flex-wrap justify-center gap-6 mt-15">
               {storageCards.map((card, index) => (
                 <FBNStorageCard
                   key={index}
@@ -134,7 +134,7 @@ function FBNInboundServices({ sectionKey }) {
                 />
               ))}
 
-              <div className="vertical-line-container hidden lg:flex">
+              <div className="vertical-line-container hidden md:block">
                 <img src="/fbn-storage-vertical-line.svg" alt="" />
               </div>
             </div>
