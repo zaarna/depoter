@@ -63,7 +63,7 @@ export default function AmazonFulfillment() {
           Fulfillment by Amazon (FBA)
         </h2>
         <div className="mt-6 md:mt-12 relative">
-          <div className="lg:hidden flex flex-col gap-6">
+          <div className="md:hidden flex flex-col gap-6">
             <img src="/AmazonCard.png" alt="" />
             {industries.map((category, index) => (
               //   <>
@@ -75,7 +75,7 @@ export default function AmazonFulfillment() {
           </div>
 
           {/* Tablet and Desktop: Masonry Layout */}
-          <div className="hidden lg:flex gap-5">
+          <div className="hidden md:flex gap-5">
             {/* Odd Data Section */}
             {/* <div className="flex flex-col gap-x-25 flex-1 gap-y-9 relative">
               {industries
@@ -95,19 +95,19 @@ export default function AmazonFulfillment() {
             {industries.map((item, index) => (
               <div
                 key={index}
-                className={`absolute z-10 border flex items-center w-[250px] px-8 ${item.className}`}
+                className={`absolute z-10 flex items-center px-6 ${item.className}`}
               >
                 {index % 2 === 0 ? (
                   <>
                     {/* Left Side Cards (1,3,5) */}
-                    <h4 className="flex-1 text-center text-[18px] font-semibold leading-[1.4] text-[#232323]">
+                    <h4 className="flex-1 text-right text-[18px] font-semibold leading-[1.4] text-[#232323]">
                       {item.title}
                     </h4>
 
                     <img
                       src={item.icons}
                       alt=""
-                      className={`w-12 h-12 object-contain absolute flex-shrink-0 ${item.iconClassName}`}
+                      className={`object-contain absolute flex-shrink-0 ${item.iconClassName}`}
                     />
                   </>
                 ) : (
@@ -116,10 +116,10 @@ export default function AmazonFulfillment() {
                     <img
                       src={item.icons}
                       alt=""
-                      className={`w-12 h-12 object-contain absolute flex-shrink-0 ${item.iconClassName}`}
+                      className={`object-contain absolute flex-shrink-0 ${item.iconClassName}`}
                     />
 
-                    <h4 className="flex-1 text-center text-[18px] font-semibold leading-[1.4] text-[#232323]">
+                    <h4 className="flex-1 text-left text-[18px] font-semibold leading-[1.4] text-[#232323]">
                       {item.title}
                     </h4>
                   </>

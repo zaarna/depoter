@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /* ------------------------------
-   🧱 Global Resets & Base Styles
--------------------------------- */
+    🧱 Global Resets & Base Styles
+  -------------------------------- */
 html,
 body {
   /* background-color: var(--color-bg); */
@@ -39,8 +39,8 @@ li {
 }
 
 /* ------------------------------
-   📦 Custom Container Utility
--------------------------------- */
+    📦 Custom Container Utility
+  -------------------------------- */
 @layer utilities {
   .container {
     margin-left: auto;
@@ -89,7 +89,7 @@ li {
   font-weight: 500;
   border-radius: 100px;
   /* background: var(--color-dark-bg);
-  color: #fff; */
+    color: #fff; */
   border: 2px solid transparent;
   overflow: hidden;
   font-family: var(--font-heading);
@@ -359,7 +359,7 @@ li {
   height: 1080px;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #ffce5a0f 14.29%, #e4d8bd00 85.3%),
     url("/freightforwarding-bg.webp");
 
@@ -379,7 +379,7 @@ li {
   height: 1150px;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
     url("/FulfillmentCenterUAEHero.svg");
 
@@ -399,7 +399,7 @@ li {
   height: 990px;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(90.11deg, #fff7e4e7 10.29%, #e4d8bd00 60.3%),
     url("/EcoIntegration-bg.png");
 
@@ -420,7 +420,7 @@ li {
   aspect-ratio: 1440 / 940;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(90.11deg, #ffffff73 15.29%, #e4d8bd00 25.3%),
     url("/Depoter_Delivery_Illustration_010526_Lemolite.svg");
 
@@ -440,7 +440,7 @@ li {
   height: 1140px;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
     url("/Delivery_heroimg.webp");
 
@@ -460,7 +460,7 @@ li {
   height: 840px;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
     url("/customs-clearance-hero.svg");
 
@@ -481,7 +481,7 @@ li {
   aspect-ratio: 1440 / 920;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
     url("/healthWellness.svg");
 
@@ -502,7 +502,7 @@ li {
   aspect-ratio: 1440 / 920;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
     url("/beautyandpersonalcare.svg");
 
@@ -523,7 +523,7 @@ li {
   aspect-ratio: 1440 / 920;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
     url("/foodnbeveragesbackground.svg");
 
@@ -544,7 +544,7 @@ li {
   aspect-ratio: 1440 / 920;
 
   background-image:
-    /* linear-gradient(0deg, #ffffff, #ffffff00), */
+      /* linear-gradient(0deg, #ffffff, #ffffff00), */
     linear-gradient(128.11deg, #fff7e40f 14.29%, #e4d8bd00 85.3%),
     url("/apparel-accessories-bg.svg");
 
@@ -594,20 +594,20 @@ li {
   background-blend-mode: multiply;
 }
 /* .bgimage-service::before {
-  position: absolute;
-  content: "";
-  right: 0%;
-  left: 0%;
-  margin: auto;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  background-image: url("/puzzle3.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 2;
-} */
+    position: absolute;
+    content: "";
+    right: 0%;
+    left: 0%;
+    margin: auto;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("/puzzle3.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  } */
 .brand-bg,
 .ecommercestack-bg {
   position: relative;
@@ -942,7 +942,7 @@ li {
     background-image: image-set(
       url("/mobilehomepagebanner.svg") 1x
         /* url("/mobilehomepagebanner@2x.webp") 2x,
-      url("/mobilehomepagebanner@3x.webp") 3x */
+        url("/mobilehomepagebanner@3x.webp") 3x */
     );
     background-size: 100%;
     background-position: top;
@@ -1063,7 +1063,7 @@ li {
       image-set(
         url("/mobiled2cbanner.svg") 1x
           /* url("/mobiled2cbanner@2x.webp") 2x,
-        url("/mobiled2cbanner@3x.webp") 3x */
+          url("/mobiled2cbanner@3x.webp") 3x */
       );
 
     background-color: #fff7e4;
@@ -1088,7 +1088,7 @@ li {
       image-set(
         url("/b2bmobilebanner.svg") 1x
           /* url("/b2bmobilebanner@2x.webp") 2x,
-        url("/b2bmobilebanner@3x.webp") 3x */
+          url("/b2bmobilebanner@3x.webp") 3x */
       );
     background-size: 100%;
     background-color: #fff7e4;
@@ -1210,7 +1210,7 @@ li {
         url("/freightforwarding-bg-mobile-2x.webp") 2x,
         url("/freightforwarding-bg-mobile-3x.webp") 3x
           /* url("/b2bmobilebanner@2x.webp") 2x,
-      url("/b2bmobilebanner@3x.webp") 3x */
+        url("/b2bmobilebanner@3x.webp") 3x */
       );
     background-size: 100%;
     background-color: #fff7e4;
@@ -1233,9 +1233,9 @@ li {
       image-set(
         url("/fulfillment-order-mobile.png")
           /* url("/B2B_heroimg.webp") 2x,
-      url("/B2B_heroimg.webp") 3x */
+        url("/B2B_heroimg.webp") 3x */
           /* url("/b2bmobilebanner@2x.webp") 2x,
-      url("/b2bmobilebanner@3x.webp") 3x */
+        url("/b2bmobilebanner@3x.webp") 3x */
       );
     background-size: 100%;
     background-position: center;
@@ -1259,7 +1259,7 @@ li {
     /* image-set( */
     /* url("/B2B_heroimg.webp") 2x, */ /* url("/B2B_heroimg.webp") 3x */
     /* url("/b2bmobilebanner@2x.webp") 2x,
-      url("/b2bmobilebanner@3x.webp") 3x */
+        url("/b2bmobilebanner@3x.webp") 3x */
     /* ); */
     background-size: 100%;
     background-position: center;
@@ -1302,9 +1302,9 @@ li {
       ),
       /* image-set( */ url("/customs-clearance-mobile.svg");
     /* url("/Delivery-heroimg-mobile-2x.webp") 2x,
-        url("/Delivery-heroimg-mobile-3x.webp") 3x */
+          url("/Delivery-heroimg-mobile-3x.webp") 3x */
     /* url("/b2bmobilebanner@2x.webp") 2x,
-      url("/b2bmobilebanner@3x.webp") 3x */
+        url("/b2bmobilebanner@3x.webp") 3x */
     /* ); */
     background-size: 100%;
     /* background-position: center; */
@@ -1326,9 +1326,9 @@ li {
       ),
       /* image-set( */ url("/product-registration-mobile.svg");
     /* url("/Delivery-heroimg-mobile-2x.webp") 2x,
-        url("/Delivery-heroimg-mobile-3x.webp") 3x */
+          url("/Delivery-heroimg-mobile-3x.webp") 3x */
     /* url("/b2bmobilebanner@2x.webp") 2x,
-      url("/b2bmobilebanner@3x.webp") 3x */
+        url("/b2bmobilebanner@3x.webp") 3x */
     /* ); */
     background-size: 100%;
     /* background-position: center; */
@@ -4147,62 +4147,283 @@ li {
   opacity: 1;
 }
 
+/* =========================
+   Amazon Process Cards Responsive Design
+========================= */
+
 .amazon-process-card-1 h4,
 .amazon-process-card-2 h4,
 .amazon-process-card-3 h4,
 .amazon-process-card-4 h4,
 .amazon-process-card-5 h4,
 .amazon-process-card-6 h4 {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .amazon-process-card-1 {
   top: 12%;
-  left: 0%;
+  left: -5%;
+  width: 220px;
 }
+
 .amazon-process-card-2 {
   top: 12%;
-  left: 72%;
+  left: 73%;
+  width: 220px;
 }
+
 .amazon-process-card-3 {
   top: 46%;
-  left: 5%;
+  left: 2%;
+  width: 200px;
 }
+
 .amazon-process-card-4 {
-  top: 45%;
-  left: 68%;
+  top: 46%;
+  left: 69%;
+  width: 220px;
 }
+
 .amazon-process-card-5 {
-  top: 65%;
-  left: 10%;
+  top: 79%;
+  left: -5%;
+  width: 220px;
 }
+
 .amazon-process-card-6 {
-  top: 65%;
-  left: 60%;
+  top: 79%;
+  left: 73%;
+  width: 220px;
 }
 
 .amazon-card-icon-1 {
-  /* position: relative; */
-  top: -45%;
-  left: 90%;
+  top: -41%;
+  left: 93%;
+  height: 1.9rem;
+  width: 1.9rem;
 }
+
 .amazon-card-icon-2 {
-  top: -42%;
-  left: -7%;
+  top: -35%;
+  left: -8%;
+  height: 1.9rem;
+  width: 1.9rem;
 }
+
 .amazon-card-icon-3 {
-  top: -43%;
-  left: 90%;
+  top: -35%;
+  left: 94%;
+  height: 1.9rem;
+  width: 1.9rem;
 }
+
 .amazon-card-icon-4 {
-  top: -42%;
-  left: -7%;
+  top: -35%;
+  left: -8%;
+  height: 1.9rem;
+  width: 1.9rem;
 }
+
 .amazon-card-icon-5 {
-  top: -10%;
-  /* left: 10%; */
+  top: -30%;
+  left: 94%;
+  height: 1.9rem;
+  width: 1.9rem;
 }
+
 .amazon-card-icon-6 {
-  top: -10%;
-  /* left: 60%; */
+  top: -26%;
+  left: -7%;
+  height: 1.9rem;
+  width: 1.9rem;
+}
+
+@media (min-width: 1024px) {
+  .amazon-process-card-1 h4,
+  .amazon-process-card-2 h4,
+  .amazon-process-card-3 h4,
+  .amazon-process-card-4 h4,
+  .amazon-process-card-5 h4,
+  .amazon-process-card-6 h4 {
+    font-size: 16px;
+  }
+
+  .amazon-process-card-1,
+  .amazon-process-card-2,
+  .amazon-process-card-5,
+  .amazon-process-card-6 {
+    width: 250px;
+  }
+
+  .amazon-process-card-3,
+  .amazon-process-card-4 {
+    width: 250px;
+  }
+
+  .amazon-process-card-1 {
+    left: -1%;
+  }
+
+  .amazon-process-card-2 {
+    left: 74%;
+  }
+
+  .amazon-process-card-3 {
+    left: 3%;
+  }
+
+  .amazon-process-card-4 {
+    top: 45%;
+    left: 70%;
+  }
+
+  .amazon-process-card-5 {
+    left: -1%;
+  }
+
+  .amazon-process-card-6 {
+    left: 74%;
+  }
+
+  .amazon-card-icon-1 {
+    top: -42%;
+    left: 95%;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .amazon-card-icon-2 {
+    top: -42%;
+    left: -14%;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .amazon-card-icon-3 {
+    top: -40%;
+    left: 96%;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .amazon-card-icon-4 {
+    top: -35%;
+    left: -14%;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .amazon-card-icon-5 {
+    top: -35%;
+    left: 96%;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .amazon-card-icon-6 {
+    top: -30%;
+    left: -12%;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .amazon-process-card-1 h4,
+  .amazon-process-card-2 h4,
+  .amazon-process-card-3 h4,
+  .amazon-process-card-4 h4,
+  .amazon-process-card-5 h4,
+  .amazon-process-card-6 h4 {
+    font-size: 18px;
+  }
+
+  .amazon-process-card-1,
+  .amazon-process-card-2,
+  .amazon-process-card-3,
+  .amazon-process-card-4,
+  .amazon-process-card-5,
+  .amazon-process-card-6 {
+    width: 300px;
+  }
+
+  .amazon-process-card-3 {
+    left: 4%;
+  }
+
+  .amazon-process-card-5,
+  .amazon-process-card-6 {
+    top: 80%;
+  }
+
+  .amazon-card-icon-1 {
+    top: -45%;
+    left: 100%;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .amazon-card-icon-2,
+  .amazon-card-icon-3,
+  .amazon-card-icon-4,
+  .amazon-card-icon-5,
+  .amazon-card-icon-6 {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .amazon-card-icon-2 {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .amazon-card-icon-3 {
+    top: -43%;
+  }
+
+  .amazon-card-icon-4 {
+    top: -43%;
+  }
+
+  .amazon-card-icon-5 {
+    top: -43%;
+    left: 99%;
+  }
+
+  .amazon-card-icon-6 {
+    top: -38%;
+    left: -13%;
+  }
+}
+
+@media (min-width: 1320px) {
+  .amazon-process-card-1 h4,
+  .amazon-process-card-2 h4,
+  .amazon-process-card-3 h4,
+  .amazon-process-card-4 h4,
+  .amazon-process-card-5 h4,
+  .amazon-process-card-6 h4 {
+    font-size: 20px;
+  }
+
+  .amazon-process-card-1,
+  .amazon-process-card-5 {
+    left: 1%;
+  }
+
+  .amazon-process-card-3 {
+    top: 47%;
+    left: 6%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .amazon-process-card-1,
+  .amazon-process-card-5 {
+    left: 2%;
+  }
+
+  .amazon-card-icon-3 {
+    left: 100%;
+  }
 }
